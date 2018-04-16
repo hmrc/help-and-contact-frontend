@@ -22,9 +22,10 @@ import play.api.i18n.Lang
 import controllers.routes
 import play.api.mvc.{AnyContent, Request}
 import uk.gov.hmrc.play.config.ServicesConfig
+import utils.PortalUrlBuilder
 
 @Singleton
-class FrontendAppConfig @Inject() (override val runModeConfiguration: Configuration, environment: Environment) extends ServicesConfig {
+class FrontendAppConfig @Inject() (override val runModeConfiguration: Configuration, environment: Environment) extends ServicesConfig with PortalUrlBuilder {
 
   override protected def mode = environment.mode
 
@@ -49,4 +50,8 @@ class FrontendAppConfig @Inject() (override val runModeConfiguration: Configurat
     "english" -> Lang("en"),
     "cymraeg" -> Lang("cy"))
   def routeToSwitchLanguage = (lang: String) => routes.LanguageSwitchController.switchToLanguage(lang)
+  private lazy val portalHost = loadConfig("portal.host")
+
+  def getPortalUrl(key: String)(implicit request: Request[_]): String =
+    buildPortalUrl(portalHost + loadConfig(s"urls.portal.$key"))
 }

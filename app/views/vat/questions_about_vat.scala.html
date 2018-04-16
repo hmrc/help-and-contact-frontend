@@ -24,7 +24,7 @@
     bodyClasses = None,
     serviceInfoContent = serviceInfoContent) {
 
-    <h1 class="heading-xlarge">@Messages("vat.questions_about_vat.heading")</h1>
-    <p>You can <a href="https://www.tax.service.gov.uk/shortforms/form/VATGenEnq?dept-name=&sub-dept-name=&location=47&lang=eng" id="make-a-vat-enquiry-online" data-journey-click="HelpVatContactHMRCContentLink:click:MakeEnquiryOnline">make a VAT enquiry online</a> or <a href="#">call us</a>.</p>
+    <h1 class="heading-xlarge">@messages("vat.questions_about_vat.heading")</h1>
+    <p>You can <a href=@appConfig.getPortalUrl("vatEnquiry") id="make-a-vat-enquiry-online" data-journey-click="HelpVatContactHMRCContentLink:click:MakeEnquiryOnline">make a VAT enquiry online</a> or <a href="#">call us</a>.</p>
 
 }
