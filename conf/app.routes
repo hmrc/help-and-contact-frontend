@@ -11,3 +11,5 @@ GET        /this-service-has-been-reset                 controllers.SessionExpir
 GET        /unauthorised                                controllers.UnauthorisedController.onPageLoad
 
 GET        /vat/how-to-pay                              controllers.VatController.paymentsAndDeadlines
+
+GET        /vat/questions-about-vat                     controllers.QuestionsAboutVATController.onPageLoad

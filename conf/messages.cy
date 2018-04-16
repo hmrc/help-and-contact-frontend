@@ -58,3 +58,9 @@ vat.payments_and_deadlines.input_tax = treth fewnbwn
 vat.payments_and_deadlines.are_slightly_different_in_each_eu_country = ychydig yn wahanol ym mhob gwlad yn yr UE
 vat.payments_and_deadlines.each_eu_country_has_set_a_minimun_amount_ = mae pob wlad yn yr UE wedi gosod isafswm a all gael ei ad-dalu
 vat.payments_and_deadlines.if_your_business_makes_both_taxable_ = os yw’ch busnes yn gwneud cyflenwadau trethadwy a chyflenwadau sydd wedi’u heithrio, efallai na fyddwch yn gallu adennill yr holl TAW a godwyd arnoch
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~ Payments and Deadlines
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vat.questions_about_vat.title = Cysylltu â CThEM ynghylch TAW
+vat.questions_about_vat.heading = Cysylltu â CThEM ynghylch TAW

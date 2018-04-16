@@ -57,3 +57,9 @@ vat.payments_and_deadlines.input_tax = input tax
 vat.payments_and_deadlines.are_slightly_different_in_each_eu_country = are slightly different in each EU country
 vat.payments_and_deadlines.each_eu_country_has_set_a_minimun_amount_ = each EU country has set a minimum amount that can be refunded
 vat.payments_and_deadlines.if_your_business_makes_both_taxable_ = if your business makes both taxable and exempt supplies, you may not be able to reclaim all of the VAT you have been charged
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~ Payments and Deadlines
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+vat.questions_about_vat.title = Contact HMRC about VAT
+vat.questions_about_vat.heading = Contact HMRC about VAT

@@ -1,0 +1,30 @@
+@*
+ * Copyright 2018 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import config.FrontendAppConfig
+
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+
+@main_template(
+    title = messages("vat.questions_about_vat.title"),
+    appConfig = appConfig,
+    bodyClasses = None,
+    serviceInfoContent = serviceInfoContent) {
+
+    <h1 class="heading-xlarge">@Messages("vat.questions_about_vat.heading")</h1>
+    <p>You can <a href="https://www.tax.service.gov.uk/shortforms/form/VATGenEnq?dept-name=&sub-dept-name=&location=47&lang=eng" id="make-a-vat-enquiry-online" data-journey-click="HelpVatContactHMRCContentLink:click:MakeEnquiryOnline">make a VAT enquiry online</a> or <a href="#">call us</a>.</p>
+
+}
