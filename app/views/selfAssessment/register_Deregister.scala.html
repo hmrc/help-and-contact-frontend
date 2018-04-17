@@ -1,0 +1,66 @@
+@*
+ * Copyright 2018 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import config.FrontendAppConfig
+
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+
+@main_template(
+    title = messages("self_assessment.register_deregister.heading"),
+    appConfig = appConfig,
+    bodyClasses = None,
+    serviceInfoContent = serviceInfoContent) {
+
+    <h1 class="heading-xlarge">@Messages("self_assessment.register_deregister.heading")</h1>
+
+    <h2 class="heading-medium">@Messages("self_assessment.register_deregister.registering_for_self_assessment")</h2>
+
+    <p>@Messages("self_assessment.register_deregister.you_must_register_to_file")</p>
+
+    <h2 class="heading-medium">@Messages("self_assessment.register_deregister.if_you_have_sent_tax_returns_before")</h2>
+
+    <p>@Messages("self_assessment.register_deregister.if_you_have_sent_tax_returns_before_you_need")</p>
+
+    <h2 class="heading-medium">@Messages("self_assessment.register_deregister.register_if_you_are_self_employed_sent_tax_return")</h2>
+
+    <p>@Messages("self_assessment.register_deregister.you_will_need_utr")</p>
+
+    <p>@Messages("self_assessment.register_deregister.signed_up_before")</p>
+
+    <h2 class="heading-medium">@Messages("self_assessment.register_deregister.register_if_you_are_self_employed")</h2>
+
+    <p>@Messages("self_assessment.register_deregister.you_will_get_a_letter")</p>
+
+    <h2 class="heading-medium">@Messages("self_assessment.register_deregister.register_as_partner")</h2>
+
+    <p>@Messages("self_assessment.register_deregister.you_will_need_partnership_utr")</p>
+
+    <p>@Messages("self_assessment.register_deregister.if_you_have_signed_up_before")</p>
+
+    <h2 class="heading-medium">@Messages("self_assessment.register_deregister.activate_your_account_online")</h2>
+
+    <p>@Messages("self_assessment.register_deregister.you_will_get_an_activation_code")</p>
+
+    <p>@Messages("self_assessment.register_deregister.you_will_need_gg")</p>
+
+    <h2 class="heading-medium">@Messages("self_assessment.register_deregister.deregister_for_self_assessment")</h2>
+
+    <p>@Messages("self_assessment.register_deregister.you_must") <a href="@appConfig.getGovUrl("stopSelfAssessment")" id="stop-self-assessment" data-journey-click="HelpSARegisterDeregisterContentLink:click:StopFilingTaxReturns">@Messages("self_assessment.register_deregister.tell_hmrc")</a> @Messages("self_assessment.register_deregister.this_could_be_because")</p>
+
+    <p>@Messages("self_assessment.register_deregister.closing_business")</p>
+
+    <p>@Messages("self_assessment.register_deregister.classtwo_ni")</p>
+}

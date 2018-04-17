@@ -76,6 +76,7 @@ vat.questions_about_vat.address_line_3 = Southend-On-Sea
 vat.questions_about_vat.address_line_4 = SS99 1BD
 vat.questions_about_vat.address_line_5 = Y Deyrnas Unedig
 vat.questions_about_vat.online_enquiries = Cewch ateb cyflymach o anfon ymholiadau ar-lein.
+
 #######################################################
 ##  SELF ASSESSMENT
 #######################################################
@@ -129,6 +130,35 @@ howtoPaySelfAssessment.address.for.sa.enquiries = ar gyfer ymholiadau Hunanasesi
 howtoPaySelfAssessment.penalties = cosbau
 howtoPaySelfAssessment.interest = llog
 howtoPaySelfAssessment.self.assessment.penalties = Cosbau Hunanasesiad
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~ Register or Deregister
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+self_assessment.register_deregister.title = Cofrestru neu ddadgofrestru ar gyfer Hunanasesiad
+self_assessment.register_deregister.heading = Cofrestru neu ddadgofrestru ar gyfer Hunanasesiad
+self_assessment.register_deregister.registering_for_self_assessment = Cofrestru ar gyfer Hunanasesiad
+self_assessment.register_deregister.you_must_register_to_file = Rhaid i chi gofrestru i gyflwyno Ffurflen Dreth Hunanasesiad o fewn 6 mis i ddiwedd y flwyddyn dreth pan ddaethoch yn hunangyflogedig neu y cawsoch incwm y mae angen i chi dalu treth arno. Mae flwyddyn dreth yn dod i ben ar 5 Ebrill. Os na fyddwch yn cofrestru, gallech wynebu cosb.
+self_assessment.register_deregister.if_you_have_sent_tax_returns_before = Os ydych wedi anfon Ffurflenni Treth o’r blaen
+self_assessment.register_deregister.if_you_have_sent_tax_returns_before_you_need = Os ydych wedi cyflwyno Ffurflenni Treth o’r blaen, bydd angen eich Cyfeirnod Unigryw y Trethdalwr (UTR) arnoch. Mae’r cyfeirnod yn 10 digid o hyd ac mae yna gysylltiad i’ch helpu i ddod o hyd iddo. Byddwch hefyd yn gallu defnyddio’r cyfrif ar-lein, y gwnaethoch ei greu o’r blaen, i gyflwyno’ch Ffurflen Dreth ond mae angen i chi gofrestru eto.
+self_assessment.register_deregister.register_if_you_are_self_employed_sent_tax_return = Cofrestru os ydych yn hunangyflogedig ac nid ydych wedi anfon Ffurflen Dreth o’r blaen
+self_assessment.register_deregister.you_will_need_utr = Bydd angen i chi ddod o hyd i’ch Cyfeirnod Unigryw y Trethdalwr (UTR), sy’n 10 digid, o’r adeg y gwnaethoch gofrestru ar gyfer Hunanasesiad yn flaenorol.
+self_assessment.register_deregister.signed_up_before = Os ydych wedi ymuno â’r gwasanaeth ar-lein o’r blaen, dylech ddefnyddio’r un cyfrif i gyflwyno’ch Ffurflen Dreth.
+self_assessment.register_deregister.register_if_you_are_self_employed = Cofrestru os ydych yn hunangyflogedig ac nid ydych wedi anfon Ffurflen Dreth o’r blaen
+self_assessment.register_deregister.you_will_get_a_letter = Bydd llythyr yn eich cyrraedd cyn pen 10 diwrnod gwaith (21 os ydych dramor) a fydd yn cynnwys eich Cyfeirnod Unigryw y Trethdalwr (UTR). Bydd angen hwn arnoch i ymrestru ar gyfer gwasanaethau ar-lein Hunanasesiad er mwyn i chi allu cyflwyno’ch Ffurflen Dreth ar-lein.
+self_assessment.register_deregister.register_as_partner = Cofrestru fel partner neu bartneriaeth
+self_assessment.register_deregister.you_will_need_partnership_utr = Bydd angen yr UTR arnoch ar gyfer y Bartneriaeth yn ogystal â’ch UTR eich hun os oes gennych un eisoes.
+self_assessment.register_deregister.if_you_have_signed_up_before = Os yw’n bartneriaeth newydd, bydd yn rhaid i’r partner enwebedig hefyd gofrestru’r bartneriaeth.
+self_assessment.register_deregister.activate_your_account_online = Cychwyn eich cyfrif ar-lein
+self_assessment.register_deregister.you_will_get_an_activation_code = Bydd cod cychwyn yn eich cyrraedd drwy’r post cyn pen 10 diwrnod gwaith o ymrestru (21 os ydych dramor). Bydd angen hwn arnoch wrth fewngofnodi i’ch cyfrif ar-lein am y tro cyntaf. Gallwch ddisodli cod cychwyn os na fyddwch yn ei gael, neu os ydych yn ei golli.
+self_assessment.register_deregister.you_will_need_gg = Bydd angen i chi wedyn greu cyfrif Porth y Llywodraeth. Nodwch eich manylion personol a chreu cyfrinair. Rhoddir Dynodydd Defnyddiwr (ID) ar y sgrin. Cadwch hyn yn ddiogel ynghyd â’ch cyfrinair gan y bydd eu hangen arnoch bob tro y byddwch yn mewngofnodi ar-lein.
+self_assessment.register_deregister.deregister_for_self_assessment = Dadgofrestru ar gyfer Hunanasesiad
+self_assessment.register_deregister.you_must = Mae’n rhaid i chi
+self_assessment.register_deregister.tell_hmrc = roi gwybod i Gyllid a Thollau EM (CThEM) os nad ydych o’r farn bod angen i chi gyflwyno Ffurflenni Treth mwyach.
+self_assessment.register_deregister.this_could_be_because = Gallai hyn fod oherwydd eich bod wedi rhoi’r gorau i hunangyflogaeth ac i fasnachu fel unig fasnachwr neu os ydych yn dod â phartneriaeth fusnes i ben neu’n ei gadael.
+self_assessment.register_deregister.closing_business = Bydd angen i chi anfon Ffurflenni Treth terfynol a rhoi gwybod i weithwyr eich bod yn cau’ch busnes.
+self_assessment.register_deregister.classtwo_ni = Bydd CThEM hefyd yn canslo’ch cyfraniadau Yswiriant Gwladol Dosbarth 2.
+
 
 #######################################################
 ##  Transcripts
