@@ -12,4 +12,4 @@ GET        /unauthorised                                controllers.Unauthorised
 
 GET        /vat/how-to-pay                              controllers.VatController.paymentsAndDeadlines
 
-GET        /vat/questions-about-vat                     controllers.QuestionsAboutVATController.onPageLoad
+GET        /vat/questions                               controllers.QuestionsAboutVATController.onPageLoad
