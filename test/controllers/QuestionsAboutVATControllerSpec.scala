@@ -23,7 +23,7 @@ import views.html.vat.questions_about_vat
 
 class QuestionsAboutVATControllerSpec extends ControllerSpecBase {
 
-  def controller(/*dataRetrievalAction: DataRetrievalAction = getEmptyCacheMap*/) =
+  def controller() =
     new QuestionsAboutVATController(frontendAppConfig, messagesApi, FakeAuthAction, FakeServiceInfoAction)
 
   def viewAsString() = questions_about_vat(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages).toString
