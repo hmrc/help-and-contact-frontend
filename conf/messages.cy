@@ -64,3 +64,12 @@ vat.payments_and_deadlines.if_your_business_makes_both_taxable_ = os yw’ch bus
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 vat.questions_about_vat.title = Cysylltu â CThEM ynghylch TAW
 vat.questions_about_vat.heading = Cysylltu â CThEM ynghylch TAW
+vat.questions_about_vat.make_enquiry_or_call = Gallwch {0}wneud ymholiad ynghylch TAW ar-lein{1} neu {2}drwy ein ffonio{3}.
+vat.questions_about_vat.send_long_questions = Anfonwch gwestiynau hir, neu gwestiynau gyda gwaith papur wedi’i atodi, drwy’r post i:
+vat.questions_about_vat.vat_enquiries_team = Cyllid a Thollau EM - Tîm Ymholiadau Ysgrifenedig TAW
+vat.questions_about_vat.address_line_1 = Alexander House
+vat.questions_about_vat.address_line_2 = 21 Victoria Avenue
+vat.questions_about_vat.address_line_3 = Southend-On-Sea
+vat.questions_about_vat.address_line_4 = SS99 1BD
+vat.questions_about_vat.address_line_5 = Y Deyrnas Unedig
+vat.questions_about_vat.online_enquiries = Cewch ateb cyflymach o anfon ymholiadau ar-lein.

@@ -36,7 +36,20 @@ class QuestionsAboutVATViewSpec extends ViewBehaviours {
 
     "contain the 'make a VAT query online' link" in {
       val doc = asDocument(createView())
-      assertLinkById(doc, "make-a-vat-enquiry-online", "make a VAT enquiry online", "http://localhost:8080/portal/shortforms/form/VATGenEnq?dept-name=&sub-dept-name=&location=47&lang=eng", expectedGAEvent = "HelpVatContactHMRCContentLink:click:MakeEnquiryOnline")
+      assertLinkById(doc,
+        linkId = "make-a-vat-enquiry-online",
+        expectedText = "make a VAT enquiry online",
+        expectedUrl="http://localhost:8080/portal/shortforms/form/VATGenEnq?dept-name=&sub-dept-name=&location=47&lang=eng",
+        expectedGAEvent = "HelpVatContactHMRCContentLink:click:MakeEnquiryOnline")
+    }
+
+    "contain the 'call us' link" in {
+      val doc = asDocument(createView())
+      assertLinkById(doc,
+        linkId = "contact-hmrc-about-vat",
+        expectedText = "call us",
+        expectedUrl="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/vat-enquiries",
+        expectedGAEvent = "HelpVatContactHMRCContentLink:click:CallUs")
     }
 
   }

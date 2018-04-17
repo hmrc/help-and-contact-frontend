@@ -25,6 +25,22 @@
     serviceInfoContent = serviceInfoContent) {
 
     <h1 class="heading-xlarge">@messages("vat.questions_about_vat.heading")</h1>
-    <p>You can <a href=@appConfig.getPortalUrl("vatEnquiry") id="make-a-vat-enquiry-online" data-journey-click="HelpVatContactHMRCContentLink:click:MakeEnquiryOnline">make a VAT enquiry online</a> or <a href="#">call us</a>.</p>
+    <p>@messages("vat.questions_about_vat.you_can")
+        <a href=@appConfig.getPortalUrl("vatEnquiry")
+           id="make-a-vat-enquiry-online"
+           data-journey-click="HelpVatContactHMRCContentLink:click:MakeEnquiryOnline">@messages("vat.questions_about_vat.make_enquiry")</a>
+        @messages("vat.questions_about_vat.or")
+        <a href=@appConfig.getGovUrl("callUs")
+           id="contact-hmrc-about-vat"
+           data-journey-click="HelpVatContactHMRCContentLink:click:CallUs">@messages("vat.questions_about_vat.call_us")</a>.
+    </p>
+    <p>@messages("vat.questions_about_vat.send_long_questions")</p>
+    <p>@messages("vat.questions_about_vat.vat_enquiries_team")</p>
+    <p>@messages("vat.questions_about_vat.address_line_1")
+    <br>@messages("vat.questions_about_vat.address_line_2")
+    <br>@messages("vat.questions_about_vat.address_line_3")
+    <br>@messages("vat.questions_about_vat.address_line_4")
+    <br>@messages("vat.questions_about_vat.address_line_5")</p>
+    <p>@messages("vat.questions_about_vat.online_enquiries")</p>
 
 }

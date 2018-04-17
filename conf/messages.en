@@ -63,3 +63,15 @@ vat.payments_and_deadlines.if_your_business_makes_both_taxable_ = if your busine
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 vat.questions_about_vat.title = Contact HMRC about VAT
 vat.questions_about_vat.heading = Contact HMRC about VAT
+vat.questions_about_vat.you_can = You can
+vat.questions_about_vat.make_enquiry = make a VAT enquiry online
+vat.questions_about_vat.or =  or
+vat.questions_about_vat.call_us = call us
+vat.questions_about_vat.send_long_questions = Send long questions or questions with attached paperwork by post to:
+vat.questions_about_vat.vat_enquiries_team = HM Revenue and Customs - VAT Written Enquiries Team
+vat.questions_about_vat.address_line_1 = Alexander House
+vat.questions_about_vat.address_line_2 = 21 Victoria Avenue
+vat.questions_about_vat.address_line_3 = Southend-On-Sea
+vat.questions_about_vat.address_line_4 = SS99 1BD
+vat.questions_about_vat.address_line_5 = United Kingdom
+vat.questions_about_vat.online_enquiries = Online enquiries get faster replies.
