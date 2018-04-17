@@ -159,6 +159,7 @@ self_assessment.register_deregister.this_could_be_because = This could be becaus
 self_assessment.register_deregister.closing_business = You will need to send final tax returns and tell employees that you are closing your business.
 self_assessment.register_deregister.classtwo_ni = HMRC will also cancel your Class 2 National Insurance contributions.
 
+
 #######################################################
 ##  Transcripts
 #######################################################
@@ -230,6 +231,3 @@ selfAssessmentPenaltiesTranscript.paragraph8 = Of course, you can avoid any pena
 selfAssessmentPenaltiesTranscript.paragraph9 = Customers also tell us they are worried that a penalty will be charged if they make a mistake on the return. This depends on whether you have taken reasonable care when you have completed it. Keeping accurate records to fill in your tax return will help to avoid this. You’ll find more help and support on GOV.UK.
 selfAssessmentPenaltiesTranscript.paragraph10 = Webinars and other videos about Self Assessment are available from HMRC.
 selfAssessmentPenaltiesTranscript.paragraph11 = Thanks for watching.
-
-
-
