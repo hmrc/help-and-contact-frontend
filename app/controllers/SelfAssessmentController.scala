@@ -26,7 +26,7 @@ import views.html.selfAssessment.register_Deregister
 class SelfAssessmentController @Inject()(appConfig: FrontendAppConfig,
                                          override val messagesApi: MessagesApi,
                                          authenticate: AuthAction,
-                                         serviceInfo: ServiceInfoAction ) extends FrontendController with I18nSupport {
+                                         serviceInfo: ServiceInfoAction) extends FrontendController with I18nSupport {
 
   def registerDeregister = (authenticate andThen serviceInfo) {
     implicit request =>
