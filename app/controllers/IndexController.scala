@@ -26,7 +26,6 @@ import views.html.index
 
 class IndexController @Inject()(val appConfig: FrontendAppConfig,
                                 val messagesApi: MessagesApi) extends FrontendController with I18nSupport {
-
   def onPageLoad: Action[AnyContent] = Action { implicit request =>
     Ok(index(appConfig))
   }
