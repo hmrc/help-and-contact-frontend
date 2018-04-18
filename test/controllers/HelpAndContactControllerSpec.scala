@@ -26,6 +26,7 @@ import views.html.vat.{payments_and_deadlines, questions_about_vat}
 
 import views.html.vat.payments_and_deadlines
 import views.html.sa._
+import views.html.selfAssessment.register_Deregister
 
 class HelpAndContactControllerSpec extends ControllerSpecBase {
 
@@ -56,6 +57,12 @@ class HelpAndContactControllerSpec extends ControllerSpecBase {
     HelpCategory.VAT,
     "how-to-pay",
     () => payments_and_deadlines(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  )
+
+  behave like pageRouter(
+    HelpCategory.SelfAssessment,
+    "register-or-deregister",
+    () => register_Deregister(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
   )
 
   behave like pageRouter(

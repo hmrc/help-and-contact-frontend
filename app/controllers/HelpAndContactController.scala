@@ -23,12 +23,19 @@ import controllers.actions._
 import handlers.ErrorHandler
 import models.HelpCategory
 import models.HelpCategory.{SelfAssessment, VAT}
+import javax.inject.Inject
+
+import models.HelpCategory
+import models.HelpCategory.{SA, VAT}
 import models.requests.ServiceInfoRequest
 import play.api.i18n.{I18nSupport, MessagesApi}
 import play.api.mvc.AnyContent
 import uk.gov.hmrc.play.bootstrap.controller.FrontendController
 import views.html.sa._
 import views.html.vat.{payments_and_deadlines, questions_about_vat}
+import uk.gov.hmrc.play.bootstrap.http.FrontendErrorHandler
+import views.html.selfAssessment.register_Deregister
+import views.html.vat.payments_and_deadlines
 
 class HelpAndContactController @Inject()(appConfig: FrontendAppConfig,
                                          override val messagesApi: MessagesApi,
@@ -55,6 +62,7 @@ class HelpAndContactController @Inject()(appConfig: FrontendAppConfig,
   private def selfAssessment(page: String)(implicit request: ServiceInfoRequest[AnyContent]) = {
     page match {
       case "how-to-pay" => Ok(how_to_pay_self_assessment(appConfig)(request.serviceInfoContent))
+      case "register-or-deregister" => Ok(register_Deregister(appConfig)(request.serviceInfoContent))
       case _ => NotFound(errorHandler.notFoundTemplate)
     }
   }
