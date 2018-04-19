@@ -16,4 +16,3 @@ GET        /self-assessment/:page                       controllers.HelpAndConta
 
 GET        /transcript/:videoTitle                      controllers.TranscriptController.onPageLoad(videoTitle: String)
 
-

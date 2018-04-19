@@ -24,9 +24,8 @@ import handlers.ErrorHandler
 import models.HelpCategory
 import models.HelpCategory.{SelfAssessment, VAT}
 import javax.inject.Inject
-
 import models.HelpCategory
-import models.HelpCategory.{SA, VAT}
+import models.HelpCategory.{SelfAssessment, VAT}
 import models.requests.ServiceInfoRequest
 import play.api.i18n.{I18nSupport, MessagesApi}
 import play.api.mvc.AnyContent
@@ -48,6 +47,7 @@ class HelpAndContactController @Inject()(appConfig: FrontendAppConfig,
       category match {
         case VAT => vat(page)
         case SelfAssessment => selfAssessment(page)
+
       }
   }
 

@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package views
+package views.sa
 
 import play.twirl.api.HtmlFormat
 import views.behaviours.ViewBehaviours
 import views.html.selfAssessment.register_Deregister
 
-class SelfAssessmentViewSpec extends ViewBehaviours {
+class RegisterDeregisterViewSpec extends ViewBehaviours {
 
   val messageKeyPrefix = "self_assessment.register_deregister"
 
