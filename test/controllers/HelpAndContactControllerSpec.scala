@@ -22,7 +22,7 @@ import models.HelpCategory
 import models.HelpCategory.VAT
 import play.api.test.Helpers._
 import play.twirl.api.{Html, HtmlFormat}
-import views.html.vat.payments_and_deadlines
+import views.html.vat.{payments_and_deadlines, questions_about_vat}
 
 class HelpAndContactControllerSpec extends ControllerSpecBase {
 
@@ -30,7 +30,7 @@ class HelpAndContactControllerSpec extends ControllerSpecBase {
   def pageRouter(helpCategory: HelpCategory, page: String, view: () => HtmlFormat.Appendable) = {
     "HelpAndContactController onPageLoad" must {
       s"display the correct $helpCategory view for /$page" in {
-        val result = controller().onPageLoad(VAT, "how-to-pay").apply(fakeRequest)
+        val result = controller().onPageLoad(helpCategory, page).apply(fakeRequest)
         status(result) mustBe OK
         contentAsString(result) mustBe view().toString
       }
@@ -53,6 +53,11 @@ class HelpAndContactControllerSpec extends ControllerSpecBase {
     HelpCategory.VAT,
     "how-to-pay",
     () => payments_and_deadlines(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  )
+  behave like pageRouter(
+    HelpCategory.VAT,
+    "questions",
+    () => questions_about_vat(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
   )
 }
 

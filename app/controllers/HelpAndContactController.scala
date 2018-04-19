@@ -26,9 +26,7 @@ import models.requests.ServiceInfoRequest
 import play.api.i18n.{I18nSupport, MessagesApi}
 import play.api.mvc.AnyContent
 import uk.gov.hmrc.play.bootstrap.controller.FrontendController
-import uk.gov.hmrc.play.bootstrap.http.FrontendErrorHandler
-import views.html.vat.payments_and_deadlines
-
+import views.html.vat.{payments_and_deadlines, questions_about_vat}
 class HelpAndContactController @Inject()(appConfig: FrontendAppConfig,
                                          override val messagesApi: MessagesApi,
                                          authenticate: AuthAction,
@@ -45,6 +43,7 @@ class HelpAndContactController @Inject()(appConfig: FrontendAppConfig,
   private def vat(page: String)(implicit request: ServiceInfoRequest[AnyContent]) = {
     page match {
       case "how-to-pay" => Ok(payments_and_deadlines(appConfig)(request.serviceInfoContent))
+      case "questions" => Ok(questions_about_vat(appConfig)(request.serviceInfoContent))
       case _ => NotFound(errorHandler.notFoundTemplate)
     }
   }
