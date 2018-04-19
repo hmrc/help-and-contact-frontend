@@ -180,6 +180,12 @@ self_assessment.register_deregister.this_could_be_because = Gallai hyn fod oherw
 self_assessment.register_deregister.closing_business = Bydd angen i chi anfon Ffurflenni Treth terfynol a rhoi gwybod i weithwyr eich bod yn cau’ch busnes.
 self_assessment.register_deregister.classtwo_ni = Bydd CThEM hefyd yn canslo’ch cyfraniadau Yswiriant Gwladol Dosbarth 2.
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~  SaEvidence
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+saEvidence.title = WELSH NEEDED HERE
+saEvidence.heading = WELSH NEEDED HERE
+
 #######################################################
 ##  Transcripts
 #######################################################

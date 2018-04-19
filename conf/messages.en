@@ -180,6 +180,11 @@ self_assessment.register_deregister.this_could_be_because = This could be becaus
 self_assessment.register_deregister.closing_business = You will need to send final tax returns and tell employees that you are closing your business.
 self_assessment.register_deregister.classtwo_ni = HMRC will also cancel your Class 2 National Insurance contributions.
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#  SaEvidence
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+saEvidence.title = saEvidence
+saEvidence.heading = saEvidence
 
 #######################################################
 ##  Transcripts
