@@ -14,11 +14,12 @@
  * limitations under the License.
  */
 
-package controllers
+package models
 
-import uk.gov.hmrc.http.cache.client.CacheMap
-import base.SpecBase
+import utils.WithName
 
-trait ControllerSpecBase extends SpecBase {
-
+sealed trait HelpCategory
+object HelpCategory {
+  case object VAT extends WithName("vat") with HelpCategory
 }
+

@@ -10,6 +10,4 @@ GET        /this-service-has-been-reset                 controllers.SessionExpir
 
 GET        /unauthorised                                controllers.UnauthorisedController.onPageLoad
 
-GET        /vat/how-to-pay                              controllers.VatController.paymentsAndDeadlines
-
-GET        /vat/questions                               controllers.QuestionsAboutVATController.onPageLoad
+GET        /vat/:page                                   controllers.HelpAndContactController.onPageLoad(helpCategory: HelpCategory = HelpCategory.VAT, page: String)

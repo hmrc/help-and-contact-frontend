@@ -17,9 +17,9 @@
 package config
 
 import com.google.inject.{Inject, Singleton}
+import controllers.routes
 import play.api.{Configuration, Environment}
 import play.api.i18n.Lang
-import controllers.routes
 import play.api.mvc.{AnyContent, Request}
 import uk.gov.hmrc.play.config.ServicesConfig
 import utils.PortalUrlBuilder

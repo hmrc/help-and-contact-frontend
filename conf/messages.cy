@@ -15,7 +15,6 @@ site.no = No
 site.yes = Yes
 site.continue = Parhau
 site.service_name = Cyfrif treth busnes
-site.textarea.char_limit = (Limit is {0} characters)
 site.signout = Allgofnodi
 
 unauthorised.title = Ni allwch weld y dudalen hon
@@ -60,7 +59,7 @@ vat.payments_and_deadlines.each_eu_country_has_set_a_minimun_amount_ = mae pob w
 vat.payments_and_deadlines.if_your_business_makes_both_taxable_ = os yw’ch busnes yn gwneud cyflenwadau trethadwy a chyflenwadau sydd wedi’u heithrio, efallai na fyddwch yn gallu adennill yr holl TAW a godwyd arnoch
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#~~ Payments and Deadlines
+#~~ Questions about VAT
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 vat.questions_about_vat.title = Cysylltu â CThEM ynghylch TAW
 vat.questions_about_vat.heading = Cysylltu â CThEM ynghylch TAW
