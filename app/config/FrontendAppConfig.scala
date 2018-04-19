@@ -61,4 +61,5 @@ class FrontendAppConfig @Inject() (override val runModeConfiguration: Configurat
 
   def getPortalUrl(key: String)(implicit request: Request[_]): String =
     buildPortalUrl(portalHost + loadConfig(s"urls.portal.$key"))
+
 }

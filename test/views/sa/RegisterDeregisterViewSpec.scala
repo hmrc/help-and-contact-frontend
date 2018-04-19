@@ -38,7 +38,7 @@ class RegisterDeregisterViewSpec extends ViewBehaviours {
       val doc = asDocument(createView())
       assertLinkById(doc, "stop-self-assessment",
         "tell HM Revenue and Customs (HMRC) if you do not think you need to file tax returns any more.",
-        "https://www.tax.service.gov.uk/business-account/self-assessment/stop",
+        "http://localhost:9020/business-account/self-assessment/stop",
         "HelpSARegisterDeregisterContentLink:click:StopFilingTaxReturns")
     }
 
