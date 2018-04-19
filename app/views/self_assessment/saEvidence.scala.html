@@ -1,0 +1,12 @@
+@import config.FrontendAppConfig
+
+@(appConfig: FrontendAppConfig, moreSADetailsUrl: String)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+
+@main_template(
+    title = messages("saEvidence.title"),
+    appConfig = appConfig,
+    bodyClasses = None,
+    serviceInfoContent = serviceInfoContent) {
+
+    @components.heading("saEvidence.heading")
+}

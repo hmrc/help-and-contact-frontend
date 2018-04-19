@@ -15,4 +15,3 @@ GET        /vat/:page                                   controllers.HelpAndConta
 GET        /self-assessment/:page                       controllers.HelpAndContactController.onPageLoad(helpCategory: HelpCategory = HelpCategory.SelfAssessment, page: String)
 
 GET        /transcript/:videoTitle                      controllers.TranscriptController.onPageLoad(videoTitle: String)
-
