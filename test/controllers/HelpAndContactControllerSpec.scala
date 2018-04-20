@@ -19,14 +19,11 @@ package controllers
 import controllers.actions._
 import handlers.ErrorHandler
 import models.HelpCategory
-import models.HelpCategory.VAT
 import play.api.test.Helpers._
-import play.twirl.api.{Html, HtmlFormat}
-import views.html.vat.{payments_and_deadlines, questions_about_vat}
-
-import views.html.vat.payments_and_deadlines
+import play.twirl.api.HtmlFormat
 import views.html.sa._
 import views.html.selfAssessment.register_Deregister
+import views.html.vat.{payments_and_deadlines, questions_about_vat}
 
 class HelpAndContactControllerSpec extends ControllerSpecBase {
 

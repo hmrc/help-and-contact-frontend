@@ -23,18 +23,13 @@ import controllers.actions._
 import handlers.ErrorHandler
 import models.HelpCategory
 import models.HelpCategory.{SelfAssessment, VAT}
-import javax.inject.Inject
-import models.HelpCategory
-import models.HelpCategory.{SelfAssessment, VAT}
 import models.requests.ServiceInfoRequest
 import play.api.i18n.{I18nSupport, MessagesApi}
 import play.api.mvc.AnyContent
 import uk.gov.hmrc.play.bootstrap.controller.FrontendController
 import views.html.sa._
-import views.html.vat.{payments_and_deadlines, questions_about_vat}
-import uk.gov.hmrc.play.bootstrap.http.FrontendErrorHandler
 import views.html.selfAssessment.register_Deregister
-import views.html.vat.payments_and_deadlines
+import views.html.vat.{payments_and_deadlines, questions_about_vat}
 
 class HelpAndContactController @Inject()(appConfig: FrontendAppConfig,
                                          override val messagesApi: MessagesApi,
