@@ -49,6 +49,7 @@ class FrontendAppConfig @Inject() (override val runModeConfiguration: Configurat
   private lazy val businessAccountHost = runModeConfiguration.getString("urls.business-account.host").getOrElse("")
 
   def getBusinessAccountUrl(key: String): String = businessAccountHost + loadConfig(s"urls.business-account.$key")
+  def getSelfAssessmentBaseUrl: String = runModeConfiguration.getString("urls.self-assessment.host").getOrElse("")
 
   lazy val languageTranslationEnabled = runModeConfiguration.getBoolean("microservice.services.features.welsh-translation").getOrElse(true)
 

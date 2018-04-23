@@ -183,8 +183,15 @@ self_assessment.register_deregister.classtwo_ni = HMRC will also cancel your Cla
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #  SaEvidence
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-saEvidence.title = saEvidence
-saEvidence.heading = saEvidence
+sa.evidence.title = Get evidence of your income (SA302)
+sa.evidence.heading = Get evidence of your income (SA302)
+
+sa.evidence.what_is_sa302=You can get evidence of your earnings for the last 4 years with an SA302.
+sa.evidence.tax_year_overview=You can also get a tax year overview for any year.
+sa.evidence.where_to_get.pre_link=You can get your SA302 in the
+sa.evidence.where_to_get.link_text=more Self Assessment details
+sa.evidence.where_to_get.post_link=section of your account.
+sa.evidence.why_you_might_need_documents=You might be asked for these documents as evidence of your income, for example if you are applying for a mortgage and you are self-employed.
 
 #######################################################
 ##  Transcripts

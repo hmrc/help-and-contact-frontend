@@ -81,4 +81,24 @@ class HelpAndContactControllerSpec extends ControllerSpecBase {
     "how-to-pay",
     () => how_to_pay_self_assessment(frontendAppConfig)(HtmlFormat.empty)(fakeServiceInfoRequest, messages)
   )
+
+  "behave appropriately for enrolments" when {
+    "the user has no enrolments" must {
+      behave like pageRouter(
+        HelpCategory.SelfAssessment,
+        "evidence-of-income",
+        () => sa_evidence(frontendAppConfig, false, "http://localhost:9020/business-account/self-assessment")(HtmlFormat.empty)(fakeRequest, messages)
+      )
+    }
+
+    "the user has an SA enrolment" must {
+//      def saEnrolment =
+      behave like pageRouter(
+        HelpCategory.SelfAssessment,
+        "evidence-of-income",
+        () => sa_evidence(frontendAppConfig, true, "http://localhost:9020/business-account/self-assessment")(HtmlFormat.empty)(fakeRequest, messages)
+      )
+    }
+
+  }
 }
