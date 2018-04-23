@@ -58,7 +58,10 @@ class HelpAndContactController @Inject()(appConfig: FrontendAppConfig,
     page match {
       case "how-to-pay" => Ok(how_to_pay_self_assessment(appConfig)(request.serviceInfoContent))
       case "register-or-deregister" => Ok(register_deregister(appConfig)(request.serviceInfoContent))
-      case "evidence-of-income" => Ok(sa_evidence(appConfig, true, appConfig.getSelfAssessmentBaseUrl)(request.serviceInfoContent))
+      case "evidence-of-income" => {
+        Ok(sa_evidence(appConfig, request.request.saUtr.isDefined, appConfig.getSelfAssessmentBaseUrl)
+        (request.serviceInfoContent))
+      }
       case _ => NotFound(errorHandler.notFoundTemplate)
     }
   }

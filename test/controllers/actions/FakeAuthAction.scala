@@ -18,11 +18,17 @@ package controllers.actions
 
 import models.requests.AuthenticatedRequest
 import play.api.mvc.{Request, Result}
+import uk.gov.hmrc.domain.SaUtr
 
 import scala.concurrent.Future
 
 object FakeAuthAction extends AuthAction {
   override def invokeBlock[A](request: Request[A], block: (AuthenticatedRequest[A]) => Future[Result]): Future[Result] =
     block(AuthenticatedRequest(request, None))
+}
+
+case class FakeAuthActionWithSaEnrolment(enrolment: Option[SaUtr] = None) extends AuthAction{
+  override def invokeBlock[A](request: Request[A], block: (AuthenticatedRequest[A]) => Future[Result]): Future[Result] =
+    block(AuthenticatedRequest(request, enrolment))
 }
 
