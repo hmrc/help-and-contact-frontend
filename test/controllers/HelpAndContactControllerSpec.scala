@@ -19,11 +19,17 @@ package controllers
 import controllers.actions._
 import handlers.ErrorHandler
 import models.HelpCategory
+import models.HelpCategory.VAT
+
 import models.requests.{AuthenticatedRequest, ServiceInfoRequest}
 import play.api.test.Helpers._
 import play.twirl.api.HtmlFormat
 import views.html.sa.{how_to_pay_self_assessment, register_deregister}
 import views.html.vat.{payments_and_deadlines, questions_about_vat}
+
+import views.html.vat.payments_and_deadlines
+import views.html.sa._
+
 
 class HelpAndContactControllerSpec extends ControllerSpecBase {
 
