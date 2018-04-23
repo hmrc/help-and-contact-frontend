@@ -39,7 +39,7 @@ class HelpAndContactController @Inject()(appConfig: FrontendAppConfig,
     implicit request =>
       category match {
         case VAT => vat(page)
-        case SelfAssessment => sa(page)
+        case SelfAssessment => selfAssessment(page)
 
       }
   }
@@ -52,7 +52,7 @@ class HelpAndContactController @Inject()(appConfig: FrontendAppConfig,
     }
   }
 
-  private def sa(page: String)(implicit request: ServiceInfoRequest[AnyContent]) = {
+  private def selfAssessment(page: String)(implicit request: ServiceInfoRequest[AnyContent]) = {
     page match {
       case "how-to-pay" => Ok(how_to_pay_self_assessment(appConfig)(request.serviceInfoContent))
       case "register-or-deregister" => Ok(register_deregister(appConfig)(request.serviceInfoContent))
