@@ -22,7 +22,7 @@ import models.HelpCategory
 import play.api.test.Helpers._
 import play.twirl.api.HtmlFormat
 import views.html.sa._
-import views.html.selfAssessment.register_Deregister
+import views.html.sa.register_deregister
 import views.html.vat.{payments_and_deadlines, questions_about_vat}
 
 class HelpAndContactControllerSpec extends ControllerSpecBase {
@@ -59,7 +59,7 @@ class HelpAndContactControllerSpec extends ControllerSpecBase {
   behave like pageRouter(
     HelpCategory.SelfAssessment,
     "register-or-deregister",
-    () => register_Deregister(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+    () => register_deregister(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
   )
 
   behave like pageRouter(

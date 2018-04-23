@@ -18,13 +18,13 @@ package views.sa
 
 import play.twirl.api.HtmlFormat
 import views.behaviours.ViewBehaviours
-import views.html.selfAssessment.register_Deregister
+import views.html.sa.register_deregister
 
 class RegisterDeregisterViewSpec extends ViewBehaviours {
 
   val messageKeyPrefix = "self_assessment.register_deregister"
 
-  def createView = () => register_Deregister(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView = () => register_deregister(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
 
   "RegisterDeregisterSelfAssessment view" must {
     behave like normalPage(createView, messageKeyPrefix)
