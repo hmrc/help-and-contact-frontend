@@ -18,7 +18,9 @@ package utils
 
 import base.SpecBase
 import play.api.mvc.Cookie
-import uk.gov.hmrc.domain.CtUtr
+import uk.gov.hmrc.domain.{CtUtr, SaUtrGenerator}
+
+import scala.util.Random
 
 class PortalUrlBuilderSpec extends SpecBase {
 
@@ -29,15 +31,22 @@ class PortalUrlBuilderSpec extends SpecBase {
 
   "build portal url" when {
 
+    "there is <utr>" should {
+      val utr = new SaUtrGenerator(new Random).nextSaUtr
+      "return the provided url with the current users UTR" in {
+        PortalUrlBuilder.buildPortalUrl("http://testurl/<utr>/")(Some(utr))(fakeRequest) mustBe s"http://testurl/$utr/?lang=eng"
+      }
+    }
+
     "the user is in english" should {
       "append ?lang=eng to given url" in {
-        PortalUrlBuilder.buildPortalUrl("http://testurl")(fakeRequest) mustBe "http://testurl?lang=eng"
+        PortalUrlBuilder.buildPortalUrl("http://testurl")(None)(fakeRequest) mustBe "http://testurl?lang=eng"
       }
     }
 
     "the user is in welsh" should {
       "append ?lang=cym to given url" in {
-        PortalUrlBuilder.buildPortalUrl("http://testurl")(fakeRequestWithWelsh) mustBe "http://testurl?lang=cym"
+        PortalUrlBuilder.buildPortalUrl("http://testurl")(None)(fakeRequestWithWelsh) mustBe "http://testurl?lang=cym"
       }
     }
   }

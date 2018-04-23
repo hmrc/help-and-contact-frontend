@@ -17,12 +17,13 @@
 package utils
 
 import play.api.mvc.Request
+import uk.gov.hmrc.domain.SaUtr
 import uk.gov.hmrc.play.language.LanguageUtils
 import uk.gov.hmrc.urls.UrlBuilder
 
 trait PortalUrlBuilder {
-  def buildPortalUrl(url: String)(implicit request: Request[_]): String = {
-    val replacedUrl = UrlBuilder.buildUrl(url,Seq())
+  def buildPortalUrl(url: String)(saUtr: Option[SaUtr] = None)(implicit request: Request[_]): String = {
+    val replacedUrl = UrlBuilder.buildUrl(url, Seq(("<utr>", saUtr)))
     appendLanguage(replacedUrl)
   }
 

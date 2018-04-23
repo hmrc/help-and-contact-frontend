@@ -21,6 +21,7 @@ import controllers.routes
 import play.api.i18n.Lang
 import play.api.mvc.Request
 import play.api.{Configuration, Environment}
+import uk.gov.hmrc.domain.SaUtr
 import uk.gov.hmrc.play.config.ServicesConfig
 import utils.PortalUrlBuilder
 
@@ -59,6 +60,6 @@ class FrontendAppConfig @Inject() (override val runModeConfiguration: Configurat
 
   private lazy val portalHost = loadConfig("portal.host")
 
-  def getPortalUrl(key: String)(implicit request: Request[_]): String =
-    buildPortalUrl(portalHost + loadConfig(s"urls.portal.$key"))
+  def getPortalUrl(key: String, saUtr: Option[SaUtr] = None)(implicit request: Request[_]): String =
+    buildPortalUrl(portalHost + loadConfig(s"urls.portal.$key"))(saUtr)
 }

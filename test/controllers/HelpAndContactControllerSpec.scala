@@ -20,14 +20,16 @@ import controllers.actions._
 import handlers.ErrorHandler
 import models.HelpCategory
 import models.HelpCategory.VAT
+import models.requests.{AuthenticatedRequest, ServiceInfoRequest}
 import play.api.test.Helpers._
 import play.twirl.api.{Html, HtmlFormat}
 import views.html.vat.{payments_and_deadlines, questions_about_vat}
-
 import views.html.vat.payments_and_deadlines
 import views.html.sa._
 
 class HelpAndContactControllerSpec extends ControllerSpecBase {
+
+  val fakeServiceInfoRequest = ServiceInfoRequest(AuthenticatedRequest(fakeRequest, None), HtmlFormat.empty)
 
   def pageRouter(helpCategory: HelpCategory, page: String, view: () => HtmlFormat.Appendable) = {
     "HelpAndContactController onPageLoad" must {
@@ -67,6 +69,6 @@ class HelpAndContactControllerSpec extends ControllerSpecBase {
   behave like pageRouter(
     HelpCategory.SelfAssessment,
     "how-to-pay",
-    () => how_to_pay_self_assessment(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+    () => how_to_pay_self_assessment(frontendAppConfig)(HtmlFormat.empty)(fakeServiceInfoRequest, messages)
   )
 }

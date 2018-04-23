@@ -26,7 +26,7 @@ import play.api.mvc.{ActionBuilder, ActionFunction, Request, Result}
 import uk.gov.hmrc.auth.core._
 import uk.gov.hmrc.auth.core.authorise.AlternatePredicate
 import uk.gov.hmrc.auth.core.retrieve.{OptionalRetrieval, Retrieval, Retrievals, ~}
-import uk.gov.hmrc.domain.{CtUtr, Vrn}
+import uk.gov.hmrc.domain.{CtUtr, SaUtr, Vrn}
 import uk.gov.hmrc.http.{HeaderCarrier, UnauthorizedException}
 import uk.gov.hmrc.play.HeaderCarrierConverter
 
@@ -35,11 +35,22 @@ import scala.concurrent.{ExecutionContext, Future}
 class AuthActionImpl @Inject()(override val authConnector: AuthConnector, config: FrontendAppConfig)
                               (implicit ec: ExecutionContext) extends AuthAction with AuthorisedFunctions {
 
+  final val saEnrolmentKey: String = "IR-SA"
+  final val saEnrolmentIdentifier: String = "UTR"
+
+  private def getSaUtr(enrolments: Enrolments): Option[SaUtr] = {
+    enrolments
+      .getEnrolment(saEnrolmentKey)
+      .flatMap(
+        _.getIdentifier(saEnrolmentIdentifier).map(utr => SaUtr(utr.value))
+      )
+  }
+
   override def invokeBlock[A](request: Request[A], block: (AuthenticatedRequest[A]) => Future[Result]): Future[Result] = {
     implicit val hc: HeaderCarrier = HeaderCarrierConverter.fromHeadersAndSession(request.headers, Some(request.session))
 
-    authorised() {
-      block(AuthenticatedRequest(request))
+    authorised().retrieve(Retrievals.authorisedEnrolments) {
+      case enrolments => block(AuthenticatedRequest(request, getSaUtr(enrolments)))
     } recover {
       case ex: NoActiveSession =>
         Redirect(config.loginUrl, Map("continue" -> Seq(config.loginContinueUrl)))

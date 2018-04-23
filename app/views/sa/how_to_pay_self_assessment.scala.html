@@ -16,7 +16,8 @@
 
 @import config.FrontendAppConfig
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@import models.requests.ServiceInfoRequest
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: ServiceInfoRequest[_], messages: Messages)
 
 @main_template(
     title = messages("howToPaySelfAssessment.title"),
@@ -148,9 +149,19 @@
 
     <p>
         @messages("howToPaySelfAssessment.paragraph13")
-        @messages("howtoPaySelfAssessment.penalties")
+        @if(request.request.saUtr.isDefined) {
+            <a id="penalties" href="@appConfig.getPortalUrl("selfAssessmentPenalties", request.request.saUtr)"
+            data-journey-click="HowToPaySa:click:Penalties">@messages("howtoPaySelfAssessment.penalties")</a>
+        } else {
+            @messages("howtoPaySelfAssessment.penalties")
+        }
         @messages("howtoPaySelfAssessment.and")
-        @messages("howtoPaySelfAssessment.interest").
+        @if(request.request.saUtr.isDefined) {
+            <a id="interest" href="@appConfig.getPortalUrl("selfAssessmentInterest", request.request.saUtr)"
+            data-journey-click="HowToPaySa:click:Interest">@messages("howtoPaySelfAssessment.interest")</a>.
+        } else {
+            @messages("howtoPaySelfAssessment.interest").
+        }
     </p>
 
     <h2>@messages("howToPaySelfAssessment.check.status.of.appeal")</h2>
@@ -160,7 +171,7 @@
     <h2>@messages("howToPaySelfAssessment.further.help.with.penalties")</h2>
 
     @components.embed_youtube_video(appConfig.getYoutubeVideoId("selfAssessmentPenalties"))
-    
+
     <p>
         <a id="self-assessment-penalties-transcript"
         href="@controllers.routes.TranscriptController.onPageLoad("self-assessment-penalties")"
