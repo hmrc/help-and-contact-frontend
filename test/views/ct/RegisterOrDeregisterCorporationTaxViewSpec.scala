@@ -57,6 +57,10 @@ class RegisterOrDeregisterCorporationTaxViewSpec extends ViewBehaviours {
       doc.text() must include("This is posted to your company address by HM Revenue and Customs (HMRC), usually within a few days " +
         "of the company being registered with Companies House (incorporated).")
       doc.text() must include("Request your company’s UTR online if you did not get one after registering your company.")
+      doc.text() must include("You will need to tell HMRC:")
+      doc.text() must include("your company’s registration number")
+      doc.text() must include("the date you started to do business (your company’s first accounting period will start from this date)")
+      doc.text() must include("the date your annual accounts are made up to")
       doc.text() must include("If your company is registered as dormant and then starts trading, you need to register for Corporation Tax to tell HMRC your company is active.")
       doc.text() must include("HMRC will tell you the deadline for paying Corporation Tax. You will need to file a Company Tax Return, " +
         "even if you make a loss or have no Corporation Tax to pay.")
@@ -100,6 +104,15 @@ class RegisterOrDeregisterCorporationTaxViewSpec extends ViewBehaviours {
         "link - click:Register for Corporation Tax or tell HMRC you are no longer trading:Request your company UTR online",
         expectedIsExternal = false,
         expectedOpensInNewTab = false)
+
+      assertLinkById(
+        doc,
+        "accounting-periods",
+        "accounting period",
+        "https://www.gov.uk/corporation-tax-accounting-period",
+        "link - click:Register for Corporation Tax or tell HMRC you are no longer trading:accounting period",
+        expectedIsExternal = true,
+        expectedOpensInNewTab = true)
 
       assertLinkById(
         doc,

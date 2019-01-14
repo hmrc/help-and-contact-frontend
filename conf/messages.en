@@ -433,6 +433,13 @@ ct.register_deregister.this_is_posted_ = This is posted to your company address 
 ct.register_deregister.request_utr_= Request your company’s UTR online
 ct.register_deregister.no_utr_ = if you did not get one after registering your company.
 
+ct.register_deregister.what_you_need_ = You will need to tell HMRC:
+ct.register_deregister.item_1 = your company’s registration number
+ct.register_deregister.item_2_start = the date you started to do business (your company’s first
+ct.register_deregister.item_2_link = accounting period
+ct.register_deregister.item_2_end = will start from this date)
+ct.register_deregister.item_3 = the date your annual accounts are made up to
+
 ct.register_deregister.if_your_company_is_registered_as_dormant_ = If your company is registered as dormant and then starts trading, you need to
 ct.register_deregister.register_for_Corporation_Tax = register for Corporation Tax
 ct.register_deregister.to_tell_HMRC_your_company_is_active = to tell HMRC your company is active.

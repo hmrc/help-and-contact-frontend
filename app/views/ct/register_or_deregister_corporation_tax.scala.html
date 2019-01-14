@@ -54,6 +54,21 @@
         @messages("ct.register_deregister.no_utr_")
     </p>
 
+    <p>
+    @messages("ct.register_deregister.what_you_need_")
+    </p>
+
+    <ul class="list list-bullet">
+        <li>@messages("ct.register_deregister.item_1")</li>
+        <li>
+            @messages("ct.register_deregister.item_2_start")
+            <a id="accounting-periods" target="_blank" rel="external noopener" href="@appConfig.getGovUrl("corporationTaxAccountingPeriods")"
+            data-journey-click="link - click:Register for Corporation Tax or tell HMRC you are no longer trading:accounting period">@messages("ct.register_deregister.item_2_link")</a>
+            @messages("ct.register_deregister.item_2_end")
+        </li>
+        <li>@messages("ct.register_deregister.item_3")</li>
+    </ul>
+
     <h2>@messages("ct.register_deregister.make_your_company_active.heading")</h2>
 
     <p>

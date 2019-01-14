@@ -434,6 +434,13 @@ ct.register_deregister.this_is_posted_ = Caiff hwn ei bostio i gyfeiriad eich cw
 ct.register_deregister.request_utr_= Gwnewch gais ar-lein am Gyfeirnod Unigryw y Trethdalwr (UTR) ar gyfer eich cwmni
 ct.register_deregister.no_utr_ = os na chawsoch un ar ôl cofrestru’r cwmni.
 
+ct.register_deregister.what_you_need_ = Bydd yn rhaid i chi roi gwybod y canlynol i CThEM:
+ct.register_deregister.item_1 = rhif cofrestru eich cwmni
+ct.register_deregister.item_2_start = y dyddiad y gwnaethoch ddechrau masnachu (bydd
+ct.register_deregister.item_2_link = cyfnod cyfrifyddu
+ct.register_deregister.item_2_end = cyntaf eich cwmni’n dechrau o’r dyddiad hwn)
+ct.register_deregister.item_3 = dyddiad cau eich cyfrifon blynyddol
+
 ct.register_deregister.if_your_company_is_registered_as_dormant_ = Os yw’ch cwmni wedi’i gofrestru’n segur, ac yna’n dechrau masnachu, mae angen i chi
 ct.register_deregister.register_for_Corporation_Tax = gofrestru ar gyfer Treth Gorfforaeth
 ct.register_deregister.to_tell_HMRC_your_company_is_active = er mwyn rhoi gwybod i CThEM bod eich cwmni’n gweithredu.
