@@ -75,7 +75,6 @@ class HowToPayCorporationTaxViewSpec extends ViewBehaviours {
         "year-company-set-up",
         "the year you set up your company",
         "https://www.gov.uk/first-company-accounts-and-return",
-        "link - click:How to pay your Corporation Tax:the year you set up your company",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
       assertLinkById(
@@ -83,7 +82,6 @@ class HowToPayCorporationTaxViewSpec extends ViewBehaviours {
         "instalments",
         "in instalments",
         "https://www.gov.uk/guidance/corporation-tax-paying-in-instalments",
-        "link - click:How to pay your Corporation Tax:in instalments",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
       assertLinkById(
@@ -91,7 +89,6 @@ class HowToPayCorporationTaxViewSpec extends ViewBehaviours {
         "charge-you-interest",
         "charge you interest",
         "https://www.gov.uk/guidance/corporation-tax-interest-charges",
-        "link - click:How to pay your Corporation Tax:charge you interest",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
       assertLinkById(
@@ -99,7 +96,6 @@ class HowToPayCorporationTaxViewSpec extends ViewBehaviours {
         "pay-you-interest",
         "pay you interest",
         "https://www.gov.uk/get-refund-interest-corporation-tax",
-        "link - click:How to pay your Corporation Tax:pay you interest",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
       assertLinkById(
@@ -107,7 +103,6 @@ class HowToPayCorporationTaxViewSpec extends ViewBehaviours {
         "online-or-telephone-banking",
         "online or telephone banking",
         "https://www.gov.uk/pay-corporation-tax/bank-details",
-        "link - click:How to pay your Corporation Tax:Faster Payments",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
       assertLinkById(
@@ -115,7 +110,6 @@ class HowToPayCorporationTaxViewSpec extends ViewBehaviours {
         "chaps",
         "CHAPS",
         "https://www.gov.uk/pay-corporation-tax/bank-details",
-        "link - click:How to pay your Corporation Tax:CHAPS",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
       assertLinkById(
@@ -123,7 +117,6 @@ class HowToPayCorporationTaxViewSpec extends ViewBehaviours {
         "debit-or-credit-card",
         "online by debit or credit card",
         "https://www.gov.uk/pay-corporation-tax/debit-or-credit-card",
-        "link - click:How to pay your Corporation Tax:online by debit or credit card",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
       assertLinkById(
@@ -131,7 +124,6 @@ class HowToPayCorporationTaxViewSpec extends ViewBehaviours {
         "bank-or-building-society",
         "bank or building society",
         "https://www.gov.uk/pay-corporation-tax/bank-or-building-society",
-        "link - click:How to pay your Corporation Tax:bank or building society",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
       assertLinkById(
@@ -139,7 +131,6 @@ class HowToPayCorporationTaxViewSpec extends ViewBehaviours {
         "bacs",
         "Bacs",
         "https://www.gov.uk/pay-corporation-tax/bank-details",
-        "link - click:How to pay your Corporation Tax:Bacs",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
       assertLinkById(
@@ -147,7 +138,6 @@ class HowToPayCorporationTaxViewSpec extends ViewBehaviours {
         "direct-debit",
         "Direct Debit",
         "https://www.gov.uk/pay-corporation-tax/direct-debit",
-        "link - click:How to pay your Corporation Tax:Direct Debit",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
     }

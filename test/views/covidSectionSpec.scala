@@ -44,7 +44,6 @@ class covidSectionSpec extends ViewBehaviours {
         "covid-digital-assistant-for-help-and-support",
         "Digital assistant for help and support (opens in new tab)",
         "https://www.tax.service.gov.uk/ask-hmrc/virtual-assistant/support-for-coronavirus",
-        "link - click:Help and contact:covid help digital assistant",
           expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -52,7 +51,6 @@ class covidSectionSpec extends ViewBehaviours {
         "covid-financial-support-for-businesses",
         "Financial support for businesses (opens in new tab)",
         "https://www.gov.uk/government/collections/financial-support-for-businesses-during-coronavirus-covid-19#business-support-grant-funds",
-        "link - click:Help and contact:covid help support businesses",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -60,7 +58,6 @@ class covidSectionSpec extends ViewBehaviours {
         "covid-debt-management-for-tax-bills",
         "Debt management for tax bills: contact HMRC (opens in new tab)",
         "https://www.gov.uk/government/organisations/hm-revenue-customs/contact/coronavirus-covid-19-helpline",
-        "link - click:Help and contact:covid help webchat tax bills",
         expectedOpensInNewTab = true
       )
     }

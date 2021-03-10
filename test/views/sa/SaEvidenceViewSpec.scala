@@ -37,7 +37,6 @@ class SaEvidenceViewSpec extends ViewBehaviours {
           "getting-evidence",
           "Find out more about getting evidence of your income (opens in new tab)",
           "https://www.gov.uk/sa302-tax-calculation",
-          "link - click:SA302 Evidence : Find out more about getting evidence of your income",
           expectedOpensInNewTab = true
         )
       }
@@ -47,8 +46,7 @@ class SaEvidenceViewSpec extends ViewBehaviours {
           doc,
           "find-sa302",
           "Find your SA302",
-          "http://localhost:9020/business-account/self-assessment",
-          "link - click:SA302 Evidence : Find your SA302"
+          "http://localhost:9020/business-account/self-assessment"
         )
       }
     }

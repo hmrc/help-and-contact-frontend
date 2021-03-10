@@ -37,8 +37,7 @@
 
 <p>@Messages("modular.sa_tax_return.if_you_receive_hmrc")</p>
 
-    <p><a href="https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return" id = "who-must-send-link" target ="_blank"
-          data-journey-click="link - click:Help with your Self Assessment tax return : Who must file a Self Assessment tax return">
+    <p><a href="https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return" id = "who-must-send-link" target ="_blank">
         @Messages("modular.sa_tax_return.who_must_file_link")
     </a></p>
 
@@ -57,7 +56,7 @@
 <p>@Messages("modular.sa_tax_return.to_file_online")</p>
 <ul class="list list-bullet">
 <li>@messages("modular.sa_tax_return.list_be_registered")</li>
-    <li><a href="@appConfig.getAddTaxUrl("haveSaUtr")" id="add-to-sa" data-journey-click="link - click:Help with your Self Assessment tax return : add Self Assessment to your tax account">
+    <li><a href="@appConfig.getAddTaxUrl("haveSaUtr")" id="add-to-sa">
         @messages("modular.sa_tax_return.list_add_sa_to")</a></li>
 <li>@messages("modular.sa_tax_return.list_complete_and_file", appConfig.taxYearNext)</li>
 <li>@messages("modular.sa_tax_return.list_pay_what_you_owe", appConfig.taxYearNext)</li>
@@ -66,7 +65,6 @@
 
 <p>
   @Messages("modular.sa_tax_return.have_not_received")
-    <a href="https://www.gov.uk/check-if-you-need-tax-return" id ="not-received-sa-return" target="_blank"
-       data-journey-click="link - click:Help with your Self Assessment tax return : If you have not received a notice to file a Self Assessment tax return">
+    <a href="https://www.gov.uk/check-if-you-need-tax-return" id ="not-received-sa-return" target="_blank">
     @Messages("modular.sa_tax_return.have_not_received_link")</a></p>
 

@@ -31,7 +31,7 @@
   <p>@messages("epaye.submissions.if_you_make_fps_on_time_")</p>
   <p>
       @messages("epaye.submissions.if_you_make_fps_late_")
-      <a id="payroll-guide" href="@appConfig.getGovUrl("payrollGuide")" data-journey-click="link - click:View, check or correct your submissions:GOV.UK guide on payroll"
+      <a id="payroll-guide" href="@appConfig.getGovUrl("payrollGuide")"
           target="_blank" rel="external noopener">
         @messages("epaye.submissions.gov_uk_guide_on_payroll")</a>.
   </p>
@@ -46,12 +46,12 @@
     @if(email.isDefined) {
       <p>@messages("epaye.submissions.we_send_an_email_")</p>
       <p>@messages("epaye.submissions.your_government_gateway_email_", email.getOrElse(messages("epaye.submissions.not_specified")) )</p>
-      <a id="change-address" href="@appConfig.getBusinessAccountUrl("changeEmail")" data-journey-click="link - click:View, check or correct your submissions:Change this address">
+      <a id="change-address" href="@appConfig.getBusinessAccountUrl("changeEmail")">
         @messages("epaye.submissions.change_address_link")</a>
     } else {
       <p>
         @messages("epaye.submissions.we_can_send_")
-        <a id="add-email" href="@appConfig.getBusinessAccountUrl("changeEmail")" data-journey-click="link - click:View check or correct your submissions:add an email">
+        <a id="add-email" href="@appConfig.getBusinessAccountUrl("changeEmail")">
           @messages("epaye.submissions.add_an_email")</a>
         @messages("epaye.submissions.to_your_government_gateway_account")
       </p>
@@ -61,7 +61,7 @@
     <p>@messages("epaye.submissions.to_check_if_hmrc_received_")</p>
     <p>
       @messages("epaye.submissions.to_view_a_specific_submission_")
-      <a id="view-user-guide" href="@appConfig.getGovUrl("bptGuide")" data-journey-click="link - click:View check or correct your submissions:view user guide"
+      <a id="view-user-guide" href="@appConfig.getGovUrl("bptGuide")"
         target="_blank" rel="external noopener">
         @messages("epaye.submissions.user_guide")</a>@messages("epaye.submissions.but_select_")
     </p>
@@ -73,7 +73,7 @@
   <h3>@messages("epaye.submissions.submissions_for_the_current_tax_year")</h3>
     <p>@messages("epaye.submissions.you_can_make_changes_")</p>
     <p>@messages("epaye.submissions.follow_the")
-      <a id="correct-user-guide" href="@appConfig.getGovUrl("bptGuide")" data-journey-click="link - click:View check or correct your submissions:correct user guide"
+      <a id="correct-user-guide" href="@appConfig.getGovUrl("bptGuide")"
           target="_blank" rel="external noopener">
         @messages("epaye.submissions.user_guide")</a>
       @messages("epaye.submissions.if_you_use_")
@@ -84,7 +84,7 @@
     <p>@messages("epaye.submissions.if_you_spot_an_error_")</p>
     <p>
       @messages("epaye.submissions.you_can")
-      <a id="submit-earlier-year-update" href="@appConfig.getGovUrl("submitEarlierYearUpdate")" data-journey-click="link - click:View check or correct your submissions:submit an Earlier Year Update using Basic PAYE Tools"
+      <a id="submit-earlier-year-update" href="@appConfig.getGovUrl("submitEarlierYearUpdate")"
           target="_blank" rel="external noopener">
         @messages("epaye.submissions.submit_an_earlier_year_update_")</a>
       @messages("epaye.submissions.if_you_use_bpt_")
@@ -92,7 +92,7 @@
     <p>@messages("epaye.submissions.if_you_use_commercial_software_")</p>
     <p>
       @messages("epaye.submissions.if_your_software_does_not_offer_")
-      <a id="install-bpt" href="@appConfig.getGovUrl("installBPT")" data-journey-click="link - click:View check or correct your submissions:install BPT to submit an Earlier Year Update"
+      <a id="install-bpt" href="@appConfig.getGovUrl("installBPT")"
           target="_blank" rel="external noopener">
         @messages("epaye.submissions.install_bpt_")</a>.
     </p>

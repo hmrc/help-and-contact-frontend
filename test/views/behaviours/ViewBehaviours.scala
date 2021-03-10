@@ -71,8 +71,7 @@ trait ViewBehaviours extends ViewSpecBase {
             doc,
             "logOutNavHref",
             "Sign out",
-            "http://localhost:9020/business-account/sso-sign-out",
-            "link - click:Help and Contact:Sign out"
+            "http://localhost:9020/business-account/sso-sign-out"
           )
         }
 

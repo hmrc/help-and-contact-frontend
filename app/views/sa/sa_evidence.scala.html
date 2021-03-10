@@ -37,16 +37,14 @@
 </ul>
 
 @if(hasSAenrolment) {
-<p><a href="@appConfig.getBusinessAccountUrl("selfAssessmentBase")" id="find-sa302"
-      data-journey-click="link - click:SA302 Evidence : Find your SA302">
+<p><a href="@appConfig.getBusinessAccountUrl("selfAssessmentBase")" id="find-sa302">
     @Messages("sa302.evidence.find_sa302")</a></p>
 }
 
 <p>@Messages("sa302.evidence.might_be")</p>
 <p>@Messages("sa302.evidence.check_mortgage")</p>
 <p>@Messages("sa302.evidence.print_documents")</p>
-<p><a href="https://www.gov.uk/sa302-tax-calculation" id="getting-evidence" target="_blank"
-data-journey-click="link - click:SA302 Evidence : Find out more about getting evidence of your income">
+<p><a href="https://www.gov.uk/sa302-tax-calculation" id="getting-evidence" target="_blank">
     @Messages("sa302.evidence.evidence_of_income")</a></p>
 
 

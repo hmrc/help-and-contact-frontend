@@ -88,22 +88,19 @@ class PaymentAndPenaltiesViewSpec extends ViewBehaviours {
         "understanding-payments",
         "Understanding balancing payments and payments on account (opens in new tab)",
         "https://www.gov.uk/understand-self-assessment-bill/payments-on-account",
-        "link - click:Payment and penalties : Understanding balancing payments and payments on account",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "pay-a-penalty",
         "pay a penalty",
-        "https://www.gov.uk/understand-self-assessment-bill/payments-on-account",
-        "link - click:Payment and penalties : Pay a penalty"
+        "https://www.gov.uk/understand-self-assessment-bill/payments-on-account"
       )
       assertLinkById(
         doc,
         "ways-to-pay-taxbill",
         "Read detailed information about ways to pay your tax bill (opens in new tab)",
         "https://www.gov.uk/pay-self-assessment-tax-bill",
-        "link - click:Payment and penalties : Read detailed information about ways to pay your tax bill",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -111,22 +108,19 @@ class PaymentAndPenaltiesViewSpec extends ViewBehaviours {
         "how-do-i-pay-video",
         "Video - How do I pay my Self Assessment tax bill? (opens in new tab)",
         "https://youtu.be/vRxLHyNmWp4",
-        "link - click:Payment and penalties : How do I pay my Self Assessment tax bill? - video",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "how-do-i-pay-transcript",
         "How do I pay my Self Assessment tax bill? - transcript",
-        "/business-account/help/transcript/paying-your-self-assessment-tax-bill",
-        "link - click:Payment and penalties : How do I pay my Self Assessment tax bill? - transcript"
+        "/business-account/help/transcript/paying-your-self-assessment-tax-bill"
       )
       assertLinkById(
         doc,
         "budget-for-taxbill",
         "Budget for your tax bill if you’re self-employed (opens in new tab)",
         "https://www.gov.uk/self-assessment-ready-reckoner",
-        "link - click:Payment and penalties : Budget for your tax bill if you’re self employed",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -134,29 +128,25 @@ class PaymentAndPenaltiesViewSpec extends ViewBehaviours {
         "how-do-i-budget-video",
         "Video - How do I budget for my Self Assessment tax bill? (opens in new tab)",
         "https://youtu.be/XaqY3qhDXGo",
-        "link - click:Payment and penalties : How do I budget for my Self Assessment tax bill? - video",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "how-do-i-budget-transcript",
         "How do I budget for my Self Assessment tax bill? - video transcript",
-        "/business-account/help/transcript/budgeting-your-self-assessment-tax-bill",
-        "link - click:Payment and penalties : How do I budget for my Self Assessment tax bill? - transcript"
+        "/business-account/help/transcript/budgeting-your-self-assessment-tax-bill"
       )
       assertLinkById(
         doc,
         "reasonable-excuse",
         "reasonable excuse,",
-        "https://www.gov.uk/tax-appeals/reasonable-excuses",
-        "link - click:Payment and penalties : reasonable excuses"
+        "https://www.gov.uk/tax-appeals/reasonable-excuses"
       )
       assertLinkById(
         doc,
         "more-about-sa",
         "Find out more about Self Assessment penalties (opens in new tab)",
         "https://www.gov.uk/tax-appeals/penalty",
-        "link - click:Payment and penalties : Find out more about Self Assessment penalties",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -164,7 +154,6 @@ class PaymentAndPenaltiesViewSpec extends ViewBehaviours {
         "interest-rates",
         "Interest rates for late and early payments (opens in new tab)",
         "https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments",
-        "link - click:Payment and penalties : Interest rates for late and early payments",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -172,7 +161,6 @@ class PaymentAndPenaltiesViewSpec extends ViewBehaviours {
         "interest-rates",
         "Interest rates for late and early payments (opens in new tab)",
         "https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments",
-        "link - click:Payment and penalties : Interest rates for late and early payments",
         expectedOpensInNewTab = true
       )
 
@@ -185,15 +173,13 @@ class PaymentAndPenaltiesViewSpec extends ViewBehaviours {
         doc,
         "view-sa-penalties",
         "View your Self Assessment penalties",
-        "http://localhost:8080/portal/self-assessment/ind/abcdefgh/account/penalties?lang=eng",
-        "link - click:Payment and penalties : View your Self Assessment penalties"
+        "http://localhost:8080/portal/self-assessment/ind/abcdefgh/account/penalties?lang=eng"
       )
       assertLinkById(
         doc,
         "view-sa-interest",
         "View your Self Assessment interest",
-        "http://localhost:8080/portal/self-assessment/ind/abcdefgh/account/interests?lang=eng",
-        "link - click:Payment and penalties : View your Self Assessment interest"
+        "http://localhost:8080/portal/self-assessment/ind/abcdefgh/account/interests?lang=eng"
       )
     }
 

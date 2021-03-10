@@ -88,22 +88,19 @@ class SaTaxReturnSpec extends ViewBehaviours {
         "who-must-send-link",
         "Who must file a Self Assessment tax return (opens in new tab)",
         "https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return",
-        "link - click:Help with your Self Assessment tax return : Who must file a Self Assessment tax return",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "add-to-sa",
         "add Self Assessment to your tax account",
-        "http://localhost:9730/business-account/add-tax/self-assessment/have-sa-utr",
-        "link - click:Help with your Self Assessment tax return : add Self Assessment to your tax account"
+        "http://localhost:9730/business-account/add-tax/self-assessment/have-sa-utr"
       )
       assertLinkById(
         doc,
         "not-received-sa-return",
         "check anonymously if you need to file a return (opens in new tab).",
         "https://www.gov.uk/check-if-you-need-tax-return",
-        "link - click:Help with your Self Assessment tax return : If you have not received a notice to file a Self Assessment tax return",
         expectedOpensInNewTab = true
       )
 

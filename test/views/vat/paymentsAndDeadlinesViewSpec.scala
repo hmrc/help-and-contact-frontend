@@ -47,8 +47,7 @@ class paymentsAndDeadlinesViewSpec extends ViewBehaviours {
         doc,
         "online-or-telephone-banking",
         "online or telephone banking",
-        "https://www.gov.uk/pay-vat/bank-details",
-        expectedGAEvent = "link - click:How to pay VAT and deadlines:online or telephone banking")
+        "https://www.gov.uk/pay-vat/bank-details")
     }
 
     "contain the 'CHAPS' link" in {
@@ -56,8 +55,7 @@ class paymentsAndDeadlinesViewSpec extends ViewBehaviours {
       assertLinkById(doc,
         "chaps",
         "CHAPS",
-        "https://www.gov.uk/pay-vat/bank-details",
-        expectedGAEvent = "link - click:How to pay VAT and deadlines:chaps")
+        "https://www.gov.uk/pay-vat/bank-details")
     }
 
     "contain the 'online by debit or credit card' link" in {
@@ -65,8 +63,7 @@ class paymentsAndDeadlinesViewSpec extends ViewBehaviours {
       assertLinkById(doc,
         "debit-or-credit-card",
         "online by debit or credit card",
-        "https://www.gov.uk/pay-vat/by-debit-or-credit-card-online",
-        expectedGAEvent = "link - click:How to pay VAT and deadlines:online by debit or credit card")
+        "https://www.gov.uk/pay-vat/by-debit-or-credit-card-online")
     }
 
     "contain the 'bank or building society' link" in {
@@ -74,8 +71,7 @@ class paymentsAndDeadlinesViewSpec extends ViewBehaviours {
       assertLinkById(doc,
         "bank-or-building-society",
         "bank or building society",
-        "https://www.gov.uk/pay-vat/bank-or-building-society",
-        expectedGAEvent = "link - click:How to pay VAT and deadlines:bank or building society")
+        "https://www.gov.uk/pay-vat/bank-or-building-society")
     }
 
     "contain the 'direct debit' link" in {
@@ -83,8 +79,7 @@ class paymentsAndDeadlinesViewSpec extends ViewBehaviours {
       assertLinkById(doc,
         "direct-debit",
         "Direct Debit",
-        "https://www.gov.uk/pay-vat/direct-debit",
-        expectedGAEvent = "link - click:How to pay VAT and deadlines:Direct Debit")
+        "https://www.gov.uk/pay-vat/direct-debit")
     }
 
     "contain the 'Bacs' link" in {
@@ -92,8 +87,7 @@ class paymentsAndDeadlinesViewSpec extends ViewBehaviours {
       assertLinkById(doc,
         "bacs",
         "Bacs",
-        "https://www.gov.uk/pay-vat/bank-details",
-        expectedGAEvent = "link - click:How to pay VAT and deadlines:Bacs")
+        "https://www.gov.uk/pay-vat/bank-details")
     }
 
     "contain the 'standing order' link" in {
@@ -101,8 +95,7 @@ class paymentsAndDeadlinesViewSpec extends ViewBehaviours {
       assertLinkById(doc,
         "standing-order",
         "standing order",
-        "https://www.gov.uk/pay-vat/standing-order",
-        expectedGAEvent = "link - click:How to pay VAT and deadlines:standing order")
+        "https://www.gov.uk/pay-vat/standing-order")
     }
 
     "contain the 'get a refund of VAT paid in another EU country' link" in {
@@ -110,8 +103,7 @@ class paymentsAndDeadlinesViewSpec extends ViewBehaviours {
       assertLinkById(doc,
         "get-eu-vat-refund",
         "get a refund of VAT paid in another EU country",
-        "https://www.gov.uk/guidance/vat-refunds-for-uk-businesses-buying-from-other-eu-countries",
-        expectedGAEvent = "link - click:How to pay VAT and deadlines:get a refund of VAT paid in another EU country")
+        "https://www.gov.uk/guidance/vat-refunds-for-uk-businesses-buying-from-other-eu-countries")
     }
 
     "contain the 'input tax' link" in {
@@ -119,8 +111,7 @@ class paymentsAndDeadlinesViewSpec extends ViewBehaviours {
       assertLinkById(doc,
         "input-tax",
         "input tax",
-        "https://www.gov.uk/government/publications/vat-notice-700-the-vat-guide/vat-notice-700-the-vat-guide#input-tax-introduction-and-general-rules",
-        expectedGAEvent = "link - click:How to pay VAT and deadlines:input tax")
+        "https://www.gov.uk/government/publications/vat-notice-700-the-vat-guide/vat-notice-700-the-vat-guide#input-tax-introduction-and-general-rules")
     }
 
   }

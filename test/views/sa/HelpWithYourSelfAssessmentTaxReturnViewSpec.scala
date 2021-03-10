@@ -86,52 +86,45 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
         doc,
         "find-out-more-link",
         "Find out more about registering for Self Assessment online",
-        "/business-account/help/self-assessment/register-or-stopping",
-        "link - click:Help with your Self Assessment tax return : Find out more about registering for SA online"
+        "/business-account/help/self-assessment/register-or-stopping"
       )
       assertLinkById(
         doc,
         "why-i-have-been-sent-tax-video",
         "Video - Why have I been sent a tax return? (opens in new tab)",
         "https://youtu.be/ySQiDjQ1b5k",
-        "link - click:Help with your Self Assessment tax return : Why have I been sent a tax return - video link",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "why-i-have-been-sent-tax-transcript",
         "Why have I been sent a tax return? - video transcript",
-        "/business-account/help/transcript/why-sent-tax-return",
-        "link - click:Help with your Self Assessment tax return : Why have I been sent a tax return - transcript"
+        "/business-account/help/transcript/why-sent-tax-return"
       )
       assertLinkById(
         doc,
         "used-to-file-link",
         "tell HMRC to stop Self Assessment.",
-        "http://localhost:9020/business-account/self-assessment/stop",
-        "link - click:Help with your Self Assessment tax return : If you used to file a tax return but do not need to file one for the most recent tax year"
+        "http://localhost:9020/business-account/self-assessment/stop"
       )
       assertLinkById(
         doc,
         "my-first-sa-video",
         "Video - My first Self Assessment tax return (opens in new tab)",
         "https://youtu.be/SSZ56xkMs48",
-        "link - click:Help with your Self Assessment tax return : My first Self Assessment tax return - video",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "my-first-sa-transcript",
         "Your first Self Assessment tax return - video transcript",
-        "/business-account/help/transcript/new-your-first-tax-return",
-        "link - click:Help with your Self Assessment tax return : Your first Self Assessment tax return - transcript"
+        "/business-account/help/transcript/new-your-first-tax-return"
       )
       assertLinkById(
         doc,
         "learn-more-sa",
         "learn more about Self Assessment (opens in new tab).",
         "https://www.gov.uk/guidance/help-and-support-for-self-assessment",
-        "link - click:Help with your Self Assessment tax return : Watch videos, get email alerts, take part in webinars and learn more about Self Assessment",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -139,52 +132,45 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
         "tailor-tax-video",
         "Video - How do I tailor my Self Assessment tax return? (opens in new tab)",
         "https://youtu.be/Rr0LUxFQ33g",
-        "link - click:Help with your Self Assessment tax return : How do I tailor my Self Assessment tax return - video",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "tailor-tax-transcript",
         "Tailor your tax return - video transcript",
-        "/business-account/help/transcript/new-how-do-i-tailor-sa-tax",
-        "link - click:Help with your Self Assessment tax return : How do I tailor my Self Assessment tax return - transcript"
+        "/business-account/help/transcript/new-how-do-i-tailor-sa-tax"
       )
       assertLinkById(
         doc,
         "self-employed-tax-video",
         "Video - Your self-employed tax return (opens in new tab)",
         "https://youtu.be/revvcPm40IE",
-        "link - click:Help with your Self Assessment tax return : Your self-employed tax return - video",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "self-employed-tax-transcript",
         "Your self-employed tax return - video transcript",
-        "/business-account/help/transcript/new-your-self-employed-tax-return",
-        "link - click:Help with your Self Assessment tax return : Your self-employed tax return - transcript"
+        "/business-account/help/transcript/new-your-self-employed-tax-return"
       )
       assertLinkById(
         doc,
         "income-from-property-video",
         "Video - Income from property - what do I include on my tax return? (opens in new tab)",
         "https://youtu.be/jUVNt68r2h0",
-        "link - click:Help with your Self Assessment tax return : Income from property - video",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "income-from-property-transcript",
         "If I have income from property, how do I fill in my tax return? - video transcript",
-        "/business-account/help/transcript/new-income-from-property",
-        "link - click:Help with your Self Assessment tax return : Income from property - transcript"
+        "/business-account/help/transcript/new-income-from-property"
       )
       assertLinkById(
         doc,
         "who-must-file",
         "Who must file a tax return (opens in new tab)",
         "https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return",
-        "link - click:Help with your Self Assessment tax return : Who must file a tax return",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -192,22 +178,19 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
         "need-to-change",
         "If you need to change your tax return (opens in new tab)",
         "https://www.gov.uk/self-assessment-tax-returns/corrections",
-        "link - click:Help with your Self Assessment tax return : If you need to change your tax return",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "how-to-pay-sa",
         "How to pay your Self Assessment",
-        "/business-account/help/self-assessment/payment-and-penalties",
-        "link - click:Help with your Self Assessment tax return : How to pay your Self Assessment"
+        "/business-account/help/self-assessment/payment-and-penalties"
       )
       assertLinkById(
         doc,
         "sa-resource-list",
         "Self Assessment resource list (opens in new tab)",
         "https://www.gov.uk/topic/personal-tax/self-assessment",
-        "link - click:Help with your Self Assessment tax return : Self Assessment resource list",
         expectedOpensInNewTab = true
       )
 
@@ -220,7 +203,6 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
         "complete-and-file",
         "Complete and file your tax return (opens in new tab).",
         "http://localhost:8080/portal/self-assessment-file/1920/ind/1234567890/return?lang=eng",
-        "link - click:Help with your Self Assessment tax return : Complete and file your tax return",
         expectedOpensInNewTab = true
       )
     }

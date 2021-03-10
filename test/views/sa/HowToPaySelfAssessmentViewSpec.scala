@@ -102,58 +102,49 @@ class HowToPaySelfAssessmentViewSpec extends ViewBehaviours {
         "viewing-self-assessment-calculation-video",
         "Video - Viewing your Self Assessment tax return calculation (opens in new tab)",
         "https://youtu.be/wq35KqfGCjo",
-        expectedOpensInNewTab = true,
-        expectedGAEvent = "link - click:How to pay your Self Assessment:Viewing your calculation - video link")
+        expectedOpensInNewTab = true)
       assertLinkById(
         doc,
         "viewing-self-assessment-calculation-transcript",
         "Viewing your Self Assessment tax return calculations - video transcript",
-        "/business-account/help/transcript/viewing-your-self-assessment-calculation",
-        "link - click:How to pay your Self Assessment:Viewing your calculation - video transcript")
+        "/business-account/help/transcript/viewing-your-self-assessment-calculation")
       assertLinkById(
         doc,
         "paying-your-self-assessment-bill-video",
         "Video - How do I pay my Self Assessment tax bill? (opens in new tab)",
         "https://youtu.be/vRxLHyNmWp4",
-        expectedOpensInNewTab = true,
-        expectedGAEvent = "link - click:How to pay your Self Assessment:Paying your Self Assessment tax bill - video link")
+        expectedOpensInNewTab = true)
       assertLinkById(
         doc,
         "paying-your-self-assessment-bill-transcript",
         "How do I pay my Self Assessment tax bill? - video transcript",
-        "/business-account/help/transcript/paying-your-self-assessment-tax-bill",
-        "link - click:How to pay your Self Assessment:Paying your Self Assessment tax bill - video transcript")
+        "/business-account/help/transcript/paying-your-self-assessment-tax-bill")
       assertLinkById(
         doc,
         "more-information",
         "More information about paying your Self Assessment tax bill",
-        "https://www.gov.uk/pay-self-assessment-tax-bill",
-        "link - click:More information about paying your Self Assessment tax bill")
+        "https://www.gov.uk/pay-self-assessment-tax-bill")
       assertLinkById(
         doc,
         "budgeting-for-sa-bill-video",
         "Video - How do I budget for my Self Assessment tax bill? (opens in new tab)",
         "https://youtu.be/XaqY3qhDXGo",
-        expectedOpensInNewTab = true,
-        expectedGAEvent = "link - click:How to pay your Self Assessment:How do I budget for my Self Assessment tax bill - video link")
+        expectedOpensInNewTab = true)
       assertLinkById(
         doc,
         "budgeting-for-sa-bill-transcript",
         "How do I budget for my Self Assessment tax bill? - video transcript",
-        "/business-account/help/transcript/budgeting-your-self-assessment-tax-bill",
-        "link - click:How to pay your Self Assessment:How do I budget for my Self Assessment tax bill - video transcript")
+        "/business-account/help/transcript/budgeting-your-self-assessment-tax-bill")
       assertLinkById(
         doc,
         "reasonable-excuses",
         "reasonable excuse",
-        "https://www.gov.uk/tax-appeals/reasonable-excuses",
-        "link - click:How to pay your Self Assessment:reasonable excuses")
+        "https://www.gov.uk/tax-appeals/reasonable-excuses")
       assertLinkById(
         doc,
         "form-SAASUB",
         "appeal a £100 Self Assessment late filing penalty online (opens in new tab)",
         "/digital-forms/form/self-assessment-appeal-late-filing-penalty/draft/guide",
-        "link - click:Appeal a £100 Self Assessment late filing penalty online:form SAASUB",
         false,
         true,
         false)
@@ -162,28 +153,24 @@ class HowToPaySelfAssessmentViewSpec extends ViewBehaviours {
         "form-SA370",
         "appeal any late filing or late payment penalty using form SA370 (opens in new tab)",
         "https://www.gov.uk/government/publications/self-assessment-appeal-against-penalties-for-late-filing-and-late-payment-sa370",
-        "link - click:How to pay your Self Assessment:form SA370",
         false,
         true)
       assertLinkById(
         doc,
         "address-for-sa-enquiries",
         "address for Self Assessment enquiries.",
-        "https://www.gov.uk/government/organisations/hm-revenue-customs/contact/self-assessment",
-        "link - click:How to pay your Self Assessment:address for Self Assessment enquiries")
+        "https://www.gov.uk/government/organisations/hm-revenue-customs/contact/self-assessment")
       assertLinkById(
         doc,
         "self-assessment-penalties-video",
         "Video - Self Assessment penalties (opens in new tab)",
         "https://youtu.be/tIqsbnmNqzA",
-        expectedOpensInNewTab = true,
-        expectedGAEvent = "link - click:How to pay your Self Assessment:Self Assessment penalties - video link")
+        expectedOpensInNewTab = true)
       assertLinkById(
         doc,
         "self-assessment-penalties-transcript",
         "Self Assessment penalties - video transcript",
-        "/business-account/help/transcript/self-assessment-penalties",
-        "link - click:How to pay your Self Assessment:Self Assessment penalties - video transcript")
+        "/business-account/help/transcript/self-assessment-penalties")
     }
 
   }
@@ -210,8 +197,7 @@ class HowToPaySelfAssessmentViewSpec extends ViewBehaviours {
         doc,
         "penalties",
         "View your Self Assessment penalties",
-        s"http://localhost:8080/portal/self-assessment/ind/$utr/account/penalties?lang=eng",
-        "link - click:How to pay your Self Assessment:penalties")
+        s"http://localhost:8080/portal/self-assessment/ind/$utr/account/penalties?lang=eng")
     }
 
     "have an interest link" in {
@@ -221,8 +207,7 @@ class HowToPaySelfAssessmentViewSpec extends ViewBehaviours {
         doc,
         "interest",
         "View your Self Assessment interest",
-        s"http://localhost:8080/portal/self-assessment/ind/$utr/account/interests?lang=eng",
-        "link - click:How to pay your Self Assessment:interest")
+        s"http://localhost:8080/portal/self-assessment/ind/$utr/account/interests?lang=eng")
     }
   }
 
@@ -234,8 +219,7 @@ class HowToPaySelfAssessmentViewSpec extends ViewBehaviours {
         doc,
         "address-for-sa-enquiries",
         "Wasanaeth Cwsmeriaid Cymraeg CThEM.",
-        "https://www.gov.uk/government/organisations/hm-revenue-customs/contact/welsh-language-helplines",
-        "link - click:How to pay your Self Assessment:address for Self Assessment enquiries")
+        "https://www.gov.uk/government/organisations/hm-revenue-customs/contact/welsh-language-helplines")
     }
   }
 }

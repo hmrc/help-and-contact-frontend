@@ -86,7 +86,6 @@ class ExpensesViewSpec extends ViewBehaviours {
         "allowable-expenses",
         "Find out more about allowable expenses if you’re self-employed (opens in new tab)",
         "https://www.gov.uk/expenses-if-youre-self-employed",
-        "link - click:Expenses : Find out more about allowable expenses if you’re self-employed",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -94,22 +93,19 @@ class ExpensesViewSpec extends ViewBehaviours {
         "what-expenses-video",
         "Video - What expenses can I include in my Self Assessment tax return? (opens in new tab)",
         "https://youtu.be/FjXAH3tMg2I",
-        "link - click:Expenses : What expenses can I include in my Self Assessment tax return? - video",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "what-expenses-transcript",
         "What expenses can I include in my Self Assessment tax return? - video transcript",
-        "/business-account/help/transcript/expenses-if-you-are-self-employed",
-        "link - click:Expenses : What expenses can I include in my Self Assessment tax return? - transcript"
+        "/business-account/help/transcript/expenses-if-you-are-self-employed"
       )
       assertLinkById(
         doc,
         "find-out-more-simplified",
         "Find out more about simplified expenses (opens in new tab)",
         "https://www.gov.uk/simpler-income-tax-simplified-expenses",
-        "link - click:Expenses : Find out more about simplified expenses",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -117,22 +113,19 @@ class ExpensesViewSpec extends ViewBehaviours {
         "cash-basis-video",
         "Video - Cash basis and simplified expenses (opens in new tab)",
         "https://youtu.be/T4UDYw9kCjA",
-        "link - click:Expenses : Cash basis and simplified expenses - video",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "cash-basis-transcript",
         "Cash basis and simplified expenses - video transcript",
-        "/business-account/help/transcript/cash-basis",
-        "link - click:Expenses : Cash basis and simplified expenses - transcript"
+        "/business-account/help/transcript/cash-basis"
       )
       assertLinkById(
         doc,
         "travel-expenses-sa",
         "Travel expenses if you’re self-employed (opens in new tab)",
         "https://www.gov.uk/expenses-if-youre-self-employed/travel",
-        "link - click:Expenses : Travel expenses if you’re self-employed",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -140,7 +133,6 @@ class ExpensesViewSpec extends ViewBehaviours {
         "simplified-motoring-expenses",
         "Simplified motoring expenses if you’re self employed (opens in new tab)",
         "https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles-",
-        "link - click:Expenses : Simplified motoring expenses if you’re self employed",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -148,15 +140,13 @@ class ExpensesViewSpec extends ViewBehaviours {
         "claiming-motoring-video",
         "Video - Claiming motoring expenses if you’re self-employed (opens in new tab)",
         "https://youtu.be/r2txvLXi_Fk",
-        "link - click:Expenses : Claiming motoring expenses if you’re self-employed - video",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "claiming-motoring-transcript",
         "Claiming motoring expenses if you’re self-employed - video transcript",
-        "/business-account/help/transcript/calculating-motoring-expenses",
-        "link - click:Expenses : Claiming motoring expenses if you’re self-employed - transcript"
+        "/business-account/help/transcript/calculating-motoring-expenses"
       )
 
     }

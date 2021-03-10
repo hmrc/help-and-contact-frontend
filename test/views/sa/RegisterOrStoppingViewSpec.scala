@@ -89,7 +89,6 @@ class RegisterOrStoppingViewSpec extends ViewBehaviours {
         "class-2-ni-contributions",
         "Class 2 National Insurance contributions (opens in new tab).",
         "https://www.gov.uk/self-employed-national-insurance-rates",
-        "link - click:Registering or stopping : Class 2 National Insurance contributions",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -97,22 +96,19 @@ class RegisterOrStoppingViewSpec extends ViewBehaviours {
         "class-2-video",
         "Video - Class 2 National Insurance contributions and your tax return (opens in new tab)",
         "https://youtu.be/5TURQ3ODbvE",
-        "link - click:Registering or stopping : Class 2 National Insurance contributions and your tax return - Video",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "class-2-transcript",
         "Class 2 National Insurance contributions and your tax return - transcript",
-        "/business-account/help/transcript/class-2-ni",
-        "link - click:Registering or stopping : Class 2 National Insurance contributions and your tax return - Transcript"
+        "/business-account/help/transcript/class-2-ni"
       )
       assertLinkById(
         doc,
         "find-UTR",
         "You can find your UTR (opens in new tab) if you do not know it.",
         "https://www.gov.uk/find-lost-utr-number",
-        "link - click:Registering or stopping : You can find your UTR if you do not know it",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -120,22 +116,19 @@ class RegisterOrStoppingViewSpec extends ViewBehaviours {
         "sa1-register",
         "use form SA1 to register for Self Assessment (opens in new tab).",
         "https://www.gov.uk/government/publications/self-assessment-register-for-self-assessment-and-get-a-tax-return-sa1",
-        "link - click:Registering or stopping : use form SA1 to register for Self Assessment",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "file-register-sa",
         "register for Self Assessment.",
-        "http://localhost:9730/business-account/add-tax/self-assessment/have-sa-utr",
-        "link - click:Registering or stopping : If you did not file a tax return last year and have to file one this year, register for Self Assessment"
+        "http://localhost:9730/business-account/add-tax/self-assessment/have-sa-utr"
       )
       assertLinkById(
         doc,
         "registering-partnership",
         "Find out more about registering as a partner or partnership (opens in new tab).",
         "https://www.gov.uk/register-for-self-assessment/partner-or-partnership",
-        "link - click:Registering or stopping : Find out more about registering as a partner or partnership",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -143,7 +136,6 @@ class RegisterOrStoppingViewSpec extends ViewBehaviours {
         "learn-sa",
         "Learn about Self Assessment (opens in new tab)",
         "https://www.gov.uk/guidance/help-and-support-for-self-assessment",
-        "link - click:Registering or stopping : Learn about Self Assessment",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -151,22 +143,19 @@ class RegisterOrStoppingViewSpec extends ViewBehaviours {
         "registering-sa-video",
         "Video - Registering for Self Assessment (opens in new tab)",
         "https://youtu.be/L8F6micVczE",
-        "link - click:Registering or stopping : Registering for Self Assessment - video",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "registering-sa-transcript",
         "Registering for Self Assessment: video transcript",
-        "/business-account/help/transcript/new-registering-for-self-assessment",
-        "link - click:Registering or stopping : Registering for Self Assessment - transcript"
+        "/business-account/help/transcript/new-registering-for-self-assessment"
       )
       assertLinkById(
         doc,
         "tell-hmrc",
         "tell HMRC if you do not need to file tax returns any more.",
-        "http://localhost:9020/business-account/self-assessment/stop",
-        "link - click:Registering or stopping : You must tell HMRC if you do not need to file tax returns any more"
+        "http://localhost:9020/business-account/self-assessment/stop"
       )
 
     }

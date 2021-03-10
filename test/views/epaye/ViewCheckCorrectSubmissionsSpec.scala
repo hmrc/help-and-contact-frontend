@@ -49,7 +49,6 @@ class ViewCheckCorrectSubmissionsSpec extends ViewBehaviours{
         "payroll-guide",
         "GOV.UK guide on payroll",
         "https://www.gov.uk/running-payroll/fps-after-payday#viewing-late-fps-reports-in-your-hmrc-online-account",
-        "link - click:View, check or correct your submissions:GOV.UK guide on payroll",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
     }
@@ -59,8 +58,7 @@ class ViewCheckCorrectSubmissionsSpec extends ViewBehaviours{
         doc,
         "change-address",
         "Change this address.",
-        "http://localhost:9020/business-account/manage-account/government-gateway-warning",
-        "link - click:View, check or correct your submissions:Change this address"
+        "http://localhost:9020/business-account/manage-account/government-gateway-warning"
       )
     }
 
@@ -69,7 +67,6 @@ class ViewCheckCorrectSubmissionsSpec extends ViewBehaviours{
         doc,
         "view-user-guide","user guide",
         "https://www.gov.uk/government/publications/basic-paye-tools-user-guide/basic-paye-tools-user-guide",
-        "link - click:View check or correct your submissions:view user guide",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
     }
@@ -79,7 +76,6 @@ class ViewCheckCorrectSubmissionsSpec extends ViewBehaviours{
         doc,
         "correct-user-guide","user guide",
         "https://www.gov.uk/government/publications/basic-paye-tools-user-guide/basic-paye-tools-user-guide",
-        "link - click:View check or correct your submissions:correct user guide",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
     }
@@ -90,7 +86,6 @@ class ViewCheckCorrectSubmissionsSpec extends ViewBehaviours{
         "submit-earlier-year-update",
         "submit an Earlier Year Update using Basic PAYE Tools",
         "https://www.gov.uk/government/publications/basic-paye-tools-earlier-year-update-payroll-user",
-        "link - click:View check or correct your submissions:submit an Earlier Year Update using Basic PAYE Tools",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
     }
@@ -101,7 +96,6 @@ class ViewCheckCorrectSubmissionsSpec extends ViewBehaviours{
         "install-bpt",
         "install BPT to submit an Earlier Year Update",
         "https://www.gov.uk/government/publications/basic-paye-tools-earlier-year-update-alongside-commercial-software",
-        "link - click:View check or correct your submissions:install BPT to submit an Earlier Year Update",
         expectedIsExternal = true,
         expectedOpensInNewTab = true)
     }
@@ -121,8 +115,7 @@ class ViewCheckCorrectSubmissionsSpec extends ViewBehaviours{
         docWithoutEmail,
         "add-email",
         "add an email",
-        "http://localhost:9020/business-account/manage-account/government-gateway-warning",
-        "link - click:View check or correct your submissions:add an email"
+        "http://localhost:9020/business-account/manage-account/government-gateway-warning"
       )
     }
   }
