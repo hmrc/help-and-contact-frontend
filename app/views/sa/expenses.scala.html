@@ -20,75 +20,77 @@
   main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(title = messages("expenses.title"), appConfig = appConfig, bodyClasses = None, serviceInfoContent = serviceInfoContent) {
 
-  <h1 id="expenses" class="heading-xlarge">@Messages("expenses.heading")</h1>
+  <h1 id="expenses" class="govuk-heading-xl">@Messages("expenses.heading")</h1>
 
-<h2>@Messages("expenses.can_include")</h2>
-<p>@Messages("expenses.allowable_expenses")</p>
-<p>@Messages("expenses.send_proof")</p>
-<p>@Messages("expenses.keep_proof")</p>
-<p><a href="https://www.gov.uk/expenses-if-youre-self-employed" id="allowable-expenses" target="_blank"
+<h2 class="govuk-heading-m">@Messages("expenses.can_include")</h2>
+<p class="govuk-body">@Messages("expenses.allowable_expenses")</p>
+<p class="govuk-body">@Messages("expenses.send_proof")</p>
+<p class="govuk-body">@Messages("expenses.keep_proof")</p>
+<p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/expenses-if-youre-self-employed" id="allowable-expenses" target="_blank"
 data-journey-click="link - click:Expenses : Find out more about allowable expenses if you’re self-employed">@Messages("expenses.find_out_more")</a></p>
-<div class="panel panel-border-wide">
- <p><a href="https://youtu.be/FjXAH3tMg2I" id="what-expenses-video" target="_blank"
+<div class="govuk-inset-text">
+ <p class="govuk-body"><a class="govuk-link" href="https://youtu.be/FjXAH3tMg2I" id="what-expenses-video" target="_blank"
  data-journey-click="link - click:Expenses : What expenses can I include in my Self Assessment tax return? - video">
   @Messages("expenses.what_expenses_video")</a></p>
- <p><a href="@controllers.routes.TranscriptController.onPageLoad("expenses-if-you-are-self-employed")" id="what-expenses-transcript"
+ <p class="govuk-body"><a class="govuk-link" href="@controllers.routes.TranscriptController.onPageLoad("expenses-if-you-are-self-employed")" id="what-expenses-transcript"
        data-journey-click="link - click:Expenses : What expenses can I include in my Self Assessment tax return? - transcript">
   @Messages("expenses.what_expenses_transcript")</a></p>
 </div>
 
-<h2>@Messages("expenses.simplified")</h2>
-<p>@Messages("expenses.cannot_be_used")</p>
-<p>@Messages("expenses.if_self_employed")</p>
-<p>@Messages("expenses.flat_rates")</p>
-<ul class="list list-bullet">
+<h2 class="govuk-heading-m">@Messages("expenses.simplified")</h2>
+<p class="govuk-body">@Messages("expenses.cannot_be_used")</p>
+<p class="govuk-body">@Messages("expenses.if_self_employed")</p>
+<p class="govuk-body">@Messages("expenses.flat_rates")</p>
+
+
+<ul class="govuk-list govuk-list--bullet">
 <li>@Messages("expenses.list_vehicles")</li>
 <li>@Messages("expenses.list_home")</li>
 <li>@Messages("expenses.list_living")</li>
 </ul>
 
-<p>@Messages("expenses.keep_records")</p>
-<ul class="list list-bullet">
+<p class="govuk-body">@Messages("expenses.keep_records")</p>
+<ul class="govuk-list govuk-list--bullet">
 <li>@Messages("expenses.list_mileage")</li>
 <li>@Messages("expenses.list_hours")</li>
 <li>@Messages("expenses.list_how_many")</li>
 </ul>
 
-<p><a href="https://www.gov.uk/simpler-income-tax-simplified-expenses" id="find-out-more-simplified" target="_blank"
+<p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/simpler-income-tax-simplified-expenses" id="find-out-more-simplified" target="_blank"
 data-journey-click="link - click:Expenses : Find out more about simplified expenses">@Messages("expenses.find_out_more_simplified")</a></p>
 
-<div class="panel panel-border-wide">
- <p><a href="https://youtu.be/T4UDYw9kCjA" id="cash-basis-video" target="_blank"
+<div class="govuk-inset-text">
+ <p class="govuk-body"><a class="govuk-link" href="https://youtu.be/T4UDYw9kCjA" id="cash-basis-video" target="_blank"
        data-journey-click="link - click:Expenses : Cash basis and simplified expenses - video">
   @Messages("expenses.cash_basis_video")</a></p>
- <p><a href="@controllers.routes.TranscriptController.onPageLoad("cash-basis")" id="cash-basis-transcript"
+ <p class="govuk-body"><a class="govuk-link" href="@controllers.routes.TranscriptController.onPageLoad("cash-basis")" id="cash-basis-transcript"
        data-journey-click="link - click:Expenses : Cash basis and simplified expenses - transcript">
   @Messages("expenses.cash_basis_transcript")</a></p>
 </div>
 
-<h2>@Messages("expenses.claiming_travel_header")</h2>
-<p>@Messages("expenses.allowable_business_expense")</p>
-<p>@Messages("expenses.cannot_claim")</p>
-<p>@Messages("expenses.actual_costs")</p>
-<p>@Messages("expenses.decide_to_use")</p>
-<p>@Messages("expenses.flat_rate_covers")</p>
+<h2 class="govuk-heading-m">@Messages("expenses.claiming_travel_header")</h2>
+<p class="govuk-body">@Messages("expenses.allowable_business_expense")</p>
+<p class="govuk-body">@Messages("expenses.cannot_claim")</p>
+<p class="govuk-body">@Messages("expenses.actual_costs")</p>
+<p class="govuk-body">@Messages("expenses.decide_to_use")</p>
+<p class="govuk-body">@Messages("expenses.flat_rate_covers")</p>
 
-<h2>@Messages("expenses.claiming_travel")</h2>
-<p><a href="https://www.gov.uk/expenses-if-youre-self-employed/travel" id="travel-expenses-sa" target="_blank"
+<h2 class="govuk-heading-m">@Messages("expenses.claiming_travel")</h2>
+<p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/expenses-if-youre-self-employed/travel" id="travel-expenses-sa" target="_blank"
       data-journey-click="link - click:Expenses : Travel expenses if you’re self-employed">
  @Messages("expenses.travel_if")</a></p>
-<p><a href="https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles-" id="simplified-motoring-expenses" target="_blank"
+<p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/simpler-income-tax-simplified-expenses/vehicles-" id="simplified-motoring-expenses" target="_blank"
       data-journey-click="link - click:Expenses : Simplified motoring expenses if you’re self employed">
  @Messages("expenses.simplified_motoring_expenses")</a></p>
-<div class="panel panel-border-wide">
- <p><a href="https://youtu.be/r2txvLXi_Fk" id="claiming-motoring-video" target="_blank"
+<div class="govuk-inset-text">
+ <p class="govuk-body"><a class="govuk-link" href="https://youtu.be/r2txvLXi_Fk" id="claiming-motoring-video" target="_blank"
        data-journey-click="link - click:Expenses : Claiming motoring expenses if you’re self-employed - video">
   @Messages("expenses.motoring_expenses_video")</a></p>
- <p><a href="@controllers.routes.TranscriptController.onPageLoad("calculating-motoring-expenses")" id="claiming-motoring-transcript"
+ <p class="govuk-body"><a class="govuk-link" href="@controllers.routes.TranscriptController.onPageLoad("calculating-motoring-expenses")" id="claiming-motoring-transcript"
        data-journey-click="link - click:Expenses : Claiming motoring expenses if you’re self-employed - transcript">
   @Messages("expenses.motoring_expenses_transcript")</a></p>
 </div>

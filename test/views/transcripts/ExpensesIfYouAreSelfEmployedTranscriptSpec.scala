@@ -26,7 +26,7 @@ class ExpensesIfYouAreSelfEmployedTranscriptSpec extends ViewBehaviours {
 
   val messageKeyPrefix = "sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript"
 
-  def createView(): Html = inject[expenses_if_you_are_self_employed].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView(): Html = inject[expenses_if_you_are_self_employed].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
 
   "ExpensesIfYouAreSelfEmployedTranscript view" must {
     behave like normalPage(createView, messageKeyPrefix)

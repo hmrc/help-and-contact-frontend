@@ -17,28 +17,28 @@
 @()(implicit request: Request[_], messages: Messages)
 
 
-<h2>@Messages("modular.viewingSaCalculation.viewing_your_sa_calculation")</h2>
-<p>@Messages("modular.viewingSaCalculation.automatically_works_out")</p>
-<p>@Messages("modular.viewingSaCalculation.calc_shows")</p>
-<ul class="list list-bullet">
+<h2 class="govuk-heading-m">@Messages("modular.viewingSaCalculation.viewing_your_sa_calculation")</h2>
+<p class="govuk-body">@Messages("modular.viewingSaCalculation.automatically_works_out")</p>
+<p class="govuk-body">@Messages("modular.viewingSaCalculation.calc_shows")</p>
+<ul class="govuk-list govuk-list--bullet">
 <li>@Messages("modular.viewingSaCalculation.list_tax_work_out")</li>
 <li>@Messages("modular.viewingSaCalculation.list_yourincome")</li>
 <li>@Messages("modular.viewingSaCalculation.list_personal_allowance")</li>
 <li>@Messages("modular.viewingSaCalculation.list_taxdue")</li>
-<li><a href="https://www.gov.uk/self-employed-national-insurance-rates" target="_blank" id="any-class-2-4"
+<li><a class="govuk-link" href="https://www.gov.uk/self-employed-national-insurance-rates" target="_blank" id="any-class-2-4"
        data-journey-click="link - click:Help with your Self Assessment tax return : any class 2 and class 4 National Insurance contributions">
     @Messages("modular.viewingSaCalculation.list_ni_contributions")
         @Messages("modular.viewingSaCalculation.list_opens")</a></li>
 </ul>
 
-<p>@Messages("modular.viewingSaCalculation.print_a_copy")</p>
+<p class="govuk-body">@Messages("modular.viewingSaCalculation.print_a_copy")</p>
 
-<div class="panel panel-border-wide">
-    <p><a href="https://youtu.be/dLVLt_mQyP0" id = "viewing-sa-tax-calculation-video" target="_blank"
+<div class="govuk-inset-text">
+    <p class="govuk-body"><a class="govuk-link" href="https://youtu.be/dLVLt_mQyP0" id = "viewing-sa-tax-calculation-video" target="_blank"
           data-journey-click="link - click:Help with your Self Assessment tax return : Viewing your Self Assessment tax return calculations - video">
         @Messages("modular.viewingSaCalculation.viewing_return_calculation_video")
     </a></p>
-    <p><a href="@controllers.routes.TranscriptController.onPageLoad("viewing-your-self-assessment-calculation")" id = "viewing-sa-tax-calculation-transcript"
+    <p class="govuk-body"><a class="govuk-link" href="@controllers.routes.TranscriptController.onPageLoad("viewing-your-self-assessment-calculation")" id = "viewing-sa-tax-calculation-transcript"
           data-journey-click="link - click:Help with your Self Assessment tax return : Viewing your Self Assessment tax return calculations - transcript">
         @Messages("modular.viewingSaCalculation.viewing_return_calculation_transcript")
     </a></p>

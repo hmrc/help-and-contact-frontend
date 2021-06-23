@@ -19,13 +19,13 @@
 
 @(appConfig: FrontendAppConfig)(implicit messages: Messages)
 
-<h2>@Messages("modular.sa_tax_return.self_assessment_tax_return")</h2>
-<p>@Messages("modular.sa_tax_return.is_a_system")</p>
-<p>@Messages("modular.sa_tax_return.income_tax_is_usually")</p>
-<p>@Messages("modular.sa_tax_return.people_and_business")</p>
-<p>@Messages("modular.sa_tax_return.sa_is_used_by")</p>
+<h2 class="govuk-heading-m">@Messages("modular.sa_tax_return.self_assessment_tax_return")</h2>
+<p class="govuk-body">@Messages("modular.sa_tax_return.is_a_system")</p>
+<p class="govuk-body">@Messages("modular.sa_tax_return.income_tax_is_usually")</p>
+<p class="govuk-body">@Messages("modular.sa_tax_return.people_and_business")</p>
+<p class="govuk-body">@Messages("modular.sa_tax_return.sa_is_used_by")</p>
 
-<ul class="list list-bullet">
+<ul class="govuk-list govuk-list--bullet">
 <li>@messages("modular.sa_tax_return.list_self_employed")</li>
 <li>@messages("modular.sa_tax_return.list_sole_trader")</li>
 <li>@messages("modular.sa_tax_return.list_individuals")</li>
@@ -35,38 +35,38 @@
 </ul>
 
 
-<p>@Messages("modular.sa_tax_return.if_you_receive_hmrc")</p>
+<p class="govuk-body">@Messages("modular.sa_tax_return.if_you_receive_hmrc")</p>
 
-    <p><a href="https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return" id = "who-must-send-link" target ="_blank"
+    <p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return" id = "who-must-send-link" target ="_blank"
           data-journey-click="link - click:Help with your Self Assessment tax return : Who must file a Self Assessment tax return">
         @Messages("modular.sa_tax_return.who_must_file_link")
     </a></p>
 
 
-<p>@Messages("modular.sa_tax_return.file_tax_return")</p>
-<p>@Messages("modular.sa_tax_return.sa_tax_year", appConfig.taxYearPrevious, appConfig.taxYearBegin, appConfig.taxYearNext)</p>
-<p>@Messages("modular.sa_tax_return.need_to_register_if")</p>
-<ul class="list list-bullet">
+<p class="govuk-body">@Messages("modular.sa_tax_return.file_tax_return")</p>
+<p class="govuk-body">@Messages("modular.sa_tax_return.sa_tax_year", appConfig.taxYearPrevious, appConfig.taxYearBegin, appConfig.taxYearNext)</p>
+<p class="govuk-body">@Messages("modular.sa_tax_return.need_to_register_if")</p>
+<ul class="govuk-list govuk-list--bullet">
 <li>@messages("modular.sa_tax_return.list_must_file", appConfig.taxYearPrevious, appConfig.taxYearBegin)</li>
 </ul>
-<p>@Messages("modular.sa_tax_return.and")</p>
-<ul class="list list-bullet">
+<p class="govuk-body">@Messages("modular.sa_tax_return.and")</p>
+<ul class="govuk-list govuk-list--bullet">
 <li>@messages("modular.sa_tax_return.list_did_not_file", appConfig.taxYearPrevious2, appConfig.taxYearPrevious)</li>
 </ul>
-<p>@Messages("modular.sa_tax_return.allow_up_to")</p>
-<p>@Messages("modular.sa_tax_return.to_file_online")</p>
-<ul class="list list-bullet">
+<p class="govuk-body">@Messages("modular.sa_tax_return.allow_up_to")</p>
+<p class="govuk-body">@Messages("modular.sa_tax_return.to_file_online")</p>
+<ul class="govuk-list govuk-list--bullet">
 <li>@messages("modular.sa_tax_return.list_be_registered")</li>
-    <li><a href="@appConfig.getAddTaxUrl("haveSaUtr")" id="add-to-sa" data-journey-click="link - click:Help with your Self Assessment tax return : add Self Assessment to your tax account">
+    <li><a class="govuk-link" href="@appConfig.getAddTaxUrl("haveSaUtr")" id="add-to-sa" data-journey-click="link - click:Help with your Self Assessment tax return : add Self Assessment to your tax account">
         @messages("modular.sa_tax_return.list_add_sa_to")</a></li>
 <li>@messages("modular.sa_tax_return.list_complete_and_file", appConfig.taxYearNext)</li>
 <li>@messages("modular.sa_tax_return.list_pay_what_you_owe", appConfig.taxYearNext)</li>
 </ul>
-<p>@Messages("modular.sa_tax_return.if_you_do_not_register")</p>
+<p class="govuk-body">@Messages("modular.sa_tax_return.if_you_do_not_register")</p>
 
-<p>
+<p class="govuk-body">
   @Messages("modular.sa_tax_return.have_not_received")
-    <a href="https://www.gov.uk/check-if-you-need-tax-return" id ="not-received-sa-return" target="_blank"
+    <a class="govuk-link" href="https://www.gov.uk/check-if-you-need-tax-return" id ="not-received-sa-return" target="_blank"
        data-journey-click="link - click:Help with your Self Assessment tax return : If you have not received a notice to file a Self Assessment tax return">
     @Messages("modular.sa_tax_return.have_not_received_link")</a></p>
 

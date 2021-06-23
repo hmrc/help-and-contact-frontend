@@ -20,7 +20,7 @@
   main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(
     title = messages("vat.payments_and_deadlines.title"),
@@ -28,34 +28,34 @@
     bodyClasses = Some("business-tax"),
     serviceInfoContent = serviceInfoContent) {
 
-    <h1 id="payments-and-dealdines" class="heading-xlarge">@Messages("vat.payments_and_deadlines.heading")</h1>
+    <h1 id="payments-and-dealdines" class="govuk-heading-xl">@Messages("vat.payments_and_deadlines.heading")</h1>
 
-    <p>@Messages("vat.payments_and_deadlines.the_deadline_for_submitting_")</p>
+    <p class="govuk-body">@Messages("vat.payments_and_deadlines.the_deadline_for_submitting_")</p>
 
-    <p>@Messages("vat.payments_and_deadlines.you_need_to_allow_time_")</p>
+    <p class="govuk-body">@Messages("vat.payments_and_deadlines.you_need_to_allow_time_")</p>
 
-    <p>@Messages("vat.payments_and_deadlines.if_you_are_paying_your_bill_")</p>
+    <p class="govuk-body">@Messages("vat.payments_and_deadlines.if_you_are_paying_your_bill_")</p>
 
-    <ul class="list list-bullet">
-      <li><a href="@appConfig.getGovUrl("vatBankDetails")" id="online-or-telephone-banking" data-journey-click="link - click:How to pay VAT and deadlines:online or telephone banking">@Messages("vat.payments_and_deadlines.online_or_telephone_banking")</a> @Messages("vat.payments_and_deadlines.faster_payments")</li>
-      <li><a href="@appConfig.getGovUrl("vatBankDetails")" id="chaps" data-journey-click="link - click:How to pay VAT and deadlines:chaps">@Messages("vat.payments_and_deadlines.chaps")</a></li>
-      <li><a href="@appConfig.getGovUrl("debitOrCreditCard")" id="debit-or-credit-card" data-journey-click="link - click:How to pay VAT and deadlines:online by debit or credit card">@Messages("vat.payments_and_deadlines.online_by_debit_or_credit_card")</a></li>
-      <li>@Messages("vat.payments_and_deadlines.at_your") <a href="@appConfig.getGovUrl("bankOrBuildingSociety")" id="bank-or-building-society" data-journey-click="link - click:How to pay VAT and deadlines:bank or building society">@Messages("vat.payments_and_deadlines.bank_or_building_society")</a></li>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a class="govuk-link" href="@appConfig.getGovUrl("vatBankDetails")" id="online-or-telephone-banking" data-journey-click="link - click:How to pay VAT and deadlines:online or telephone banking">@Messages("vat.payments_and_deadlines.online_or_telephone_banking")</a> @Messages("vat.payments_and_deadlines.faster_payments")</li>
+      <li><a class="govuk-link" href="@appConfig.getGovUrl("vatBankDetails")" id="chaps" data-journey-click="link - click:How to pay VAT and deadlines:chaps">@Messages("vat.payments_and_deadlines.chaps")</a></li>
+      <li><a class="govuk-link" href="@appConfig.getGovUrl("debitOrCreditCard")" id="debit-or-credit-card" data-journey-click="link - click:How to pay VAT and deadlines:online by debit or credit card">@Messages("vat.payments_and_deadlines.online_by_debit_or_credit_card")</a></li>
+      <li>@Messages("vat.payments_and_deadlines.at_your") <a class="govuk-link" href="@appConfig.getGovUrl("bankOrBuildingSociety")" id="bank-or-building-society" data-journey-click="link - click:How to pay VAT and deadlines:bank or building society">@Messages("vat.payments_and_deadlines.bank_or_building_society")</a></li>
     </ul>
 
-    <p>@Messages("vat.payments_and_deadlines.if_you_have_longer_to_pay_your_bill_")</p>
+    <p class="govuk-body">@Messages("vat.payments_and_deadlines.if_you_have_longer_to_pay_your_bill_")</p>
 
-    <ul class="list list-bullet">
-      <li><a href="@appConfig.getGovUrl("directDebit")" id="direct-debit" data-journey-click="link - click:How to pay VAT and deadlines:Direct Debit">@Messages("vat.payments_and_deadlines.direct_debit")</a> @Messages("vat.payments_and_deadlines.direct_debit_timescale")</li>
-      <li><a href="@appConfig.getGovUrl("vatBankDetails")" id="bacs" data-journey-click="link - click:How to pay VAT and deadlines:Bacs">@Messages("vat.payments_and_deadlines.bacs")</a> @Messages("vat.payments_and_deadlines.bacs_timescale")</li>
-      <li><a href="@appConfig.getGovUrl("standingOrder")" id="standing-order" data-journey-click="link - click:How to pay VAT and deadlines:standing order">@Messages("vat.payments_and_deadlines.standing_order")</a> @Messages("vat.payments_and_deadlines.standing_order_restriction")</li>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a class="govuk-link" href="@appConfig.getGovUrl("directDebit")" id="direct-debit" data-journey-click="link - click:How to pay VAT and deadlines:Direct Debit">@Messages("vat.payments_and_deadlines.direct_debit")</a> @Messages("vat.payments_and_deadlines.direct_debit_timescale")</li>
+      <li><a class="govuk-link" href="@appConfig.getGovUrl("vatBankDetails")" id="bacs" data-journey-click="link - click:How to pay VAT and deadlines:Bacs">@Messages("vat.payments_and_deadlines.bacs")</a> @Messages("vat.payments_and_deadlines.bacs_timescale")</li>
+      <li><a class="govuk-link" href="@appConfig.getGovUrl("standingOrder")" id="standing-order" data-journey-click="link - click:How to pay VAT and deadlines:standing order">@Messages("vat.payments_and_deadlines.standing_order")</a> @Messages("vat.payments_and_deadlines.standing_order_restriction")</li>
     </ul>
 
-    <h2 class="margin-top-xlarge">@Messages("vat.payments_and_deadlines.vat_refunds_on_goods_imported_from_the_eu")</h2>
-    <p>@Messages("vat.payments_and_deadlines.you_can") <a href="@appConfig.getGovUrl("euVatRefunds")" id="get-eu-vat-refund" data-journey-click="link - click:How to pay VAT and deadlines:get a refund of VAT paid in another EU country">@Messages("vat.payments_and_deadlines.get_a_refund_of_vat_paid_in_another_eu_country")</a> @Messages("vat.payments_and_deadlines.if_you_are_registered_for_vat_in_the_uk")</p>
-    <ul class="list list-bullet">
+    <h2 class="govuk-heading-m">@Messages("vat.payments_and_deadlines.vat_refunds_on_goods_imported_from_the_eu")</h2>
+    <p class="govuk-body">@Messages("vat.payments_and_deadlines.you_can") <a class="govuk-link" href="@appConfig.getGovUrl("euVatRefunds")" id="get-eu-vat-refund" data-journey-click="link - click:How to pay VAT and deadlines:get a refund of VAT paid in another EU country">@Messages("vat.payments_and_deadlines.get_a_refund_of_vat_paid_in_another_eu_country")</a> @Messages("vat.payments_and_deadlines.if_you_are_registered_for_vat_in_the_uk")</p>
+    <ul class="govuk-list govuk-list--bullet">
       <li>@Messages("vat.payments_and_deadlines.what_you_can_reclaim_depends")</li>
-      <li>@Messages("vat.payments_and_deadlines.the_rules_for_claiming") <a href="@appConfig.getGovUrl("inputTax")" id="input-tax" data-journey-click="link - click:How to pay VAT and deadlines:input tax">@Messages("vat.payments_and_deadlines.input_tax")</a> @Messages("vat.payments_and_deadlines.are_slightly_different_in_each_eu_country")</li>
+      <li>@Messages("vat.payments_and_deadlines.the_rules_for_claiming") <a class="govuk-link" href="@appConfig.getGovUrl("inputTax")" id="input-tax" data-journey-click="link - click:How to pay VAT and deadlines:input tax">@Messages("vat.payments_and_deadlines.input_tax")</a> @Messages("vat.payments_and_deadlines.are_slightly_different_in_each_eu_country")</li>
       <li>@Messages("vat.payments_and_deadlines.each_eu_country_has_set_a_minimun_amount_")</li>
       <li>@Messages("vat.payments_and_deadlines.if_your_business_makes_both_taxable_")</li>
     </ul>

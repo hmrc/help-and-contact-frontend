@@ -16,39 +16,39 @@
 
 @()(implicit request: Request[_], messages: Messages)
 
-<h2>@Messages("modular.basicRecordKeeping.heading")</h2>
- <p>@Messages("modular.basicRecordKeeping.must_record")</p>
-<ul class="list list-bullet">
+<h2 class="govuk-heading-m">@Messages("modular.basicRecordKeeping.heading")</h2>
+ <p class="govuk-body">@Messages("modular.basicRecordKeeping.must_record")</p>
+<ul class="govuk-list govuk-list--bullet">
   <li>@Messages("modular.basicRecordKeeping.list_person")</li>
   <li>@Messages("modular.basicRecordKeeping.list_phone")</li>
   <li>@Messages("modular.basicRecordKeeping.list_online")</li>
 </ul>
- <p>@Messages("modular.basicRecordKeeping.keep_records")</p>
- <p>@Messages("modular.basicRecordKeeping.software_suppliers")</p>
- <p>@Messages("modular.basicRecordKeeping.organise_income")</p>
- <p>@Messages("modular.basicRecordKeeping.must_keep")</p>
- <p>@Messages("modular.basicRecordKeeping.vat_registered")</p>
- <p>@Messages("modular.basicRecordKeeping.vat_threshold")</p>
-<p><b>@Messages("modular.basicRecordKeeping.years_after")</b></p>
-<p><b>@Messages("modular.basicRecordKeeping.example")</b></p>
+ <p class="govuk-body">@Messages("modular.basicRecordKeeping.keep_records")</p>
+ <p class="govuk-body">@Messages("modular.basicRecordKeeping.software_suppliers")</p>
+ <p class="govuk-body">@Messages("modular.basicRecordKeeping.organise_income")</p>
+ <p class="govuk-body">@Messages("modular.basicRecordKeeping.must_keep")</p>
+ <p class="govuk-body">@Messages("modular.basicRecordKeeping.vat_registered")</p>
+ <p class="govuk-body">@Messages("modular.basicRecordKeeping.vat_threshold")</p>
+<p class="govuk-body govuk-!-font-weight-bold">@Messages("modular.basicRecordKeeping.years_after")</p>
+<p class="govuk-body govuk-!-font-weight-bold">@Messages("modular.basicRecordKeeping.example")</p>
 
-<div class="panel panel-border-wide">
- <p><a href="https://youtu.be/4OlkduJ5MTU" id = "record-keeping-video" target="_blank"
+<div class="govuk-inset-text">
+ <p class="govuk-body"><a class="govuk-link" href="https://youtu.be/4OlkduJ5MTU" id = "record-keeping-video" target="_blank"
        data-journey-click="link - click:Basic record keeping when you’re self-employed : Basic record keeping for the self employed - video">
   @Messages("modular.basicRecordKeeping.record_keeping_video")
  </a></p>
- <p><a href="@controllers.routes.TranscriptController.onPageLoad("record-keeping-for-self-employed")" id = "record-keeping-transcript"
+ <p class="govuk-body"><a class="govuk-link" href="@controllers.routes.TranscriptController.onPageLoad("record-keeping-for-self-employed")" id = "record-keeping-transcript"
        data-journey-click="link - click:Basic record keeping when you’re self-employed : Basic record keeping for the self employed - transcript">
   @Messages("modular.basicRecordKeeping.record_keeping_transcript")
  </a></p>
 </div>
 
-<h2>@Messages("modular.basicRecordKeeping.more_help_record")</h2>
-<p><a href="https://www.gov.uk/self-employed-records" id="business-records" target="_blank"
+<h2 class="govuk-heading-m">@Messages("modular.basicRecordKeeping.more_help_record")</h2>
+<p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/self-employed-records" id="business-records" target="_blank"
       data-journey-click="link - click:Basic record keeping when you’re self-employed : Business records if you’re self-employed">
  @Messages("modular.basicRecordKeeping.self_record")
 </a></p>
-<p><a href="https://www.gov.uk/self-employed-records/what-records-to-keep" id="keeping-pay-tax" target="_blank"
+<p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/self-employed-records/what-records-to-keep" id="keeping-pay-tax" target="_blank"
       data-journey-click="link - click:Basic record keeping when you’re self-employed : Keeping your pay and tax records">
  @Messages("modular.basicRecordKeeping.keeping_pay_and_tax")
 </a></p>

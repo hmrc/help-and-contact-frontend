@@ -25,7 +25,7 @@ class RegisterOrDeregisterCorporationTaxViewSpec extends ViewBehaviours {
 
   val messageKeyPrefix = "ct.register_deregister"
 
-  def createView = () => inject[register_or_deregister_corporation_tax].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView = () => inject[register_or_deregister_corporation_tax].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
 
   "/help/corporation-tax/register-or-tell-hmrc-you-are-no-longer-trading" must {
 

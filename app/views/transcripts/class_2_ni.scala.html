@@ -20,7 +20,7 @@
   main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(
   title = messages("class_2_ni.title"),
@@ -28,34 +28,34 @@
   bodyClasses = None,
   serviceInfoContent = serviceInfoContent) {
 
-  @components.heading("class-2-ni-transcript", "class_2_ni.heading", "heading-xlarge")
+  @components.heading("class-2-ni-transcript", "class_2_ni.heading", "govuk-heading-xl")
 
-<p>@Messages("class_2_ni.if_self_employed")</p>
-<p>@Messages("class_2_ni.you_must_pay")</p>
-<p>@Messages("class_2_ni.dont_have_to")</p>
-<p>@Messages("class_2_ni.when_se")</p>
-<p>@Messages("class_2_ni.tax_return")</p>
-<p>@Messages("class_2_ni.your_return")</p>
-<p>@Messages("class_2_ni.amount_shows")</p>
+<p class="govuk-body">@Messages("class_2_ni.if_self_employed")</p>
+<p class="govuk-body">@Messages("class_2_ni.you_must_pay")</p>
+<p class="govuk-body">@Messages("class_2_ni.dont_have_to")</p>
+<p class="govuk-body">@Messages("class_2_ni.when_se")</p>
+<p class="govuk-body">@Messages("class_2_ni.tax_return")</p>
+<p class="govuk-body">@Messages("class_2_ni.your_return")</p>
+<p class="govuk-body">@Messages("class_2_ni.amount_shows")</p>
 
-<ul class="list list-bullet">
+<ul class="govuk-list govuk-list--bullet">
     <li>@Messages("class_2_ni.list_be_registered")</li>
     <li>@Messages("class_2_ni.list_the_service")</li>
 </ul>
 
-<p>@Messages("class_2_ni.shows_zero")</p>
+<p class="govuk-body">@Messages("class_2_ni.shows_zero")</p>
 
-<ul class="list list-bullet">
+<ul class="govuk-list govuk-list--bullet">
     <li>@Messages("class_2_ni.list_not_registered")</li>
     <li>@Messages("class_2_ni.list_already_paid")</li>
     <li>@Messages("class_2_ni.list_received_certain")</li>
     <li>@Messages("class_2_ni.list_abroad")</li>
 </ul>
 
-<p>@Messages("class_2_ni.not_sure_contact")</p>
-<p>@Messages("class_2_ni.started_or_stopped")</p>
-<p>@Messages("class_2_ni.make_voluntary")</p>
-<p>@Messages("class_2_ni.full_calculation")</p>
-<p>@Messages("class_2_ni.more_information")</p>
+<p class="govuk-body">@Messages("class_2_ni.not_sure_contact")</p>
+<p class="govuk-body">@Messages("class_2_ni.started_or_stopped")</p>
+<p class="govuk-body">@Messages("class_2_ni.make_voluntary")</p>
+<p class="govuk-body">@Messages("class_2_ni.full_calculation")</p>
+<p class="govuk-body">@Messages("class_2_ni.more_information")</p>
 
 }

@@ -28,7 +28,7 @@ class RegisteringForSelfAssessmentViewSpec extends ViewBehaviours {
 
   def createView: () => Html =
     () =>
-      inject[registering_for_self_assessment].apply(frontendAppConfig)(HtmlFormat.empty)(
+      inject[registering_for_self_assessment].apply(frontendAppConfig)(Some(HtmlFormat.empty))(
         fakeRequest,
         messages
     )

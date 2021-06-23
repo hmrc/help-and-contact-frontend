@@ -23,7 +23,7 @@ import views.html.epaye.paye_and_cis_refunds
 
 class PayeAndCisRefundsViewSpec extends ViewBehaviours {
 
-  def createView: () => HtmlFormat.Appendable = () => inject[paye_and_cis_refunds].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView: () => HtmlFormat.Appendable = () => inject[paye_and_cis_refunds].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
 
   val messageKeyPrefix = "epaye.paye_and_cis_refunds"
   val doc: Document = asDocument(createView())

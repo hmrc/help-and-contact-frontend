@@ -17,6 +17,7 @@
 package connectors
 
 import base.SpecBase
+import models.requests.{NavContent, NavLinks}
 import org.mockito.ArgumentMatchers.{any, eq => eqTo}
 import org.mockito.Mockito.when
 import org.scalatest.BeforeAndAfterEach
@@ -28,13 +29,14 @@ import uk.gov.hmrc.http.HeaderCarrier
 import uk.gov.hmrc.http.HttpClient
 import uk.gov.hmrc.play.partials.HtmlPartial.{Failure, Success}
 import uk.gov.hmrc.play.partials.{HeaderCarrierForPartials, HtmlPartial}
+
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
 class ServiceInfoPartialConnectorSpec extends SpecBase with MockitoSugar with BeforeAndAfterEach with ScalaFutures {
 
   "The ServiceInfoPartialConnector.getServiceInfoPartial() method" when {
-    lazy val btaUrl: String = TestServiceInfoPartialConnector.btaUrl
+    lazy val btaUrl: String = TestServiceInfoPartialConnector.btaPartialUrl
 
     def result: Future[Html] = TestServiceInfoPartialConnector.getServiceInfoPartial()
 
@@ -85,6 +87,36 @@ class ServiceInfoPartialConnectorSpec extends SpecBase with MockitoSugar with Be
     }
   }
 
+  "The ServiceInfoPartialConnector.getNavLinks() method" when {
+    lazy val btaNavLinkUrl: String = TestServiceInfoPartialConnector.btaNavLinksUrl
+    implicit val hc: HeaderCarrier = HeaderCarrier()
+
+    def result: Future[Option[NavContent]] = TestServiceInfoPartialConnector.getNavLinks()
+
+    "a valid NavLink Content is received" should {
+      "retrieve the correct Model" in {
+
+        when(mockHttpGet.GET[Option[NavContent]](eqTo(btaNavLinkUrl), any(), any())(any(), any(), any()))
+          .thenReturn(Future.successful(Some(successResponseNavLinks)))
+
+        whenReady(result) { response =>
+          response mustBe Some(successResponseNavLinks)
+        }
+      }
+    }
+
+    "a BadRequest(400) exception occurs" should {
+      "fail and return empty content" in {
+        when(mockHttpGet.GET[Option[NavContent]](eqTo(btaNavLinkUrl), any(), any())(any(), any(), any()))
+          .thenReturn(Future.failed(new Exception))
+
+        whenReady(result) { response =>
+          response mustBe None
+        }
+      }
+    }
+  }
+
   val mockHttpGet: HttpClient = mock[HttpClient]
 
   object TestServiceInfoPartialConnector extends ServiceInfoPartialConnector(mockHttpGet, frontendAppConfig)
@@ -126,5 +158,13 @@ class ServiceInfoPartialConnectorSpec extends SpecBase with MockitoSugar with Be
   val badRequestResponse                      = Failure(Some(Status.BAD_REQUEST))
   val gatewayTimeoutResponse                  = Failure(Some(Status.GATEWAY_TIMEOUT))
   implicit val hcwc: HeaderCarrierForPartials = HeaderCarrierForPartials(HeaderCarrier())
+
+  val successResponseNavLinks = NavContent(
+    NavLinks("Home", "Hafan", "http://localhost:9020/business-account"),
+    NavLinks("Manage account", "Rheoli'r cyfrif", "http://localhost:9020/business-account/manage-account"),
+    NavLinks("Messages", "Negeseuon", "http://localhost:9020/business-account/messages", Some(5)),
+    NavLinks("Help and contact", "Cymorth a chysylltu", "http://localhost:9733/business-account/help"),
+    NavLinks("Track your forms{0}", "Gwirio cynnydd eich ffurflenni{0}", "/track/bta", Some(0))
+  )
 
 }

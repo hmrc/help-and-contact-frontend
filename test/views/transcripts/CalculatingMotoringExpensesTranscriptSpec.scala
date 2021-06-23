@@ -27,7 +27,7 @@ class CalculatingMotoringExpensesTranscriptSpec extends ViewBehaviours {
 
   val messageKeyPrefix = "sa.expenses.claiming_motoring_expenses"
 
-  def createView(): Html = inject[calculating_motoring_expenses].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView(): Html = inject[calculating_motoring_expenses].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
 
   "CalculatingMotoringExpensesTranscript view" must {
     behave like normalPage(createView, messageKeyPrefix)

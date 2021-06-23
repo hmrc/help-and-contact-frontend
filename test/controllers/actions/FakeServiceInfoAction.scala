@@ -25,7 +25,7 @@ import scala.concurrent.{ExecutionContext, Future}
 
 object FakeServiceInfoAction extends ServiceInfoAction {
   override protected def transform[A](request: AuthenticatedRequest[A]): Future[ServiceInfoRequest[A]] = {
-    Future.successful(ServiceInfoRequest(request, HtmlFormat.empty))
+    Future.successful(ServiceInfoRequest(request, Some(HtmlFormat.empty)))
   }
 
   override protected def executionContext: ExecutionContext = global

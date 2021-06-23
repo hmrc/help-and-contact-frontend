@@ -25,7 +25,7 @@ class paymentsAndDeadlinesViewSpec extends ViewBehaviours {
 
   val messageKeyPrefix = "vat.payments_and_deadlines"
 
-  def createView = () => inject[payments_and_deadlines].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView = () => inject[payments_and_deadlines].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
 
   "VAT Payments and Deadlines view" must {
 

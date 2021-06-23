@@ -21,7 +21,7 @@
 main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig, utr: Option[SaUtr])(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig, utr: Option[SaUtr])(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(
 title = messages("payment_and_penalties.title"),
@@ -29,119 +29,118 @@ appConfig = appConfig,
 bodyClasses = Some("business-tax"),
 serviceInfoContent = serviceInfoContent) {
 
-<h1 id="payment-and-penalties" class="heading-xlarge">@Messages("payment_and_penalties.heading")</h1>
+<h1 id="payment-and-penalties" class="govuk-heading-xl">@Messages("payment_and_penalties.heading")</h1>
 
-<h2>@Messages("payment_and_penalties.when_to_pay")</h2>
- <p>@Messages("payment_and_penalties.deadlines")</p>
+<h2 class="govuk-heading-m">@Messages("payment_and_penalties.when_to_pay")</h2>
+ <p class="govuk-body">@Messages("payment_and_penalties.deadlines")</p>
 
-<ul class="list list-bullet">
+<ul class="govuk-list govuk-list--bullet">
    <li class="">@Messages("payment_and_penalties.payment_balancing", appConfig.taxYearNext, appConfig.taxYearPrevious, appConfig.taxYearBegin)</li>
    <li>@Messages("payment_and_penalties.first_payment", appConfig.taxYearNext, appConfig.taxYearBegin, appConfig.taxYearNext)</li>
    <li>@Messages("payment_and_penalties.second_payment", appConfig.taxYearNext, appConfig.taxYearBegin, appConfig.taxYearNext)</li>
 </ul>
 
-<p>@Messages("payment_and_penalties.dont_wait")</p>
- <p><a href="https://www.gov.uk/understand-self-assessment-bill/payments-on-account" id="understanding-payments" target="_blank"
+<p class="govuk-body">@Messages("payment_and_penalties.dont_wait")</p>
+ <p class="govuk-body"><a class="govuk-link" class="govuk-link" href="https://www.gov.uk/understand-self-assessment-bill/payments-on-account" id="understanding-payments" target="_blank"
   data-journey-click="link - click:Payment and penalties : Understanding balancing payments and payments on account">
       @Messages("payment_and_penalties.understanding_payments")</a></p>
 
 
-
-<h2>@Messages("payment_and_penalties.how_to_pay_bill")</h2>
-<p>@Messages("payment_and_penalties.make_sure")
- <a href="https://www.gov.uk/understand-self-assessment-bill/payments-on-account" id="pay-a-penalty"
+<h2 class="govuk-heading-m">@Messages("payment_and_penalties.how_to_pay_bill")</h2>
+<p class="govuk-body">@Messages("payment_and_penalties.make_sure")
+ <a class="govuk-link" class="govuk-link" href="https://www.gov.uk/understand-self-assessment-bill/payments-on-account" id="pay-a-penalty"
     data-journey-click="link - click:Payment and penalties : Pay a penalty">
   @Messages("payment_and_penalties.pay_penalty_link")</a>
  @Messages("payment_and_penalties.late_payment")</p>
 
-<p>@Messages("payment_and_penalties.depends")</p>
-<p>@Messages("payment_and_penalties.no_longer")</p>
+<p class="govuk-body">@Messages("payment_and_penalties.depends")</p>
+<p class="govuk-body">@Messages("payment_and_penalties.no_longer")</p>
 
-<p><a href="https://www.gov.uk/pay-self-assessment-tax-bill" id="ways-to-pay-taxbill" target="_blank"
+<p class="govuk-body"><a class="govuk-link" class="govuk-link" href="https://www.gov.uk/pay-self-assessment-tax-bill" id="ways-to-pay-taxbill" target="_blank"
 data-journey-click="link - click:Payment and penalties : Read detailed information about ways to pay your tax bill">
  @Messages("payment_and_penalties.read_info")</a></p>
 
 <div class="panel panel-border-wide">
- <p><a href="https://youtu.be/vRxLHyNmWp4" id="how-do-i-pay-video" target="_blank"
+ <p class="govuk-body"><a class="govuk-link" href="https://youtu.be/vRxLHyNmWp4" id="how-do-i-pay-video" target="_blank"
        data-journey-click="link - click:Payment and penalties : How do I pay my Self Assessment tax bill? - video">
   @Messages("payment_and_penalties.how_do_i_pay_video")</a></p>
 
- <p><a href="@controllers.routes.TranscriptController.onPageLoad("paying-your-self-assessment-tax-bill")" id="how-do-i-pay-transcript"
+ <p class="govuk-body"><a class="govuk-link" href="@controllers.routes.TranscriptController.onPageLoad("paying-your-self-assessment-tax-bill")" id="how-do-i-pay-transcript"
        data-journey-click="link - click:Payment and penalties : How do I pay my Self Assessment tax bill? - transcript">
   @Messages("payment_and_penalties.how_do_i_pay_transcript")</a></p>
 </div>
 
 @components.sa_calculation()
 
-<h2>@Messages("payment_and_penalties.budgeting_for_sa")</h2>
-                                         <p><a href="https://www.gov.uk/self-assessment-ready-reckoner" id="budget-for-taxbill" target="_blank"
+<h2 class="govuk-heading-m">@Messages("payment_and_penalties.budgeting_for_sa")</h2>
+                                         <p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/self-assessment-ready-reckoner" id="budget-for-taxbill" target="_blank"
 data-journey-click="link - click:Payment and penalties : Budget for your tax bill if you’re self employed">@Messages("payment_and_penalties.budget_taxbill")</a></p>
 
-<div class="panel panel-border-wide">
- <p><a href="https://youtu.be/XaqY3qhDXGo" id="how-do-i-budget-video" target="_blank"
+<div class="govuk-inset-text">
+ <p class="govuk-body"><a class="govuk-link" href="https://youtu.be/XaqY3qhDXGo" id="how-do-i-budget-video" target="_blank"
  data-journey-click="link - click:Payment and penalties : How do I budget for my Self Assessment tax bill? - video">
   @Messages("payment_and_penalties.how_do_i_budget_video")</a></p>
- <p><a href="@controllers.routes.TranscriptController.onPageLoad("budgeting-your-self-assessment-tax-bill")" id="how-do-i-budget-transcript"
+ <p class="govuk-body"><a class="govuk-link" href="@controllers.routes.TranscriptController.onPageLoad("budgeting-your-self-assessment-tax-bill")" id="how-do-i-budget-transcript"
        data-journey-click="link - click:Payment and penalties : How do I budget for my Self Assessment tax bill? - transcript">
   @Messages("payment_and_penalties.how_do_i_budget_transcript")</a></p>
 </div>
 
-<h2>@Messages("payment_and_penalties.penalties")</h2>
- <p>@Messages("payment_and_penalties.penalty_showing")</p>
-<ul class="list list-bullet">
+<h2 class="govuk-heading-m">@Messages("payment_and_penalties.penalties")</h2>
+ <p class="govuk-body">@Messages("payment_and_penalties.penalty_showing")</p>
+<ul class="govuk-list govuk-list--bullet">
   <li>@Messages("payment_and_penalties.list_sent_late")</li>
   <li>@Messages("payment_and_penalties.list_paid_late")</li>
   <li>@Messages("payment_and_penalties.list_not_enough")</li>
 </ul>
-<h2>@Messages("payment_and_penalties.appeal_penalty")</h2>
-<p>@Messages("payment_and_penalties.affected_covid")</p>
+<h2 class="govuk-heading-m">@Messages("payment_and_penalties.appeal_penalty")</h2>
+<p class="govuk-body">@Messages("payment_and_penalties.affected_covid")</p>
 
-<p>@Messages("payment_and_penalties.appeal_if") <a href="https://www.gov.uk/tax-appeals/reasonable-excuses" id="reasonable-excuse"
+<p class="govuk-body">@Messages("payment_and_penalties.appeal_if") <a class="govuk-link" href="https://www.gov.uk/tax-appeals/reasonable-excuses" id="reasonable-excuse"
                                                    data-journey-click="link - click:Payment and penalties : reasonable excuses">
    @Messages("payment_and_penalties.excuse_link")</a> @Messages("payment_and_penalties.for_example")</p>
 
 
 @if(utr.isDefined) {
-<p>@Messages("payment_and_penalties.conditional.you_can")</p>
-<ul class="list list-bullet">
-    <li><a href="@appConfig.getDfsFormUrl("SAASUB")" id="appeal-sa-late" target="_blank"
+<p class="govuk-body">@Messages("payment_and_penalties.conditional.you_can")</p>
+<ul class="govuk-list govuk-list--bullet">
+    <li><a class="govuk-link" href="@appConfig.getDfsFormUrl("SAASUB")" id="appeal-sa-late" target="_blank"
            data-journey-click="link - click:Payment and penalties : appeal a £100 Self Assessment late filing penalty online">
         @Messages("payment_and_penalties.list_sent_late")</a></li>
 
-    <li><a href="https://www.gov.uk/government/publications/self-assessment-appeal-against-penalties-for-late-filing-and-late-payment-sa370" id="appeal-filing"
+    <li><a class="govuk-link" href="https://www.gov.uk/government/publications/self-assessment-appeal-against-penalties-for-late-filing-and-late-payment-sa370" id="appeal-filing"
            target="_blank" data-journey-click="link - click:Payment and penalties : appeal any late filing or late payment penalty using form SA370">@Messages("payment_and_penalties.conditional.appeal_filling")</a>
         @Messages("payment_and_penalties.conditional.or")
-        <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/self-assessment" id="write-hmrc"
+        <a class="govuk-link" href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/self-assessment" id="write-hmrc"
            data-journey-click="link - click:Payment and penalties : Write to HMRC">@Messages("payment_and_penalties.conditional.write_hmrc")</a>
         @Messages("payment_and_penalties.conditional.reasons_for")</li>
 
-    <p>@Messages("payment_and_penalties.conditional.happens_next")</p>
-    <p>@Messages("payment_and_penalties.conditional.send_contact")</p>
+    <p class="govuk-body">@Messages("payment_and_penalties.conditional.happens_next")</p>
+    <p class="govuk-body">@Messages("payment_and_penalties.conditional.send_contact")</p>
 </ul>
 }
 
-<h2>@Messages("payment_and_penalties.penalties_interest")</h2>
+<h2 class="govuk-heading-m">@Messages("payment_and_penalties.penalties_interest")</h2>
 
 @if(utr.isDefined) {
-<ul class="list list-bullet">
-    <li><a href="@appConfig.getPortalUrl("selfAssessmentPenalties", utr)" id="view-sa-penalties"
+<ul class="govuk-list govuk-list--bullet">
+    <li><a class="govuk-link" href="@appConfig.getPortalUrl("selfAssessmentPenalties", utr)" id="view-sa-penalties"
            data-journey-click="link - click:Payment and penalties : View your Self Assessment penalties">
         @Messages("payment_and_penalties.conditional.view_penalties")</a></li>
-    <li><a href="@appConfig.getPortalUrl("selfAssessmentInterest", utr)" id="view-sa-interest"
+    <li><a class="govuk-link" href="@appConfig.getPortalUrl("selfAssessmentInterest", utr)" id="view-sa-interest"
     data-journey-click="link - click:Payment and penalties : View your Self Assessment interest">
         @Messages("payment_and_penalties.conditional.view_interest")</a></li>
 </ul>
 
 }
 @if(!utr.isDefined) {
-<p>@Messages("payment_and_penalties.conditional.no_penalties")</p>
+<p class="govuk-body">@Messages("payment_and_penalties.conditional.no_penalties")</p>
 }
 
-<h2>@Messages("payment_and_penalties.more_help")</h2>
-<p><a href="https://www.gov.uk/tax-appeals/penalty" id="more-about-sa" target="_blank"
+<h2 class="govuk-heading-m">@Messages("payment_and_penalties.more_help")</h2>
+<p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/tax-appeals/penalty" id="more-about-sa" target="_blank"
       data-journey-click="link - click:Payment and penalties : Find out more about Self Assessment penalties">
  @Messages("payment_and_penalties.find_more")</a></p>
-<p><a href="https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments" id="interest-rates" target="_blank"
+<p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments" id="interest-rates" target="_blank"
       data-journey-click="link - click:Payment and penalties : Interest rates for late and early payments">
  @Messages("payment_and_penalties.interest_rates")</a></p>
 

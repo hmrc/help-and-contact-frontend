@@ -20,7 +20,7 @@
   main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(
     title = messages("yourFirstTaxReturnTranscript.title"),
@@ -28,20 +28,20 @@
     bodyClasses = None,
     serviceInfoContent = serviceInfoContent) {
 
-    @components.heading("your-first-tax-return-transcript", "yourFirstTaxReturnTranscript.heading", "heading-xlarge")
+    @components.heading("your-first-tax-return-transcript", "yourFirstTaxReturnTranscript.heading", "govuk-heading-xl")
 
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph1")</p>
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph2")</p>
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph3")</p>
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph4")</p>
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph5")</p>
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph6")</p>
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph7")</p>
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph8")</p>
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph9")</p>
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph10")</p>
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph11")</p>
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph12")</p>
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph13")</p>
-    <p>@messages("yourFirstTaxReturnTranscript.paragraph14")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph1")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph2")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph3")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph4")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph5")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph6")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph7")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph8")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph9")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph10")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph11")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph12")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph13")</p>
+    <p class="govuk-body">@messages("yourFirstTaxReturnTranscript.paragraph14")</p>
 }

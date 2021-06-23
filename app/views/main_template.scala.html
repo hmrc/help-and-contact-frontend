@@ -18,9 +18,7 @@
 @import play.twirl.api.HtmlFormat
 @import uk.gov.hmrc.play.views.html.layouts.Sidebar
 
-
 @this(
-  uiSidebar: Sidebar,
   govuk_wrapper: govuk_wrapper
 )
 
@@ -31,20 +29,26 @@
   bodyClasses: Option[String] = None,
   mainClass: Option[String] = None,
   scriptElem: Option[Html] = None,
-  serviceInfoContent: Html = HtmlFormat.empty)(mainContent: Html)(implicit request : Request[_], messages: Messages)
+  fullWidth: Boolean = false,
+  serviceInfoContent: Option[Html] = None)(mainContent: Html)(implicit request : Request[_], messages: Messages)
 
-@import uk.gov.hmrc.play.views.html.layouts
+@head = {
+
+        <!--[if lte IE 8]><link href='@controllers.routes.Assets.versioned("stylesheets/application-ie-8.css")' rel="stylesheet" type="text/css" /><![endif]-->
+        <!--[if gt IE 8]><!--><link href='@controllers.routes.Assets.versioned("stylesheets/application.css")' media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/helpandcontactfrontend-app.css")'/>
+}
 
 @sidebar = {
     @if(sidebarLinks.isDefined) {
-      @uiSidebar(sidebarLinks.get, Some("sidebar"))
+      @components.sidebar(sidebarLinks.get, Some("sidebar"))
     }
 }
 
 @scriptElement = {
 @scriptElem
   <script>
-
     <!--initializes gov uk js for  detail-summary and link withn role button-->
     window.GOVUK.details.init()
     window.GOVUK.shimLinksWithButtonRole.init()
@@ -57,15 +61,23 @@
     });
     var dialogOpen;
   </script>
+    <script src='@controllers.routes.Assets.versioned("lib/govuk-frontend/govuk/all.js")'></script>
+    <script src='@controllers.routes.Assets.versioned("lib/hmrc-frontend/hmrc/all.js")'></script>
+    <script src='@routes.Assets.versioned("javascripts/helpandcontactfrontend-app.min.js")'> </script>
+    <script src='@routes.Assets.versioned("javascripts/error_summary_focus.js")'> </script>
+    <script src='@routes.Assets.versioned("javascripts/govuk.js")'></script>
+    <script>window.GOVUKFrontend.initAll();</script>
+    <script>window.HMRCFrontend.initAll();</script>
 }
-@govuk_wrapper(appConfig = appConfig,
+
+@govuk_wrapper(
                title = messages("site.service_title", title),
                mainClass = mainClass,
+               headBlock = Some(head),
                bodyClasses = bodyClasses,
-               sidebar = sidebar,
+               sidebar = Some(sidebar),
                contentHeader = contentHeader,
-               mainContent = mainContent,
+               mainContent = Some(mainContent),
                serviceInfoContent = serviceInfoContent,
-               scriptElem = Some(scriptElement)
-
-)
+               fullWidth = fullWidth,
+               scriptsBlock = Some(scriptElement))(mainContent)

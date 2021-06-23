@@ -26,7 +26,7 @@ class WhySentTaxReturnViewSpec extends ViewBehaviours {
 
   val messageKeyPrefix = "whySentTaxReturnTranscript"
 
-  def createView = () => inject[why_sent_tax_return].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView = () => inject[why_sent_tax_return].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
 
   "WhySentTaxReturn view" must {
     behave like normalPage(createView, messageKeyPrefix)

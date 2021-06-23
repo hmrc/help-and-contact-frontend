@@ -28,7 +28,7 @@ class NewIncomeFromPropertySpec extends ViewBehaviours {
 
   def createView: () => Html =
     () =>
-      inject[new_income_from_property].apply(frontendAppConfig)(HtmlFormat.empty)(
+      inject[new_income_from_property].apply(frontendAppConfig)(Some(HtmlFormat.empty))(
         fakeRequest,
         messages
       )

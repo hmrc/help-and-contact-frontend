@@ -17,18 +17,19 @@
 package controllers.actions
 
 import com.google.inject.ImplementedBy
-import javax.inject.{Inject, Singleton}
 import config.HelpAndContactHeaderCarrierForPartialsConverter
-import connectors.ServiceInfoPartialConnector
+import controllers.ServiceInfoController
+import javax.inject.{Inject, Singleton}
 import models.requests.{AuthenticatedRequest, ServiceInfoRequest}
+import play.api.i18n.I18nSupport
 import play.api.mvc._
 
 import scala.concurrent.{ExecutionContext, Future}
 
 @Singleton
 class ServiceInfoActionImpl @Inject()(
-    serviceInfoPartialConnector: ServiceInfoPartialConnector,
-    helpAndContactHeaderCarrierForPartialsConverter: HelpAndContactHeaderCarrierForPartialsConverter
+                                     serviceInfoController: ServiceInfoController,
+                                     helpAndContactHeaderCarrierForPartialsConverter: HelpAndContactHeaderCarrierForPartialsConverter
 )(
     implicit val executionContext: ExecutionContext
 ) extends ServiceInfoAction {
@@ -37,11 +38,12 @@ class ServiceInfoActionImpl @Inject()(
 
   override def transform[A](request: AuthenticatedRequest[A]): Future[ServiceInfoRequest[A]] = {
     implicit val r: Request[A] = request
-    serviceInfoPartialConnector.getServiceInfoPartial().map { serviceInfoContent =>
-      ServiceInfoRequest(request, serviceInfoContent)
-    }
+    for{
+      partial <-  serviceInfoController.serviceInfoPartial(request)
+    } yield {
+      ServiceInfoRequest(request, partial)
+      }
   }
-
 }
 
 @ImplementedBy(classOf[ServiceInfoActionImpl])

@@ -20,33 +20,33 @@
   main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(title = messages("vat.register_or_deregister.title"), appConfig = appConfig, bodyClasses = None, serviceInfoContent = serviceInfoContent) {
 
-  <h1 id="register-deregister-vat" class="heading-xlarge">@Messages("vat.register_or_deregister.heading")</h1>
+  <h1 id="register-deregister-vat" class="govuk-heading-l">@Messages("vat.register_or_deregister.heading")</h1>
 
-  <h2 class="margin-top-xlarge">@Messages("vat.register_or_deregister.register_for_vat")</h2>
-  <p>@Messages("vat.register_or_deregister.you_must_register_for_vat_with_hmrc_")</p>
+  <h2 class="govuk-heading-m">@Messages("vat.register_or_deregister.register_for_vat")</h2>
+  <p class="govuk-body">@Messages("vat.register_or_deregister.you_must_register_for_vat_with_hmrc_")</p>
 
-  <p>@Messages("vat.register_or_deregister.when_you_register_")</p>
+  <p class="govuk-body">@Messages("vat.register_or_deregister.when_you_register_")</p>
 
-  <ul class="list list-bullet">
+  <ul class="govuk-list govuk-list--bullet">
     <li>@Messages("vat.register_or_deregister.your_vat_number")</li>
     <li>@Messages("vat.register_or_deregister.when_to_submit_your_first_vat_return_and_payment")</li>
     <li>@Messages("vat.register_or_deregister.your_effective_date_of_registration_")</li>
   </ul>
 
-  <p>@Messages("vat.register_or_deregister.most_businesses_can") <a href="@appConfig.getGovUrl("registerForVat")" id="register-for-vat" data-journey-click="link - click:Register or deregister for VAT:register online">@Messages("vat.register_or_deregister.register_online")</a> @Messages("vat.register_or_deregister.and_create_an_online_vat_account")</p>
+  <p class="govuk-body">@Messages("vat.register_or_deregister.most_businesses_can") <a class="govuk-link" href="@appConfig.getGovUrl("registerForVat")" id="register-for-vat" data-journey-click="link - click:Register or deregister for VAT:register online">@Messages("vat.register_or_deregister.register_online")</a> @Messages("vat.register_or_deregister.and_create_an_online_vat_account")</p>
 
-  <h2 class="margin-top-xlarge">@Messages("vat.register_or_deregister.deregister_for_vat")</h2>
-  <p>@Messages("vat.register_or_deregister.you_must") <a href="@appConfig.getGovUrl("cancelVatRegistration")" id="cancel-vat-registration" data-journey-click="link - click:Register or deregister for VAT:cancel your registration">@Messages("vat.register_or_deregister.cancel_your_registration")</a> @Messages("vat.register_or_deregister.if_you_are_no_longer_eligible_")</p>
+  <h2 class="govuk-heading-m">@Messages("vat.register_or_deregister.deregister_for_vat")</h2>
+  <p class="govuk-body">@Messages("vat.register_or_deregister.you_must") <a class="govuk-link" href="@appConfig.getGovUrl("cancelVatRegistration")" id="cancel-vat-registration" data-journey-click="link - click:Register or deregister for VAT:cancel your registration">@Messages("vat.register_or_deregister.cancel_your_registration")</a> @Messages("vat.register_or_deregister.if_you_are_no_longer_eligible_")</p>
 
-  <ul class="list list-bullet">
+  <ul class="govuk-list govuk-list--bullet">
     <li>@Messages("vat.register_or_deregister.you_stop_trading_or_")</li>
     <li>@Messages("vat.register_or_deregister.you_join_a_vat_group")</li>
   </ul>
 
-  <p>@Messages("vat.register_or_deregister.you_must_cancel_within_30_days_")</p>
+  <p class="govuk-body">@Messages("vat.register_or_deregister.you_must_cancel_within_30_days_")</p>
 
 }

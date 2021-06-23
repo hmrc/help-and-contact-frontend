@@ -8,6 +8,7 @@ import play.api.Application
 import play.api.inject.guice.GuiceApplicationBuilder
 import play.api.libs.ws.WSClient
 import IntegrationTest._
+import com.github.tomakehurst.wiremock.client.WireMock
 
 import scala.reflect.ClassTag
 
@@ -44,6 +45,7 @@ trait IntegrationTest extends GuiceOneServerPerSuite
 
   override def beforeAll(): Unit = {
     super.beforeAll()
+    WireMock.configureFor(wiremockPort)
     wiremock.start()
   }
 

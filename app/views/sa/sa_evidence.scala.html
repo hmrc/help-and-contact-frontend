@@ -20,7 +20,7 @@
   main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig, hasSAenrolment: Boolean, moreSADetailsUrl: String)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig, hasSAenrolment: Boolean, moreSADetailsUrl: String)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(
   title = messages("sa302.evidence.title"),
@@ -28,24 +28,24 @@
   bodyClasses = None,
   serviceInfoContent = serviceInfoContent) {
 
-  @components.heading("sa-evidence", "sa302.evidence.heading", "heading-xlarge")
-<p>@Messages("sa302.evidence.complete")</p>
-<ul class="list list-bullet">
+  @components.heading("sa-evidence", "sa302.evidence.heading", "govuk-heading-xl")
+<p class="govuk-body">@Messages("sa302.evidence.complete")</p>
+<ul class="govuk-list govuk-list--bullet">
     <li>@Messages("sa302.evidence.list_get_evidence")</li>
     <li>@Messages("sa302.evidence.list_get_tax_year")</li>
     <li>@Messages("sa302.evidence.list_print_calculation")</li>
 </ul>
 
 @if(hasSAenrolment) {
-<p><a href="@appConfig.getBusinessAccountUrl("selfAssessmentBase")" id="find-sa302"
+<p class="govuk-body"><a class="govuk-link" href="@appConfig.getBusinessAccountUrl("selfAssessmentBase")" id="find-sa302"
       data-journey-click="link - click:SA302 Evidence : Find your SA302">
     @Messages("sa302.evidence.find_sa302")</a></p>
 }
 
-<p>@Messages("sa302.evidence.might_be")</p>
-<p>@Messages("sa302.evidence.check_mortgage")</p>
-<p>@Messages("sa302.evidence.print_documents")</p>
-<p><a href="https://www.gov.uk/sa302-tax-calculation" id="getting-evidence" target="_blank"
+<p class="govuk-body">@Messages("sa302.evidence.might_be")</p>
+<p class="govuk-body">@Messages("sa302.evidence.check_mortgage")</p>
+<p class="govuk-body">@Messages("sa302.evidence.print_documents")</p>
+<p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/sa302-tax-calculation" id="getting-evidence" target="_blank"
 data-journey-click="link - click:SA302 Evidence : Find out more about getting evidence of your income">
     @Messages("sa302.evidence.evidence_of_income")</a></p>
 

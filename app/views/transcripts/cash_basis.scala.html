@@ -20,7 +20,7 @@
   main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(
   title = messages("cash_basis.title"),
@@ -28,31 +28,31 @@
   bodyClasses = None,
   serviceInfoContent = serviceInfoContent) {
 
-  @components.heading("cash-basis-transcript", "cash_basis.heading", "heading-xlarge")
+  @components.heading("cash-basis-transcript", "cash_basis.heading", "govuk-heading-xl")
 
-<p>@Messages("cash_basis.simplified_expenses")</p>
-<p>@Messages("cash_basis.instead_of")</p>
-<p>@Messages("cash_basis.only_be_taxed")</p>
-<p>@Messages("cash_basis.limit_claims")</p>
-<p>@Messages("cash_basis.used_by_all")</p>
-<p>@Messages("cash_basis.way_of_working")</p>
-<p>@Messages("cash_basis.flat_rates")</p>
+<p class="govuk-body">@Messages("cash_basis.simplified_expenses")</p>
+<p class="govuk-body">@Messages("cash_basis.instead_of")</p>
+<p class="govuk-body">@Messages("cash_basis.only_be_taxed")</p>
+<p class="govuk-body">@Messages("cash_basis.limit_claims")</p>
+<p class="govuk-body">@Messages("cash_basis.used_by_all")</p>
+<p class="govuk-body">@Messages("cash_basis.way_of_working")</p>
+<p class="govuk-body">@Messages("cash_basis.flat_rates")</p>
 
-<ul class="list list-bullet">
+<ul class="govuk-list govuk-list--bullet">
     <li>@Messages("cash_basis.list_some_vehicles")</li>
     <li>@Messages("cash_basis.list_home")</li>
     <li>@Messages("cash_basis.list_living")</li>
 </ul>
 
-<p>@Messages("cash_basis.need_to_record")</p>
+<p class="govuk-body">@Messages("cash_basis.need_to_record")</p>
 
-<ul class="list list-bullet">
+<ul class="govuk-list govuk-list--bullet">
     <li>@Messages("cash_basis.list_your_miles")</li>
     <li>@Messages("cash_basis.list_hours_working")</li>
     <li>@Messages("cash_basis.list_how_many")</li>
 </ul>
 
-<p>@Messages("cash_basis.apply_flat_rate")</p>
-<p>@Messages("cash_basis.more_info")</p>
+<p class="govuk-body">@Messages("cash_basis.apply_flat_rate")</p>
+<p class="govuk-body">@Messages("cash_basis.more_info")</p>
 
 }

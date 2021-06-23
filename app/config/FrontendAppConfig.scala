@@ -25,6 +25,8 @@ import uk.gov.hmrc.play.language.LanguageUtils
 import models.SaUtr
 import utils.PortalUrlBuilder
 import uk.gov.hmrc.time.TaxYear
+import uk.gov.hmrc.hmrcfrontend.views.viewmodels.language.{Cy, En, Language}
+
 
 @Singleton
 class FrontendAppConfig @Inject()(servicesConfig: ServicesConfig,
@@ -39,6 +41,7 @@ class FrontendAppConfig @Inject()(servicesConfig: ServicesConfig,
   lazy val loginContinueUrl: String         = loadConfig("urls.loginContinue")
   lazy val requestCorporationTaxUTR: String = loadConfig("urls.requestCorporationTaxUTR")
   lazy val googleTagManagerId: String       = loadConfig(s"google-tag-manager.id")
+  lazy val appName: String                  = loadConfig("appName")
 
   private lazy val contactHost: String = servicesConfig.getString("contact-frontend.host")
   private val contactFormServiceIdentifier: String = "helpandcontactfrontend"
@@ -92,5 +95,12 @@ class FrontendAppConfig @Inject()(servicesConfig: ServicesConfig,
 
   def fileAReturn(key: String, sa: SaUtr)(implicit request: Request[_]): String = {
     getPortalUrl(key, Some(sa), Some(TaxYearCode(taxYearEnd - 1).toString))
+  }
+
+  def languageLinks: Seq[(Language, String)] = {
+    Seq(
+      (En, routes.LanguageSwitchController.switchToLanguage("english").url),
+      (Cy, routes.LanguageSwitchController.switchToLanguage("cymraeg").url)
+    )
   }
 }

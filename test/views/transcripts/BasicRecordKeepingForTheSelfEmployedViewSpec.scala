@@ -26,7 +26,7 @@ class BasicRecordKeepingForTheSelfEmployedViewSpec extends ViewBehaviours {
 
   val messageKeyPrefix = "basic.record.keeping.transcript"
 
-  def createView = () => inject[basic_record_keeping].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView = () => inject[basic_record_keeping].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
 
   "BudgetingYourSelfAssessment view" must {
     behave like normalPage(createView, messageKeyPrefix)

@@ -20,12 +20,16 @@
 
 @(appConfig: FrontendAppConfig)(implicit request: Request[_], messages: Messages)
 
-<div class="divider--top margin-top-large "><h2 id="covid-help" class="padding-top-medium">@messages("covid.coronavirus_measures.heading")</h2></div>
+<div>
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h2 id="covid-help" class="govuk-heading-m" >@messages("covid.coronavirus_measures.heading")</h2>
+</div>
 
-<div class="grid-row">
-    <div class="column-one-third">
-        <p>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+        <p class="govuk-body">
             <a id="covid-digital-assistant-for-help-and-support"
+            class="govuk-link"
             href="https://www.tax.service.gov.uk/ask-hmrc/virtual-assistant/support-for-coronavirus"
             data-journey-click="link - click:Help and contact:covid help digital assistant" target="_blank">
             @messages("covid.digital_assistant_for_help_and_support")
@@ -33,9 +37,10 @@
         </p>
     </div>
 
-    <div class="column-one-third">
-        <p>
+    <div class="govuk-grid-column-one-third">
+        <p class="govuk-body">
             <a id="covid-debt-management-for-tax-bills"
+            class="govuk-link"
             href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/coronavirus-covid-19-helpline"
             data-journey-click="link - click:Help and contact:covid help webchat tax bills" target="_blank">
             @messages("covid.debt_management_for_tax_bills")
@@ -43,14 +48,14 @@
         </p>
     </div>
 
-    <div class="column-one-third">
-        <p>
+    <div class="govuk-grid-column-one-third">
+        <p class="govuk-body">
             <a id="covid-financial-support-for-businesses"
+            class="govuk-link"
             href="https://www.gov.uk/government/collections/financial-support-for-businesses-during-coronavirus-covid-19#business-support-grant-funds"
             data-journey-click="link - click:Help and contact:covid help support businesses" target="_blank">
             @messages("covid.financial_support_for_businesses")
             </a>
         </p>
     </div>
-
 </div>

@@ -27,7 +27,7 @@ class PaymentAndPenaltiesViewSpec extends ViewBehaviours {
   val messageKeyPrefix = "payment_and_penalties"
   lazy val appConfig: FrontendAppConfig = inject[FrontendAppConfig]
 
-  def createView(hasUtr: Option[SaUtr] = None) = () => inject[payment_and_penalties].apply(frontendAppConfig, hasUtr)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView(hasUtr: Option[SaUtr] = None) = () => inject[payment_and_penalties].apply(frontendAppConfig, hasUtr)(Some(HtmlFormat.empty))(fakeRequest, messages)
 
   "Self Assessment Expenses view" must {
 

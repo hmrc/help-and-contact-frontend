@@ -20,7 +20,7 @@
 main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(
 title = messages("new.incomeFromPropertyTaxReturnTranscript.title"),
@@ -28,20 +28,20 @@ appConfig = appConfig,
 bodyClasses = None,
 serviceInfoContent = serviceInfoContent) {
 
-@components.heading("income-from-property-transcript", "new.incomeFromPropertyTaxReturnTranscript.heading", "heading-xlarge")
+@components.heading("income-from-property-transcript", "new.incomeFromPropertyTaxReturnTranscript.heading", "govuk-heading-xl")
 <div id="incomeFromPropertyTranscript-content">
 @for(i <- 1 to 5) {
-<p>@messages(s"new.incomeFromPropertyTaxReturnTranscript.paragraph$i")</p>
+<p class="govuk-body">@messages(s"new.incomeFromPropertyTaxReturnTranscript.paragraph$i")</p>
 }
 
-<ul class="list list-bullet text">
+<ul class="govuk-list govuk-list--bullet">
  @for(i <- 1 to 3) {
  <li>@messages(s"new.incomeFromPropertyTaxReturnTranscript.list$i")</li>
  }
 </ul>
 
 @for(i <- 6 to 14) {
-<p>@messages(s"new.incomeFromPropertyTaxReturnTranscript.paragraph$i")</p>
+<p class="govuk-body">@messages(s"new.incomeFromPropertyTaxReturnTranscript.paragraph$i")</p>
 }
 </div>
 }

@@ -27,7 +27,7 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
 
   val messageKeyPrefix = "helpWithYourSelfAssessmentTaxReturn"
 
-  def createView(utr: Option[SaUtr] = None) = () => inject[help_with_your_self_assessment_tax_return].apply(frontendAppConfig, utr)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView(utr: Option[SaUtr] = None) = () => inject[help_with_your_self_assessment_tax_return].apply(frontendAppConfig, utr)(Some(HtmlFormat.empty))(fakeRequest, messages)
 
   "SelfAssessmentTaxReturnCheck view" must {
     behave like normalPage(createView(), messageKeyPrefix)

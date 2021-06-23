@@ -24,7 +24,7 @@ class ExpensesViewSpec extends ViewBehaviours {
 
   val messageKeyPrefix = "expenses"
 
-  def createView = () => inject[expenses].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView = () => inject[expenses].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
 
   "Self Assessment Expenses view" must {
 

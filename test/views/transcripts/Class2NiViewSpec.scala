@@ -28,7 +28,7 @@ class Class2NiViewSpec extends ViewBehaviours {
 
   def createView: () => Html =
     () =>
-      inject[class_2_ni].apply(frontendAppConfig)(HtmlFormat.empty)(
+      inject[class_2_ni].apply(frontendAppConfig)(Some(HtmlFormat.empty))(
         fakeRequest,
         messages
     )

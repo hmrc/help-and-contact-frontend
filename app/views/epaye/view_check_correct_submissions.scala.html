@@ -20,79 +20,79 @@
   main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig, email:Option[String])(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig, email:Option[String])(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(title = messages("epaye.submissions.title"), appConfig = appConfig, bodyClasses = None, serviceInfoContent = serviceInfoContent) {
 
-<h1 id="view-check-correct-submission" class="heading-xlarge">@Messages("epaye.submissions.heading")</h1>
+<h1 id="view-check-correct-submission" class="govuk-heading-xl">@Messages("epaye.submissions.heading")</h1>
 
-<h2>@messages("epaye.submissions.when_you_can_view_")</h2>
-  <p>@messages("epaye.submissions.submissions_show_up_")</p>
-  <p>@messages("epaye.submissions.if_you_make_fps_on_time_")</p>
-  <p>
+<h2 class="govuk-heading-m">@messages("epaye.submissions.when_you_can_view_")</h2>
+  <p class="govuk-body">@messages("epaye.submissions.submissions_show_up_")</p>
+  <p class="govuk-body">@messages("epaye.submissions.if_you_make_fps_on_time_")</p>
+  <p class="govuk-body">
       @messages("epaye.submissions.if_you_make_fps_late_")
-      <a id="payroll-guide" href="@appConfig.getGovUrl("payrollGuide")" data-journey-click="link - click:View, check or correct your submissions:GOV.UK guide on payroll"
+      <a class="govuk-link" id="payroll-guide" href="@appConfig.getGovUrl("payrollGuide")" data-journey-click="link - click:View, check or correct your submissions:GOV.UK guide on payroll"
           target="_blank" rel="external noopener">
         @messages("epaye.submissions.gov_uk_guide_on_payroll")</a>.
   </p>
-  <p>@messages("epaye.submissions.eps_between_20th_and_5th_")</p>
-  <p>@messages("epaye.submissions.eps_between_6th_and_19th_")</p>
+  <p class="govuk-body">@messages("epaye.submissions.eps_between_20th_and_5th_")</p>
+  <p class="govuk-body">@messages("epaye.submissions.eps_between_6th_and_19th_")</p>
 
-<h2>@messages("epaye.submissions.your_payments_to_hmrc")</h2>
-  <p>@messages("epaye.submissions.payments_you_made_")</p>
+<h2 class="govuk-heading-m">@messages("epaye.submissions.your_payments_to_hmrc")</h2>
+  <p class="govuk-body">@messages("epaye.submissions.payments_you_made_")</p>
 
-<h2>@messages("epaye.submissions.check_your_paye_submissions")</h2>
-  <h3>@messages("epaye.submissions.email_confirmations")</h3>
+<h2 class="govuk-heading-m">@messages("epaye.submissions.check_your_paye_submissions")</h2>
+  <h3 class="govuk-heading-s">@messages("epaye.submissions.email_confirmations")</h3>
     @if(email.isDefined) {
-      <p>@messages("epaye.submissions.we_send_an_email_")</p>
-      <p>@messages("epaye.submissions.your_government_gateway_email_", email.getOrElse(messages("epaye.submissions.not_specified")) )</p>
-      <a id="change-address" href="@appConfig.getBusinessAccountUrl("changeEmail")" data-journey-click="link - click:View, check or correct your submissions:Change this address">
+      <p class="govuk-body">@messages("epaye.submissions.we_send_an_email_")</p>
+      <p class="govuk-body">@messages("epaye.submissions.your_government_gateway_email_", email.getOrElse(messages("epaye.submissions.not_specified")) )</p>
+      <a class="govuk-link" id="change-address" href="@appConfig.getBusinessAccountUrl("changeEmail")" data-journey-click="link - click:View, check or correct your submissions:Change this address">
         @messages("epaye.submissions.change_address_link")</a>
     } else {
-      <p>
+      <p class="govuk-body">
         @messages("epaye.submissions.we_can_send_")
-        <a id="add-email" href="@appConfig.getBusinessAccountUrl("changeEmail")" data-journey-click="link - click:View check or correct your submissions:add an email">
+        <a class="govuk-link" id="add-email" href="@appConfig.getBusinessAccountUrl("changeEmail")" data-journey-click="link - click:View check or correct your submissions:add an email">
           @messages("epaye.submissions.add_an_email")</a>
         @messages("epaye.submissions.to_your_government_gateway_account")
       </p>
     }
-  <h3>@messages("epaye.submissions.payroll_software_confirmations")</h3>
-    <p>@messages("epaye.submissions.you_can_also_check_")</p>
-    <p>@messages("epaye.submissions.to_check_if_hmrc_received_")</p>
-    <p>
+  <h3 class="govuk-heading-s govuk-!-padding-top-5">@messages("epaye.submissions.payroll_software_confirmations")</h3>
+    <p class="govuk-body">@messages("epaye.submissions.you_can_also_check_")</p>
+    <p class="govuk-body">@messages("epaye.submissions.to_check_if_hmrc_received_")</p>
+    <p class="govuk-body">
       @messages("epaye.submissions.to_view_a_specific_submission_")
-      <a id="view-user-guide" href="@appConfig.getGovUrl("bptGuide")" data-journey-click="link - click:View check or correct your submissions:view user guide"
+      <a class="govuk-link" id="view-user-guide" href="@appConfig.getGovUrl("bptGuide")" data-journey-click="link - click:View check or correct your submissions:view user guide"
         target="_blank" rel="external noopener">
         @messages("epaye.submissions.user_guide")</a>@messages("epaye.submissions.but_select_")
     </p>
-    <p>@messages("epaye.submissions.contact_your_software_provider_")</p>
+    <p class="govuk-body">@messages("epaye.submissions.contact_your_software_provider_")</p>
 
-<h2>@messages("epaye.submissions.correct_a_paye_submission")</h2>
-  <p>@messages("epaye.submissions.you_must_use_your_payroll_software_")</p>
+<h2 class="govuk-heading-m">@messages("epaye.submissions.correct_a_paye_submission")</h2>
+  <p class="govuk-body">@messages("epaye.submissions.you_must_use_your_payroll_software_")</p>
 
-  <h3>@messages("epaye.submissions.submissions_for_the_current_tax_year")</h3>
-    <p>@messages("epaye.submissions.you_can_make_changes_")</p>
-    <p>@messages("epaye.submissions.follow_the")
-      <a id="correct-user-guide" href="@appConfig.getGovUrl("bptGuide")" data-journey-click="link - click:View check or correct your submissions:correct user guide"
+  <h3 class="govuk-heading-s">@messages("epaye.submissions.submissions_for_the_current_tax_year")</h3>
+    <p class="govuk-body">@messages("epaye.submissions.you_can_make_changes_")</p>
+    <p class="govuk-body">@messages("epaye.submissions.follow_the")
+      <a class="govuk-link" id="correct-user-guide" href="@appConfig.getGovUrl("bptGuide")" data-journey-click="link - click:View check or correct your submissions:correct user guide"
           target="_blank" rel="external noopener">
         @messages("epaye.submissions.user_guide")</a>
       @messages("epaye.submissions.if_you_use_")
     </p>
-    <p>@messages("epaye.submissions.contact_your_software_provider_")</p>
+    <p class="govuk-body">@messages("epaye.submissions.contact_your_software_provider_")</p>
 
-  <h3>@messages("epaye.submissions.submissions_from_an_earlier_tax_year")</h3>
-    <p>@messages("epaye.submissions.if_you_spot_an_error_")</p>
-    <p>
+  <h3 class="govuk-heading-s">@messages("epaye.submissions.submissions_from_an_earlier_tax_year")</h3>
+    <p class="govuk-body">@messages("epaye.submissions.if_you_spot_an_error_")</p>
+    <p class="govuk-body">
       @messages("epaye.submissions.you_can")
-      <a id="submit-earlier-year-update" href="@appConfig.getGovUrl("submitEarlierYearUpdate")" data-journey-click="link - click:View check or correct your submissions:submit an Earlier Year Update using Basic PAYE Tools"
+      <a class="govuk-link" id="submit-earlier-year-update" href="@appConfig.getGovUrl("submitEarlierYearUpdate")" data-journey-click="link - click:View check or correct your submissions:submit an Earlier Year Update using Basic PAYE Tools"
           target="_blank" rel="external noopener">
         @messages("epaye.submissions.submit_an_earlier_year_update_")</a>
       @messages("epaye.submissions.if_you_use_bpt_")
     </p>
-    <p>@messages("epaye.submissions.if_you_use_commercial_software_")</p>
-    <p>
+    <p class="govuk-body">@messages("epaye.submissions.if_you_use_commercial_software_")</p>
+    <p class="govuk-body">
       @messages("epaye.submissions.if_your_software_does_not_offer_")
-      <a id="install-bpt" href="@appConfig.getGovUrl("installBPT")" data-journey-click="link - click:View check or correct your submissions:install BPT to submit an Earlier Year Update"
+      <a class="govuk-link" id="install-bpt" href="@appConfig.getGovUrl("installBPT")" data-journey-click="link - click:View check or correct your submissions:install BPT to submit an Earlier Year Update"
           target="_blank" rel="external noopener">
         @messages("epaye.submissions.install_bpt_")</a>.
     </p>

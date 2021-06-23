@@ -16,261 +16,303 @@
 
 @import config.FrontendAppConfig
 @import models.HelpCategory._
+@import uk.gov.hmrc.govukfrontend.views.html.components._
 
 @this(
   main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(
   title = messages("help_and_contact.title"),
   appConfig = appConfig,
-  bodyClasses = Some("help-and-contact-homepage"),
+  fullWidth = true,
   serviceInfoContent = serviceInfoContent) {
 
-  <h1 id="help-and-contact">@Messages("help_and_contact.heading")</h1>
+  <h1 class="govuk-heading-xl" id="help-and-contact">@Messages("help_and_contact.heading")</h1>
 
   @covid(appConfig)
 
-<div class="divider--top margin-top-large "><h2 class="padding-top-medium">@Messages("help_and_contact.self_assessment")</h2></div>
-
-  <div class="grid-row">
-    <div class="column-one-third">
-      <p>
-        <a id="register-or-stopping-self-assessment"
-          href="@controllers.routes.HelpAndContactController.onPageLoad(SelfAssessment, "register-or-stopping")"
-          data-journey-click="link - click:Help and contact:Register or stopping Self Assessment">
-            @messages("register_or_stopping.help_page")
-        </a>
-      </p>
-    </div>
-    <div class="column-one-third">
-      <p>
-        <a id="payment-and-penalties-self-assessment"
-          href="@controllers.routes.HelpAndContactController.onPageLoad(SelfAssessment, "payment-and-penalties")"
-          data-journey-click="link - click:Help and contact:Payment and Penalties">
-            @messages("payment_and_penalties.help_page")
-        </a>
-      </p>
-    </div>
-    <div class="column-one-third">
-      <p>
-        <a id="expenses"
-           href="@controllers.routes.HelpAndContactController.onPageLoad(SelfAssessment, "expenses")"
-           data-journey-click="link - click:Help and contact:Expenses">
-            @messages("sa.expenses.title")
-        </a>
-      </p>
-    </div>
-  </div>
-  <div class="grid-row">
-    <div class="column-one-third">
-      <p>
-        <a id="evidence-of-income"
-           href="@controllers.routes.HelpAndContactController.onPageLoad(SelfAssessment, "evidence-of-income")"
-           data-journey-click="link - click:Help and contact:Get evidence of your income (SA302)">
-            @messages("sa.evidence.heading")
-        </a>
-      </p>
-    </div>
-    <div class="column-one-third">
-      <p>
-        <a id="help-with-sa-return"
-           href="@controllers.routes.HelpAndContactController.onPageLoad(SelfAssessment, "help-with-return")"
-           data-journey-click="link - click:Help and contact:Help with your Self Assessment return">
-            @messages("helpWithYourSelfAssessmentTaxReturn.heading")
-        </a>
-      </p>
-    </div>
-    <div class="column-one-third">
-      <p>
-        <a id="contact-about-self-assessment"
-           href="@appConfig.getGovUrl("addressForSaEnquiries")"
-           data-journey-click="link - click:Help and contact:Contact HMRC about Self Assessment">
-            @messages("sa.contact_hmrc.heading")
-        </a>
-      </p>
-    </div>
-  </div>
-
-<div class="divider--top margin-top-large"><h2 class="padding-top-medium">@Messages("help_and_contact.vat")</h2></div>
-
-  <div class="grid-row">
-    <div class="column-one-third">
-      <p>
-        <a id="register-deregister-vat"
-           href="@controllers.routes.HelpAndContactController.onPageLoad(VAT, "register-or-deregister")"
-           data-journey-click="link - click:Help and contact:Register or deregister for VAT">
-            @messages("vat.register_or_deregister.heading")
-        </a>
-      </p>
-    </div>
-    <div class="column-one-third">
-      <p>
-        <a id="how-to-pay-vat"
-           href="@controllers.routes.HelpAndContactController.onPageLoad(VAT, "how-to-pay")"
-           data-journey-click="link - click:Help and contact:How to pay VAT and deadlines">
-            @messages("vat.payments_and_deadlines.heading")
-        </a>
-      </p>
-    </div>
-    <div class="column-one-third">
-      <p>
-        <a id="contact-about-vat"
-           href=@appConfig.getGovUrl("callUs")
-           data-journey-click="link - click:Help and contact:Contact HMRC about VAT">
-            @messages("vat.questions_about_vat.heading")
-        </a>
-      </p>
-    </div>
-  </div>
-
-<div class="grid-row">
-  <div class="column-one-third">
-    <p>
-      <a id="correct-a-mistake"
-         href="@appConfig.getGovUrl("vatCorrections")"
-      data-journey-click="link - click:Help and contact:Correct errors on your VAT returns">@messages("vat.correct_a_mistake")
-      </a>
-    </p>
-  </div>
+<div>
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-width-full">
+    <h2 class="govuk-heading-m">@Messages("help_and_contact.self_assessment")
+    </h2>
 </div>
 
-<div class="divider--top margin-top-large"> <h2 class="padding-top-medium">@Messages("help_and_contact.making_tax_digital")</h2></div>
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="register-or-stopping-self-assessment"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(SelfAssessment, "register-or-stopping")"
+                data-journey-click="link - click:Help and contact:Register or stopping Self Assessment">
+                @messages("register_or_stopping.help_page")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="payment-and-penalties-self-assessment"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(SelfAssessment, "payment-and-penalties")"
+                data-journey-click="link - click:Help and contact:Payment and Penalties">
+                @messages("payment_and_penalties.help_page")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="expenses"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(SelfAssessment, "expenses")"
+                data-journey-click="link - click:Help and contact:Expenses">
+                @messages("sa.expenses.title")
+                </a>
+            </p>
+        </div>
+    </div>
 
-  <div class="grid-row">
-    <div class="column-one-third">
-      <p>
-        <a id="sing-up-for-mtd"
-           href="@appConfig.getGovUrl("signUpForMTD")"
-        data-journey-click="link - click:Help and contact:Sign up for Making Tax Digital for VAT">
-        @messages("help_and_contact.sign_up.making_tax_digital")
-        </a>
-      </p>
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="evidence-of-income"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(SelfAssessment, "evidence-of-income")"
+                data-journey-click="link - click:Help and contact:Get evidence of your income (SA302)">
+                @messages("sa.evidence.heading")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="help-with-sa-return"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(SelfAssessment, "help-with-return")"
+                data-journey-click="link - click:Help and contact:Help with your Self Assessment return">
+                @messages("helpWithYourSelfAssessmentTaxReturn.heading")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="contact-about-self-assessment"
+                class="govuk-link"
+                href="@appConfig.getGovUrl("addressForSaEnquiries")"
+                data-journey-click="link - click:Help and contact:Contact HMRC about Self Assessment">
+                @messages("sa.contact_hmrc.heading")
+                </a>
+            </p>
+        </div>
     </div>
-    <div class="column-one-third">
-      <p>
-        <a id="mtd-tax-webniar"
-           href="@appConfig.getGovUrl("webinarsForMTD")"
-        data-journey-click="link - click:Help and contact:Making Tax Digital for VAT Webinars">
-        @messages("help_and_contact.making_tax_digital_webinar")
-        </a>
-      </p>
-    </div>
-    <div class="column-one-third">
-      <p>
-        <a id="contact-about-mtd"
-           href="@appConfig.getGovUrl("contactHMRCAboutMTD")"
-        data-journey-click="link - click:Help and contact:Contact HMRC about Making Tax Digital for VAT">
-        @messages("help_and_contact.contact_hmrc_about_mtd")
-        </a>
-      </p>
-    </div>
-  </div>
 
-<div class="divider--top margin-top-large"> <h2 class="padding-top-medium">@Messages("help_and_contact.corporation_tax")</h2></div>
+<div>
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h2 class="govuk-heading-m">@Messages("help_and_contact.vat")</h2>
+</div>
 
-  <div class="grid-row">
-    <div class="column-one-third">
-      <p>
-        <a id="register-or-tell-no-longer-trading-corporation-tax"
-           href="@controllers.routes.HelpAndContactController.onPageLoad(CorporationTax, "register-or-tell-hmrc-you-are-no-longer-trading")"
-           data-journey-click="link - click:Help and contact:Register for Corporation Tax or tell HMRC you are no longer trading">
-            @messages("ct.register_deregister.heading")
-        </a>
-      </p>
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="register-deregister-vat"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(VAT, "register-or-deregister")"
+                data-journey-click="link - click:Help and contact:Register or deregister for VAT">
+                @messages("vat.register_or_deregister.heading")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="how-to-pay-vat"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(VAT, "how-to-pay")"
+                data-journey-click="link - click:Help and contact:How to pay VAT and deadlines">
+                @messages("vat.payments_and_deadlines.heading")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="contact-about-vat"
+                class="govuk-link"
+                href=@appConfig.getGovUrl("callUs")
+                data-journey-click="link - click:Help and contact:Contact HMRC about VAT">
+                @messages("vat.questions_about_vat.heading")
+                </a>
+            </p>
+        </div>
     </div>
-    <div class="column-one-third">
-      <p>
-        <a id="how-to-pay-corporation-tax"
-           href="@controllers.routes.HelpAndContactController.onPageLoad(CorporationTax, "how-to-pay")"
-           data-journey-click="link - click:Help and contact:How to pay your Corporation Tax">
-            @messages("ct.how_to_pay.heading")
-        </a>
-      </p>
-    </div>
-    <div class="column-one-third">
-      <p>
-        <a id="contact-about-corporation-tax"
-          href="@controllers.routes.HelpAndContactController.onPageLoad(CorporationTax, "contact-hmrc")"
-          data-journey-click="link - click:Help and contact:Contact HMRC about Corporation Tax">
-          @messages("ct.contact_hmrc.heading")
-        </a>
-      </p>
-    </div>
-  </div>
-  <div class="grid-row">
-    <div class="column-one-third">
-      <p>
-        <a id="ask-for-ct-utr"
-          href="@appConfig.requestCorporationTaxUTR"
-          data-journey-click="link - click:Help and contact:Ask for a copy of your Corporation Tax UTR" target="_blank" rel="external noopener">
-          @messages("ct.ask_for_a_copy_")
-        </a>
-      </p>
-    </div>
-  </div>
 
-<div class="divider--top margin-top-large"><h2 class="padding-top-medium">@Messages("help_and_contact.paye_for_employers")</h2></div>
-
-  <div class="grid-row">
-    <div class="column-one-third">
-      <p>
-        <a id="get-started"
-           href="@controllers.routes.HelpAndContactController.onPageLoad(Epaye, "get-started")"
-           data-journey-click="link - click:Help and contact:Get started with EPAYE">
-            @messages("epaye.get_started")
-        </a>
-      </p>
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="correct-a-mistake"
+                class="govuk-link"
+                href="@appConfig.getGovUrl("vatCorrections")"
+                data-journey-click="link - click:Help and contact:Correct errors on your VAT returns">@messages("vat.correct_a_mistake")
+                </a>
+            </p>
+        </div>
     </div>
-      <div class="column-one-third">
-          <p>
-              <a id="paye-and-cis-refunds"
-                 href="@controllers.routes.HelpAndContactController.onPageLoad(Epaye, "refunds")"
-              data-journey-click="link - click:Help and contact:PAYE refunds and Construction Industry Scheme (CIS) refunds">
-              @messages("epaye.paye_and_cis_refunds.heading")
-              </a>
-          </p>
-      </div>
-      <div class="column-one-third">
-          <p>
-              <a id="contact-about-epaye"
-                 href=@appConfig.getGovUrl("payeEmployerEnquiries")
-              data-journey-click="link - click:Help and contact:Contact HMRC about PAYE">
-              @messages("epaye.contact_hmrc.heading")
-              </a>
-          </p>
-      </div>
-  </div>
-  <div class="grid-row">
-      <div class="column-one-third">
-          <p>
-              <a id="view-check-or-correct-epaye"
-                 href="@controllers.routes.HelpAndContactController.onPageLoad(Epaye, "view-check-correct-submissions")"
-              data-journey-click="link - click:Help and contact:View, check or correct your submissions">
-              @messages("epaye.submissions.heading")
-              </a>
-          </p>
-      </div>
-    <div class="column-one-third">
-        <p>
-          <a id="contact-about-employee-change"
-             href="@controllers.routes.HelpAndContactController.onPageLoad(Epaye, "change-employee-circumstances")"
-          data-journey-click="link - click:Help and contact:Change employee circumstances">
-             @messages("epaye.change.emplyee_circumstances")
-          </a>
-        </p>
-    </div>
-      <div class="column-one-third">
-          <p>
-              <a id="remove-epaye"
-                 href="@controllers.routes.HelpAndContactController.onPageLoad(Epaye, "remove")"
-              data-journey-click="link - click:Help and contact:Remove EPAYE">
-              @messages("epaye.remove")
-              </a>
-          </p>
-      </div>
-  </div>
 
+<div>
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h2 class="govuk-heading-m">@Messages("help_and_contact.making_tax_digital")</h2>
+</div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="sing-up-for-mtd"
+                class="govuk-link"
+                href="@appConfig.getGovUrl("signUpForMTD")"
+                data-journey-click="link - click:Help and contact:Sign up for Making Tax Digital for VAT">
+                @messages("help_and_contact.sign_up.making_tax_digital")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="mtd-tax-webniar"
+                class="govuk-link"
+                href="@appConfig.getGovUrl("webinarsForMTD")"
+                data-journey-click="link - click:Help and contact:Making Tax Digital for VAT Webinars">
+                @messages("help_and_contact.making_tax_digital_webinar")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="contact-about-mtd"
+                class="govuk-link"
+                href="@appConfig.getGovUrl("contactHMRCAboutMTD")"
+                data-journey-click="link - click:Help and contact:Contact HMRC about Making Tax Digital for VAT">
+                @messages("help_and_contact.contact_hmrc_about_mtd")
+                </a>
+            </p>
+        </div>
+    </div>
+
+<div>
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h2 class="govuk-heading-m">@Messages("help_and_contact.corporation_tax")</h2>
+</div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="register-or-tell-no-longer-trading-corporation-tax"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(CorporationTax, "register-or-tell-hmrc-you-are-no-longer-trading")"
+                data-journey-click="link - click:Help and contact:Register for Corporation Tax or tell HMRC you are no longer trading">
+                @messages("ct.register_deregister.heading")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="how-to-pay-corporation-tax"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(CorporationTax, "how-to-pay")"
+                data-journey-click="link - click:Help and contact:How to pay your Corporation Tax">
+                @messages("ct.how_to_pay.heading")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="contact-about-corporation-tax"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(CorporationTax, "contact-hmrc")"
+                data-journey-click="link - click:Help and contact:Contact HMRC about Corporation Tax">
+                @messages("ct.contact_hmrc.heading")
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="ask-for-ct-utr"
+                class="govuk-link"
+                href="@appConfig.requestCorporationTaxUTR"
+                data-journey-click="link - click:Help and contact:Ask for a copy of your Corporation Tax UTR" target="_blank" rel="external noopener">
+                @messages("ct.ask_for_a_copy_")
+                </a>
+            </p>
+        </div>
+    </div>
+
+<div>
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h2 class="govuk-heading-m">@Messages("help_and_contact.paye_for_employers")</h2>
+</div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="get-started"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(Epaye, "get-started")"
+                data-journey-click="link - click:Help and contact:Get started with EPAYE">
+                @messages("epaye.get_started")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="paye-and-cis-refunds"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(Epaye, "refunds")"
+                data-journey-click="link - click:Help and contact:PAYE refunds and Construction Industry Scheme (CIS) refunds">
+                @messages("epaye.paye_and_cis_refunds.heading")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="contact-about-epaye"
+                class="govuk-link"
+                href=@appConfig.getGovUrl("payeEmployerEnquiries")
+                data-journey-click="link - click:Help and contact:Contact HMRC about PAYE">
+                @messages("epaye.contact_hmrc.heading")
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="view-check-or-correct-epaye"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(Epaye, "view-check-correct-submissions")"
+                data-journey-click="link - click:Help and contact:View, check or correct your submissions">
+                @messages("epaye.submissions.heading")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="contact-about-employee-change"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(Epaye, "change-employee-circumstances")"
+                data-journey-click="link - click:Help and contact:Change employee circumstances">
+                @messages("epaye.change.emplyee_circumstances")
+                </a>
+            </p>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <p class="govuk-body">
+                <a id="remove-epaye"
+                class="govuk-link"
+                href="@controllers.routes.HelpAndContactController.onPageLoad(Epaye, "remove")"
+                data-journey-click="link - click:Help and contact:Remove EPAYE">
+                @messages("epaye.remove")
+                </a>
+            </p>
+        </div>
+    </div>
 }

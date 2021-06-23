@@ -20,7 +20,7 @@
   main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(
     title = messages("payingYourSelfAssessmentTaxBillTranscript.title"),
@@ -28,35 +28,35 @@
     bodyClasses = None,
     serviceInfoContent = serviceInfoContent) {
 
-    @components.heading("paying-sa-tax-bill-transcript", "payingYourSelfAssessmentTaxBillTranscript.heading", "heading-xlarge")
+    @components.heading("paying-sa-tax-bill-transcript", "payingYourSelfAssessmentTaxBillTranscript.heading", "govuk-heading-xl")
 
 
-    <p>@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph1")</p>
-    <p>@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph2")</p>
+    <p class="govuk-body">@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph1")</p>
+    <p class="govuk-body">@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph2")</p>
 
-    <ul class="list list-bullet">
+    <ul class="govuk-list govuk-list--bullet">
       <li>@messages("payingYourSelfAssessmentTaxBillTranscript.list1.bullet1")</li>
       <li>@messages("payingYourSelfAssessmentTaxBillTranscript.list1.bullet2")</li>
     </ul>
 
-    <p>@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph3")</p>
-    <p>@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph4")</p>
+    <p class="govuk-body">@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph3")</p>
+    <p class="govuk-body">@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph4")</p>
 
-    <ul class="list list-bullet">
+    <ul class="govuk-list govuk-list--bullet">
       <li>@messages("payingYourSelfAssessmentTaxBillTranscript.list2.bullet1")</li>
       <li>@messages("payingYourSelfAssessmentTaxBillTranscript.list2.bullet2")</li>
       <li>@messages("payingYourSelfAssessmentTaxBillTranscript.list2.bullet3")</li>
       <li>@messages("payingYourSelfAssessmentTaxBillTranscript.list2.bullet4")</li>
     </ul>
 
-    <p>@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph5")</p>
+    <p class="govuk-body">@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph5")</p>
 
-    <ul class="list list-bullet">
+    <ul class="govuk-list govuk-list--bullet">
       <li>@messages("payingYourSelfAssessmentTaxBillTranscript.list3.bullet1")</li>
       <li>@messages("payingYourSelfAssessmentTaxBillTranscript.list3.bullet2")</li>
       <li>@messages("payingYourSelfAssessmentTaxBillTranscript.list3.bullet3")</li>
     </ul>
 
-    <p>@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph6")</p>
-    <p>@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph7")</p>
+    <p class="govuk-body">@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph6")</p>
+    <p class="govuk-body">@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph7")</p>
 }

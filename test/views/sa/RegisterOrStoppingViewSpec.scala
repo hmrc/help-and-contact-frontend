@@ -24,7 +24,7 @@ class RegisterOrStoppingViewSpec extends ViewBehaviours {
 
   val messageKeyPrefix = "register_or_stopping"
 
-  def createView = () => inject[register_or_stopping].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView = () => inject[register_or_stopping].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
 
   "Self Assessment Expenses view" must {
 

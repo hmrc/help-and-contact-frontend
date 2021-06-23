@@ -1,4 +1,4 @@
-/*
+@*
  * Copyright 2021 HM Revenue & Customs
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,10 +12,12 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *@
 
-package connectors.models
+@(content: Html,
+  includeGridWrapper: Boolean = false,
+  articleClasses: Option[String] = None)
 
-import uk.gov.hmrc.http.HttpResponse
-
-case class MicroServiceException(message: String, response: HttpResponse) extends Exception(message)
+<article class="content__body@if( includeGridWrapper ){ grid-wrapper}@if(articleClasses.isDefined){ @articleClasses.get }">
+    @content
+</article>

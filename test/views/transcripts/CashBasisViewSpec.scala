@@ -28,7 +28,7 @@ class CashBasisViewSpec extends ViewBehaviours {
 
   def createView: () => Html =
     () =>
-      inject[cash_basis].apply(frontendAppConfig)(HtmlFormat.empty)(
+      inject[cash_basis].apply(frontendAppConfig)(Some(HtmlFormat.empty))(
         fakeRequest,
         messages
     )

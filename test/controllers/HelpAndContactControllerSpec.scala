@@ -44,7 +44,7 @@ class HelpAndContactControllerSpec extends ControllerSpecBase with MockitoSugar 
 
 
   def fakeServiceInfoRequest(utr: Option[SaUtr] = None): ServiceInfoRequest[AnyContentAsEmpty.type] =
-    ServiceInfoRequest[AnyContentAsEmpty.type](AuthenticatedRequest(FakeRequest("", ""), utr, Some("user@example.com")), HtmlFormat.empty)
+    ServiceInfoRequest[AnyContentAsEmpty.type](AuthenticatedRequest(FakeRequest("", ""), utr, Some("user@example.com")), Some(HtmlFormat.empty))
 
   def pageRedirect(helpCategory: HelpCategory, page: String, destinationUrl: String)  =
     "HelpAndContactController onPageLoad" must {
@@ -101,7 +101,7 @@ class HelpAndContactControllerSpec extends ControllerSpecBase with MockitoSugar 
       val result = SUT.mainPage().apply(fakeRequest)
       status(result) mustBe OK
       contentAsString(result) mustBe inject[help_and_contact]
-        .apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+        .apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
         .toString()
     }
   }
@@ -109,34 +109,34 @@ class HelpAndContactControllerSpec extends ControllerSpecBase with MockitoSugar 
   behave like pageRouter(
     HelpCategory.VAT,
     "how-to-pay",
-    () => inject[payments_and_deadlines].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+    () => inject[payments_and_deadlines].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
   )
 
   behave like pageRouter(
     HelpCategory.VAT,
     "register-or-deregister",
-    () => inject[register_or_deregister].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+    () => inject[register_or_deregister].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
   )
 
 
   behave like pageRouterWithEnrolments(
     HelpCategory.SelfAssessment,
     "payment-and-penalties",
-    () => inject[payment_and_penalties].apply(frontendAppConfig, Some(SaUtr("abcdefgh")))(HtmlFormat.empty)(fakeServiceInfoRequest(None), messages),
+    () => inject[payment_and_penalties].apply(frontendAppConfig, Some(SaUtr("abcdefgh")))(Some(HtmlFormat.empty))(fakeServiceInfoRequest(None), messages),
     fakeServiceInfoRequest(None)
   )
 
   behave like pageRouter(
     HelpCategory.SelfAssessment,
     "register-or-stopping",
-    () => inject[register_or_stopping].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+    () => inject[register_or_stopping].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
   )
 
   behave like pageRouter(
     HelpCategory.SelfAssessment,
     "help-with-return",
     () =>
-      inject[help_with_your_self_assessment_tax_return].apply(frontendAppConfig, Some(SaUtr("abcdefgh")))(HtmlFormat.empty)(fakeRequest, messages)
+      inject[help_with_your_self_assessment_tax_return].apply(frontendAppConfig, Some(SaUtr("abcdefgh")))(Some(HtmlFormat.empty))(fakeRequest, messages)
   )
 
   behave like pageRedirectWithEnrolments(
@@ -148,21 +148,21 @@ class HelpAndContactControllerSpec extends ControllerSpecBase with MockitoSugar 
   behave like pageRouter(
     HelpCategory.SelfAssessment,
     "expenses",
-    () => inject[expenses].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+    () => inject[expenses].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
   )
 
 
   behave like pageRouter(
     HelpCategory.CorporationTax,
     "contact-hmrc",
-    () => inject[contact_hmrc_about_ct].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+    () => inject[contact_hmrc_about_ct].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
   )
 
   behave like pageRouter(
     HelpCategory.CorporationTax,
     "how-to-pay",
     () =>
-      inject[how_to_pay_corporation_tax].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+      inject[how_to_pay_corporation_tax].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
   )
 
   behave like pageRouter(
@@ -170,13 +170,13 @@ class HelpAndContactControllerSpec extends ControllerSpecBase with MockitoSugar 
     "register-or-tell-hmrc-you-are-no-longer-trading",
     () =>
       inject[register_or_deregister_corporation_tax]
-        .apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+        .apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
   )
 
   behave like pageRouter(
     HelpCategory.Epaye,
     "refunds",
-    () => inject[paye_and_cis_refunds].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+    () => inject[paye_and_cis_refunds].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
   )
 
   behave like pageRouter(
@@ -184,7 +184,7 @@ class HelpAndContactControllerSpec extends ControllerSpecBase with MockitoSugar 
     "view-check-correct-submissions",
     () =>
       inject[view_check_correct_submissions]
-        .apply(frontendAppConfig, Some("user@example.com"))(HtmlFormat.empty)(fakeRequest, messages)
+        .apply(frontendAppConfig, Some("user@example.com"))(Some(HtmlFormat.empty))(fakeRequest, messages)
   )
 
   behave like pageRedirect(
@@ -225,7 +225,7 @@ class HelpAndContactControllerSpec extends ControllerSpecBase with MockitoSugar 
         "evidence-of-income",
         () =>
           inject[sa_evidence].apply(frontendAppConfig, true, "http://localhost:9020/business-account/self-assessment")(
-            HtmlFormat.empty
+            Some(HtmlFormat.empty)
           )(fakeServiceInfoRequest(testUtr), messages),
         fakeServiceInfoRequest(testUtr)
       )

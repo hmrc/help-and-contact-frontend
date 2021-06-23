@@ -20,36 +20,34 @@
   main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(title = messages("epaye.paye_and_cis_refunds.title"), appConfig = appConfig, bodyClasses = None, serviceInfoContent = serviceInfoContent) {
 
-  <h1 id="paye-and-cis-refunds" class="heading-xlarge">@Messages("epaye.paye_and_cis_refunds.heading")</h1>
+  <h1 id="paye-and-cis-refunds" class="govuk-heading-xl">@Messages("epaye.paye_and_cis_refunds.heading")</h1>
 
-  <h2 class="margin-top-xlarge">@Messages("epaye.paye_and_cis_refunds.paye_refunds")</h2>
-  <p>@Messages("epaye.paye_and_cis_refunds.if_hmrc_owes_you_money_for_employers_paye_")</p>
-  <p>@Messages("epaye.paye_and_cis_refunds.you_do_not_need_to_tell_hmrc")</p>
-  <p>@Messages("epaye.paye_and_cis_refunds.if_the_refund_is_because_you_made_a_mistake_")</p>
+  <h2 class="govuk-heading-m">@Messages("epaye.paye_and_cis_refunds.paye_refunds")</h2>
+  <p class="govuk-body">@Messages("epaye.paye_and_cis_refunds.if_hmrc_owes_you_money_for_employers_paye_")</p>
+  <p class="govuk-body">@Messages("epaye.paye_and_cis_refunds.you_do_not_need_to_tell_hmrc")</p>
+  <p class="govuk-body">@Messages("epaye.paye_and_cis_refunds.if_the_refund_is_because_you_made_a_mistake_")</p>
 
-  <h2 class="margin-top-xlarge">@Messages("epaye.paye_and_cis_refunds.apply_for_a_refund_by_post")</h2>
-  <p>@Messages("epaye.paye_and_cis_refunds.you_can_also_request_a_refund_by_post")</p>
-  <p>@Messages("epaye.paye_and_cis_refunds.it_takes_several_months_for_hmrc_to_process_")</p>
-  <p>@Messages("epaye.paye_and_cis_refunds.you_will_only_get_a_refund_if_you_do_not_owe")</p>
-  <p>@Messages("epaye.paye_and_cis_refunds.write_to_the_following_address_including_details_")</p>
-  <address class="address">
-    <p>
-      <span class="address-line">@Messages("epaye.paye_and_cis_refunds.national_insurance_contributions_")</span>
-      <span class="address-line">@Messages("epaye.paye_and_cis_refunds.hm_revenue_and_customs")</span>
-      <span class="address-line">@Messages("epaye.paye_and_cis_refunds.bx9_1bx")</span>
-      <span class="address-line">@Messages("epaye.paye_and_cis_refunds.united_kingdom")</span>
-    </p>
-  </address>
-  <p><a id="more-about-refunds" href="@appConfig.getGovUrl("epayeMoreAboutRefunds")" target="_blank"rel="external noopener" data-journey-click="link - click:PAYE refunds and Construction Industry Scheme (CIS) refunds:More about refunds">@Messages("epaye.paye_and_cis_refunds.more_about_refunds")</a></p>
+  <h2 class="govuk-heading-m">@Messages("epaye.paye_and_cis_refunds.apply_for_a_refund_by_post")</h2>
+  <p class="govuk-body">@Messages("epaye.paye_and_cis_refunds.you_can_also_request_a_refund_by_post")</p>
+  <p class="govuk-body">@Messages("epaye.paye_and_cis_refunds.it_takes_several_months_for_hmrc_to_process_")</p>
+  <p class="govuk-body">@Messages("epaye.paye_and_cis_refunds.you_will_only_get_a_refund_if_you_do_not_owe")</p>
+  <p class="govuk-body">@Messages("epaye.paye_and_cis_refunds.write_to_the_following_address_including_details_")</p>
+    <ul class="govuk-list">
+        <li>@Messages("epaye.paye_and_cis_refunds.national_insurance_contributions_")</li>
+        <li>@Messages("epaye.paye_and_cis_refunds.hm_revenue_and_customs")</li>
+        <li>@Messages("epaye.paye_and_cis_refunds.bx9_1bx")</li>
+        <li>@Messages("epaye.paye_and_cis_refunds.united_kingdom")</li>
+    </ul>
+  <p class="govuk-body"><a class="govuk-link" id="more-about-refunds" href="@appConfig.getGovUrl("epayeMoreAboutRefunds")" target="_blank"rel="external noopener" data-journey-click="link - click:PAYE refunds and Construction Industry Scheme (CIS) refunds:More about refunds">@Messages("epaye.paye_and_cis_refunds.more_about_refunds")</a></p>
 
-  <h2 class="margin-top-xlarge">@Messages("epaye.paye_and_cis_refunds.cis_refunds")</h2>
-  <p>@Messages("epaye.paye_and_cis_refunds.if_you_are_a_limited_company_that_acts_as_a_subcontractor_")</p>
-  <p>@Messages("epaye.paye_and_cis_refunds.we_aim_to_process_repayments_within_25_working_days_")</p>
-  <p>@Messages("epaye.paye_and_cis_refunds.do_not_call_unless_it_has_been_more_than_")</p>
-  <p><a id="how-to-claim-cis" href="@appConfig.getGovUrl("epayeClaimCisRefund")" target="_blank" rel="external noopener" data-journey-click="link - click:PAYE refunds and Construction Industry Scheme (CIS) refunds:How to claim a CIS refund">@Messages("epaye.paye_and_cis_refunds.how_to_claim_cis_refund")</a></p>
+  <h2 class="govuk-heading-m">@Messages("epaye.paye_and_cis_refunds.cis_refunds")</h2>
+  <p class="govuk-body">@Messages("epaye.paye_and_cis_refunds.if_you_are_a_limited_company_that_acts_as_a_subcontractor_")</p>
+  <p class="govuk-body">@Messages("epaye.paye_and_cis_refunds.we_aim_to_process_repayments_within_25_working_days_")</p>
+  <p class="govuk-body">@Messages("epaye.paye_and_cis_refunds.do_not_call_unless_it_has_been_more_than_")</p>
+  <p class="govuk-body"><a class="govuk-link" id="how-to-claim-cis" href="@appConfig.getGovUrl("epayeClaimCisRefund")" target="_blank" rel="external noopener" data-journey-click="link - click:PAYE refunds and Construction Industry Scheme (CIS) refunds:How to claim a CIS refund">@Messages("epaye.paye_and_cis_refunds.how_to_claim_cis_refund")</a></p>
 
 }

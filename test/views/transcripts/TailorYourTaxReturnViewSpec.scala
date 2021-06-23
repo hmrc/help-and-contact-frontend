@@ -26,7 +26,7 @@ class TailorYourTaxReturnViewSpec extends ViewBehaviours {
 
   val messageKeyPrefix = "tailorYourTaxReturnTranscript"
 
-  def createView = () => inject[tailor_your_tax_return].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView = () => inject[tailor_your_tax_return].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
 
   "TailorYourTaxReturn view" must {
     behave like normalPage(createView, messageKeyPrefix)

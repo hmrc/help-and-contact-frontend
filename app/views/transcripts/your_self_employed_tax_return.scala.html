@@ -20,7 +20,7 @@
   main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(
     title = messages("yourSelfEmployedTaxReturnTranscript.title"),
@@ -28,9 +28,9 @@
     bodyClasses = None,
     serviceInfoContent = serviceInfoContent) {
 
-    @components.heading("your-self-employed-tax-return-transcript", "yourSelfEmployedTaxReturnTranscript.heading", "heading-xlarge")
+    @components.heading("your-self-employed-tax-return-transcript", "yourSelfEmployedTaxReturnTranscript.heading", "govuk-heading-xl")
 
     @for(i <- 1 to 30) {
-        <p>@messages(s"yourSelfEmployedTaxReturnTranscript.paragraph$i")</p>
+        <p class="govuk-body">@messages(s"yourSelfEmployedTaxReturnTranscript.paragraph$i")</p>
     }
 }

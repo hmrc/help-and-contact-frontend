@@ -27,7 +27,7 @@ class SaEvidenceViewSpec extends ViewBehaviours {
   "SaEvidence view" when {
     "the user has an SA enrolment" must{
       def createView(hasUtr: Boolean = false) = () => inject[sa_evidence].apply(frontendAppConfig,
-        hasUtr, "bta-base/more-details")(HtmlFormat.empty)(fakeRequest, messages)
+        hasUtr, "bta-base/more-details")(Some(HtmlFormat.empty))(fakeRequest, messages)
       behave like normalPage(createView(), messageKeyPrefix)
 
       "have a link to find out more page" in {
@@ -53,7 +53,7 @@ class SaEvidenceViewSpec extends ViewBehaviours {
       }
     }
     "the user has no SA enrolment" must{
-      def createView = () => inject[sa_evidence].apply(frontendAppConfig, false, "bta-base/more-details")(HtmlFormat.empty)(fakeRequest, messages)
+      def createView = () => inject[sa_evidence].apply(frontendAppConfig, false, "bta-base/more-details")(Some(HtmlFormat.empty))(fakeRequest, messages)
       behave like normalPage(createView, messageKeyPrefix)
 
       "contain heading ID" in {

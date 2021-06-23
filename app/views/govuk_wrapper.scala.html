@@ -14,120 +14,110 @@
  * limitations under the License.
  *@
 
-@import play.twirl.api.HtmlFormat
- @import uk.gov.hmrc.play.views.html.layouts._
- @import uk.gov.hmrc.play.views.html.helpers._
- @import views.html.layouts.GovUkTemplate
- @import uk.gov.hmrc.play.views.html.layouts.HeadWithTrackingConsent
- @import uk.gov.hmrc.play.views.html.layouts.TrackingConsentSnippet
+@import config.FrontendAppConfig
+@import uk.gov.hmrc.hmrcfrontend.views.html.components.{HmrcLanguageSelect, HmrcReportTechnicalIssue}
+@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.language.{Cy, En, LanguageSelect}
+@import uk.gov.hmrc.hmrcfrontend.views.html.deprecated.helpers.HmrcStandardFooter
 
- @this(
-   uiHead: HeadWithTrackingConsent,
-   uiHeaderNav: HeaderNav,
-   uiFooter: Footer,
-   uiServiceInfo: ServiceInfo,
-   uiArticle: Article,
-   uiFooterLinks: FooterLinks,
-   uiEuExitLinks: EuExitLinks,
-   hmrcGovUkTemplate: GovUkTemplate,
-   uiReportAProblemLink: ReportAProblemLink,
-   trackingConsentSnippet: TrackingConsentSnippet
- )
+@this(govukLayout: GovukLayout,
+      govukTemplate: GovukTemplate,
+      govukHeader: GovukHeader,
+      govukFooter: HmrcStandardFooter,
+      hmrcReportTechnicalIssue: HmrcReportTechnicalIssue,
+      hmrcLanguageSelect: HmrcLanguageSelect,
+      appConfig: FrontendAppConfig)
 
-@(appConfig: config.FrontendAppConfig,
-  title: String,
-  mainClass: Option[String] = None,
-  mainDataAttributes: Option[Html] = None,
-  bodyClasses: Option[String] = None,
-  sidebar: Html = HtmlFormat.empty,
-  contentHeader: Option[Html] = None,
-  mainContent: Html = HtmlFormat.empty,
-  serviceInfoContent: Html = HtmlFormat.empty,
-  scriptElem: Option[Html] = None)(implicit request: Request[_], messages: Messages)
+@(title: String,
+        mainClass: Option[String] = None,
+        mainDataAttributes: Option[Html] = None,
+        bodyClasses: Option[String] = None,
+        headerBlock: Option[Html] = None,
+        sidebar: Option[Html] = None,
+        footerBlock: Option[Html] = None,
+        contentHeader: Option[Html] = None,
+        headBlock: Option[Html] = None,
+        footerItems: Seq[FooterItem] = Seq.empty,
+        mainContent: Option[Html] = None,
+        serviceInfoContent: Option[Html] = None,
+        fullWidth: Boolean = false,
+        scriptsBlock: Option[Html] = None)(contentBlock: Html)(implicit request: Request[_], messages: Messages)
 
-@head = {
+@headerDefault = {
+@headerBlock.getOrElse {
+ @govukHeader(Header(
+  serviceName = Some(messages("site.service_name")),
+  serviceUrl = Some(appConfig.getBusinessAccountUrl("home")),
+  navigation = Some(Seq(
+       HeaderNavigation(
+        href = Some(appConfig.getBusinessAccountUrl("signout")),
+        active = true,
+        content = Text("Sign out"),
+        attributes = Map("data-journey-click" -> "link - click:Help and Contact:Sign out")
+       )
+  ))))
+}}
 
-    @uiHead(
-      linkElem = None,
-      headScripts = None)
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/helpandcontactfrontend-app.css")' />
+@footerDefault = {
+ @govukFooter()
 }
 
-@headerNavLinks = {
-<li>
-    <a id="logOutNavHref" href="@appConfig.getBusinessAccountUrl("signout")" data-journey-click="link - click:Help and Contact:Sign out">@Messages("site.signout")</a>
-</li>
-}
+@beforeContentBlock = {
+ <div class="centered-content soft--ends">
+ @serviceInfoContent
+ </div>
 
-@insideHeader = {
+ @{
+  def playLangToUiLanguage(l: Lang) = l.code match {
+   case "en" => En
+   case "cy" => Cy
+  }
 
-    @uiHeaderNav(
-      navTitle = Some(messages("site.service_name")),
-      navTitleLink = None,
-      showBetaLink = false,
-      navLinks = Some(headerNavLinks))
-}
+  if(appConfig.languageTranslationEnabled) {
+   hmrcLanguageSelect(LanguageSelect(
+    playLangToUiLanguage(messages.lang),
+    appConfig.languageLinks: _*
+   ))
+  }
+ }
 
-@afterHeader = {}
+ }
 
-@bodyEnd = {
-  @uiFooter(
-      analyticsToken = Some(appConfig.analyticsToken),
-      analyticsHost = appConfig.analyticsHost,
-      ssoUrl = None,
-      scriptElem = scriptElem,
-      gaCalls = None)
-      <script src='@routes.Assets.versioned("javascripts/helpandcontactfrontend-app.min.js")'> </script>
-      <script src='@routes.Assets.versioned("javascripts/error_summary_focus.js")'> </script>
-}
-
-@footerTop = {}
-
-@footerLinks = {
-    @uiFooterLinks()
-}
-
-@serviceInfo = {
-  @uiServiceInfo(
-      betaBanner = HtmlFormat.empty,
-      includeGridWrapper = false,
-      serviceInfoContent = Some(serviceInfoContent),
-      includeHMRCBranding = false)
+@bodyEndDefault = {
+ @scriptsBlock
 }
 
 @headerAndMainContent = {
-  @contentHeader.getOrElse(HtmlFormat.empty)
-  @mainContent
+@contentHeader.getOrElse(None)
+@mainContent
 }
 
-@getHelpForm = @{uiReportAProblemLink(appConfig.reportAProblemPartialUrl, appConfig.reportAProblemNonJSUrl)}
 
-@content = {
-<div class="centered-content soft--ends">
-  @serviceInfo
-</div>
-<div class="centered-content" role="region" aria-label="@messages("site.language_switcher")">
-  @if(appConfig.languageTranslationEnabled) {
-  @views.html.language_selection(
-  appConfig.languageMap,
-  appConfig.routeToSwitchLanguage,
-  Some("translate u-align--right"))
-  }
-</div>
+@mainContentDefault = {
 
-<main id="wrapper" class="site-wrapper" role="main" @mainClass.map { mainClassVal => class="@mainClass" } @mainDataAttributes>
+ <div class="govuk-grid-row">
+  <div class= @{if(fullWidth) "govuk-grid-column-full-width" else "govuk-grid-column-two-thirds"}>
+   <main id="wrapper" class="site-wrapper" role="main" @mainClass.map { mainClassVal => class="@mainClass" } @mainDataAttributes >
+    <div id="content">
+     @components.article(headerAndMainContent)
+     @sidebar
 
-  <div id="content">
-
-    @uiArticle(headerAndMainContent)
-
-    @sidebar
-
-      @getHelpForm
-
+     @hmrcReportTechnicalIssue(
+      uk.gov.hmrc.hmrcfrontend.views.html.components.ReportTechnicalIssue(
+       appConfig.appName,
+       language = if (messages.lang.code == "cy") Cy else En
+      )
+     )
+    </div>
+   </main>
   </div>
-</main>
+ </div>
 }
 
-@hmrcGovUkTemplate(Some(title), bodyClasses)(head, bodyEnd, insideHeader, afterHeader, footerTop, Some(footerLinks), true)(content)
+ @govukTemplate(
+ pageTitle = Some(title),
+ headerBlock = headerDefault,
+ bodyEndBlock = Some(bodyEndDefault),
+ footerBlock = footerDefault,
+ headBlock = headBlock,
+ beforeContentBlock = Some(beforeContentBlock)
+)(mainContentDefault)

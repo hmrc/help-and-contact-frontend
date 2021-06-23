@@ -20,7 +20,7 @@
   main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Html)(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
 
 @main_template(
     title = messages("viewingYourCalculationTranscript.title"),
@@ -28,25 +28,25 @@
     bodyClasses = None,
     serviceInfoContent = serviceInfoContent) {
 
-    @components.heading("viewing-your-sa-calculation-transcript", "viewingYourCalculationTranscript.heading", "heading-xlarge")
+    @components.heading("viewing-your-sa-calculation-transcript", "viewingYourCalculationTranscript.heading", "govuk-heading-xl")
 
-    <p>@messages("viewingYourCalculationTranscript.paragraph1")</p>
-    <p>@messages("viewingYourCalculationTranscript.paragraph2")</p>
+    <p class="govuk-body">@messages("viewingYourCalculationTranscript.paragraph1")</p>
+    <p class="govuk-body">@messages("viewingYourCalculationTranscript.paragraph2")</p>
 
-    <ul class="list list-bullet">
+    <ul class="govuk-list govuk-list--bullet">
         <li>@messages("viewingYourCalculationTranscript.para2bullet1")</li>
         <li>@messages("viewingYourCalculationTranscript.para2bullet2")</li>
         <li>@messages("viewingYourCalculationTranscript.para2bullet3")</li>
     </ul>
 
-    <p>@messages("viewingYourCalculationTranscript.paragraph3")</p>
-    <p>@messages("viewingYourCalculationTranscript.paragraph4")</p>
-    <p>@messages("viewingYourCalculationTranscript.paragraph5")</p>
-    <p>@messages("viewingYourCalculationTranscript.paragraph6")</p>
-    <p>@messages("viewingYourCalculationTranscript.paragraph7")</p>
-    <p>@messages("viewingYourCalculationTranscript.paragraph8")</p>
+    <p class="govuk-body">@messages("viewingYourCalculationTranscript.paragraph3")</p>
+    <p class="govuk-body">@messages("viewingYourCalculationTranscript.paragraph4")</p>
+    <p class="govuk-body">@messages("viewingYourCalculationTranscript.paragraph5")</p>
+    <p class="govuk-body">@messages("viewingYourCalculationTranscript.paragraph6")</p>
+    <p class="govuk-body">@messages("viewingYourCalculationTranscript.paragraph7")</p>
+    <p class="govuk-body">@messages("viewingYourCalculationTranscript.paragraph8")</p>
 
-    <ul class="list list-bullet">
+    <ul class="govuk-list govuk-list--bullet">
         <li>@messages("viewingYourCalculationTranscript.para8bullet1")</li>
         <li>@messages("viewingYourCalculationTranscript.para8bullet2")</li>
         <li>@messages("viewingYourCalculationTranscript.para8bullet3")</li>
@@ -55,6 +55,6 @@
         <li>@messages("viewingYourCalculationTranscript.para8bullet6")</li>
     </ul>
 
-    <p>@messages("viewingYourCalculationTranscript.paragraph9")</p>
-    <p>@messages("viewingYourCalculationTranscript.paragraph10")</p>
+    <p class="govuk-body">@messages("viewingYourCalculationTranscript.paragraph9")</p>
+    <p class="govuk-body">@messages("viewingYourCalculationTranscript.paragraph10")</p>
 }

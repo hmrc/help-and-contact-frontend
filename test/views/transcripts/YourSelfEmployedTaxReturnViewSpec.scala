@@ -26,7 +26,7 @@ class YourSelfEmployedTaxReturnViewSpec extends ViewBehaviours {
 
   val messageKeyPrefix = "yourSelfEmployedTaxReturnTranscript"
 
-  def createView = () => inject[your_self_employed_tax_return].apply(frontendAppConfig)(HtmlFormat.empty)(fakeRequest, messages)
+  def createView = () => inject[your_self_employed_tax_return].apply(frontendAppConfig)(Some(HtmlFormat.empty))(fakeRequest, messages)
 
   "YourSelfEmployedTaxReturn view" must {
     behave like normalPage(createView, messageKeyPrefix)
