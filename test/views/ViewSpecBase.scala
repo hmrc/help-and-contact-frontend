@@ -113,12 +113,11 @@ trait ViewSpecBase extends SpecBase {
     assert(link.attr("target").contains("_blank") == expectedOpensInNewTab, s"\n\n Link $linkId does not meet expectedOpensInNewTab $expectedGAEvent")
   }
 
-  def assertLinkByClass(doc: Document, linkClass: String, expectedText: String, expectedUrl: String, expectedGAEvent: String, expectedIsExternal: Boolean = false, expectedOpensInNewTab: Boolean = false, exactUrl: Boolean = true) {
+  def assertLinkByClass(doc: Document, linkClass: String, expectedText: String, expectedUrl: String, expectedIsExternal: Boolean = false, expectedOpensInNewTab: Boolean = false, exactUrl: Boolean = true) {
     val link = doc.getElementsByClass(linkClass)
     assert(link.text().contains(expectedText), s"\n\n Link $linkClass does not have text $expectedText")
     assert(link.eachAttr("href").contains(expectedUrl), s"\n\n Link $linkClass does not contain expectedUrl $expectedUrl")
     assert(link.attr("rel").contains("external") == expectedIsExternal, s"\n\n Link $linkClass does not meet expectedIsExternal $expectedIsExternal")
-    assert(link.attr("data-journey-click") == expectedGAEvent, s"\n\n Link $linkClass does not have expectedGAEvent $expectedGAEvent")
-    assert(link.attr("target").contains("_blank") == expectedOpensInNewTab, s"\n\n Link $linkClass does not meet expectedOpensInNewTab $expectedGAEvent")
+    assert(link.attr("target").contains("_blank") == expectedOpensInNewTab, s"\n\n Link $linkClass does not meet expectedOpensInNewTab")
   }
 }

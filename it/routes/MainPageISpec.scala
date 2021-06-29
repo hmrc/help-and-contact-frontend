@@ -21,6 +21,7 @@ class MainPageISpec extends FeatureSpec with MustMatchers with GivenWhenThen wit
 
       And("Service info is available")
       mockGetServiceInfo()
+      mockGetNavLinks()
 
       When("the Main page is accessed")
       val result: WSResponse = HttpRequest.get("/")
@@ -40,8 +41,10 @@ class MainPageISpec extends FeatureSpec with MustMatchers with GivenWhenThen wit
       Given("User is unauthorised")
       mockUnauthorised()
 
+
       And("Service info is available")
       mockGetServiceInfo()
+      mockGetNavLinks()
 
       When("the Main page is accessed")
       val result: WSResponse = HttpRequest.get("/")
@@ -61,6 +64,7 @@ class MainPageISpec extends FeatureSpec with MustMatchers with GivenWhenThen wit
 
       And("Service info is not available")
       mockGetServiceInfoFailure()
+      mockGetNavLinks()
 
       When("the Main page is accessed")
       val result: WSResponse = HttpRequest.get("/")

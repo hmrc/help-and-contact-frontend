@@ -2,5 +2,7 @@
 ->         /business-account/help       app.Routes
 ->         /                            health.Routes
 ->     	   /template                    template.Routes
+->         /govuk-frontend              govuk.Routes
+->         /hmrc-frontend               hmrcfrontend.Routes
 
 GET        /admin/metrics               @com.kenshoo.play.metrics.MetricsController.metrics

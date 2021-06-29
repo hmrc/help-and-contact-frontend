@@ -68,11 +68,9 @@ trait ViewBehaviours extends ViewSpecBase {
           val doc = asDocument(view())
           assertLinkByClass(
             doc,
-            "govuk-header__link",
+            "govuk-link hmrc-sign-out-nav__link",
             "Sign out",
-            "http://localhost:9020/business-account/sso-sign-out",
-            "link - click:Help and Contact:Sign out"
-          )
+            "http://localhost:9020/business-account/sso-sign-out")
         }
 
         "contain the platform help links section with a link to the accessibility statement" in {

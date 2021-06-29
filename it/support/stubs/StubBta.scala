@@ -13,6 +13,13 @@ object StubBta {
       )
     )
 
+  def mockGetNavLinks()(implicit wiremock: WireMockServer): Unit =
+    wiremock.stubFor(get(urlEqualTo("/business-account/partial/nav-links"))
+      .willReturn(aResponse()
+        .withBody("""<div id="service-info-partial"></div>""")
+      )
+    )
+
   def mockGetServiceInfoFailure()(implicit wiremock: WireMockServer): Unit =
     wiremock.stubFor(get(urlEqualTo("/business-account/partial/service-info"))
       .willReturn(aResponse().withFault(Fault.MALFORMED_RESPONSE_CHUNK))

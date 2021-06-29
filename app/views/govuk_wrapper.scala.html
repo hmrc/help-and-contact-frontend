@@ -18,6 +18,7 @@
 @import uk.gov.hmrc.hmrcfrontend.views.html.components.{HmrcLanguageSelect, HmrcReportTechnicalIssue}
 @import uk.gov.hmrc.hmrcfrontend.views.viewmodels.language.{Cy, En, LanguageSelect}
 @import uk.gov.hmrc.hmrcfrontend.views.html.deprecated.helpers.HmrcStandardFooter
+@import uk.gov.hmrc.hmrcfrontend.views.html.helpers.HmrcStandardHeader
 
 @this(govukLayout: GovukLayout,
       govukTemplate: GovukTemplate,
@@ -25,6 +26,7 @@
       govukFooter: HmrcStandardFooter,
       hmrcReportTechnicalIssue: HmrcReportTechnicalIssue,
       hmrcLanguageSelect: HmrcLanguageSelect,
+      hmrcStandardHeader: HmrcStandardHeader,
       appConfig: FrontendAppConfig)
 
 @(title: String,
@@ -44,17 +46,11 @@
 
 @headerDefault = {
 @headerBlock.getOrElse {
- @govukHeader(Header(
+ @hmrcStandardHeader(
   serviceName = Some(messages("site.service_name")),
   serviceUrl = Some(appConfig.getBusinessAccountUrl("home")),
-  navigation = Some(Seq(
-       HeaderNavigation(
-        href = Some(appConfig.getBusinessAccountUrl("signout")),
-        active = true,
-        content = Text("Sign out"),
-        attributes = Map("data-journey-click" -> "link - click:Help and Contact:Sign out")
-       )
-  ))))
+  signOutUrl = Some(appConfig.getBusinessAccountUrl("signout"))
+ )
 }}
 
 @footerDefault = {

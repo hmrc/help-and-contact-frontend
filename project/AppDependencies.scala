@@ -9,11 +9,9 @@ private object AppDependencies {
   val compile: Seq[ModuleID] = Seq(
     ws,
     "uk.gov.hmrc" %% "govuk-template" % "5.66.0-play-27",
-    "uk.gov.hmrc" %% "play-ui" % "9.2.0-play-27",
     "uk.gov.hmrc" %% "http-caching-client" % "9.2.0-play-27",
     "uk.gov.hmrc" %% "bootstrap-frontend-play-27" % "5.3.0",
     "uk.gov.hmrc" %% "play-language" % "5.0.0-play-27",
-    "uk.gov.hmrc" %% "play-partials" % "8.1.0-play-27",
     "uk.gov.hmrc" %% "tax-year" % "1.3.0",
     "uk.gov.hmrc" %% "play-frontend-hmrc" % "0.59.0-play-27",
     "uk.gov.hmrc" %% "play-frontend-govuk" % "0.71.0-play-27"

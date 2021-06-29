@@ -17,28 +17,25 @@
 package controllers.actions
 
 import com.google.inject.ImplementedBy
-import config.HelpAndContactHeaderCarrierForPartialsConverter
 import controllers.ServiceInfoController
 import javax.inject.{Inject, Singleton}
 import models.requests.{AuthenticatedRequest, ServiceInfoRequest}
-import play.api.i18n.I18nSupport
+import play.api.http.HeaderNames
 import play.api.mvc._
+import uk.gov.hmrc.http.HeaderCarrier
+import uk.gov.hmrc.play.http.HeaderCarrierConverter
 
 import scala.concurrent.{ExecutionContext, Future}
 
 @Singleton
-class ServiceInfoActionImpl @Inject()(
-                                     serviceInfoController: ServiceInfoController,
-                                     helpAndContactHeaderCarrierForPartialsConverter: HelpAndContactHeaderCarrierForPartialsConverter
-)(
-    implicit val executionContext: ExecutionContext
-) extends ServiceInfoAction {
-
-  import helpAndContactHeaderCarrierForPartialsConverter._
+class ServiceInfoActionImpl @Inject()(serviceInfoController: ServiceInfoController)
+                                     (implicit val executionContext: ExecutionContext) extends ServiceInfoAction {
 
   override def transform[A](request: AuthenticatedRequest[A]): Future[ServiceInfoRequest[A]] = {
-    implicit val r: Request[A] = request
-    for{
+    val header: HeaderCarrier = HeaderCarrierConverter.fromRequestAndSession(request, request.session)
+    implicit val hc: HeaderCarrier = header.copy(extraHeaders = header.headers(Seq(HeaderNames.COOKIE)))
+
+    for {
       partial <-  serviceInfoController.serviceInfoPartial(request)
     } yield {
       ServiceInfoRequest(request, partial)
