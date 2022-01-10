@@ -136,14 +136,6 @@ class PaymentAndPenaltiesViewSpec extends ViewBehaviours {
       )
       assertLinkById(
         doc,
-        "how-do-i-pay-video",
-        "Video - How do I pay my Self Assessment tax bill? (opens in new tab)",
-        "https://youtu.be/gfuEtUYOrgA",
-        "link - click:Payment and penalties : How do I pay my Self Assessment tax bill? - video",
-        expectedOpensInNewTab = true
-      )
-      assertLinkById(
-        doc,
         "budget-for-taxbill",
         "Budget for your tax bill if you’re self-employed (opens in new tab)",
         "https://www.gov.uk/self-assessment-ready-reckoner",

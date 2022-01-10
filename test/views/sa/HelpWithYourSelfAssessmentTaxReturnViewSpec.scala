@@ -91,14 +91,6 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
         "/business-account/help/self-assessment/register-or-stopping",
         "link - click:Help with your Self Assessment tax return : Find out more about registering for SA online"
       )
-      assertLinkById(
-        doc,
-        "why-i-have-been-sent-tax-video",
-        "Video - Why have I been sent a tax return? (opens in new tab)",
-        "https://youtu.be/UovlY9zQBvM",
-        "link - click:Help with your Self Assessment tax return : Why have I been sent a tax return - video link",
-        expectedOpensInNewTab = true
-      )
      /* assertLinkById(
         doc,
         "why-i-have-been-sent-tax-transcript",
