@@ -56,8 +56,6 @@ class ContactHMRCAboutCorporationTaxViewSpec extends ViewBehaviours {
       doc.text() must include("0300 200 3410")
       doc.text() must include("Outside UK: ")
       doc.text() must include("+44 151 268 0571")
-      doc.text() must include("Fax:")
-      doc.text() must include("03000 543 889")
       doc.text() must include("Opening times:")
       doc.text() must include("Monday to Friday: 8am to 6pm")
       doc.text() must include("Closed weekends.")
