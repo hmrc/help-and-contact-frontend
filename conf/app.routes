@@ -1,25 +1,14 @@
 # microservice specific routes
-->          /hmrc-frontend                                    hmrcfrontend.Routes
+->         /hmrc-frontend                              hmrcfrontend.Routes
 
-GET        /assets/*file                                controllers.Assets.versioned(path="/public", file: Asset)
+GET        /assets/*file                               controllers.Assets.versioned(path="/public", file: Asset)
 
-GET         /switch-to-welsh                                 controllers.LanguageController.switchToWelsh
-GET         /switch-to-english                               controllers.LanguageController.switchToEnglish
+GET        /switch-to-welsh                            controllers.LanguageController.switchToWelsh
+GET        /switch-to-english                          controllers.LanguageController.switchToEnglish
 
-GET        /this-service-has-been-reset                 controllers.SessionExpiredController.onPageLoad
+GET        /this-service-has-been-reset                controllers.SessionExpiredController.onPageLoad
 
-GET        /unauthorised                                controllers.UnauthorisedController.onPageLoad
+GET        /unauthorised                               controllers.UnauthorisedController.onPageLoad
 
-GET        /                                            controllers.HelpAndContactController.mainPage
-
-GET        /corporation-tax/:page                       controllers.HelpAndContactController.onPageLoad(helpCategory: HelpCategory = HelpCategory.CorporationTax, page: String)
-
-GET        /epaye                                       controllers.HelpAndContactController.onPageLoad(helpCategory: HelpCategory = HelpCategory.Epaye, page = "")
-GET        /epaye/:page                                 controllers.HelpAndContactController.onPageLoad(helpCategory: HelpCategory = HelpCategory.Epaye, page: String)
-
-GET        /self-assessment/:page                       controllers.HelpAndContactController.onPageLoad(helpCategory: HelpCategory = HelpCategory.SelfAssessment, page: String)
-GET        /vat/:page                                   controllers.HelpAndContactController.onPageLoad(helpCategory: HelpCategory = HelpCategory.VAT, page: String)
-
-GET        /transcript/:videoTitle                      controllers.TranscriptController.onPageLoad(videoTitle: String)
-
-GET        /general/:page                               controllers.HelpAndContactController.onPageLoad(helpCategory: HelpCategory = HelpCategory.GEN, page: String)
+GET        /:pageType                                  controllers.HelpAndContactController.renderPage(pageType: String)
+GET        /                                           controllers.HelpAndContactController.mainPage

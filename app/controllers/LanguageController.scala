@@ -18,6 +18,8 @@ package controllers
 
 import config.FrontendAppConfig
 import controllers.LanguageController.{english, welsh}
+import models.PageType
+
 import javax.inject.Inject
 import play.api.i18n.{I18nSupport, Lang}
 import play.api.mvc.{Action, AnyContent, Flash, MessagesControllerComponents}

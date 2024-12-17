@@ -15,36 +15,42 @@
  *@
 
 @import config.FrontendAppConfig
-@import views.html.general.bta_help_row
-@import views.html.sa.self_assessment_row
-@import views.html.vat.vat_row
-@import views.html.vat.mtd_vat_row
-@import views.html.ct.corporation_tax_row
-@import views.html.epaye.epaye_row
-@import views.html.sa.mtd_itsa_row
+@import models.{PageType, HelpCategory}
 
 @this(
-  main_template: main_template
+main_template: main_template
 )
 
-@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html], dynamicContent: Html, name: String, pageTypes: Seq[PageType])(implicit request: Request[_], messages: Messages)
 
 @main_template(
-  title = messages("help_and_contact.title"),
-  appConfig = appConfig,
-  fullWidth = true,
-  serviceInfoContent = serviceInfoContent) {
+title = messages("help_and_contact.title"),
+appConfig = appConfig,
+fullWidth = true,
+serviceInfoContent = serviceInfoContent) {
 
-  <h1 class="govuk-heading-xl" id="help-and-contact">@Messages("help_and_contact.heading")</h1>
+<h1 class="govuk-heading-xl" id="help-and-contact">@Messages("help_and_contact.heading")</h1>
 
-    @bta_help_row(appConfig)
-@*    @covid(appConfig)
-    *@
-    @corporation_tax_row(appConfig)
-    @epaye_row(appConfig)
-    @mtd_itsa_row(appConfig)
-    @self_assessment_row(appConfig)
-    @mtd_vat_row(appConfig)
-    @vat_row(appConfig)
-
+<div class="govuk-grid-column-one-quarter">
+ @for(category <- HelpCategory.values) {
+  @defining(pageTypes.filter(_.category == category)) { filteredLinks =>
+   @if(filteredLinks.nonEmpty) {
+   <h2 class="govuk-heading-m">
+    @Messages(s"help_and_contact.${category.toString.toLowerCase}")
+   </h2>
+   <ul class="govuk-list govuk-list--spaced">
+    @for(link <- filteredLinks) {
+    <li class="@if(link.name == name) {help-nav-active}">
+     <a class="govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+        href="@routes.HelpAndContactController.renderPage(link.name)">
+       @Messages(link.messageKey)
+     </a>
+    </li>
+    }
+   </ul>
+   }
+  }
+ }
+ </div>
+@dynamicContent
 }

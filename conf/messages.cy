@@ -26,15 +26,84 @@ timeout.message = Er eich diogelwch, byddwn yn eich allgofnodi cyn pen
 timeout.title = Rydych ar fin cael eich allgofnodi
 
 ########################################################################################################################
-### Help and Contact main
+### Help and Contact Main Page
 ########################################################################################################################
 
 help_and_contact.title = Cymorth a chysylltu
+
 help_and_contact.heading = Cymorth a chysylltu
+help_and_contact.bta = Cyfrif treth busnes
+help_and_contact.help_with_business_tax_account = Help gyda’ch cyfrif treth busnes
+help_and_contact.change_contact_and_account_details = Newid manylion cyswllt a chyfrif
+help_and_contact.how_to_add_a_tax = Sut i ychwanegu treth
+
 help_and_contact.self_assessment = Hunanasesiad
+help_and_contact.payments_and_penalties = Taliadau a chosbau
+help_and_contact.registering_or_stopping = Cofrestru neu stopio
+help_and_contact.help_with_sa_tax_return = Cael help gyda llenwi Ffurflen Dreth Hunanasesiad
+help_and_contact.get_evidence_of_income = Cael tystiolaeth o incwm – SA302
+help_and_contact.expenses = Treuliau
+help_and_contact.sign_up_for_mtd_for_income_tax_new_tab = Cofrestru ar gyfer y cynllun Troi Treth yn Ddigidol (MTD) ar gyfer Treth Incwm (yn agor tab newydd)
 help_and_contact.vat = TAW
-help_and_contact.corporation_tax = Treth Gorfforaeth
+help_and_contact.register_or_deregister = Cofrestru neu ddadgofrestru
+help_and_contact.how_to_pay_and_deadlines = Sut i dalu a dyddiadau cau
+help_and_contact.correcting_errors_on_returns = Cywiro gwallau ar Ffurflenni Treth
 help_and_contact.paye_for_employers = TWE i gyflogwyr
+help_and_contact.get_started = Dechrau arni
+help_and_contact.view_or_correct_submissions = Bwrw golwg dros neu gywiro cyflwyniadau
+help_and_contact.paye_and_cis_refunds = Ad-daliadau CIS a TWE
+help_and_contact.changes_in_employee_circumstances = Cymraeg Newidiadau yn amgylchiadau cyflogai
+help_and_contact.if_you_stop_being_an_employer = Os ydych yn rhoi’r gorau i fod yn gyflogwr
+help_and_contact.corporation_tax = Treth Gorfforaeth
+help_and_contact.register_or_add_tax = Cofrestru ar gyfer treth, neu ei hychwanegu
+help_and_contact.how_to_pay = Sut i dalu
+help_and_contact.closing_a_limited_company = Cau cwmni cyfyngedig
+help_and_contact.get_a_copy_of_your_unique_taxpayer_reference_utr = Cael copi o’ch Cyfeirnod Unigryw y Trethdalwr (UTR)
+help_and_contact.contact_hmrc = Cysylltu â CThEF
+
+help_and_contact.help_with_your_bta_account = Help gyda’ch cyfrif treth busnes (BTA)
+help_and_contact.paragraph1 = Mae’ch cyfrif treth busnes yn gadael i chi reoli’ch trethi, tollau a chynlluniau busnes CThEF ar-lein.
+help_and_contact.paragraph2 = Nid oes rhaid i chi fod yn berchen ar fusnes neu’n rhedeg busnes i gael cyfrif treth busnes.
+help_and_contact.paragraph3 = Er mwyn rheoli treth, toll neu gynllun, mae’n rhaid i chi
+help_and_contact.paragraph3_link_text = ychwanegu treth at eich cyfrif treth busnes.
+
+help_and_contact.use_your_bta_to = Defnyddiwch eich cyfrif treth busnes i wneud y canlynol:
+help_and_contact.list_item1 = gwirio trethi rydych wedi cofrestru ar eu cyfer
+help_and_contact.list_item2 = cyflwyno Ffurflenni Treth a gwneud taliadau
+help_and_contact.list_item3 = ychwanegu neu ddileu treth, toll neu gynllun
+help_and_contact.list_item4 = rhoi’r gallu i rywun arall gael mynediad at dreth, toll neu gynllun
+help_and_contact.list_item5 = gweld negeseuon gan CThEF
+help_and_contact.list_item6 = ychwanegu, newid neu fwrw golwg dros asiant treth
+help_and_contact.list_item7 = cael help gyda’ch trethi
+
+help_and_contact.if_youre_not_a_registered_company = Os nad ydych yn gwmni cofrestredig
+help_and_contact.paragraph4 = yd yn oed os nad ydych wedi’ch cofrestru fel cwmni cyfyngedig, mae’n bosibl bod angen cyfrif treth busnes arnoch.
+help_and_contact.paragraph5 = Er enghraifft, os ydych yn hunangyflogedig neu’n unig fasnachwr ac rydych yn ennill incwm trethadwy drwy’r canlynol:
+help_and_contact.list_item8 = eiddo wedi’i rentu
+help_and_contact.list_item9 = gwerthu nwyddau neu wasanaethau
+help_and_contact.list_item10 = gweithgarwch tebyg
+help_and_contact.paragraph6 = Mae hefyd angen cyfrif treth busnes arnoch os yw’r canlynol yn wir:
+help_and_contact.list_item11 = rydych wedi sefydlu cwmni cyfyngedig, neu sefydliad arall sy’n talu Treth Gorfforaeth
+help_and_contact.list_item12 = defnyddio TWE gan eich bod yn cyflogi pobl
+help_and_contact.list_item13 = codi TAW
+
+help_and_contact.how_to_manage_your_business_tax_account = Sut i reoli manylion eich cyfrif treth busnes
+help_and_contact.paragraph7 = Cadwch gofnod o’r manylion ar gyfer mewngofnodi i wasanaethau CThEF a ddefnyddiwyd gennych i greu eich cyfrif treth busnes.
+help_and_contact.paragraph8 = Mae’ch cyfrif treth busnes yn defnyddio dull gwirio 2 gam. Byddwn yn gofyn i chi nodi cod mynediad yr ydym yn ei anfon at ddyfais neu ap arall.
+help_and_contact.paragraph9 = Peidiwch â chreu set arall o fanylion ar gyfer mewngofnodi i wasanaethau CThEF.
+help_and_contact.paragraph10_part1 = I weld eich trethi busnes i gyd mewn un lle,
+help_and_contact.paragraph10_link_text = mae’n rhaid i chi ddefnyddio un set o fanylion ar gyfer mewngofnodi i wasanaethau CThEF yn unig ar gyfer pob un o’ch gwasanaethau treth busnes ar-lein (yn agor tab newydd)
+help_and_contact.paragraph10_part2 = a’i defnyddio i fewngofnodi i’r cyfrif treth busnes.
+
+help_and_contact.manage_your_hmrc_sign_in_details = Rheoli’ch manylion ar gyfer mewngofnodi i wasanaethau CThEF
+
+help_and_contact.the_difference_between_your_bta_and_pta_account = Y gwahaniaeth rhwng eich cyfrif treth busnes a’ch cyfrif treth personol
+help_and_contact.paragraph11 = Defnyddir eich cyfrif treth busnes er mwyn bwrw golwg dros eich sefyllfa dreth a rheoli’ch holl drethi o un lle.
+help_and_contact.paragraph12_link_text = Bwrw golwg dros drethi, tollau a chynlluniau y gallwch eu rheoli
+help_and_contact.pta = Cyfrif treth personol
+help_and_contact.paragraph13 = Defnyddir eich cyfrif treth personol i wirio’ch cofnodion a rheoli’ch manylion gyda Chyllid a Thollau EF (CThEF).
+help_and_contact.paragraph14_link_text = Darllenwch ragor am eich cyfrif treth personol
+
 help_and_contact.govuk_link = GOV.UK
 
 ########################################################################################################################

@@ -24,11 +24,8 @@ import org.scalatestplus.play.guice._
 import play.api.i18n.{Messages, MessagesApi}
 import play.api.mvc.AnyContent
 import play.api.test.{FakeRequest, Injecting}
-import views.html.ct.{contact_hmrc_about_ct, register_or_deregister_corporation_tax}
-import views.html.epaye.{paye_and_cis_refunds, view_check_correct_submissions}
 import views.html.help_and_contact
-import views.html.sa._
-import views.html.vat.{payments_and_deadlines, register_or_deregister}
+
 
 trait SpecBase extends PlaySpec with GuiceOneAppPerSuite with Injecting {
 
@@ -40,31 +37,11 @@ trait SpecBase extends PlaySpec with GuiceOneAppPerSuite with Injecting {
 
   def messages: Messages = messagesApi.preferred(fakeRequest)
 
-  def contactHMRCAboutCt: contact_hmrc_about_ct = inject[contact_hmrc_about_ct]
-
-  def registerOrDeregisterCorporationTax: register_or_deregister_corporation_tax = inject[register_or_deregister_corporation_tax]
-
-  def payeAndCisRefunds: paye_and_cis_refunds = inject[paye_and_cis_refunds]
-
-  def viewCheckCorrectSubmissions: view_check_correct_submissions = inject[view_check_correct_submissions]
-
   def helpAndContact: help_and_contact = inject[help_and_contact]
-
-  def saEvidence: sa_evidence = inject[sa_evidence]
-
-  def expenses: expenses = inject[expenses]
-
-  def helpWithYourSelfAssessmentTaxReturn: help_with_your_self_assessment_tax_return = inject[help_with_your_self_assessment_tax_return]
-
-  def paymentsAndDeadlines: payments_and_deadlines = inject[payments_and_deadlines]
-
-  def registerOrDeregister: register_or_deregister = inject[register_or_deregister]
 
   def errorHandler: ErrorHandler = inject[ErrorHandler]
 
   def authenticate: AuthAction = inject[AuthAction]
-
-  def registerOrStopping: register_or_stopping = inject[register_or_stopping]
 
 
 }

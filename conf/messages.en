@@ -26,15 +26,84 @@ timeout.message= For your security, we will sign you out in
 timeout.keep-alive-button= Stay signed in
 
 ########################################################################################################################
-### Help and Contact main
+### Help and Contact Main Page
 ########################################################################################################################
 
 help_and_contact.title = Help and contact
+
 help_and_contact.heading = Help and contact
+help_and_contact.bta = Business tax account
+help_and_contact.help_with_business_tax_account = Help with your business tax account
+help_and_contact.change_contact_and_account_details = Change contact and account details
+help_and_contact.how_to_add_a_tax = How to add a tax
+
 help_and_contact.self_assessment = Self Assessment
+help_and_contact.payments_and_penalties = Payments and penalties
+help_and_contact.registering_or_stopping = Registering or stopping
+help_and_contact.help_with_sa_tax_return = Help with SA tax return
+help_and_contact.get_evidence_of_income = Get evidence of income - SA302
+help_and_contact.expenses = Expenses
+help_and_contact.sign_up_for_mtd_for_income_tax_new_tab = Sign up for MTD for Income Tax (opens in new tab)
 help_and_contact.vat = VAT
-help_and_contact.corporation_tax = Corporation Tax
+help_and_contact.register_or_deregister = Register or deregister
+help_and_contact.how_to_pay_and_deadlines = How to pay and deadlines
+help_and_contact.correcting_errors_on_returns = Correcting errors on returns
 help_and_contact.paye_for_employers = PAYE for employers
+help_and_contact.get_started = Get started
+help_and_contact.view_or_correct_submissions = View or correct submissions
+help_and_contact.paye_and_cis_refunds = PAYE and CIS refunds
+help_and_contact.changes_in_employee_circumstances = Changes in employee circumstances
+help_and_contact.if_you_stop_being_an_employer = If you stop being an employer
+help_and_contact.corporation_tax = Corporation Tax
+help_and_contact.register_or_add_tax = Register or add tax
+help_and_contact.how_to_pay = How to pay
+help_and_contact.closing_a_limited_company = Closing a limited company
+help_and_contact.get_a_copy_of_your_unique_taxpayer_reference_utr = Get a copy of your Unique Taxpayer Reference (UTR)
+help_and_contact.contact_hmrc = Contact HMRC
+
+help_and_contact.help_with_your_bta_account = Help with your business tax account (BTA)
+help_and_contact.paragraph1 = Your business tax account lets you manage your HMRC business taxes, duties, and schemes online.
+help_and_contact.paragraph2 = You do not have to own or run a business to have a business tax account.
+help_and_contact.paragraph3 = To manage a tax, duty or scheme, you must
+help_and_contact.paragraph3_link_text = add a tax to your business tax account.
+
+help_and_contact.use_your_bta_to = Use your BTA to:
+help_and_contact.list_item1 = check taxes that you’ve registered for
+help_and_contact.list_item2 = make returns and payments
+help_and_contact.list_item3 = add or remove a tax, duty or scheme
+help_and_contact.list_item4 = give someone else access to a tax, duty or scheme
+help_and_contact.list_item5 = view messages from HMRC
+help_and_contact.list_item6 = add, view, or change a tax agent
+help_and_contact.list_item7 = get help with your taxes
+
+help_and_contact.if_youre_not_a_registered_company = If you are not a registered company
+help_and_contact.paragraph4 = Even if you are not registered as a limited company, you may need a business tax account.
+help_and_contact.paragraph5 = For example, if you’re self-employed or a sole trader and earn taxable income from:
+help_and_contact.list_item8 = renting property
+help_and_contact.list_item9 = selling goods and services
+help_and_contact.list_item10 = similar activity
+help_and_contact.paragraph6 = You also need a business tax account if you:
+help_and_contact.list_item11 = set up a limited company or other organisation that pays Corporation Tax
+help_and_contact.list_item12 = use PAYE because you employ people
+help_and_contact.list_item13 = charge VAT
+
+help_and_contact.how_to_manage_your_business_tax_account = How to manage your business tax account details
+help_and_contact.paragraph7 = Keep a record of the HMRC sign details that you used to create your business tax account.
+help_and_contact.paragraph8 = Your business tax account uses 2-stage verification. We’ll ask you to enter an access code that we send to another device or app.
+help_and_contact.paragraph9 = Do not create another HMRC sign in
+help_and_contact.paragraph10_part1 = To view all your business taxes in one place you must
+help_and_contact.paragraph10_link_text = use only one HMRC sign in for all your online business tax services (opens in new tab)
+help_and_contact.paragraph10_part2 = and sign into the business tax account with it.
+
+help_and_contact.manage_your_hmrc_sign_in_details = Manage your HMRC sign in details
+
+help_and_contact.the_difference_between_your_bta_and_pta_account = The difference between your business tax account and personal tax account
+help_and_contact.paragraph11 = Your business tax account is used to view your tax position and manage all your taxes from one place.
+help_and_contact.paragraph12_link_text = View taxes, duties and schemes you can manage (opens in new tab)
+help_and_contact.pta = Personal tax account
+help_and_contact.paragraph13 = Your personal tax account is used to check your records and manage your details with HM Revenue and Customs (HMRC).
+help_and_contact.paragraph14_link_text = Read more about your personal tax account (opens in new tab)
+
 help_and_contact.govuk_link = GOV.UK
 
 

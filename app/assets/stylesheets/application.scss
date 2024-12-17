@@ -13,3 +13,10 @@ $hmrc-assets-path: "/business-account/help/assets/lib/hmrc-frontend/hmrc/";
     width: 100%;
   }
 }
+
+.help-nav-active {
+	border-left: 4px solid #1d70b8;
+	margin-left: -14px;
+	padding-left: 8px;
+	font-weight: bold;
+}
