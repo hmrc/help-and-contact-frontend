@@ -385,7 +385,7 @@ expenses.send_proof = You do not need to send proof of your expenses when you fi
 expenses.keep_proof = You should keep proof and records so that you can show them to HMRC if asked. You need to make sure your records are accurate.
 expenses.find_out_more = Find out more about allowable expenses if you’re self-employed
 expenses.what_expenses_video = Video - What expenses can I include in my Self Assessment tax return? (opens in new tab)
-expenses.what_expenses_transcript = What expenses can I include in my Self Assessment tax return? - video transcript
+expenses.what_expenses_transcript = Video transcript – What expenses can I include in my Self Assessment tax return?
 expenses.simplified = Simplified expenses
 expenses.cannot_be_used = Simplified expenses cannot be used by limited companies or business partnerships involving a limited company.
 expenses.if_self_employed = If you’re self-employed, or a business partnership, you can choose to use simplified expenses to work out some of your expenses using flat rates instead of working out your actual business costs.
@@ -926,28 +926,27 @@ yourIncomeFromPropertyTaxReturnTranscript.paragraph17 = You can find more inform
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Expenses if you are self employed transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.title = What expenses can I include in my Self Assessment tax return? - video transcript
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.heading = What expenses can I include in my Self Assessment tax return? - video transcript
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph1 = You’re self-employed which means you have essential costs to keep your business running. You can deduct these costs which are called allowable expenses to work out your taxable profit.
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph2 = But remember – if you’re using the £1000 tax-free trading allowance, you can’t claim any expenses.
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.title = Video transcript – What expenses can I include in my Self Assessment tax return?
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.heading = Video transcript – What expenses can I include in my Self Assessment tax return?
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph1 = You’re self-employed – which means you have essential costs to keep your business running. You can deduct these costs – which are called allowable expenses – to work out your taxable profit.
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph2 = But remember – if you’re using the one thousand pound tax-free trading allowance, you can’t claim any expenses.
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph3 = Allowable expenses include:
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet1 = office property and equipment
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet2 = travel, including cars and vans
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet3 = staff
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet4 = any legal and financial costs
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet5 = and also marketing and subscriptions
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet5 = and also marketing and subscriptions.
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph4 = You can’t claim for anything you spend on personal things, such as:
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet1 = your home and accommodation
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet2 = food
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet3 = clothing
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet4 = holidays
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet5 = and anything you buy for you and your family
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet5 = and anything you buy for you and your family.
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph5 = You may want to use simplified expenses – this means you claim a flat rate instead of working out the actual costs. For example, for car travel you can claim 45 pence a mile up to 10,000 miles and then 25 pence a mile over this amount.
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph6 = If your income is £85,000 or more, you’ll need to list each expense individually under the appropriate heading. This also applies if you didn’t trade a full year but would have earned this amount or more if you had – for example, your income for 6 months was £50,000 – so in 12 months it would have been £100,000.
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph7 = If your income is less than £85,000, it’s up to you whether you give us your total amount of expenses or list them individually.
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph8 = It’s important you keep records and proof of your business costs – you’ll need them to complete your Self Assessment tax return.
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph9 = Sometimes we ask to see these, but please don’t send them with your return.
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph10 = You can find more information about Self Assessment on
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph6 = If your income is eighty five thousand pounds or more, you’ll need to list each expense individually under the appropriate heading. This also applies if you didn’t trade a full year but would have earned this amount or more if you had – for example, your income for six months was fifty thousand pounds – so in 12 months it would have been a hundred thousand pounds.
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph7 = If your income is less than eighty five thousand pounds, it’s up to you whether you give us your total amount of expenses or list them individually.
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph8 = It’s important you keep records and proof of your business costs – you’ll need them to complete your Self Assessment tax return. Sometimes we ask to see these, but please don’t send them with your return.
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph9 = You can find more information about Self Assessment on
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Calculating motoring expenses transcript
