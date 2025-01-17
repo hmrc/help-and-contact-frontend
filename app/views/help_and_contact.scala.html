@@ -42,12 +42,14 @@ serviceInfoContent = serviceInfoContent) {
    <ul class="govuk-list govuk-list--spaced">
     @for(pageLink <- filteredLinks) {
     <li class="@if(pageLink.name == name) {help-nav-active}">
+     <div id="@pageLink.name">
       @link(
         link = if(pageLink.externalUrl.isDefined) pageLink.externalUrl.get else routes.HelpAndContactController.renderPage(pageLink.name).toString,
         messageKey = Messages(pageLink.messageKey),
         isExternal = pageLink.externalUrl.isDefined,
         additionalClasses = if (pageLink.name == name) "govuk-!-font-weight-bold" else ""
       )
+     </div>
     </li>
     }
    </ul>
