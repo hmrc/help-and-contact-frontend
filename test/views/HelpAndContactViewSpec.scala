@@ -66,7 +66,7 @@ class HelpAndContactViewSpec extends ViewBehaviours with GuiceOneAppPerSuite {
         ("Help with your business tax account", "/business-account/help/help-with-bta"),
         ("Change contact and account details", "/business-account/help/change-contact-and-account-details"),
         ("How to add a tax", "/business-account/help/how-to-add-tax"),
-        ("Payments and penalties", "/business-account/help/payment-and-penalties"),
+        ("Payments and penalties", "/business-account/help/payments-and-penalties"),
         ("Registering or stopping", "/business-account/help/registering-or-stopping"),
         ("Help with SA tax return", "/business-account/help/help-with-sa-tax-return"),
         ("Get evidence of income - SA302", "/business-account/help/get-evidence-of-income"),

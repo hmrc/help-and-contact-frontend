@@ -62,6 +62,7 @@ class CtaxHowToPayViewSpec extends ViewBehaviours {
 
     "have correct links" in {
       val doc = asDocument(createView()())
+      println("0")
       assertLinkByDocId(
         doc,
         "ct-how-to-pay-video",
@@ -70,6 +71,7 @@ class CtaxHowToPayViewSpec extends ViewBehaviours {
         "",
         expectedOpensInNewTab = true
       )
+      println("0")
       assertLinkByDocId(
         doc,
         "ct-how-to-pay-video-transcript",

@@ -94,10 +94,20 @@
  </ol>
  <br><br>
  <h2 class="govuk-heading-m">@Messages("help_and_contact.other_help")</h2>
- <p class="govuk-body">
-  @Messages("help_and_contact.if_you_prefer")
-  <a href="https://www.youtube.com/watch?v=DZHrRO95jsU" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("help_and_contact.you_can_watch_our_video_on_how_to_add_tax")</a>. <br><br>
-  <a href="/business-account/help/transcript/add-a-tax" class="govuk-link govuk-link--no-visited-state">@Messages("help_and_contact.transcript_how_do_i_add_tax_bta")
-  </a>
- </p>
+
+ <div class="govuk-inset-text">
+  <p>
+   <a class="govuk-link" rel="noreferrer noopener" target="_blank"
+      href="https://youtu.be/hspBxF2NVBY">
+    @messages("help_and_contact.video.how_do_i_add_tax_bta") @messages("app.common.openInNewTab")
+   </a>
+  </p>
+  <p>
+   <a class="govuk-link" rel="noreferrer noopener"
+      href="/help-and-contact/transcripts/sa-what-expenses-to-include-in-tax-return.html">
+    @Messages("help_and_contact.transcript_how_do_i_add_tax_bta")
+   </a>
+  </p>
+ </div>
+
 </div>

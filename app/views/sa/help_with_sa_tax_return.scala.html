@@ -19,9 +19,8 @@
 
 @(name: String, utr: Option[SaUtr], appConfig: FrontendAppConfig)(implicit request: Request[_], messages: Messages)
 
-
 <div class="govuk-grid-column-three-quarters govuk-!-padding-left-8">
-<h1 class="govuk-heading-l">@Messages("helpWithYourSelfAssessmentTaxReturn.heading")</h1>
+<h1 id="@name" class="govuk-heading-l">@Messages("helpWithYourSelfAssessmentTaxReturn.heading")</h1>
 
 @components.sa_tax_return(appConfig)
 
@@ -80,10 +79,11 @@
                              rel="noreferrer noopener">
         @Messages("helpWithYourSelfAssessmentTaxReturn.first_sa_video")
     </a></p>
-    <p class="govuk-body"><a class="govuk-link" href="@controllers.routes.TranscriptController.onPageLoad("new-your-first-tax-return")" id = "my-first-sa-transcript"
-        >
+    <p class="govuk-body">
+        <a id="my-first-sa-transcript" class="govuk-link" href="@controllers.routes.TranscriptController.onPageLoad("new-your-first-tax-return")">
         @Messages("helpWithYourSelfAssessmentTaxReturn.first_sa_transcript")
-        </a></p>
+        </a>
+    </p>
 </div>
 
 <h2 class="govuk-heading-m">@Messages("helpWithYourSelfAssessmentTaxReturn.help_completing")</h2>

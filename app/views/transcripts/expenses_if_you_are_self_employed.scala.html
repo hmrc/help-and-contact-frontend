@@ -17,7 +17,7 @@
 @import config.FrontendAppConfig
 
 @this(
-  main_template: main_template
+main_template: main_template
 )
 
 @(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
@@ -29,36 +29,35 @@ bodyClasses = None,
 serviceInfoContent = serviceInfoContent
 ) {
 
-    <h1 id="what-expenses-can-i-include-in-my-sa-tax-return-video-transcript" class="govuk-heading-xl">
-        @Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.heading")</h1>
+<h1 id="what-expenses-can-i-include-in-my-sa-tax-return-video-transcript" class="govuk-heading-xl">
+    @Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.heading")</h1>
 
-    <p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph1")</p>
-    <p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph2")</p>
-    <p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph3")</p>
+<p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph1")</p>
+<p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph2")</p>
+<p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph3")</p>
 
 
-    <ul class="govuk-list govuk-list--bullet">
-        <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet1")</li>
-        <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet2")</li>
-        <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet3")</li>
-        <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet4")</li>
-        <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet5")</li>
-    </ul>
+<ul class="govuk-list govuk-list--bullet">
+    <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet1")</li>
+    <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet2")</li>
+    <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet3")</li>
+    <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet4")</li>
+    <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet5")</li>
+</ul>
 
-    <p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph4")</p>
+<p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph4")</p>
 
-    <ul class="govuk-list govuk-list--bullet">
-        <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet1")</li>
-        <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet2")</li>
-        <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet3")</li>
-        <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet4")</li>
-        <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet5")</li>
-    </ul>
+<ul class="govuk-list govuk-list--bullet">
+    <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet1")</li>
+    <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet2")</li>
+    <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet3")</li>
+    <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet4")</li>
+    <li>@Messages("sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet5")</li>
+</ul>
 
-    <p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph5")</p>
-    <p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph6")</p>
-    <p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph7")</p>
-    <p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph8")</p>
-    <p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph9")</p>
-    <p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph10") <a class="govuk-link" id="gov-link" href="https://www.gov.uk/">@messages("help_and_contact.govuk_link")</a>.</p>
+<p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph5")</p>
+<p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph6")</p>
+<p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph7")</p>
+<p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph8")</p>
+<p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph9") <a class="govuk-link" id="gov-link" href="https://www.gov.uk/" target="_blank">@messages("help_and_contact.govuk_link")</a>.</p>
 }

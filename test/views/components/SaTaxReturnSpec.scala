@@ -102,10 +102,10 @@ class SaTaxReturnSpec extends ViewBehaviours {
       assertLinkById(
         doc,
         "not-received-sa-return",
-        "check anonymously if you need to file a return",
+        "check anonymously if you need to file a return (opens in new tab)",
         "https://www.gov.uk/check-if-you-need-tax-return",
 
-        expectedOpensInNewTab = false
+        expectedOpensInNewTab = true
       )
 
     }

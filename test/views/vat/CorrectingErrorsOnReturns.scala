@@ -16,13 +16,14 @@
 
 package views.vat
 
+import models.PageType
 import org.jsoup.Jsoup
 import views.behaviours.ViewBehaviours
 import views.html.vat.correcting_errors_on_returns
 
 class CorrectingErrorsOnReturns extends ViewBehaviours {
 
-  val view = correcting_errors_on_returns()
+  val view = correcting_errors_on_returns(PageType.CorrectingErrorsOnReturns.name)(messages)
 
   "VAT Correcting Errors On Returns view" must {
 
@@ -30,43 +31,25 @@ class CorrectingErrorsOnReturns extends ViewBehaviours {
 
       val doc = Jsoup.parse(view.toString)
 
-      doc.text() must include("HMRC’s online tax return automatically works out how much you need to pay. " +
-        "You fill in your figures and once you have checked that everything is correct, you can view your calculation.")
-
-      doc.text() must include("The calculation shows:")
-
-      doc.text() must include("how your tax bill has been worked out")
-
-      doc.text() must include("your income")
-
-      doc.text() must include("your personal allowance")
-
-      doc.text() must include("the tax due")
-
-      doc.text() must include("You can print a copy of the calculation for your records.")
-
+      doc.text() must include("You can correct errors in returns for the preceding 4 years, if the net value of the errors is either:")
+      doc.text() must include("£10,000 or less")
+      doc.text() must include("between £10,000 and £50,000 but less than 1% of the total value of your sales")
+      doc.text() must include("For these kinds of errors, make an adjustment or correction in your next return.")
+      doc.text() must include("You must tell HMRC separately about net errors that are:")
+      doc.text() must include("over £50,000")
+      doc.text() must include("over £10,000 if they exceed 1% of the total value of sales")
+      doc.text() must include("deliberate errors")
     }
 
     "have correct links" in {
       val doc = Jsoup.parse(view.toString)
       assertLinkById(
         doc,
-        "any-class-2-4",
-        "any class 2 and class 4 National Insurance contributions",
-        "https://www.gov.uk/self-employed-national-insurance-rates",
-
-        expectedOpensInNewTab = false
-      )
-      assertLinkById(
-        doc,
-        "viewing-sa-tax-calculation-video",
-        "Video - Viewing your Self Assessment tax return calculation (opens in new tab)",
-        "https://www.youtube.com/watch?v=R49QSSdl8fc",
-
+        "correcting-vat-errors-link",
+        "correcting errors in your VAT return (opens in new tab)",
+        "https://www.gov.uk/submit-vat-return/correct-errors-in-your-vat-return",
         expectedOpensInNewTab = true
       )
-
-
     }
 
   }

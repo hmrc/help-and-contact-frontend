@@ -25,7 +25,7 @@ import scala.collection.JavaConverters._
 
 class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
 
-  val messageKeyPrefix = "helpWithYourSelfAssessmentTaxReturn"
+  val messageKeyPrefix = "help_and_contact.help_with_sa_tax_return"
 
   def createView(utr: Option[SaUtr] = None) = () => help_with_sa_tax_return(PageType.HelpWithSATaxReturn.name, utr, frontendAppConfig)(fakeRequest, messages)
 
@@ -50,11 +50,10 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
         "Viewing your Self Assessment calculation",
         "More help with Self Assessment",
         "Basic record keeping when you’re self-employed",
-        "More help with record keeping"
+        "More help with record keeping",
       )
       val doc = asDocument(createView()())
-      val headings = doc.getElementsByTag("article").first.getElementsByTag("h2").asScala.toList.map(_.text())
-
+      val headings = doc.getElementsByTag("h2").eachText().asScala.toList
       headings mustBe listOfHeadings
     }
 
@@ -86,7 +85,7 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
         doc,
         "find-out-more-link",
         "Find out more about registering for Self Assessment online",
-        "/business-account/help/self-assessment/register-or-stopping"
+        "/business-account/help/registering-or-stopping"
       )
       assertLinkById(
         doc,
@@ -95,7 +94,6 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
         "https://www.youtube.com/watch?v=ZWasvKMvJvs",
         expectedOpensInNewTab = true
       )
-
       assertLinkById(
         doc,
         "used-to-file-link",
@@ -143,7 +141,7 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
         doc,
         "how-to-pay-sa",
         "How to pay your Self Assessment",
-        "/business-account/help/self-assessment/payment-and-penalties"
+        "/business-account/help/payments-and-penalties"
       )
       assertLinkById(
         doc,

@@ -183,7 +183,8 @@ help_and_contact.enter_the_amount_from_box5 = Enter the amount from Box 5 on you
 help_and_contact.other_help = Other help
 help_and_contact.if_you_prefer = If you prefer,
 help_and_contact.you_can_watch_our_video_on_how_to_add_tax = you can watch our video on how to add a tax (opens in a new tab)
-help_and_contact.transcript_how_do_i_add_tax_bta = Video transcript for ‘How do I add a tax to my Business Tax Account’
+help_and_contact.transcript_how_do_i_add_tax_bta = Video transcript — ‘How do I add a tax to my Business Tax Account’
+help_and_contact.video.how_do_i_add_tax_bta = Video — for ‘How do I add a tax to my Business Tax Account’
 
 help_and_contact.register_or_deregister = Register or deregister
 help_and_contact.register_or_deregister_for_vat = Register or deregister for VAT
@@ -560,6 +561,11 @@ payments_and_penalties.interest_rates = Interest rates for late and early paymen
 payments_and_penalties.sa_penalties_video = Video - Self Assessment penalties (opens in new tab)
 payments_and_penalties.sa_penalties_transcript = Self Assessment penalties - video transcript
 payments_and_penalties.penalties_interest = Your penalties and interest
+
+payments_and_penalties.view_sa_penalties =view your Self Assessment penalties
+payments_and_penalties.view_sa_interest =view your Self Assessment interest
+payments_and_penalties.interest_rates_for_late_or_early = interest rates for late and early payments (opens in new tab)
+
 payments_and_penalties.conditional.you_can = You can:
 payments_and_penalties.conditional.appeal_sa_late = appeal a £100 Self Assessment late filing penalty online (opens in new tab)
 payments_and_penalties.conditional.appeal_filling = use form SA370 to appeal any late filing or late payment penalty
@@ -582,7 +588,7 @@ expenses.allowable_expenses = Include all of your allowable expenses for the tax
 expenses.send_proof = You do not need to send proof of your expenses when you file your tax return.
 expenses.keep_proof = You should keep proof and records so that you can show them to HMRC if asked. You need to make sure your records are accurate.
 expenses.find_out_more = Find out more about allowable expenses if you’re self-employed
-expenses.what_expenses_video = Video - What expenses can I include in my Self Assessment tax return? (opens in new tab)
+expenses.what_expenses_video = Video transcript – What expenses can I include in my Self Assessment tax return?
 expenses.what_expenses_transcript = What expenses can I include in my Self Assessment tax return? - video transcript
 expenses.simplified = Simplified expenses
 expenses.cannot_be_used = Simplified expenses cannot be used by limited companies or business partnerships involving a limited company.
@@ -918,7 +924,7 @@ ct.register_deregister_close_company_ = close the limited company
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ How to find out about Self Assessment penalties  transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-howToFindSaPenaltiesTranscript.title = Video - How to find out about Self Assessment penalties
+howToFindSaPenaltiesTranscript.title = How to find out about Self Assessment penalties - video transcript
 howToFindSaPenaltiesTranscript.heading = How to find out about Self Assessment penalties - video transcript
 howToFindSaPenaltiesTranscript.paragraph1 = You may have heard there are penalties if you’re late sending and paying your online tax return to HMRC.
 howToFindSaPenaltiesTranscript.paragraph2 = Remember you should send and pay your online tax return by 31st January, if you don’t you’ll usually be charged a penalty.
@@ -932,49 +938,44 @@ howToFindSaPenaltiesTranscript.paragraph8 = The easiest way to avoid penalties i
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Viewing your self assessment calculation transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-viewingYourCalculationTranscript.title = Viewing your Self Assessment tax return calculations - video transcript
-viewingYourCalculationTranscript.heading = Viewing your Self Assessment tax return calculations - video transcript
+viewingYourCalculationTranscript.title = Video transcript - Viewing your Self Assessment tax return calculation
+viewingYourCalculationTranscript.heading = Video transcript - Viewing your Self Assessment tax return calculation
 viewingYourCalculationTranscript.paragraph1 = When you use our Self Assessment online tax return, it automatically works out how much you’ll need to pay us.
-viewingYourCalculationTranscript.paragraph2 = After adding your figures and checking everything is correct, you can view your calculation. This shows the amount you’re due to pay for this tax return. It will include:
-viewingYourCalculationTranscript.para2bullet1 = Income Tax
-viewingYourCalculationTranscript.para2bullet2 = Class 4 National Insurance
-viewingYourCalculationTranscript.para2bullet3 = and Class 2 National Insurance contributions
-viewingYourCalculationTranscript.paragraph3 = if they’re due.
+viewingYourCalculationTranscript.paragraph2 = After adding your figures, and checking everything is correct, you can view your calculation.
+viewingYourCalculationTranscript.paragraph3 = This shows the amount you’re due to pay for this tax return. It will include Income Tax, Class 4 National Insurance and Class 2 National Insurance contributions, if they’re due.
+
 viewingYourCalculationTranscript.paragraph4 = If the amount of Income Tax and Class 4 National Insurance is £1,000 or more, you have to make a payment on account.
-viewingYourCalculationTranscript.paragraph5 = A payment on account is made twice a year on 31 January and 31 July to help you spread the cost of each year’s tax.
+viewingYourCalculationTranscript.paragraph5 = A payment on account is made twice a year, on the 31st of January and the 31st of July, to help you spread the cost of each year’s tax.
 viewingYourCalculationTranscript.paragraph6 = Each payment is half of your last Income Tax and Class 4 National Insurance bill.  These payments are taken off the amount you’re due to pay the following year.
-viewingYourCalculationTranscript.paragraph7 = If you’d like to see how the figures have been worked out in more detail, select ‘View and print your full calculation’.
-viewingYourCalculationTranscript.paragraph8 = This shows your:
-viewingYourCalculationTranscript.para8bullet1 = income
-viewingYourCalculationTranscript.para8bullet2 = personal allowance
-viewingYourCalculationTranscript.para8bullet3 = tax due
-viewingYourCalculationTranscript.para8bullet4 = Class 4 National Insurance
-viewingYourCalculationTranscript.para8bullet5 = Class 2 National Insurance
-viewingYourCalculationTranscript.para8bullet6 = and the total of any payments due
-viewingYourCalculationTranscript.paragraph9 = Remember, these estimated payments don’t include any payments you’ve already made. You can print a copy of this for your own records.
-viewingYourCalculationTranscript.paragraph10 = You can find more information about Self Assessment on
+viewingYourCalculationTranscript.paragraph7 = If you’d like to see how the figures have been worked out in more detail, select ‘View and print your full calculation’. This shows your income, personal allowance, tax due, Class 4 National Insurance, Class 2 National Insurance and the total of any payments due.
+viewingYourCalculationTranscript.paragraph8 = Remember, these estimated payments don’t include any payments you’ve already made. You can print a copy of this for your own records.
+viewingYourCalculationTranscript.paragraph9 = You can find more information about Self Assessment on
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Paying your self assessment tax bill transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-payingYourSelfAssessmentTaxBillTranscript.title = How do I pay my Self Assessment tax bill? - video transcript
-payingYourSelfAssessmentTaxBillTranscript.heading = How do I pay my Self Assessment tax bill? - video transcript
+payingYourSelfAssessmentTaxBillTranscript.title = Video transcript - How do I pay my Self Assessment tax bill?
+payingYourSelfAssessmentTaxBillTranscript.heading = Video transcript - How do I pay my Self Assessment tax bill?
 payingYourSelfAssessmentTaxBillTranscript.paragraph1 = After completing your online Self Assessment return, you’ll see your tax calculation and how much you’ll pay.
-payingYourSelfAssessmentTaxBillTranscript.paragraph2 = There are lots of ways to pay this bill, and 2 deadlines for paying it by. Paying on time means you’ll avoid being charged interest and a late penalty. The deadlines are:
-payingYourSelfAssessmentTaxBillTranscript.list1.bullet1 = 31 January for your tax bill from the previous year and first payment on account
-payingYourSelfAssessmentTaxBillTranscript.list1.bullet2 = and 31 July for your second payment on account.
-payingYourSelfAssessmentTaxBillTranscript.paragraph3 = To help you avoid missing the deadline, you can choose to make your payments earlier. If you prefer to pay regularly throughout the year, use a budget payment plan.
-payingYourSelfAssessmentTaxBillTranscript.paragraph4 = For your payment to reach us the same or next day, pay by:
-payingYourSelfAssessmentTaxBillTranscript.list2.bullet1 = online or telephone banking, using faster payments
-payingYourSelfAssessmentTaxBillTranscript.list2.bullet2 = CHAPS
-payingYourSelfAssessmentTaxBillTranscript.list2.bullet3 = or your debit or corporate credit card online
-payingYourSelfAssessmentTaxBillTranscript.list2.bullet4 = approving your payment through your online account
-payingYourSelfAssessmentTaxBillTranscript.paragraph5 = For payment to reach us within 3 days, pay by:
+payingYourSelfAssessmentTaxBillTranscript.paragraph2 = There are lots of ways to pay this bill and two deadlines for paying it by.
+payingYourSelfAssessmentTaxBillTranscript.paragraph3 = Paying on-time means you’ll avoid being charged interest and a late penalty.
+payingYourSelfAssessmentTaxBillTranscript.paragraph4 = The deadlines are:
+payingYourSelfAssessmentTaxBillTranscript.list1.bullet1 = 31 January for your tax bill from the <b>previous year</b> and <b>first</b> payment on account and
+payingYourSelfAssessmentTaxBillTranscript.list1.bullet2 = 31 July for your second payment on account.
+payingYourSelfAssessmentTaxBillTranscript.paragraph5 = To help you avoid missing the deadline, you can choose to make your payments earlier. If you prefer to pay regularly throughout the year, use a budget payment plan.
+payingYourSelfAssessmentTaxBillTranscript.paragraph6 =You can also pay your Self Assessment tax bill through the HMRC app.
+payingYourSelfAssessmentTaxBillTranscript.paragraph7 = For your payment to reach us the <b>same</b> or <b>next day</b>, pay by:
+payingYourSelfAssessmentTaxBillTranscript.list2.bullet1 = approving your payment through your online bank account
+payingYourSelfAssessmentTaxBillTranscript.list2.bullet2 = online or telephone banking, using faster payments
+payingYourSelfAssessmentTaxBillTranscript.list2.bullet3 = CHAPS
+payingYourSelfAssessmentTaxBillTranscript.list2.bullet4 = or your debit or corporate credit card online
+payingYourSelfAssessmentTaxBillTranscript.paragraph8 = Alternatively, you can use a paying-in slip from HMRC at your bank or building society
+payingYourSelfAssessmentTaxBillTranscript.paragraph9 = For payment to reach us within <b>three days</b>, pay by:
 payingYourSelfAssessmentTaxBillTranscript.list3.bullet1 = Direct Debit
 payingYourSelfAssessmentTaxBillTranscript.list3.bullet2 = or Bacs
-payingYourSelfAssessmentTaxBillTranscript.list3.bullet3 = alternatively you can send a cheque through the post.
-payingYourSelfAssessmentTaxBillTranscript.paragraph6 = After paying, you can view your HMRC online account to check payment has been received. It should show as paid within 7 working days.
-payingYourSelfAssessmentTaxBillTranscript.paragraph7 = You can find more information about Self Assessment on
+payingYourSelfAssessmentTaxBillTranscript.paragraph10 = Alternatively, you can send a cheque through the post.
+payingYourSelfAssessmentTaxBillTranscript.paragraph11 = After paying, you can view your HMRC online account, to check payment has been received – it should show as paid within seven working days.
+payingYourSelfAssessmentTaxBillTranscript.paragraph12 = You can find more information about Self Assessment on
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Budgeting for your Self Assessment tax bill transcript
@@ -1008,15 +1009,15 @@ selfAssessmentPenaltiesTranscript.paragraph9 = The easiest way to avoid penaltie
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Why have I been sent a tax return transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-whySentTaxReturnTranscript.title = What to do if you’ve been sent a tax return? - video transcript
-whySentTaxReturnTranscript.heading = What to do if you’ve been sent a tax return? - video transcript
-whySentTaxReturnTranscript.paragraph1 = You’ll usually be sent a tax return if you’re registered as self-employed, but there are plenty of other reasons why you may need to fill one in.
-whySentTaxReturnTranscript.paragraph2 = You can check if you need to fill in a Self Assessment tax return quickly and easily on
-whySentTaxReturnTranscript.paragraph2_2 = using the link at the end of this video.
-whySentTaxReturnTranscript.paragraph3 = It’s not connected to HM Revenue and Customs online services so it’s completely anonymous.
-whySentTaxReturnTranscript.paragraph4 = If you’re sent a tax return, or if you get an email or letter from HMRC telling you to complete one, you must do it - even if you don’t have any tax to pay. If you don’t send a tax return back by the deadline you may have to pay a penalty.
-whySentTaxReturnTranscript.paragraph5 = If you used to send a tax return but don’t need to send one for the last tax year, contact HMRC to close your Self Assessment account.
-whySentTaxReturnTranscript.paragraph6 = You must also tell HMRC if you’ve stopped being self-employed. You can do all this – and find out much more – on
+
+whySentTaxReturnTranscript.title = Video transcript – What to do if you’ve  been sent a tax return
+whySentTaxReturnTranscript.heading = Video transcript – What to do if you’ve been sent a tax return
+whySentTaxReturnTranscript.paragraph1 = You’ll usually be sent a tax return if you’re registered as self-employed, but there are plenty of other reasons why you may need to fill one in. You can check if you need to fill in a Self Assessment tax return quickly and easily on
+whySentTaxReturnTranscript.paragraph1_2 = using the link at the end of this video.
+whySentTaxReturnTranscript.paragraph2 = It’s not connected to HM Revenue and Customs online services so it’s completely anonymous
+whySentTaxReturnTranscript.paragraph3 = If you’re sent a tax return, or if you get an email or letter from HMRC telling you to complete one, you must do it - even if you don’t have any tax to pay. If you don’t send a tax return back by the deadline you may have to pay a penalty.
+whySentTaxReturnTranscript.paragraph4 = If you used to send a tax return but don’t need to send one for the last tax year, contact HMRC to close your Self Assessment account.
+whySentTaxReturnTranscript.paragraph5 = You must also tell HMRC if you’ve stopped being self-employed. You can do all this – and find out much more – on
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1155,28 +1156,27 @@ yourIncomeFromPropertyTaxReturnTranscript.paragraph17 = You can find more inform
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Expenses if you are self employed transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.title = What expenses can I include in my Self Assessment tax return? - video transcript
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.heading = What expenses can I include in my Self Assessment tax return? - video transcript
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph1 = You’re self-employed which means you have essential costs to keep your business running. You can deduct these costs which are called allowable expenses to work out your taxable profit.
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph2 = But remember – if you’re using the £1000 tax-free trading allowance, you can’t claim any expenses.
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.title = Video transcript – What expenses can I include in my Self Assessment tax return?
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.heading = Video transcript – What expenses can I include in my Self Assessment tax return?
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph1 = You’re self-employed – which means you have essential costs to keep your business running. You can deduct these costs – which are called allowable expenses – to work out your taxable profit.
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph2 = But remember – if you’re using the one thousand pound tax-free trading allowance, you can’t claim any expenses.
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph3 = Allowable expenses include:
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet1 = office property and equipment
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet2 = travel, including cars and vans
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet3 = staff
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet4 = any legal and financial costs
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet5 = and also marketing and subscriptions
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para3bullet5 = and also marketing and subscriptions.
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph4 = You can’t claim for anything you spend on personal things, such as:
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet1 = your home and accommodation
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet2 = food
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet3 = clothing
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet4 = holidays
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet5 = and anything you buy for you and your family
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.para4bullet5 = and anything you buy for you and your family.
 sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph5 = You may want to use simplified expenses – this means you claim a flat rate instead of working out the actual costs. For example, for car travel you can claim 45 pence a mile up to 10,000 miles and then 25 pence a mile over this amount.
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph6 = If your income is £85,000 or more, you’ll need to list each expense individually under the appropriate heading. This also applies if you didn’t trade a full year but would have earned this amount or more if you had – for example, your income for 6 months was £50,000 – so in 12 months it would have been £100,000.
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph7 = If your income is less than £85,000, it’s up to you whether you give us your total amount of expenses or list them individually.
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph8 = It’s important you keep records and proof of your business costs – you’ll need them to complete your Self Assessment tax return.
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph9 = Sometimes we ask to see these, but please don’t send them with your return.
-sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph10 = You can find more information about Self Assessment on
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph6 = If your income is eighty five thousand pounds or more, you’ll need to list each expense individually under the appropriate heading. This also applies if you didn’t trade a full year but would have earned this amount or more if you had – for example, your income for six months was fifty thousand pounds – so in 12 months it would have been a hundred thousand pounds.
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph7 = If your income is less than eighty five thousand pounds, it’s up to you whether you give us your total amount of expenses or list them individually.
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph8 = It’s important you keep records and proof of your business costs – you’ll need them to complete your Self Assessment tax return. Sometimes we ask to see these, but please don’t send them with your return.
+sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph9 = You can find more information about Self Assessment on
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Calculating motoring expenses transcript
@@ -1420,8 +1420,8 @@ mtditsaHelp.help_with_mtditsa = Help with Making Tax Digital for Income Tax
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Help if you can't pay your tax bill - Transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-help.cant.pay.taxbill.transcript.title = How to get help when you can’t pay your tax bill - Video Transcript
-help.cant.pay.taxbill.transcript.heading = How to get help when you can’t pay your tax bill - Video Transcript
+help.cant.pay.taxbill.transcript.title = Help if you can’t pay your tax bill - video transcript
+help.cant.pay.taxbill.transcript.heading = Help if you can’t pay your tax bill - video transcript
 help.cant.pay.taxbill.transcript.paragraph1 = If you’re having problems paying your tax bill, don’t worry. HMRC can help you get back on track.
 help.cant.pay.taxbill.transcript.paragraph2 = We’ll look at your financial circumstances and how we can help you.
 help.cant.pay.taxbill.transcript.paragraph3 = For example, if you can’t pay by the deadline, we may be able to agree an affordable payment plan.
@@ -1429,39 +1429,37 @@ help.cant.pay.taxbill.transcript.paragraph4 = That means you can pay in instalme
 help.cant.pay.taxbill.transcript.paragraph5 = If it’s your health or other personal difficulties causing problems, we’ll work with you or with someone acting on your behalf to find a solution you can afford.
 help.cant.pay.taxbill.transcript.paragraph6 = We also work with Money Helper. They can help you access advice that’s free and independent if you’re having difficulty paying any of your debts.
 help.cant.pay.taxbill.transcript.paragraph7 = Remember we’re here to help.
-help.cant.pay.taxbill.transcript.paragraph8 =You can find more on
-help.cant.pay.taxbill.transcript.paragraph9 = and watch our other helpful videos on
+help.cant.pay.taxbill.transcript.paragraph8 =You can find out more on
+help.cant.pay.taxbill.transcript.paragraph9 = and watch our other helpful videos on YouTube.
 help.cant.pay.taxbill.transcript.paragraph9_1 = YouTube
-
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ New tailor your SA tax return transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-sa.new_tailor_tax_return_transcript.heading = How do I tailor my Self Assessment tax return? - video transcript
-sa.new_tailor_tax_return_transcript.title = How do I tailor my Self Assessment tax return? - video transcript
+sa.new_tailor_tax_return_transcript.heading = Video transcript - How do I tailor my Self Assessment tax return?
+sa.new_tailor_tax_return_transcript.title = Video transcript - How do I tailor my Self Assessment tax return?
 sa.new_tailor_tax_return_transcript.paragraph1 = When you’re filling in your online tax return, you’ll find a section called ‘Tailor your return’.
 sa.new_tailor_tax_return_transcript.paragraph2 = It’s three pages of questions where you answer ‘Yes’ or ‘No’, which means you only get the sections you need to complete. If you’re not sure about a question, click on the ‘Help about’ link for guidance.
 sa.new_tailor_tax_return_transcript.paragraph3 = Page one asks if you’ve had income as an employee, from self-employment or from a partnership.
 sa.new_tailor_tax_return_transcript.paragraph4 = You must answer ‘Yes’ or ‘No’ to all the questions. If you choose ‘Yes’, you may be asked for more information; for example, if you say yes to being employed, it asks how many employers you had, and their names.
 sa.new_tailor_tax_return_transcript.paragraph5 = Using ‘Save and continue’ takes you to the next page. This saves your answers so far, you can then stop and come back later.
 sa.new_tailor_tax_return_transcript.paragraph6 = Page two asks about other kinds of income, such as interest from bank and savings accounts, dividends from shares, and pensions.
-sa.new_tailor_tax_return_transcript.paragraph7 = Only answer ‘Yes’ to this question if you incorrectly claimed or you were overpaid from an HMRC coronavirus support scheme. Use the ‘Help about’ link for more guidance.
-sa.new_tailor_tax_return_transcript.paragraph8 = Please note the question about losses on other taxable income refers to income such as casual earnings or commission. It’s not for losses that belong elsewhere in your return – for example, losses from self-employment go in the self-employment section. If in doubt, use the ‘Help about’ link for further guidance.
-sa.new_tailor_tax_return_transcript.paragraph9 = The third page is mainly about tax reliefs, including pension contributions, charitable gifts, Married Couple’s Allowance and Marriage Allowance.
-sa.new_tailor_tax_return_transcript.paragraph10 = This is for tax you’ve paid in the tax year covered by this online return, and which has already been refunded by us or Jobcentre Plus. It’s not for refunds that came from an earlier year, or from an employer.
-sa.new_tailor_tax_return_transcript.paragraph11 = The next section is Fill in your return. Based on your answers in Tailor your return, it shows you the sections you need to complete next.
-sa.new_tailor_tax_return_transcript.paragraph12 = Remember, your Self Assessment tax return covers the tax year that ended on the fifth of April and is due by the thirty first of January the following year. Any tax you owe must be paid by the thirty first of January.
-sa.new_tailor_tax_return_transcript.paragraph13 = You can file anytime, just don’t leave it until the last minute.
-sa.new_tailor_tax_return_transcript.paragraph14 = You can find out more about Self Assessment on
-sa.new_tailor_tax_return_transcript.paragraph14_2 =  and watch our other helpful videos and webinars on YouTube.
+sa.new_tailor_tax_return_transcript.paragraph7 = Please note the question about losses on other taxable income refers to income such as casual earnings or commission. It’s not for losses that belong elsewhere in your return – for example, losses from self-employment go in the self-employment section. If in doubt, use the ‘Help about’ link for further guidance.
+sa.new_tailor_tax_return_transcript.paragraph8 = The third page is mainly about tax reliefs, including pension contributions, charitable gifts, Married Couple’s Allowance and Marriage Allowance.
+sa.new_tailor_tax_return_transcript.paragraph9 = This is for tax you’ve paid in the tax year covered by this online return, and which has already been refunded by us or Jobcentre Plus. It’s not for refunds that came from an earlier year, or from an employer.
+sa.new_tailor_tax_return_transcript.paragraph10 = The next section is ‘Fill in your return‘. Based on your answers in ‘Tailor your return‘, it shows you the sections you need to complete next.
+sa.new_tailor_tax_return_transcript.paragraph11 = Remember, your Self Assessment tax return covers the tax year that ended on the 5th of April and is due by the 31st of January the following year. Any tax you owe must be paid by the 31st of January.
+sa.new_tailor_tax_return_transcript.paragraph12 = You can file anytime, just don’t leave it until the last minute.
+sa.new_tailor_tax_return_transcript.paragraph13 = You can find out more about Self Assessment on
+sa.new_tailor_tax_return_transcript.paragraph13_2 =  and watch our other helpful videos and webinars on YouTube.
 
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ New your first SA tax return transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-new.yourSelfEmployedTaxReturnTranscript.heading = My first Self Assessment tax return - video transcript
-new.yourSelfEmployedTaxReturnTranscript.title = My first Self Assessment tax return - video transcript
+new.yourSelfEmployedTaxReturnTranscript.heading = Video transcript – My first Self Assessment tax return
+new.yourSelfEmployedTaxReturnTranscript.title = Video transcript – My first Self Assessment tax return
 new.yourSelfEmployedTaxReturnTranscript.paragraph1 = Do you need to complete a Self Assessment tax return?
 new.yourSelfEmployedTaxReturnTranscript.paragraph2 = To help you find out, you can check on
 new.yourSelfEmployedTaxReturnTranscript.paragraph2_2 =  by answering some questions.
@@ -1473,35 +1471,34 @@ new.yourSelfEmployedTaxReturnTranscript.paragraph6 = Make sure you’ve got your
 new.yourSelfEmployedTaxReturnTranscript.paragraph7 = Go to
 new.yourSelfEmployedTaxReturnTranscript.paragraph7_2 = and login with the user ID and password you received when you registered online.
 new.yourSelfEmployedTaxReturnTranscript.paragraph8 = First, we’ll need some details about you. The online screens will guide you – if you get stuck, there are prompts on screen and links that explain more. For example, if you enter your date of birth the wrong way, the box will light up red.
-new.yourSelfEmployedTaxReturnTranscript.paragraph9 = In the section called Tailor your return you answer yes or no to a series of questions – this means you only fill in the sections that apply to you. If you’re not sure about a question, click on the ‘Help about’ link for guidance.
-new.yourSelfEmployedTaxReturnTranscript.paragraph10 = The Save and continue button will save what you’ve entered so far; it’s handy if you want to stop and come back to it later.
+new.yourSelfEmployedTaxReturnTranscript.paragraph9 = In the section called ’Tailor your return’ you answer yes or no to a series of questions – this means you only fill in the sections that apply to you. If you’re not sure about a question, click on the ‘Help about’ link for guidance.
+new.yourSelfEmployedTaxReturnTranscript.paragraph10 = The ’Save and continue’ button will save what you’ve entered so far; it’s handy if you want to stop and come back to it later.
 new.yourSelfEmployedTaxReturnTranscript.paragraph11 = When you’ve completed your return, check it through. You can go back if you need to correct anything.
-new.yourSelfEmployedTaxReturnTranscript.paragraph12 = Use View your calculation to find out if you owe tax and how much.
-new.yourSelfEmployedTaxReturnTranscript.paragraph13 = Now you can save a copy for your records. In the Submit return section, you’ll need your user ID and password to send it to HMRC. Finally, you’ll get an online message to confirm that we’ve received it.
+new.yourSelfEmployedTaxReturnTranscript.paragraph12 = Use ’View your calculation’ to find out if you owe tax and how much.
+new.yourSelfEmployedTaxReturnTranscript.paragraph13 = Now you can save a copy for your records. In the ’Submit return’ section, you’ll need your user ID and password to send it to HMRC. Finally, you’ll get an online message to confirm that we’ve received it.
 new.yourSelfEmployedTaxReturnTranscript.paragraph14 = You can find out more about Self Assessment on
 new.yourSelfEmployedTaxReturnTranscript.paragraph14_2 = and watch our other helpful videos and webinars on YouTube.
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ New income from property transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-new.incomeFromPropertyTaxReturnTranscript.heading = If I have income from property, how do I fill in my tax return? - video transcript
-new.incomeFromPropertyTaxReturnTranscript.title = If I have income from property, how do I fill in my tax return? - video transcript
+new.incomeFromPropertyTaxReturnTranscript.heading = Video transcript – If I have income from property, how do I fill in my tax return?
+new.incomeFromPropertyTaxReturnTranscript.title = Video transcript – If I have income from property, how do I fill in my tax return?
 new.incomeFromPropertyTaxReturnTranscript.paragraph1 = Your tax return must include any income from property that’s in the UK or European Economic Area.
 new.incomeFromPropertyTaxReturnTranscript.paragraph2 = For property income outside of these areas, fill in the foreign income tax return pages instead.
 new.incomeFromPropertyTaxReturnTranscript.paragraph3 = In this section, don’t include income from letting rooms, such as bed and breakfast unless you’re claiming rent a room relief. This counts as trade and goes elsewhere in your tax return.
 new.incomeFromPropertyTaxReturnTranscript.paragraph4 = To begin, tell us what type of property income you had during the year including furnished holiday lettings.
-new.incomeFromPropertyTaxReturnTranscript.paragraph5 = On this page tell us how much property income you received. Include any coronavirus support scheme payments. Use the ‘help about’ link for further guidance.
+new.incomeFromPropertyTaxReturnTranscript.paragraph5 = On this page tell us how much property income you received. Use the help about link for further guidance.
 new.incomeFromPropertyTaxReturnTranscript.paragraph6 = We need to know if you’re claiming the property income allowance – if you are, then you can’t claim expenses.
 new.incomeFromPropertyTaxReturnTranscript.paragraph7 = You also need to tell us if you’re using traditional accounting – that means you record income and expenses when you invoice customers or receive a bill.
 new.incomeFromPropertyTaxReturnTranscript.paragraph8 = If you’re not claiming the property income allowance, enter your running costs here. You can include the cost of repairs, but not improvements or upgrades. Don’t include any residential finance costs on this page.
-new.incomeFromPropertyTaxReturnTranscript.paragraph9 = If your total annual income is below 85 thousand pounds, add your total running costs here but don’t include residential finance costs.
-new.incomeFromPropertyTaxReturnTranscript.paragraph10 = Next, enter 25 percent of your residential finance costs – you can enter the other 75 percent further on.
-new.incomeFromPropertyTaxReturnTranscript.paragraph11 = On page four enter what we call adjustments – claims that could reduce your tax bill. For example, if you claim rent a room relief and your income is over the threshold, add the exempt amount of £7,500 – or, £3,750, if you’re a joint owner.
-new.incomeFromPropertyTaxReturnTranscript.paragraph12 = On page five you’ll see your adjusted profit or loss for the year.
-new.incomeFromPropertyTaxReturnTranscript.paragraph13 = If you’re in profit, you must enter losses from an earlier year. This amount cannot be more than your adjusted profit for the current year. We’ll then calculate your taxable profit.
-new.incomeFromPropertyTaxReturnTranscript.paragraph14 = Enter your total residential finance costs for this year here. This will help reduce your total tax bill. You can also enter any residential finance costs you couldn’t use in the previous tax year. Use the ‘Help about’ link to work out the amount to enter.
-new.incomeFromPropertyTaxReturnTranscript.paragraph15 = Finally, on page six, add any extra information. Then check your figures on the summary screen – you can go back to make corrections.
-new.incomeFromPropertyTaxReturnTranscript.paragraph16 = You can find more information about Self Assessment on
+new.incomeFromPropertyTaxReturnTranscript.paragraph9 = If your total annual income is below 85 thousand pounds, add your total running costs here.
+new.incomeFromPropertyTaxReturnTranscript.paragraph10 = On page four enter what we call adjustments – claims that could reduce your tax bill. For example, if you claim rent a room relief and your income is over the threshold, add the exempt amount of £7,500 – or, £3,750, if you’re a joint owner.
+new.incomeFromPropertyTaxReturnTranscript.paragraph11 = On page five you’ll see your adjusted profit or loss for the year.
+new.incomeFromPropertyTaxReturnTranscript.paragraph12 = If you’re in profit, you must enter losses from an earlier year. This amount cannot be more than your adjusted profit for the current year. We’ll then calculate your taxable profit.
+new.incomeFromPropertyTaxReturnTranscript.paragraph13 = Enter your total residential finance costs for this year here. This will help reduce your total tax bill. You can also enter any residential finance costs you couldn’t use in the previous tax year. Use the ‘Help about’ link to work out the amount to enter.
+new.incomeFromPropertyTaxReturnTranscript.paragraph14 = Finally, on page six, add any extra information. Then check your figures on the summary screen – you can go back to make corrections.
+new.incomeFromPropertyTaxReturnTranscript.paragraph15 = You can find more information about Self Assessment on
 
 #######################################################
 ##  General

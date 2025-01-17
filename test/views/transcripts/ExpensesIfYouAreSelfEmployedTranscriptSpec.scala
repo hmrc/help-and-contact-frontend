@@ -85,7 +85,7 @@ class ExpensesIfYouAreSelfEmployedTranscriptSpec extends ViewBehaviours {
         "If your income is less than eighty five thousand pounds, it’s up to you whether you give us your total amount " +
           "of expenses or list them individually.",
         "It’s important you keep records and proof of your business costs – you’ll need them to complete your Self Assessment tax return."+
-        " Sometimes we ask to see these, but please don’t send them with your return.",
+          " Sometimes we ask to see these, but please don’t send them with your return.",
         "You can find more information about Self Assessment on GOV.UK."
       )
 
