@@ -38,12 +38,12 @@
 </ul>
 <p class="govuk-body"><a class="govuk-link" href ="https://www.gov.uk/find-lost-utr-number" id = "find-UTR" rel="noreferrer noopener" target="_blank"
 >@Messages("register_or_stopping.can_find_utr") @Messages("app.common.openInNewTab")</a></p>
-
+<br>
 <h2 class="govuk-heading-m">@Messages("register_or_stopping.not_self_employed")</h2>
 <p class="govuk-body">@Messages("register_or_stopping.did_not_file_return")
     <a class="govuk-link" href="https://www.gov.uk/government/publications/self-assessment-register-for-self-assessment-and-get-a-tax-return-sa1" id="sa1-register"
-       rel="noreferrer noopener" >
-        @Messages("register_or_stopping.sa1_link")</a></p>
+       rel="noreferrer noopener" target="_blank" >
+        @Messages("register_or_stopping.sa1_link") @Messages("app.common.openInNewTab")</a></p>
 
 <h2 class="govuk-heading-m">@Messages("register_or_stopping.are_self_employed")</h2>
 <p class="govuk-body">@Messages("register_or_stopping.did_not_file_this_year")
@@ -59,19 +59,12 @@
     @Messages("register_or_stopping.more_about_registering")</a></p>
 
 <h2 class="govuk-heading-m">@Messages("register_or_stopping.sa_guidance")</h2>
-<p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/guidance/help-and-support-for-self-assessment" id ="learn-sa" rel="noreferrer noopener"
+<p class="govuk-body"><a class="govuk-link" target="_blank" href="https://www.gov.uk/guidance/help-and-support-for-self-assessment" id ="learn-sa" rel="noreferrer noopener"
 >
-    @Messages("register_or_stopping.learn_sa")</a></p>
+    @Messages("register_or_stopping.learn_sa") @Messages("app.common.openInNewTab")</a></p>
 
 
-<div class="govuk-inset-text">
-    <p class="govuk-body"><a class="govuk-link" href="https://www.youtube.com/watch?v=Ls_wqOstiBM" target="_blank" id ="registering-sa-video"
-                             rel="noreferrer noopener">
-        @Messages("register_or_stopping.registering_sa_video")</a></p>
-    <p class="govuk-body"><a class="govuk-link" href="@controllers.routes.TranscriptController.onPageLoad("new-registering-for-self-assessment")" id ="registering-sa-transcript"
-        >
-        @Messages("register_or_stopping.registering_sa_transcript")</a></p>
-</div>
+
 
 <h2 class="govuk-heading-m">@Messages("register_or_stopping.stop_sa")</h2>
 <p class="govuk-body">@Messages("register_or_stopping.you_must")
