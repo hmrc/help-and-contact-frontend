@@ -570,9 +570,9 @@ payments_and_penalties.conditional.send_contact = Bydd CThEM yn anfon manylion c
 payments_and_penalties.conditional.no_penalties = Does dim cosbau na llog gennych i’w dangos.
 payments_and_penalties.conditional.view_penalties = Bwrw golwg dros eich cosbau Hunanasesiad
 payments_and_penalties.conditional.view_interest = Bwrw golwg dros eich llog Hunanasesiad
-payments_and_penalties.interest_rates_for_late_or_early = WIP
-payments_and_penalties.view_sa_interest = wip
-payments_and_penalties.view_sa_penalties = wip
+payments_and_penalties.interest_rates_for_late_or_early = Bwrw golwg dros eich cosbau Hunanasesiad
+payments_and_penalties.view_sa_interest = Bwrw golwg dros eich llog Hunanasesiad
+payments_and_penalties.view_sa_penalties = Cyfraddau llog ar gyfer taliadau cynnar a hwyr
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
