@@ -148,9 +148,8 @@ help_and_contact.how_to_add_tax = How to add a tax
 help_and_contact.how_to_add_tax_to_your_bta = How to add a tax to your business tax account
 help_and_contact.any_services_you_add = Any services you add will show on your business tax account (BTA).
 help_and_contact.you_can_add_more_than_40_services = You can add more than 40 services to your business tax account.
-help_and_contact.each_time_you_add_service = Each time you add a service, we’ll send you an activation pin within 10 days. After you’ve entered the pin, you can use the service.
+help_and_contact.each_time_you_add_service = For some services we’ll send you an activation pin within 10 days. After you’ve entered the pin, you can use the service.
 help_and_contact.add_corporation_tax = Add Corporation Tax
-help_and_contact.select_add_tax_duty_scheme = Select ‘add a tax, duty or scheme’.
 help_and_contact.select_corporation_tax = Select ‘Corporation Tax’.
 help_and_contact.enter_your_10_digit_corporation_utr = Enter your 10-digit Corporation Tax Unique Taxpayer Reference.
 help_and_contact.enter_your_company_registration_number = Enter your Company Registration Number, or the postcode of your registered office.
@@ -162,7 +161,6 @@ help_and_contact.register_for_self_assessment = register for Self Assessment
 help_and_contact.select_sa = Select ‘Self Assessment’.
 help_and_contact.enter_your_10_digit_utr = Enter your 10-digit UTR.
 help_and_contact.select_if_youre_an_individual_or_sole_trader = Select if you’re an individual or sole trader, partnership, or trust.
-help_and_contact.enter_your_utr_again = Enter your UTR again.
 help_and_contact.enter_your_ni_number = Enter your National Insurance number, or the postcode you used to register.
 help_and_contact.if_you_live_abroad = If you live abroad, select that option.
 help_and_contact.add_paye_for_employers = Add PAYE for employers
@@ -174,7 +172,6 @@ help_and_contact.enter_your_hmrc_office_no = Enter your HMRC office number, PAYE
 help_and_contact.add_vat = Add VAT
 help_and_contact.select_vat_and_vat_services = Select ‘VAT and VAT services’.
 help_and_contact.select_which_type_of_vat = Select which type of VAT service you want to add from the options.
-help_and_contact.enter_your_9_digit_vat = Enter your 9-digit VAT number
 help_and_contact.enter_your_vat_registration_number = Enter your VAT Registration Number
 help_and_contact.enter_the_postcode_on_your_certificate = Enter the postcode on your Certificate of Registration
 help_and_contact.enter_the_date_of_registration = Enter the date of registration
@@ -547,6 +544,7 @@ payments_and_penalties.budgeting_for_sa = Budgeting for your Self Assessment tax
 payments_and_penalties.budget_taxbill = Budget for your tax bill if you’re self-employed
 payments_and_penalties.how_do_i_budget_video = Video - How do I budget for my Self Assessment tax bill? (opens in new tab)
 payments_and_penalties.how_do_i_budget_transcript = How do I budget for my Self Assessment tax bill? - video transcript
+payments_and_penalties.how_to_find_out_about_sa_video = Video - How to find out about Self Assessment penalties (opens in new tab)
 payments_and_penalties.penalties = Penalties
 payments_and_penalties.penalty_showing = You’ll have a penalty showing on your account if you:
 payments_and_penalties.list_sent_late = use the online service to appeal a late filing penalty
@@ -781,6 +779,31 @@ epaye.further_resources_link1 = running your payroll (opens in new tab)
 epaye.further_resources_link2 = paying employers’ PAYE (opens in new tab)
 epaye.further_resources_link3 = Video - How do I use payroll software? (opens in new tab)
 epaye.further_resources_link4 = How do I use payroll software? - video transcript
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~ PAYE Get started transcript
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+how.payroll.software.title = How do I use payroll software? - video transcript
+how.payroll.software.transcript.heading = How do I use payroll software? - video transcript
+how.payroll.software.transcript.gov_uk = GOV.UK (opens in new tab)
+how.payroll.software.transcript.and_pick_a_software = and pick a software package.
+how.payroll.software.transcript.to_send_your = To send your reports using payroll software, first go to
+how.payroll.software.transcript.theyve_all_been = They’ve all been recognised by us and come with a user guide if you need more help.
+how.payroll.software.transcript.youll_need_to_enter = You’ll need to enter your employer details including your HMRC reference numbers, and your employees’ details including their National Insurance numbers. Next, register for a PAYE Online account on
+how.payroll.software.transcript.pay_your_employees = pay your employees, including their: monthly salary; weekly wage; hourly pay rate and number of hours worked.
+how.payroll.software.transcript.using_your_software = Using your software, you’re now ready to send us a Full Payment Submission (or FPS) on or before each payday.
+how.payroll.software.transcript.your_fps_tells_us = Your FPS tells us:
+how.payroll.software.transcript.list_item1 = what you’ve paid your employees
+how.payroll.software.transcript.list_item2 = any deductions you’ve made from their pay
+how.payroll.software.transcript.list_item3 = the total you’re due to pay HMRC
+how.payroll.software.transcript.list_item4 = about anyone who’s joined or left since your last report
+how.payroll.software.transcript.if_you_dont = if you don’t send your FPS reports on time you may be charged a penalty.
+how.payroll.software.transcript.one_more_thing = One more thing. You may need to send us an Employer Payment Summary if:
+how.payroll.software.transcript.youre_not_sending = you’re not sending an FPS because you’ve haven’t paid your employees
+how.payroll.software.transcript.youre_reducing = you’re reducing your PAYE payments to reclaim statutory payments to employees such as maternity pay
+how.payroll.software.transcript.youre_claiming_employement = you’re claiming Employment Allowance.
+how.payroll.software.transcript.for_more_information = For more information about payroll software and sending reports go to
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Remove
@@ -1254,7 +1277,6 @@ basic.record.keeping.transcript.paragraph6 = If you’re VAT registered, you’l
 basic.record.keeping.transcript.paragraph7 = Make sure you store your records for at least 6 years, as we may need to see them to check you’re paying the right amount of tax.
 basic.record.keeping.transcript.paragraph8 = You can find out more on
 basic.record.keeping.transcript.paragraph8_2 = and in our other helpful videos on YouTube.
-
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Add a tax transcript

@@ -70,7 +70,7 @@ class BasicRecordKeepingSpec extends ViewBehaviours {
         doc,
         "record-keeping-video",
         "Video - Basic record keeping for the self employed (opens in new tab)",
-        "https://www.youtube.com/watch?v=FCHvuD8xsw4",
+        "https://www.youtube.com/watch?v=Jn46jDuKbn8",
         expectedOpensInNewTab = true
       )
 

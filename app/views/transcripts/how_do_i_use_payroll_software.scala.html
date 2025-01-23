@@ -1,0 +1,73 @@
+@*
+ * Copyright 2024 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import config.FrontendAppConfig
+
+@this(
+  main_template: main_template
+)
+
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
+
+@main_template(
+    title = messages("how.payroll.software.title"),
+    appConfig = appConfig,
+    bodyClasses = None,
+    serviceInfoContent = serviceInfoContent) {
+
+    @components.heading("how-do-i-use-payroll-software-transcript", "how.payroll.software.transcript.heading", "govuk-heading-xl")
+
+    <p class="govuk-body">
+        @Messages("how.payroll.software.transcript.to_send_your")
+        <a class="govuk-link" rel="noreferrer noopener" target="_blank" href="https://www.gov.uk/payroll-software">@Messages("how.payroll.software.transcript.gov_uk") </a>@Messages("how.payroll.software.transcript.and_pick_a_software")
+        @Messages("how.payroll.software.transcript.theyve_all_been")
+    </p>
+    <p class="govuk-body">
+        @Messages("how.payroll.software.transcript.youll_need_to_enter")<a class="govuk-link" rel="noreferrer noopener" target="_blank" href="https://www.gov.uk/paye-online"> @Messages("how.payroll.software.transcript.gov_uk")</a>. Enter details of how you
+        @Messages("how.payroll.software.transcript.pay_your_employees")
+    </p>
+    <p class="govuk-body">
+        @Messages("how.payroll.software.transcript.using_your_software")
+    </p>
+    <p class="govuk-body">@Messages("how.payroll.software.transcript.your_fps_tells_us")</p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>@Messages("how.payroll.software.transcript.list_item1")</li>
+        <li>@Messages("how.payroll.software.transcript.list_item2")</li>
+        <li>@Messages("how.payroll.software.transcript.list_item3")</li>
+        <li>@Messages("how.payroll.software.transcript.list_item4")</li>
+    </ul>
+    <p class="govuk-body">
+        @Messages("how.payroll.software.transcript.if_you_dont")
+    </p>
+    <p class="govuk-body">
+        @Messages("how.payroll.software.transcript.one_more_thing")
+    </p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>
+            @Messages("how.payroll.software.transcript.youre_not_sending")
+        </li>
+        <li>
+            @Messages("how.payroll.software.transcript.youre_reducing")
+        </li>
+        <li>@Messages("how.payroll.software.transcript.youre_claiming_employement")</li>
+    </ul>
+    <p class="govuk-body">
+        @Messages("how.payroll.software.transcript.for_more_information")
+        <a class="govuk-link" rel="noreferrer noopener" target="_blank" href="https://www.gov.uk/government/organisations/hm-revenue-customs">@Messages("how.payroll.software.transcript.gov_uk") </a>.
+    </p>
+    <p></p>
+
+}

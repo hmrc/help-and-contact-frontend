@@ -106,7 +106,7 @@ class PaymentAndPenaltiesViewSpec extends ViewBehaviours {
         doc,
         "pay-a-penalty",
         "pay a penalty",
-        "https://www.gov.uk/understand-self-assessment-bill/payments-on-account",
+        "https://www.gov.uk/self-assessment-tax-returns/penalties",
 
       )
       assertLinkById(
