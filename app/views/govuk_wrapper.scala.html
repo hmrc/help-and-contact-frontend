@@ -104,7 +104,7 @@
 
  <div class="govuk-grid-row">
   <div class= @{if(fullWidth) "govuk-grid-column-full-from-desktop" else "govuk-grid-column-two-thirds"}>
-   <div id="wrapper" class="site-wrapper" role="main" @mainClass.map { mainClassVal => class="@mainClass" } @mainDataAttributes >
+   <div id="wrapper" class="site-wrapper" @mainClass.map { mainClassVal => class="@mainClass" } @mainDataAttributes >
     <div id="content">
      @components.article(headerAndMainContent)
      @sidebar

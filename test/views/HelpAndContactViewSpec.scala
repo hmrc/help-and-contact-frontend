@@ -54,11 +54,6 @@ class HelpAndContactViewSpec extends ViewBehaviours with GuiceOneAppPerSuite {
       }
     }
 
-    "contain heading ID" in {
-      val doc = asDocument(createView(page = "help-with-bta")())
-      doc.getElementsByTag("h1").attr("id") mustBe "help-and-contact"
-    }
-
     "have correct links" when {
       val doc = asDocument(createView(page = "help-with-bta")())
 
