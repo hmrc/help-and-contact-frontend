@@ -30,8 +30,6 @@ appConfig = appConfig,
 fullWidth = true,
 serviceInfoContent = serviceInfoContent) {
 
-<!--<h1 class="govuk-heading-xl" id="help-and-contact">@Messages("help_and_contact.heading")</h1>-->
-
 <div class="govuk-grid-column-one-quarter">
  @for(category <- HelpCategory.values) {
   @defining(pageTypes.filter(_.category == category)) { filteredLinks =>
