@@ -45,11 +45,23 @@
        rel="noreferrer noopener" target="_blank" >
         @Messages("register_or_stopping.sa1_link") @Messages("app.common.openInNewTab")</a></p>
 
+    <div class="govuk-inset-text">
+        <p><a class="govuk-link" id="viewing-register-online-sa-not-self-employed-video" rel="noreferrer noopener" target="_blank" href="https://www.youtube.com/watch?v=6ia0F3zitD0">@Messages("register.online.sa.not.self.employed.video.title")
+        </a></p>
+        <p> <a class="govuk-link" href='@controllers.routes.TranscriptController.onPageLoad("register_online_sa_not_self_employed")'>@Messages("register.online.sa.not.self.employed.transcript.title")</a></p>
+    </div>
+
 <h2 class="govuk-heading-m">@Messages("register_or_stopping.are_self_employed")</h2>
 <p class="govuk-body">@Messages("register_or_stopping.did_not_file_this_year")
     <a class="govuk-link" href="@appConfig.getAddTaxUrl("haveSaUtr")" id ="file-register-sa"
     >
     @Messages("register_or_stopping.register_link")</a></p>
+
+    <div class="govuk-inset-text">
+        <p><a class="govuk-link" id="viewing-register-online-sa-self-employed-video" rel="noreferrer noopener" target="_blank" href="https://www.youtube.com/watch?v=bovXqb7H4T8">@Messages("register.online.sa.self.employed.video.title")
+        </a></p>
+        <p> <a class="govuk-link" href='@controllers.routes.TranscriptController.onPageLoad("register_online_sa_self_employed")'>@Messages("register.online.sa.self.employed.transcript.title")</a></p>
+    </div>
 
 <h2 class="govuk-heading-m">@Messages("register_or_stopping.partnership")</h2>
 <p class="govuk-body">@Messages("register_or_stopping_utr_reference")</p>

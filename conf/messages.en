@@ -235,8 +235,8 @@ vat.payments_and_deadlines.are_slightly_different_in_each_eu_country = are sligh
 vat.payments_and_deadlines.each_eu_country_has_set_a_minimun_amount_ = each EU country has set a minimum amount that can be refunded
 vat.payments_and_deadlines.if_your_business_makes_both_taxable_ = if your business makes both taxable and exempt supplies, you may not be able to reclaim all of the VAT you have been charged
 vat.payments_and_deadlines.how_to_pay_your_bill_link = Read detailed information about how to pay your VAT bill
-vat.payments_and_deadlines.how_to_get_help_link = Video - How to get help when you can''t pay your tax bill (opens in a new tab)
-vat.payments_and_deadlines.how_to_get_help_transcript_link = How to get help when you can''t pay your tax bill - video transcript
+vat.payments_and_deadlines.how_to_get_help_link = Video - How to get help when you can’’t pay your tax bill (opens in a new tab)
+vat.payments_and_deadlines.how_to_get_help_transcript_link = How to get help when you can’’t pay your tax bill - video transcript
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Register or Deregister
@@ -1350,7 +1350,7 @@ ct.how.to.pay.transcript.paragraph18.p1 = You can find more information on
 ct.how.to.pay.transcript.paragraph18.linkText = GOV.UK
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#~~ Can't Access SA Online Transcript
+#~~ Can’t Access SA Online Transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cant.access.sa.online.title = I can’t access Self Assessment online using my business tax account - video transcript
 cant.access.sa.online.heading = I can’t access Self Assessment online using my business tax account - video transcript
@@ -1393,6 +1393,149 @@ when.how.pay.epaye.paragraph15 = Please note, you can no longer pay using a pers
 when.how.pay.epaye.paragraph16 = Remember to make sure you pay by the deadline to avoid any interest or penalties.
 when.how.pay.epaye.paragraph17 = You can find more information on
 when.how.pay.epaye.paragraph17.linkText = GOV.UK
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~ Register online SA NOT self employed
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+register.online.sa.not.self.employed.video.title = Video – How do I register online for Self Assessment if I’m not self-employed? (opens in a new tab)
+register.online.sa.not.self.employed.transcript.title = Video transcript – How do I register online for Self Assessment if I’m not self-employed?
+register.online.sa.not.self.employed.transcript.heading = Video transcript – How do I register online for Self Assessment if I’m not self-employed?
+register.online.sa.not.self.employed.transcript.if_youre_not_self = If you’re not self-employed and need to send a tax return, this video will show you how to register for Self Assessment on GOV.UK.
+register.online.sa.not.self.employed.transcript.it_only_takes = It only takes a couple of minutes to do this. It’s also free, secure, and saves having to print any forms. So, let’s get started.
+register.online.sa.not.self.employed.transcript.before_you_register = Before you register, go to GOV.UK and search ‘check if you need to send a tax return’.
+register.online.sa.not.self.employed.transcript.follow_the_link = Follow the link and answer a few quick questions to help you decide if you need to register for Self Assessment.
+register.online.sa.not.self.employed.transcript.keep_in_mind_that = Keep in mind that if HMRC has already asked you to send a tax return, you must do this.
+register.online.sa.not.self.employed.transcript.here_are_some_of = Here are some of the reasons you might need to register for Self Assessment:
+register.online.sa.not.self.employed.transcript.list1.1 = you’re a UK landlord earning more than £1000 from property
+register.online.sa.not.self.employed.transcript.list1.2 = you claim Child Benefit and you or your partner earns over £50,000. (The highest earner should complete the tax return)
+register.online.sa.not.self.employed.transcript.list1.3 = you have Capital Gains Tax to pay
+register.online.sa.not.self.employed.transcript.list1.4 = you receive annual income from a trust or settlement
+register.online.sa.not.self.employed.transcript.list1.5 = you have untaxed income that cannot be collected through your PAYE tax code
+register.online.sa.not.self.employed.transcript.list1.6 = your income for 2022 to 2023 is over £100,000 where you pay tax through PAYE, or over £150,000 for the 2023 to 2024 tax year onwards
+register.online.sa.not.self.employed.transcript.you_can_find_out_more = You can find out more about who needs to send a tax return on GOV.UK.
+register.online.sa.not.self.employed.transcript.to_use_hmrc_online = To use HMRC online services, you need a Government Gateway account.
+register.online.sa.not.self.employed.transcript.if_youve_already = If you’ve already got one, have your user ID and password ready.
+register.online.sa.not.self.employed.transcript.if_not = If not, don’t worry – you’ll just need to create your sign-in details.
+register.online.sa.not.self.employed.transcript.its_easy = It’s easy to do this.
+register.online.sa.not.self.employed.transcript.go_to_govuk = Go to GOV.UK, search ‘HMRC online services’, and
+register.online.sa.not.self.employed.transcript.follow_this_link = follow this link (opens in new tab)
+register.online.sa.not.self.employed.transcript.scroll_down_the_page = Scroll down the page and select ‘Sign in’.
+register.online.sa.not.self.employed.transcript.youll_see_an_option = You’ll see an option to ‘Create sign in details’.
+register.online.sa.not.self.employed.transcript.doing_this_is_quick = Doing this is quick and then you’re ready to go.
+register.online.sa.not.self.employed.transcript.when_youre_ready = When you’re ready,
+register.online.sa.not.self.employed.transcript.type_this_web = type this web address into your browser (opens in new tab)
+register.online.sa.not.self.employed.transcript.or_just_select = Or just select the link we’ve included in the video description below.
+register.online.sa.not.self.employed.transcript.now_youll = Now you’ll need to sign in – so just enter your user ID and password.
+register.online.sa.not.self.employed.transcript.once_youre_in = Once you’re in, you’ll see this form.
+register.online.sa.not.self.employed.transcript.answer_all_the = Answer all the questions that apply to you.
+register.online.sa.not.self.employed.transcript.and_then_youve = And when you’ve filled everything in, select ‘Next’
+register.online.sa.not.self.employed.transcript.itll_take_you_to = It’ll take you to this summary.
+register.online.sa.not.self.employed.transcript.check_your_details = Check your details.
+register.online.sa.not.self.employed.transcript.spot_incorrect_info = And if you spot something isn’t correct, just go ‘Back’ to change it.
+register.online.sa.not.self.employed.transcript.submit_when_ready = Once you’re happy, go ahead and select ‘Submit’ at the bottom of the page.
+register.online.sa.not.self.employed.transcript.confirmation_message = Now you’re all done – and this is your confirmation to show it’s been sent.
+register.online.sa.not.self.employed.transcript.no_need_to_call = There’s no need to call us. If we need anything else, we’ll get in touch.
+register.online.sa.not.self.employed.transcript.utr_post_timeframe = You’ll get a Unique Taxpayer Reference, also known as a UTR, in the post within 15 days, or 21 days if you’re abroad.
+register.online.sa.not.self.employed.transcript.utr_find_online = You can find it sooner by logging in to your online account, or in the HMRC app.
+register.online.sa.not.self.employed.transcript.utr_keep_safe = Keep this safe. Your UTR is like your National Insurance number – it stays with you for life. And you’ll need it every time you deal with your Self Assessment.
+register.online.sa.not.self.employed.transcript.self_assessment_deadline = You must register for Self Assessment by 5 October.
+register.online.sa.not.self.employed.transcript.allow_enough_time = So make sure you give yourself enough time to do it.
+register.online.sa.not.self.employed.transcript.submit_tax_return_deadline = Remember to submit your tax return and pay any tax you owe by 31 January. Or even earlier if you can.
+register.online.sa.not.self.employed.transcript.more_info_videos = For more information, check out our other videos on the HMRC YouTube channel. Or search ‘Self Assessment’ on
+register.online.sa.not.self.employed.transcript.gov_uk_link = GOV.UK (opens in a new tab)
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~ Register online SA self employed
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+register.online.sa.self.employed.video.title = Video – How do I register online for Self Assessment if I’m self-employed? (opens in a new tab)
+register.online.sa.self.employed.transcript.title = Video transcript – How do I register online for Self Assessment if I’m self-employed?
+register.online.sa.self.employed.transcript.heading = Video transcript – How do I register online for Self Assessment if I’m self-employed?
+register.online.sa.self.employed.transcript.video_intro = This video will show you how to register for Self Assessment online if you’re self-employed.
+register.online.sa.self.employed.transcript.video_benefits = It only takes a few minutes to do this. It’s also free, secure, and saves having to print any forms. So, let’s get started.
+
+register.online.sa.self.employed.transcript.self_assessment_reminder = First, here’s a quick reminder about Self Assessment.
+register.online.sa.self.employed.transcript.self_assessment_threshold = You’ll need to register for Self Assessment and pay tax on any earnings over £1,000 that haven’t been taxed already.
+
+register.online.sa.self.employed.transcript.definition_self_employed = You are self-employed if you work for yourself as an individual or as a solo business.
+register.online.sa.self.employed.transcript.self_employed_responsibility = If you’re self-employed, you may have people working for you, but you are the person responsible for the business and any losses.
+register.online.sa.self.employed.transcript.examples_self_employed = This might mean you sell goods and services.
+register.online.sa.self.employed.transcript.types_self_employed = Or you could be a freelancer, contractor, consultant, seasonal worker, coach, content creator—you name it.
+
+register.online.sa.self.employed.transcript.registration_requirement = However you earn money, if it’s over £1,000 and isn’t taxed at source, you’ll need to register for Self Assessment and complete a tax return.
+register.online.sa.self.employed.transcript.voluntary_registration = If you want to, you can register as self-employed even if your income is £1,000 or less. Then you can pay voluntary Class 2 National Insurance or record any loss.
+
+register.online.sa.self.employed.transcript.hmrc_online_services = To use HMRC online services, you need a Government Gateway account.
+register.online.sa.self.employed.transcript.have_gov_gateway = If you’ve already got one, have your user ID and password ready.
+register.online.sa.self.employed.transcript.create_gov_gateway = If not, don’t worry—you’ll just need to create your sign-in details.
+register.online.sa.self.employed.transcript.easy_registration = It’s easy to do this.
+register.online.sa.self.employed.transcript.hmrc_sign_in = Go to GOV.UK, search ‘sign in to your HMRC Business Tax Account’ and
+register.online.sa.self.employed.transcript.hmrc_sign_in_link = follow the link (opens in a new tab).
+register.online.sa.self.employed.transcript.create_sign_in_details = You’ll see an option to ‘Create sign in details’.
+register.online.sa.self.employed.transcript.quick_registration = Doing this is quick, and then you’re ready to go.
+
+register.online.sa.self.employed.transcript.sign_in_business_tax_account = Now you’ll need to sign in using a Business Tax Account.
+register.online.sa.self.employed.transcript.select_tax_duty = Select ‘get online access to a tax duty or scheme’.
+register.online.sa.self.employed.transcript.select_self_assessment = Choose the Self Assessment option from this list.
+
+register.online.sa.self.employed.transcript.utr_question = We’ll then ask if you have a Self Assessment Unique Taxpayer Reference, known as a UTR.
+register.online.sa.self.employed.transcript.select_no_continue = You’re registering for the first time, so just select ‘No’ then ‘Continue’.
+
+register.online.sa.self.employed.transcript.select_individual_sole_trader = Now select ‘Individual or sole trader’ to describe yourself.
+register.online.sa.self.employed.transcript.confirm_self_employed = Then ‘Yes’ to being self-employed.
+register.online.sa.self.employed.transcript.select_self_assessment = Tick the ‘Self Assessment’ box then choose ‘Next’.
+register.online.sa.self.employed.transcript.select_business_type = Here, select the first option as your business type.
+register.online.sa.self.employed.transcript.enter_start_date = Next, enter the date you started working for yourself.
+register.online.sa.self.employed.transcript.ni_and_contact_details = Then, make sure you’ve got your National Insurance number and contact details ready for this next bit.
+
+register.online.sa.self.employed.transcript.checklist_sections = You’ll see a checklist of the sections you need to fill in.
+register.online.sa.self.employed.transcript.delegate_option = If you want somebody else to complete, view, or amend your registration, you can ‘set up a delegate’ using the link on the right. For example, if you have a bookkeeper, accountant, or tax agent.
+register.online.sa.self.employed.transcript.skip_delegate_setup = We’ll carry on without doing this—but the process is easy to follow if you want to set this up for them.
+
+register.online.sa.self.employed.transcript.enter_personal_details = Enter your personal details.
+register.online.sa.self.employed.transcript.review_registration_summary = And once you’ve filled everything in, select ‘Next’—it’ll take you back to the registration summary.
+
+register.online.sa.self.employed.transcript.more_about_you_business = We now need more information about you and your business.
+register.online.sa.self.employed.transcript.add_contact_details = So, choose ‘Next’ to add your contact details in ‘About you’.
+register.online.sa.self.employed.transcript.review_personal_details = Select ‘Next’ when you’ve filled out this section, and you’ll see a summary of your personal details.
+register.online.sa.self.employed.transcript.correct_errors = Check this information. If you spot something that isn’t correct, just change it here.
+register.online.sa.self.employed.transcript.confirm_and_continue = And once you’re ready, select ‘Next’.
+
+register.online.sa.self.employed.transcript.business_details = Now tell us some details about your business.
+
+register.online.sa.self.employed.transcript.confirm_business_address = Confirm if your business address is the same as your home address.
+register.online.sa.self.employed.transcript.enter_alternate_address = If the address is different, you can select this in the drop-down and enter it.
+
+register.online.sa.self.employed.transcript.enter_business_contact_details = Now tell us your business contact details—including your business email address.
+register.online.sa.self.employed.transcript.business_email_receipt = We need this so we can send you a receipt of your registration.
+
+register.online.sa.self.employed.transcript.review_summary = Check everything is correct on this summary page—there’s a link under each section if you need to change anything.
+register.online.sa.self.employed.transcript.keep_box_unticked = It’s simpler if you leave this last box unticked. That way, we can set up and activate the Self Assessment online service for your business.
+register.online.sa.self.employed.transcript.final_confirmation = And once you’re happy with the details, just select ‘Next’.
+
+register.online.sa.self.employed.transcript.check_section_completion = Check you’ve filled out every section—you should see a tick for each section.
+register.online.sa.self.employed.transcript.fix_missing_info = If there’s a cross next to anything, just go back into that section and fill out anything that’s missing.
+register.online.sa.self.employed.transcript.select_next = Then select next.
+
+register.online.sa.self.employed.transcript.confirm_correct_info = You’ll need to read this information and tick the box to confirm everything is correct.
+
+register.online.sa.self.employed.transcript.registration_complete = Now you’re all done.
+register.online.sa.self.employed.transcript.acknowledgment = This acknowledgment confirms you’ve submitted your registration.
+register.online.sa.self.employed.transcript.important_info = It has some important information and links—so do read it carefully.
+register.online.sa.self.employed.transcript.cis_registration = For example, if you work as a subcontractor in the Construction Industry, you’ll need to register for this separately.
+register.online.sa.self.employed.transcript.screenshot_advice = It’s a good idea to screenshot this page or take a photo of it.
+
+register.online.sa.self.employed.transcript.utr_post_timeframe = You’ll get a Unique Taxpayer Reference in the post within 15 days, or 21 days if you’re abroad.
+register.online.sa.self.employed.transcript.utr_find_online = You can find it sooner by logging into your online account, or in the HMRC app.
+register.online.sa.self.employed.transcript.utr_keep_safe = Keep this safe. Your UTR is like your National Insurance number—it stays with you for life.
+register.online.sa.self.employed.transcript.utr_no_need_to_call = Your reference number also shows that you’ve registered for Self Assessment, so there’s no need to call us to confirm it.
+
+register.online.sa.self.employed.transcript.self_employed_tax_deadline = You need to register to pay tax as a self-employed person by 5 October in the tax year after you became self-employed.
+register.online.sa.self.employed.transcript.allow_enough_time = So make sure you give yourself enough time.
+
+register.online.sa.self.employed.transcript.submit_tax_return_deadline = Remember to submit your tax return and pay any tax you owe by 31 January. Or even earlier if you can.
+register.online.sa.self.employed.transcript.more_info_videos = For more information, check out our other videos on the HMRC YouTube channel. Or search ‘Self Assessment’ on
+register.online.sa.self.employed.transcript.gov_uk_link = GOV.UK (opens in a new tab).
+
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Contact HMRC about Self Assessment
@@ -1440,7 +1583,7 @@ mtditsaHelp.help_with_mtditsa = Help with Making Tax Digital for Income Tax
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#~~ Help if you can't pay your tax bill - Transcript
+#~~ Help if you can’t pay your tax bill - Transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 help.cant.pay.taxbill.transcript.title = Help if you can’t pay your tax bill - video transcript
 help.cant.pay.taxbill.transcript.heading = Help if you can’t pay your tax bill - video transcript

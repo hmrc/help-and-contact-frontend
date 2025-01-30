@@ -1,0 +1,111 @@
+@*
+ * Copyright 2024 HM Revenue & Customs
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *@
+
+@import config.FrontendAppConfig
+
+@this(
+  main_template: main_template
+)
+
+@(appConfig: FrontendAppConfig)(serviceInfoContent: Option[Html])(implicit request: Request[_], messages: Messages)
+
+@main_template(
+    title = messages("register.online.sa.not.self.employed.transcript.title"),
+    appConfig = appConfig,
+    bodyClasses = None,
+    serviceInfoContent = serviceInfoContent) {
+
+    @components.heading("register-online-sa-not-self-employed-transcript", "register.online.sa.not.self.employed.transcript.heading", "govuk-heading-xl")
+
+    <p class="govuk-body">
+        @Messages("register.online.sa.not.self.employed.transcript.if_youre_not_self")
+    </p>
+    <p class="govuk-body">
+        @Messages("register.online.sa.not.self.employed.transcript.it_only_takes")
+    </p>
+    <br>
+    <p class="govuk-body">
+        @Messages("register.online.sa.not.self.employed.transcript.before_you_register")
+    </p>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.follow_the_link")</p>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.keep_in_mind_that")</p>
+
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.here_are_some_of")</p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>@Messages("register.online.sa.not.self.employed.transcript.list1.1")</li>
+        <li>@Messages("register.online.sa.not.self.employed.transcript.list1.2")</li>
+        <li>@Messages("register.online.sa.not.self.employed.transcript.list1.3")</li>
+        <li>@Messages("register.online.sa.not.self.employed.transcript.list1.4")</li>
+        <li>@Messages("register.online.sa.not.self.employed.transcript.list1.5")</li>
+        <li>@Messages("register.online.sa.not.self.employed.transcript.list1.6")</li>
+    </ul>
+    <br>
+    <p class="govuk-body">
+        @Messages("register.online.sa.not.self.employed.transcript.you_can_find_out_more")
+    </p>
+    <p class="govuk-body">
+        @Messages("register.online.sa.not.self.employed.transcript.to_use_hmrc_online")
+    </p>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.if_youve_already")</p>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.if_not")</p>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.its_easy")</p>
+    <p class="govuk-body">
+        @Messages("register.online.sa.not.self.employed.transcript.go_to_govuk")
+        <a href="https://www.gov.uk/log-in-register-hmrc-online-services" class="govuk-link" rel="noreferrer noopener" target="_blank">
+            @Messages("register.online.sa.not.self.employed.transcript.follow_this_link")
+        </a>.
+    </p>
+    <br>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.scroll_down_the_page")</p>
+    <br>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.youll_see_an_option")</p>
+    <p class="govuk-body">
+        @Messages("register.online.sa.not.self.employed.transcript.doing_this_is_quick")
+    </p>
+    <br>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.when_youre_ready")
+        <a href="https://www.online.hmrc.gov.uk/shortforms/form/SA1" class="govuk-link" rel="noreferrer noopener" target="_blank">
+            @Messages("register.online.sa.not.self.employed.transcript.type_this_web")</a>.
+    </p>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.or_just_select")</p>
+    <br>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.now_youll")</p>
+    <br>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.once_youre_in")</p>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.answer_all_the")</p>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.and_then_youve")</p>
+    <br>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.itll_take_you_to")</p>
+    <p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.check_your_details")</p>
+<p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.spot_incorrect_info")</p>
+<p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.submit_when_ready")</p>
+<br>
+<p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.confirmation_message")</p>
+<p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.no_need_to_call")</p>
+<br>
+<p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.utr_post_timeframe")</p>
+<p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.utr_find_online")</p>
+<p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.utr_keep_safe")</p>
+<p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.self_assessment_deadline")</p>
+<p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.allow_enough_time")</p>
+<br>
+<p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.submit_tax_return_deadline")</p>
+<p class="govuk-body">@Messages("register.online.sa.not.self.employed.transcript.more_info_videos")
+    <a class="govuk-link" rel="noreferrer noopener" target="_blank" href="https://www.gov.uk/">
+        @Messages("register.online.sa.not.self.employed.transcript.gov_uk_link")
+    </a>
+</p>
+}

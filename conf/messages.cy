@@ -1393,6 +1393,150 @@ cant.access.sa.online.paragraph12 = Gallwch ddod o hyd i ragor o wybodaeth am Hu
 cant.access.sa.online.link = GOV.UK
 cant.access.sa.online.paragraph13 = ac yn ein fideos defnyddiol eraill ar YouTube.
 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~ Register online SA NOT self employed
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+register.online.sa.not.self.employed.video.title = Video – Sut ydw i’n cofrestru ar gyfer Hunanasesiad ar-lein os nad yw i’n Hunangyflogedig?
+register.online.sa.not.self.employed.transcript.title = Video transcript - Sut ydw i’n cofrestru ar gyfer Hunanasesiad ar-lein os nad yw i’n Hunangyflogedig?
+register.online.sa.not.self.employed.transcript.heading = Video transcript - Sut ydw i’n cofrestru ar gyfer Hunanasesiad ar-lein os nad yw i’n Hunangyflogedig?
+register.online.sa.not.self.employed.transcript.if_youre_not_self = Os nad ydych yn hunangyflogedig a bod angen i chi anfon Ffurflen Dreth, bydd y fideo hwn yn dangos i chi sut i gofrestru ar gyfer Hunanasesiad ar GOV.UK.
+register.online.sa.not.self.employed.transcript.it_only_takes = Dim ond ychydig o funudau y mae’n ei gymryd i wneud hyn. Mae hefyd yn rhad ac am ddim, yn ddiogel, ac yn arbed rhag gorfod argraffu unrhyw ffurflenni. Gadewch i ni ddechrau arni.
+register.online.sa.not.self.employed.transcript.before_you_register = Cyn i chi gofrestru, ewch i GOV.UK, chwiliwch am ‘check if you need to send a tax return’ a dewiswch yr opsiwn Cymraeg sydd ar gael.
+register.online.sa.not.self.employed.transcript.follow_the_link = Dilynwch y cysylltiad...ac atebwch ychydig o gwestiynau byr i’ch helpu i benderfynu a oes angen i chi gofrestru ar gyfer Hunanasesiad.
+register.online.sa.not.self.employed.transcript.keep_in_mind_that = Cofiwch, os yw CThEF eisoes wedi gofyn i chi anfon Ffurflen Dreth, mae’n rhaid i chi wneud hyn.
+register.online.sa.not.self.employed.transcript.here_are_some_of = Dyma rai o’r rhesymau pam y gallai fod angen i chi gofrestru ar gyfer Hunanasesiad:
+register.online.sa.not.self.employed.transcript.list1.1 = rydych yn landlord yn y DU sy’n ennill mwy na £1000 o eiddo
+register.online.sa.not.self.employed.transcript.list1.2 = ydych yn hawlio Budd-dal Plant ac rydych chi neu’ch partner yn ennill dros £50,000. (Y person sy’n ennill y cyflog mwyaf dylai lenwi’r Ffurflen Dreth)
+register.online.sa.not.self.employed.transcript.list1.3 = mae gennych Dreth Enillion Cyfalaf i’w thalu
+register.online.sa.not.self.employed.transcript.list1.4 = rydych yn cael incwm blynyddol o ymddiriedolaeth neu setliad
+register.online.sa.not.self.employed.transcript.list1.5 = mae gennych incwm sydd heb ei drethu na ellir ei gasglu drwy’ch cod TWE
+register.online.sa.not.self.employed.transcript.list1.6 = mae eich incwm ar gyfer 2022 i 2023 dros £100,000 os ydych yn talu treth drwy TWE, neu dros £150,000 ar gyfer blwyddyn dreth 2023 i 2024 ymlaen
+register.online.sa.not.self.employed.transcript.you_can_find_out_more = Gallwch ddysgu rhagor am bwy sydd angen anfon Ffurflen Dreth ar GOV.UK.
+register.online.sa.not.self.employed.transcript.to_use_hmrc_online = I ddefnyddio gwasanaeth ar-lein CThEF, bydd angen cyfrif Porth y Llywodraeth arnoch.
+register.online.sa.not.self.employed.transcript.if_youve_already = Os oes gennych un eisoes, gwnewch yn siŵr fod eich Dynodydd Defnyddiwr a’ch cyfrinair yn barod.
+register.online.sa.not.self.employed.transcript.if_not = Os nad oes gennych un, peidiwch â phoeni – dim ond creu eich manylion mewngofnodi y bydd angen i chi ei wneud.
+register.online.sa.not.self.employed.transcript.its_easy = Mae’n hawdd gwneud hyn.
+register.online.sa.not.self.employed.transcript.go_to_govuk = Ewch i GOV.UK, chwiliwch am ‘HMRC online services’, dilynwch y
+register.online.sa.not.self.employed.transcript.follow_this_link = cysylltiad a dewiswch yr opsiwn Cymraeg (yn agor tab newydd)
+register.online.sa.not.self.employed.transcript.scroll_down_the_page = Sgroliwch i lawr y dudalen a dewiswch yr opsiwn ar gyfer mewngofnodi.
+register.online.sa.not.self.employed.transcript.youll_see_an_option = Fe welwch opsiwn i ‘Creu manylion mewngofnodi’.
+register.online.sa.not.self.employed.transcript.doing_this_is_quick = Mae gwneud hyn yn gyflym ac yna rydych chi’n barod i fynd.
+register.online.sa.not.self.employed.transcript.when_youre_ready = Pan fyddwch yn barod,
+register.online.sa.not.self.employed.transcript.type_this_web = teipiwch y cyfeiriad gwe hwn yn eich porwr (yn agor tab newydd)
+register.online.sa.not.self.employed.transcript.or_just_select = Neu, dewiswch y cysylltiad rydym wedi’i gynnwys yn y disgrifiad y fideo.
+register.online.sa.not.self.employed.transcript.now_youll = Nawr bydd angen i chi fewngofnodi – felly ewch ati i nodi eich Dynodydd Defnyddiwr a’ch cyfrinair.
+register.online.sa.not.self.employed.transcript.once_youre_in = Ar ôl i chi fewngofnodi, byddwch yn gweld y ffurflen hon.
+register.online.sa.not.self.employed.transcript.answer_all_the = Atebwch bob cwestiwn sy’n berthnasol i chi.
+register.online.sa.not.self.employed.transcript.and_then_youve = A phan byddwch wedi llenwi popeth, dewiswch ‘Nesaf’
+register.online.sa.not.self.employed.transcript.itll_take_you_to = Cewch eich cyfeirio at y crynodeb hwn.
+register.online.sa.not.self.employed.transcript.check_your_details = Gwiriwch eich manylion.
+register.online.sa.not.self.employed.transcript.spot_incorrect_info = Ac os ydych chi’n sylwi bod rhywbeth o’i le, pwyswch ‘Yn ôl’ i’w newid.
+register.online.sa.not.self.employed.transcript.submit_when_ready = Pan fydd popeth yn ei le, ewch yn eich blaen a dewiswch ‘Cyflwyno’ sydd ar waelod y dudalen.
+register.online.sa.not.self.employed.transcript.confirmation_message = Nawr rydych wedi gorffen – dyma’ch cadarnhad i ddangos ei fod wedi cael ei anfon.
+register.online.sa.not.self.employed.transcript.no_need_to_call = Does dim angen i chi ein ffonio ni. Os oes angen unrhyw beth arall arnom, byddwn yn cysylltu â chi.
+register.online.sa.not.self.employed.transcript.utr_post_timeframe = Cewch Gyfeirnod Unigryw y Trethdalwr, a elwir hefyd yn UTR, drwy’r post cyn pen 15 diwrnod gwaith, neu 21 diwrnod os ydych dramor.
+register.online.sa.not.self.employed.transcript.utr_find_online = Gallwch hefyd ddod o hyd iddo drwy fewngofnodi i’ch cyfrif ar-lein, neu ap CThEF.
+register.online.sa.not.self.employed.transcript.utr_keep_safe = Cadwch hwn yn ddiogel. Mae eich Cyfeirnod Unigryw y Trethdalwr fel eich rhif Yswiriant Gwladol – mae’n aros gyda chi am weddill eich oes. A byddwch ei angen bob tro y byddwch yn delio â’ch Hunanasesiad.
+register.online.sa.not.self.employed.transcript.self_assessment_deadline = Mae’n rhaid i chi gofrestru ar gyfer Hunanasesiad erbyn 5 Hydref.
+register.online.sa.not.self.employed.transcript.allow_enough_time = Felly, gwnewch yn siŵr eich bod yn rhoi digon o amser i chi’ch hun i wneud hynny.
+register.online.sa.not.self.employed.transcript.submit_tax_return_deadline = Cofiwch gyflwyno’ch Ffurflen Dreth a thalu unrhyw dreth sy’n ddyledus gennych erbyn 31 Ionawr. Neu hyd yn oed yn gynharach os gallwch chi.
+register.online.sa.not.self.employed.transcript.more_info_videos = Am ragor o wybodaeth, edrychwch ar ein fideos eraill ar sianel YouTube CThEF. Neu chwiliwch am ‘Self Assessment’ ar
+register.online.sa.not.self.employed.transcript.gov_uk_link = GOV.UK (yn agor tab newydd) a dewiswch yr opsiwn Cymraeg.
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#~~ Register online SA self employed
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+register.online.sa.self.employed.video.title = Video - Sut ydw i’n cofrestru ar gyfer Hunanasesiad os ydw i’n hunangyflogedig?
+register.online.sa.self.employed.transcript.title = Video Transcript - Sut ydw i’n cofrestru ar gyfer Hunanasesiad os ydw i’n hunangyflogedig?
+register.online.sa.self.employed.transcript.heading = Video Transcript - Sut ydw i’n cofrestru ar gyfer Hunanasesiad os ydw i’n hunangyflogedig?
+register.online.sa.self.employed.transcript.video_intro = Bydd y fideo hwn yn dangos i chi sut i gofrestru ar gyfer Hunanasesiad ar-lein os ydych yn hunangyflogedig.
+register.online.sa.self.employed.transcript.video_benefits = Dim ond ychydig o funudau y mae’n eu cymryd i gofrestru. Mae hefyd yn rhad ac am ddim, yn ddiogel, ac yn arbed rhag gorfod argraffu unrhyw ffurflenni. Gadewch i ni ddechrau arni.
+
+register.online.sa.self.employed.transcript.self_assessment_reminder = Yn gyntaf, dyma nodyn atgoffa cyflym ynghylch Hunanasesiad.
+register.online.sa.self.employed.transcript.self_assessment_threshold = Bydd angen i chi gofrestru ar gyfer Hunanasesiad a thalu treth ar unrhyw enillion dros £1,000 nad ydynt wedi’u trethu’n barod.
+
+register.online.sa.self.employed.transcript.definition_self_employed = Rydych yn hunangyflogedig os ydych chi’n gweithio i chi’ch hun fel unigolyn neu fel busnes unigol.
+register.online.sa.self.employed.transcript.self_employed_responsibility = Os ydych yn hunangyflogedig, efallai fod gennych bobl yn gweithio i chi, ond chi yw’r person sy’n gyfrifol am y busnes ac unrhyw golledion.
+register.online.sa.self.employed.transcript.examples_self_employed = Gall hyn olygu eich bod yn gwerthu nwyddau a gwasanaethau.
+register.online.sa.self.employed.transcript.types_self_employed = Neu fe allech chi fod yn weithiwr llawrydd, contractwr, ymgynghorydd, gweithiwr tymhorol, hyfforddwr, crëwr cynnwys, beth bynnag a fynnech.
+
+
+register.online.sa.self.employed.transcript.registration_requirement = Y peth pwysig i gofio yw waeth pa ffordd y byddwch yn ennill arian, os yw’n fwy na £1,000 ac nad yw wedi’i drethu wrth y ffynhonnell, bydd angen i chi gofrestru ar gyfer Hunanasesiad a llenwi Ffurflen Dreth.
+register.online.sa.self.employed.transcript.voluntary_registration = Ac os byddwch yn dymuno, gallwch gofrestru’n hunangyflogedig hyd yn oed os yw’ch incwm yn £1,000 neu lai, yna gallwch dalu Yswiriant Gwladol Dosbarth 2 gwirfoddol, neu gofnodi unrhyw golled.
+
+register.online.sa.self.employed.transcript.hmrc_online_services = I ddefnyddio gwasanaethau ar-lein CThEF, bydd angen cyfrif Porth y Llywodraeth arnoch.
+register.online.sa.self.employed.transcript.have_gov_gateway = Os oes gennych un eisoes, sicrhewch fod gennych eich Dynodydd Defnyddiwr a’ch cyfrinair wrth law.
+register.online.sa.self.employed.transcript.create_gov_gateway = Os nad oes gennych un, peidiwch â phoeni – dim ond creu eich manylion mewngofnodi y bydd angen i chi ei wneud.
+register.online.sa.self.employed.transcript.easy_registration = Mae’n hawdd gwneud hyn.
+register.online.sa.self.employed.transcript.hmrc_sign_in = Ewch i GOV.UK, chwilio am ‘sign in to your HMRC Business Tax Account’,
+register.online.sa.self.employed.transcript.hmrc_sign_in_link = yna dilyn y cysylltiad (yn agor tab newydd) a dewis yr opsiwn Gymraeg.
+register.online.sa.self.employed.transcript.create_sign_in_details = Fe welwch opsiwn i ‘Creu manylion mewngofnodi’.
+register.online.sa.self.employed.transcript.quick_registration = Mae gwneud hyn yn gyflym ac yna rydych chi’n barod i fynd.
+
+register.online.sa.self.employed.transcript.sign_in_business_tax_account = Nawr, bydd angen i chi fewngofnodi gan ddefnyddio Cyfrif Treth Busnes.
+register.online.sa.self.employed.transcript.select_tax_duty = Dewiswch ‘Cael mynediad ar-lein at dreth, toll neu gynllun’.
+register.online.sa.self.employed.transcript.select_self_assessment = A dewiswch yr opsiwn Hunanasesiad o’r rhestr hon.
+
+register.online.sa.self.employed.transcript.utr_question = Yna, byddwn yn gofyn a oes gennych Gyfeirnod Unigryw y Trethdalwr ar gyfer Hunanasesiad, a elwir yn UTR.
+register.online.sa.self.employed.transcript.select_no_continue = Rydych chi’n cofrestru am y tro cyntaf, felly dewiswch ‘Na’, yna ‘Yn eich blaen’.
+
+register.online.sa.self.employed.transcript.select_individual_sole_trader = Nawr, dewiswch ‘Unigolyn neu unig fasnachwr’ i ddisgrifio’ch hun.
+register.online.sa.self.employed.transcript.confirm_self_employed = Wedyn, dewiswch ‘Iawn’ i ddweud eich bod yn hunangyflogedig.
+register.online.sa.self.employed.transcript.select_self_assessment = Ticiwch y blwch ‘Hunanasesiad’, yna dewiswch ‘Nesaf’.
+register.online.sa.self.employed.transcript.select_business_type = Yma, dewiswch yr opsiwn cyntaf fel eich math o fusnes.
+register.online.sa.self.employed.transcript.enter_start_date = Nesaf, nodwch y dyddiad y gwnaethoch ddechrau gweithio i chi’ch hun.
+register.online.sa.self.employed.transcript.ni_and_contact_details = Yna, gwnewch yn siŵr bod gennych eich rhif Yswiriant Gwladol a’ch manylion cyswllt wrth law ar gyfer y rhan nesaf.
+
+register.online.sa.self.employed.transcript.checklist_sections = Fe welwch restr wirio o’r adrannau y bydd angen i chi eu llenwi.
+register.online.sa.self.employed.transcript.delegate_option = Os ydych am i rywun arall gwblhau eich cofrestriad, bwrw golwg drosto neu ei newid, gallwch ‘pennu dirprwy’ gan ddefnyddio’r cysylltiad ar y dde. Er enghraifft, os oes gennych chi lyfrifwr, cyfrifydd neu asiant treth.
+register.online.sa.self.employed.transcript.skip_delegate_setup = Byddwn ni’n parhau heb wneud hyn – ond mae’r broses yn hawdd ei dilyn os ydych chi am drefnu hyn ar eu cyfer.
+
+register.online.sa.self.employed.transcript.enter_personal_details = Nodwch eich manylion personol.
+register.online.sa.self.employed.transcript.review_registration_summary = Ac unwaith y byddwch wedi llenwi pob dim, dewiswch ‘Nesaf’ – bydd yn mynd â chi yn ôl i’r crynodeb cofrestru.
+
+register.online.sa.self.employed.transcript.more_about_you_business = Mae angen rhagor o wybodaeth arnom ni nawr amdanoch chi a’ch busnes.
+register.online.sa.self.employed.transcript.add_contact_details =  Felly, dewiswch ‘Nesaf’ i ychwanegu eich manylion cyswllt yn ‘Amdanoch chi’.
+register.online.sa.self.employed.transcript.review_personal_details = Dewiswch ‘Nesaf’ pan fyddwch wedi llenwi’r adran hon, a byddwch yn gweld crynodeb o’ch manylion personol.
+register.online.sa.self.employed.transcript.correct_errors = Gwriwch yr wybodaeth hon. Os ydych chi’n sylwi ar rywbeth nad yw’n gywir, gallwch ei newid yma.
+register.online.sa.self.employed.transcript.confirm_and_continue = Unwaith y byddwch yn barod, dewiswch Nesaf’.
+
+register.online.sa.self.employed.transcript.business_details = Nawr, dywedwch wrthym ychydig o fanylion am eich busnes.
+
+register.online.sa.self.employed.transcript.confirm_business_address = A chadarnhewch a yw’ch cyfeiriad busnes yr un peth â’ch cyfeiriad cartref.
+register.online.sa.self.employed.transcript.enter_alternate_address = Os yw’r cyfeiriad yn wahanol, gallwch ddewis hwn o’r gwymplen a’i nodi.
+
+register.online.sa.self.employed.transcript.enter_business_contact_details = Nawr, rhoi gwybod am fanylion cyswllt eich busnes – gan gynnwys cyfeiriad e-bost eich busnes.
+register.online.sa.self.employed.transcript.business_email_receipt = Mae angen hyn arnom fel y gallwn anfon derbynneb o’ch cofrestriad atoch.
+
+register.online.sa.self.employed.transcript.review_summary = Gwiriwch fod popeth yn gywir ar dudalen hon y crynodeb– mae yna gysylltiad o dan bob adran os oes angen newid unrhyw beth.
+register.online.sa.self.employed.transcript.keep_box_unticked = Mae’n symlach os ydych chi’n gadael y blwch olaf hwn heb ei dicio. Trwy hynny, gallwn sefydlu ac actifadu gwasanaeth ar-lein Hunanasesiad ar gyfer eich busnes.
+register.online.sa.self.employed.transcript.final_confirmation = Ac unwaith y byddwch chi’n hapus gyda’r manylion, dewiswch ‘Nesaf’.
+
+register.online.sa.self.employed.transcript.check_section_completion = Gwiriwch eich bod wedi llenwi pob adran – dylech weld tic ar gyfer pob adran.
+register.online.sa.self.employed.transcript.fix_missing_info = Os oes croes wrth ymyl unrhyw beth, ewch yn ôl i’r adran honno a llenwi unrhyw beth sydd ar goll.
+register.online.sa.self.employed.transcript.select_next = Yna dewiswch ‘Nesaf’.
+
+register.online.sa.self.employed.transcript.confirm_correct_info = Bydd angen i chi ddarllen yr wybodaeth hon a thicio’r blwch i gadarnhau bod popeth yn gywir.
+
+register.online.sa.self.employed.transcript.registration_complete = Nawr rydych wedi gorffen.
+register.online.sa.self.employed.transcript.acknowledgment = Mae’r gydnabyddiaeth hon yn cadarnhau eich bod wedi cyflwyno eich cofrestriad.
+register.online.sa.self.employed.transcript.important_info = Mae ganddi rywfaint o wybodaeth a chysylltiadau pwysig – felly darllenwch hi yn ofalus.
+register.online.sa.self.employed.transcript.cis_registration = Er enghraifft, os ydych chi’n gweithio fel is-gontractwr yn y Diwydiant Adeiladu, bydd angen i chi gofrestru ar gyfer hyn ar wahân.
+register.online.sa.self.employed.transcript.screenshot_advice = Mae’n syniad da i dynnu sgrinlun o’r dudalen hon neu dynnu llun ohoni.
+
+register.online.sa.self.employed.transcript.utr_post_timeframe = Cewch Gyfeirnod Unigryw y Trethdalwr drwy’r post cyn pen 15 diwrnod, neu 21 diwrnod os ydych dramor.
+register.online.sa.self.employed.transcript.utr_find_online = Gallwch ddod o hyd iddo’n gynt drwy fewngofnodi i’ch cyfrif ar-lein, neu yn ap CThEF.
+register.online.sa.self.employed.transcript.utr_keep_safe = Cadwch hwn yn ddiogel. Mae eich Cyfeirnod Unigryw y Trethdalwr fel eich rhif Yswiriant Gwladol – mae’n aros gyda chi am weddill eich oes.
+register.online.sa.self.employed.transcript.utr_no_need_to_call = Mae eich cyfeirnod hefyd yn dangos eich bod wedi cofrestru ar gyfer Hunanasesiad, felly nid oes angen i chi ein ffonio i’w gadarnhau.
+
+register.online.sa.self.employed.transcript.self_employed_tax_deadline = Mae angen i chi gofrestru i dalu treth fel person hunangyflogedig erbyn 5 Hydref yn y flwyddyn dreth sy’n dod ar ôl yr un pan ddaethoch yn hunangyflogedig.
+register.online.sa.self.employed.transcript.allow_enough_time = Felly, gwnewch yn siŵr eich bod yn caniatáu digon o amser i chi’ch hun.
+
+register.online.sa.self.employed.transcript.submit_tax_return_deadline = Cofiwch gyflwyno’ch Ffurflen Dreth a thalu unrhyw dreth sy’n ddyledus gennych erbyn 31 Ionawr. Neu hyd yn oed yn gynharach os gallwch chi.
+register.online.sa.self.employed.transcript.more_info_videos = Am ragor o wybodaeth, edrychwch ar ein fideos eraill ar sianel YouTube CThEF. Neu chwiliwch am ‘Self Assessment’ ar
+register.online.sa.self.employed.transcript.gov_uk_link = GOV.UK (yn agor tab newydd), ac yna dewiswch yr opsiwn Cymraeg.
+
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ When and how to pay epaye Transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

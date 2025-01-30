@@ -56,6 +56,8 @@ class TranscriptController @Inject()(appConfig: FrontendAppConfig,
                                      cant_pay_taxbill: cant_pay_taxbill,
                                      how_to_pay_corporation_tax: how_to_pay_corporation_tax,
                                      how_do_i_use_payroll_software: how_do_i_use_payroll_software,
+                                     register_online_sa_not_self_employed: register_online_sa_not_self_employed,
+                                     register_online_sa_self_employed: register_online_sa_self_employed,
                                      override val controllerComponents: MessagesControllerComponents)
     extends FrontendController(controllerComponents)
     with I18nSupport {
@@ -96,7 +98,9 @@ class TranscriptController @Inject()(appConfig: FrontendAppConfig,
       "cant-pay-taxbill" -> cant_pay_taxbill(appConfig)(request.serviceInfoContent),
       "how-to-pay-corporation-tax" -> how_to_pay_corporation_tax(appConfig)(request.serviceInfoContent
       ),
-      "how-do-i-use-payroll-software" -> how_do_i_use_payroll_software(appConfig)(request.serviceInfoContent)
+      "how-do-i-use-payroll-software" -> how_do_i_use_payroll_software(appConfig)(request.serviceInfoContent),
+      "register_online_sa_not_self_employed" -> register_online_sa_not_self_employed(appConfig)(request.serviceInfoContent),
+      "register_online_sa_self_employed" -> register_online_sa_self_employed(appConfig)(request.serviceInfoContent)
     )
 
 
