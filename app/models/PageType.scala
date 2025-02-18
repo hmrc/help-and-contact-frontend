@@ -80,7 +80,7 @@ object PageType {
     val name = "view-or-correct-your-submissions"
     val messageKey = "help_and_contact.view_or_correct_submissions"
     val category = HelpCategory.Epaye
-    val route = "view-check-correct-submissions"
+    val route = "epaye/view-check-correct-submissions"
   }
 
 
