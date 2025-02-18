@@ -10,6 +10,6 @@ GET        /this-service-has-been-reset                controllers.SessionExpire
 
 GET        /unauthorised                               controllers.UnauthorisedController.onPageLoad
 
-GET        /:pageType                                  controllers.HelpAndContactController.renderPage(pageType: String)
+GET        /*pageType                                  controllers.HelpAndContactController.renderPage(pageType: String)
 GET        /                                           controllers.HelpAndContactController.mainPage
 GET        /transcript/:videoTitle                      controllers.TranscriptController.onPageLoad(videoTitle: String)

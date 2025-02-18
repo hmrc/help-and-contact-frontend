@@ -47,9 +47,9 @@ class HelpAndContactController @Inject()(
   def mainPage: Action[AnyContent] = renderPage(PageType.HelpWithBTA.name)
 
   def renderPage(pageType: String): Action[AnyContent] = (authenticate andThen serviceInfo) { implicit request =>
-    PageType.withName(pageType) match {
+    PageType.values.find(p => p.route == pageType || p.name == pageType) match {
       case Some(validPageType) if validPageType.externalUrl.isDefined =>
-         Redirect(validPageType.externalUrl.get)
+        Redirect(validPageType.externalUrl.get)
       case Some(validPageType) =>
         val dynamicContent: Html = viewResolver.resolve(validPageType)
         Ok(help_and_contact(appConfig)(
