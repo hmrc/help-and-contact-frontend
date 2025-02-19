@@ -235,8 +235,8 @@ vat.payments_and_deadlines.are_slightly_different_in_each_eu_country = are sligh
 vat.payments_and_deadlines.each_eu_country_has_set_a_minimun_amount_ = each EU country has set a minimum amount that can be refunded
 vat.payments_and_deadlines.if_your_business_makes_both_taxable_ = if your business makes both taxable and exempt supplies, you may not be able to reclaim all of the VAT you have been charged
 vat.payments_and_deadlines.how_to_pay_your_bill_link = Read detailed information about how to pay your VAT bill
-vat.payments_and_deadlines.how_to_get_help_link = Video - How to get help when you can’’t pay your tax bill (opens in a new tab)
-vat.payments_and_deadlines.how_to_get_help_transcript_link = How to get help when you can’’t pay your tax bill - video transcript
+vat.payments_and_deadlines.how_to_get_help_link = Video - How to get help when you can’t pay your tax bill (opens in a new tab)
+vat.payments_and_deadlines.how_to_get_help_transcript_link = How to get help when you can’t pay your tax bill - video transcript
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Register or Deregister

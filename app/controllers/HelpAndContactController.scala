@@ -23,12 +23,11 @@ import handlers.ErrorHandler
 import javax.inject.Inject
 import play.api.i18n.{I18nSupport, MessagesApi}
 import play.api.mvc.{Action, AnyContent, MessagesControllerComponents}
-import play.twirl.api.{Html, HtmlFormat}
+import play.twirl.api.Html
 import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 import utils.LoggingUtil
 import views.html.help_and_contact
 
-import scala.concurrent.ExecutionContext
 import models.PageType
 import services.{PageTypeResolverService}
 
@@ -44,12 +43,12 @@ class HelpAndContactController @Inject()(
                                         ) extends FrontendController(controllerComponents)
   with I18nSupport with LoggingUtil {
 
-  def mainPage: Action[AnyContent] = renderPage(PageType.HelpWithBTA.name)
+  def mainPage: Action[AnyContent] = renderPage(PageType.HelpWithBTA.route)
 
   def renderPage(pageType: String): Action[AnyContent] = (authenticate andThen serviceInfo) { implicit request =>
-    PageType.withName(pageType) match {
+    PageType.values.find(p => p.route == pageType) match {
       case Some(validPageType) if validPageType.externalUrl.isDefined =>
-         Redirect(validPageType.externalUrl.get)
+        Redirect(validPageType.externalUrl.get)
       case Some(validPageType) =>
         val dynamicContent: Html = viewResolver.resolve(validPageType)
         Ok(help_and_contact(appConfig)(
@@ -58,7 +57,6 @@ class HelpAndContactController @Inject()(
           validPageType.name,
           PageType.values
         ))
-        
       case None =>
         NotFound(errorHandler.notFoundTemplate)
     }

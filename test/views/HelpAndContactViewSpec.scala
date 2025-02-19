@@ -58,39 +58,42 @@ class HelpAndContactViewSpec extends ViewBehaviours with GuiceOneAppPerSuite {
       val doc = asDocument(createView(page = "help-with-bta")())
 
       val linksToValidate = Seq(
-        ("Help with your business tax account", "/business-account/help/help-with-bta"),
-        ("Change contact and account details", "/business-account/help/change-contact-and-account-details"),
-        ("How to add a tax", "/business-account/help/how-to-add-tax"),
-        ("Payments and penalties", "/business-account/help/payments-and-penalties"),
-        ("Registering or stopping", "/business-account/help/registering-or-stopping"),
-        ("Help with SA tax return", "/business-account/help/help-with-sa-tax-return"),
-        ("Get evidence of income - SA302", "/business-account/help/get-evidence-of-income"),
-        ("Expenses", "/business-account/help/expenses"),
-        ("Sign up for MTD for Income Tax (opens in new tab)", "https://www.gov.uk/guidance/sign-up-your-business-for-making-tax-digital-for-income-tax"),
-        ("Register or deregister", "/business-account/help/register-or-deregister-vat"),
-        ("How to pay and deadlines", "/business-account/help/how-to-pay-vat-and-deadlines"),
-        ("Get started", "/business-account/help/get-started-paye"),
-        ("View or correct your submissions", "/business-account/help/view-or-correct-your-submissions"),
-        ("PAYE and CIS refunds", "/business-account/help/paye-and-cis-refunds"),
-        ("Changes in employee circumstances", "/business-account/help/changes-in-employee-circumstances"),
-        ("If you stop being an employer", "/business-account/help/stop-being-an-employer"),
-        ("Closing a limited company", "/business-account/help/closing-limited-company"),
-        ("Get a copy of your Unique Taxpayer Reference (UTR)", "/business-account/help/ask-your-corporation-tax-utr"),
-        ("Contact HMRC", "/business-account/help/contact-hmrc")
+        ("nav-link-help-with-bta", "Help with your business tax account", "/business-account/help/help-with-your-business-tax-account"),
+        ("nav-link-change-contact-and-account-details", "Change contact and account details", "/business-account/help/change-your-details"),
+        ("nav-link-how-to-add-tax", "How to add a tax", "/business-account/help/how-to-add-tax"),
+        ("nav-link-payments-and-penalties", "Payments and penalties", "/business-account/help/self-assessment/payment-and-penalties"),
+        ("nav-link-registering-or-stopping", "Registering or stopping", "/business-account/help/self-assessment/register-or-stopping"),
+        ("nav-link-help-with-sa-tax-return", "Help with SA tax return", "/business-account/help/self-assessment/help-with-return"),
+        ("nav-link-get-evidence-of-income", "Get evidence of income - SA302", "/business-account/help/self-assessment/evidence-of-income"),
+        ("nav-link-expenses", "Expenses", "/business-account/help/self-assessment/expenses"),
+        ("nav-link-sign-up-for-mtd", "Sign up for MTD for Income Tax (opens in new tab)", "https://www.gov.uk/guidance/sign-up-your-business-for-making-tax-digital-for-income-tax"),
+        ("nav-link-register-or-deregister-vat", "Register or deregister", "/business-account/help/vat/register-or-deregister"),
+        ("nav-link-how-to-pay-vat-and-deadlines", "How to pay and deadlines", "/business-account/help/vat/how-to-pay"),
+        ("nav-link-correcting-errors-on-returns", "Correcting errors on returns", "/business-account/help/correcting-errors-on-returns"),
+        ("nav-link-get-started-paye", "Get started", "/business-account/help/epaye/get-started"),
+        ("nav-link-view-or-correct-your-submissions", "View or correct your submissions", "/business-account/help/epaye/view-check-correct-submissions"),
+        ("nav-link-paye-and-cis-refunds", "PAYE and CIS refunds", "/business-account/help/refunds"),
+        ("nav-link-changes-in-employee-circumstances", "Changes in employee circumstances", "/business-account/help/epaye/change-employee-circumstances"),
+        ("nav-link-stop-being-an-employer", "If you stop being an employer", "/business-account/help/stop-being-an-employer"),
+        ("nav-link-register-add-corporation-tax", "Register or add Corporation Tax", "/business-account/help/register-add-corporation-tax"),
+        ("nav-link-how-to-pay", "How to pay and deadlines", "/business-account/help/corporation-tax/how-to-pay"),
+        ("nav-link-closing-limited-company", "Closing a limited company", "/business-account/help/closing-limited-company"),
+        ("nav-link-ask-your-corporation-tax-utr", "Get a copy of your Unique Taxpayer Reference (UTR)", "/business-account/help/ask-for-copy-of-your-corporation-tax-utr"),
+        ("nav-link-contact-hmrc", "Contact HMRC", "/business-account/help/corporation-tax/contact-hmrc")
       )
 
-      linksToValidate.foreach { case (linkText, url) =>
-        s"contain '$linkText' link" in {
-          assertLinkByText(doc, linkText, url)
+      linksToValidate.foreach { case (id, linkText, url) =>
+        s"contain link with id '$id', text '$linkText', and URL '$url'" in {
+          assertLinkById(doc, id, linkText, url)
         }
+      }
 
-        def assertLinkByText(doc: Document, linkText: String, expectedUrl: String): Unit = {
-          val links = doc.select("a")
-          val link: Option[Element] = links.find(_.text() == linkText)
-          assert(link.isDefined, s"Link with text '$linkText' not found")
-          assert(link.get.attr("href") == expectedUrl, s"Link with text '$linkText' does not point to '$expectedUrl'")
-        }
-        }
+      def assertLinkById(doc: Document, id: String, expectedText: String, expectedUrl: String): Unit = {
+        val link = doc.select(s"a#$id").first()
+        assert(link != null, s"Link with id '$id' not found")
+        assert(link.text() == expectedText, s"Link with id '$id' does not have expected text '$expectedText'")
+        assert(link.attr("href") == expectedUrl, s"Link with id '$id' does not point to '$expectedUrl'")
+      }
       }
     }
 }
