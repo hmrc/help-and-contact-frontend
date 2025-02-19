@@ -28,9 +28,10 @@ import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 import utils.LoggingUtil
 import views.html.help_and_contact
 
-import scala.concurrent.ExecutionContext
 import models.PageType
 import services.{PageTypeResolverService}
+
+import play.api.Logger
 
 class HelpAndContactController @Inject()(
                                           appConfig: FrontendAppConfig,
@@ -44,10 +45,10 @@ class HelpAndContactController @Inject()(
                                         ) extends FrontendController(controllerComponents)
   with I18nSupport with LoggingUtil {
 
-  def mainPage: Action[AnyContent] = renderPage(PageType.HelpWithBTA.name)
+  def mainPage: Action[AnyContent] = renderPage(PageType.HelpWithBTA.route)
 
   def renderPage(pageType: String): Action[AnyContent] = (authenticate andThen serviceInfo) { implicit request =>
-    PageType.values.find(p => p.route == pageType || p.name == pageType) match {
+    PageType.values.find(p => p.route == pageType) match {
       case Some(validPageType) if validPageType.externalUrl.isDefined =>
         Redirect(validPageType.externalUrl.get)
       case Some(validPageType) =>
@@ -58,7 +59,6 @@ class HelpAndContactController @Inject()(
           validPageType.name,
           PageType.values
         ))
-        
       case None =>
         NotFound(errorHandler.notFoundTemplate)
     }
