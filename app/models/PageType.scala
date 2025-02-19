@@ -16,8 +16,6 @@
 
 package models
 
-import models.HelpCategory.VAT
-
 sealed trait PageType {
   def name: String
   def messageKey: String

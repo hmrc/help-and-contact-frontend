@@ -23,15 +23,13 @@ import handlers.ErrorHandler
 import javax.inject.Inject
 import play.api.i18n.{I18nSupport, MessagesApi}
 import play.api.mvc.{Action, AnyContent, MessagesControllerComponents}
-import play.twirl.api.{Html, HtmlFormat}
+import play.twirl.api.Html
 import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
 import utils.LoggingUtil
 import views.html.help_and_contact
 
 import models.PageType
 import services.{PageTypeResolverService}
-
-import play.api.Logger
 
 class HelpAndContactController @Inject()(
                                           appConfig: FrontendAppConfig,
