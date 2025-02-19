@@ -56,7 +56,7 @@ class HelpAndContactControllerSpec extends ControllerSpecBase with MockitoSugar 
 
 
   val pageTypeTestCases = Seq(
-    "help-with-bta" -> views.html.general.help_with_your_bta(PageType.HelpWithBTA.name, frontendAppConfig)(messages),
+    "help-with-your-business-tax-account" -> views.html.general.help_with_your_bta(PageType.HelpWithBTA.route, frontendAppConfig)(messages),
   )
 
   "HelpAndContactController" should {
