@@ -14,7 +14,7 @@
  * limitations under the License.
  *@
 
-@(name: String)(implicit messages: Messages)
+@(name: String, email:Option[String])(implicit messages: Messages)
 
 <div class="govuk-grid-column-three-quarters govuk-!-padding-left-8">
     <h1 id="page-title-@name" class="govuk-heading-l">@Messages("help_and_contact.view_or_correct_submissions")</h1>
@@ -39,7 +39,7 @@
     <h2 class="govuk-heading-m">@Messages("epaye.submissions.check_your_paye_submissions")</h2>
     <h3 class="govuk-heading-s">@messages("epaye.submissions.email_confirmations")</h3>
     <p class="govuk-body">@Messages("epaye.submissions.we_send_an_email_")</p>
-    <p class="govuk-body">@Html(Messages("epaye.submissions.your_hmrc_email_"))</p>
+    <p class="govuk-body">@Html(Messages("epaye.submissions.your_hmrc_email_", email.getOrElse("")))</p>
     <p class="govuk-body"><a href="/business-account/manage-account/government-gateway-warning" class="govuk-link govuk-link--no-visited-state">@Messages("epaye.submissions.change_address_link")</a></p>
     <h3 class="govuk-heading-s">@messages("epaye.submissions.payroll_software_confirmations")</h3>
     <p class="govuk-body">@Messages("epaye.submissions.you_can_also_check_")</p>

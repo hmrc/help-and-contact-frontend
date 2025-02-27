@@ -48,7 +48,7 @@ class PageTypeResolverService @Inject()(
     case p@PageType.HowToPayVatAndDeadlines => how_to_pay_vat_and_deadlines(p.name)(messages)
     case p@PageType.CorrectingErrorsOnReturns => correcting_errors_on_returns(p.name)(messages)
     case p@PageType.GetStarted => epaye_get_started(p.name)(messages)
-    case p@PageType.ViewOrCorrectYourSubmissions => epaye_view_or_correct_submissions(p.name)(messages)
+    case p@PageType.ViewOrCorrectYourSubmissions => epaye_view_or_correct_submissions(p.name, request.request.email)(messages)
     case p@PageType.PayeCisRefunds => paye_cis_refunds(p.name)(messages)
     case p@PageType.PayeChangeCircumstance => paye_change_circumstance(p.name)(messages)
     case p@PageType.PayeStopEmployer => paye_stop_employer(p.name)(messages)
