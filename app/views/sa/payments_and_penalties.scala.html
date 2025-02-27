@@ -48,8 +48,8 @@
     <p class="govuk-body">@Messages("payments_and_penalties.depends")</p>
     <p class="govuk-body">@Messages("payments_and_penalties.no_longer")</p>
 
-    <p class="govuk-body"><a class="govuk-link" class="govuk-link" href="https://www.gov.uk/pay-self-assessment-tax-bill" id="ways-to-pay-taxbill"
-                             rel="noreferrer noopener">
+    <p class="govuk-body"><a class="govuk-link" class="govuk-link" href="https://www.gov.uk/pay-self-assessment-tax-bill#ways-to-pay" id="ways-to-pay-taxbill"
+                             rel="noreferrer noopener" target="_blank">
         @Messages("payments_and_penalties.read_info")</a></p>
 
     <div class="govuk-inset-text">
@@ -70,7 +70,7 @@
     @components.sa_calculation()
 
     <h2 class="govuk-heading-m">@Messages("payments_and_penalties.budgeting_for_sa")</h2>
-    <p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/self-assessment-ready-reckoner" id="budget-for-taxbill" rel="noreferrer noopener"
+    <p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/self-assessment-ready-reckoner" target="_blank" id="budget-for-taxbill" rel="noreferrer noopener"
     >@Messages("payments_and_penalties.budget_taxbill")</a></p>
 
     <div class="govuk-inset-text">
@@ -126,18 +126,6 @@
         @Messages("payments_and_penalties.find_more") @Messages("app.common.openInNewTab")</a></p>
 
     <h2 class="govuk-heading-m">@Messages("payments_and_penalties.penalties_interest")</h2>
-
-    <ul class="govuk-list govuk-list--bullet">
-        <li>
-            <a class="govuk-link govuk-link--no-visited-state" href="https://www.staging.tax.service.gov.uk/self-assessment/ind/1555369057/account/penalties?lang=eng">@Messages("payments_and_penalties.view_sa_penalties")</a>
-        </li>
-        <li>
-            <a class="govuk-link govuk-link--no-visited-state" href="https://www.staging.tax.service.gov.uk/self-assessment/ind/1555369057/account/interests?lang=eng">@Messages("payments_and_penalties.view_sa_interest")</a>
-        </li>
-        <li>
-            <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank" href="https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments">@Messages("payments_and_penalties.interest_rates_for_late_or_early")</a>
-        </li>
-    </ul>
 
     @if(utr.isDefined) {
     <ul class="govuk-list govuk-list--bullet">

@@ -117,10 +117,10 @@ class RegisterOrStoppingViewSpec extends ViewBehaviours {
       assertLinkById(
         doc,
         "registering-partnership",
-        "Find out more about registering as a partner or partnership.",
+        "Find out more about registering as a partner or partnership (opens in new tab)",
         "https://www.gov.uk/register-for-self-assessment/partner-or-partnership",
 
-        expectedOpensInNewTab = false
+        expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,

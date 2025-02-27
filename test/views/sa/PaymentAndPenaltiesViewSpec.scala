@@ -112,10 +112,10 @@ class PaymentAndPenaltiesViewSpec extends ViewBehaviours {
       assertLinkById(
         doc,
         "ways-to-pay-taxbill",
-        "Read detailed information about ways to pay your tax bill",
-        "https://www.gov.uk/pay-self-assessment-tax-bill",
+        "Read detailed information about ways to pay your tax bill (opens in new tab)",
+        "https://www.gov.uk/pay-self-assessment-tax-bill#ways-to-pay",
 
-        expectedOpensInNewTab = false
+        expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
@@ -128,10 +128,10 @@ class PaymentAndPenaltiesViewSpec extends ViewBehaviours {
       assertLinkById(
         doc,
         "budget-for-taxbill",
-        "Budget for your tax bill if you’re self-employed",
+        "Budget for your tax bill if you’re self-employed (opens in new tab)",
         "https://www.gov.uk/self-assessment-ready-reckoner",
 
-        expectedOpensInNewTab = false
+        expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
