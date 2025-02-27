@@ -126,16 +126,16 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
       assertLinkById(
         doc,
         "who-must-file",
-        "Who must file a tax return",
+        "Who must file a tax return (opens in new tab)",
         "https://www.gov.uk/self-assessment-tax-returns/who-must-send-a-tax-return",
-        expectedOpensInNewTab = false
+        expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "need-to-change",
-        "If you need to change your tax return",
+        "If you need to change your tax return (opens in new tab)",
         "https://www.gov.uk/self-assessment-tax-returns/corrections",
-        expectedOpensInNewTab = false
+        expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
@@ -146,9 +146,9 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
       assertLinkById(
         doc,
         "sa-resource-list",
-        "Self Assessment resource list",
+        "Self Assessment resource list (opens in new tab)",
         "https://www.gov.uk/topic/personal-tax/self-assessment",
-        expectedOpensInNewTab = false
+        expectedOpensInNewTab = true
       )
 
     }

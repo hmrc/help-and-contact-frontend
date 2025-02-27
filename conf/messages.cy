@@ -235,7 +235,7 @@ vat.payments_and_deadlines.are_slightly_different_in_each_eu_country = ychydig y
 vat.payments_and_deadlines.each_eu_country_has_set_a_minimun_amount_ = mae pob wlad yn yr UE wedi gosod isafswm a all gael ei ad-dalu
 vat.payments_and_deadlines.if_your_business_makes_both_taxable_ = os yw’ch busnes yn gwneud cyflenwadau trethadwy a chyflenwadau sydd wedi’u heithrio, efallai na fyddwch yn gallu adennill yr holl TAW a godwyd arnoch
 
-vat.payments_and_deadlines.how_to_pay_your_bill_link = Darllenwch wybodaeth fanwl am sut i dalu’ch bil TAW
+vat.payments_and_deadlines.how_to_pay_your_bill_link = Darllenwch wybodaeth fanwl am sut i dalu’ch bil TAW (yn agor tab newydd)
 vat.payments_and_deadlines.how_to_get_help_link = Fideo – Sut i gael help os na allwch dalu’ch bil treth (yn agor tab newydd)
 vat.payments_and_deadlines.how_to_get_help_transcript_link = Sut i gael help os na allwch dalu’ch bil treth – trawsgrifiad fideo
 
@@ -332,10 +332,10 @@ helpWithYourSelfAssessmentTaxReturn.income_from_property_header = Os oes gennych
 helpWithYourSelfAssessmentTaxReturn.income_from_property_video = Fideo – Os oes gennyf  incwm o eiddo, sut ydw i’n llenwi fy Ffurflen Dreth? (yn agor tab newydd)
 helpWithYourSelfAssessmentTaxReturn.income_from_property_transcript_link = Os oes gennyf  incwm o eiddo, sut ydw i’n llenwi fy Ffurflen Dreth? – trawsgrifiad fideo
 helpWithYourSelfAssessmentTaxReturn.more_help_with_sa = Rhagor o help gyda Hunanasesiad
-helpWithYourSelfAssessmentTaxReturn.who_must_file = Pwy sy’n gorfod cyflwyno Ffurflen Dreth
-helpWithYourSelfAssessmentTaxReturn.need_to_change = Os oes angen i chi newid eich Ffurflen Dreth
+helpWithYourSelfAssessmentTaxReturn.who_must_file = Pwy sy’n gorfod cyflwyno Ffurflen Dreth (yn agor tab newydd)
+helpWithYourSelfAssessmentTaxReturn.need_to_change = Os oes angen i chi newid eich Ffurflen Dreth (yn agor tab newydd)
 helpWithYourSelfAssessmentTaxReturn.howtopaysa = Sut i dalu’ch Hunanasesiad
-helpWithYourSelfAssessmentTaxReturn.sa_resource = Rhestr o adnoddau ar gyfer Hunanasesiad
+helpWithYourSelfAssessmentTaxReturn.sa_resource = Rhestr o adnoddau ar gyfer Hunanasesiad (yn agor tab newydd)
 helpWithYourSelfAssessmentTaxReturn.your_first_self_assessment = Eich Ffurflen Dreth Hunanasesiad gyntaf
 helpWithYourSelfAssessmentTaxReturn.your_self_employed_return = Eich Ffurflen Dreth Hunangyflogaeth
 helpWithYourSelfAssessmentTaxReturn.if_i_have_income_from_property_ = Os oes gennyf  incwm o eiddo, sut ydw i’n llenwi fy Ffurflen Dreth?
@@ -469,9 +469,8 @@ modular.basicRecordKeeping.example = Enghraifft: Ar gyfer blwyddyn dreth 2019 i 
 modular.basicRecordKeeping.record_keeping_video = Fideo – Cadw cofnodion sylfaenol ar gyfer pobl hunangyflogedig (yn agor tab newydd)
 modular.basicRecordKeeping.record_keeping_transcript = Cadw cofnodion sylfaenol pan fyddwch yn hunangyflogedig – trawsgrifiad fideo
 modular.basicRecordKeeping.more_help_record = Rhagor o help gyda chadw cofnodion
-modular.basicRecordKeeping.self_record = Cofnodion busnes os ydych yn hunangyflogedig
-modular.basicRecordKeeping.keeping_pay_and_tax = Cadw’ch cofnodion cyflog a threth
-
+modular.basicRecordKeeping.self_record = Cofnodion busnes os ydych yn hunangyflogedig (yn agor tab newydd)
+modular.basicRecordKeeping.keeping_pay_and_tax = Cadw’ch cofnodion cyflog a threth (yn agor tab newydd)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -500,7 +499,7 @@ register_or_stopping.partnership = Os ydych yn bartner neu’n bartneriaeth
 register_or_stopping_utr_reference = Bydd angen y Cyfeirnod Unigryw y Trethdalwr (UTR) arnoch ar gyfer y bartneriaeth a’ch UTR personol eich hun os oes gennych un eisoes.
 register_or_stopping.new_partnership = Os yw’n bartneriaeth newydd, bydd yn rhaid i’r partner enwebedig hefyd gofrestru’r bartneriaeth.
 register_or_stopping.more_about_registering = Dysgwch ragor am gofrestru fel partner neu bartneriaeth.
-register_or_stopping.sa_guidance = Arweiniad Hunanasesiad
+register_or_stopping.sa_guidance = Arweiniad Hunanasesiad (yn agor tab newydd)
 register_or_stopping.learn_sa = Dysgu am Hunanasesiad
 register_or_stopping.registering_sa_video = Fideo – Cofrestru ar gyfer Hunanasesiad (yn agor tab newydd)
 register_or_stopping.registering_sa_transcript = Cofrestru ar gyfer Hunanasesiad - trawsgrifiad fideo
@@ -537,11 +536,11 @@ payments_and_penalties.pay_penalty_link = Os bydd eich taliad yn hwyr,
 payments_and_penalties.late_payment = codir llog arnoch ac efallai y bydd yn rhaid i chi dalu cosb.
 payments_and_penalties.depends = Mae’r amser y mae angen i chi ei ganiatáu yn dibynnu ar eich dull o dalu.
 payments_and_penalties.no_longer = Ni allwch dalu yn Swyddfa’r Post mwyach.
-payments_and_penalties.read_info = Darllenwch wybodaeth fanwl am ffyrdd o dalu’ch bil treth
+payments_and_penalties.read_info = Darllenwch wybodaeth fanwl am ffyrdd o dalu’ch bil treth (yn agor tab newydd)
 payments_and_penalties.how_do_i_pay_video = Fideo – Sut rydw i’n talu fy mil treth Hunanasesiad? (yn agor tab newydd)
 payments_and_penalties.how_do_i_pay_transcript = Sut rydw i’n talu fy mil treth Hunanasesiad? – trawsgrifiad fideo
 payments_and_penalties.budgeting_for_sa = Cyllidebu ar gyfer eich bil treth Hunanasesiad
-payments_and_penalties.budget_taxbill = Cyllidebu ar gyfer eich bil treth Hunanasesiad os ydych yn hunangyflogedig
+payments_and_penalties.budget_taxbill = Cyllidebu ar gyfer eich bil treth Hunanasesiad os ydych yn hunangyflogedig (yn agor tab newydd)
 payments_and_penalties.how_do_i_budget_video = Fideo – Sut rydw i’n cyllidebu ar gyfer fy mil treth Hunanasesiad? (yn agor tab newydd)
 payments_and_penalties.how_do_i_budget_transcript = Sut rydw i’n cyllidebu ar gyfer fy mil treth Hunanasesiad? – trawsgrifiad fideo
 payments_and_penalties.how_to_find_out_about_sa_video = Fideo - Sut i gael gwybod am gosbau Hunanasesu
@@ -625,7 +624,7 @@ sa302.evidence.list_print_calculation = argraffu’ch cyfrifiad a’ch trosolwg 
 sa302.evidence.might_be = Efallai y gofynnir i chi am y dogfennau hyn fel tystiolaeth o’ch incwm, er enghraifft, os ydych yn gwneud cais am forgais a’ch bod yn hunangyflogedig.
 sa302.evidence.check_mortgage = Gwiriwch fod eich darparwr morgais yn derbyn dogfennau rydych wedi’u hargraffu eich hun.
 sa302.evidence.print_documents = Ni allwch argraffu’ch dogfennau tan hyd at 72 awr ar ôl i chi anfon eich Ffurflen Dreth.
-sa302.evidence.evidence_of_income = Dysgwch ragor am gael tystiolaeth o’ch incwm
+sa302.evidence.evidence_of_income = Dysgwch ragor am gael tystiolaeth o’ch incwm (yn agor tab newydd)
 sa302.evidence.find_sa302 = Dod o hyd i’ch SA302
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
