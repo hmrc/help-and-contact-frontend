@@ -14,12 +14,15 @@ GET        /                                            controllers.HelpAndConta
 GET        /transcript/:videoTitle                      controllers.TranscriptController.onPageLoad(videoTitle: String)
 
 GET        /epaye/refunds                               controllers.HelpAndContactController.renderPage(pageType: String = "refunds")
-GET        /epaye/paye-refund                                controllers.HelpAndContactController.renderPage(pageType: String = "refunds")
+GET        /epaye/paye-refund                           controllers.HelpAndContactController.renderPage(pageType: String = "refunds")
 GET        /epaye/get-started                           controllers.HelpAndContactController.renderPage(pageType: String = "epaye")
 GET        /register-add-corporation-tax                controllers.HelpAndContactController.renderPage(pageType: String = "corporation-tax/register-or-tell-hmrc-you-are-no-longer-trading")
 GET        /epaye/view-check-correct-submissions        controllers.HelpAndContactController.renderPage(pageType: String = "epaye/check-submissions")
+GET        /view-or-correct-your-submissions            controllers.HelpAndContactController.renderPage(pageType: String = "epaye/check-submissions")
 GET        /epaye/latency                               controllers.HelpAndContactController.renderPage(pageType: String = "epaye/check-submissions")
 GET        /epaye/change-employee-circumstances         controllers.HelpAndContactController.renderPage(pageType: String = "change-employee-circumstances")
 GET        /help-with-making-tax-digital-for-income-tax controllers.HelpAndContactController.renderPage(pageType: String = "sign-up-for-mtd")
-GET        /stop-being-an-employer                               controllers.HelpAndContactController.renderPage(pageType: String = "epaye/remove")
+GET        /stop-being-an-employer                      controllers.HelpAndContactController.renderPage(pageType: String = "epaye/remove")
+GET        /self-assessment/payment-and-penalties       controllers.HelpAndContactController.renderPage(pageType: String = "self-assessment/how-to-pay")
+
 GET        /*pageType                                  controllers.HelpAndContactController.renderPage(pageType: String)

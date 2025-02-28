@@ -142,7 +142,7 @@ object PageType {
     val name = "payments-and-penalties"
     val messageKey = "help_and_contact.payments_and_penalties"
     val category = HelpCategory.SelfAssessment
-    val route = "self-assessment/payment-and-penalties"
+    val route = "self-assessment/how-to-pay"
   }
 
 
