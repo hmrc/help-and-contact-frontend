@@ -27,8 +27,10 @@ class EpayeViewCorrectSubmissionViewSpec extends ViewBehaviours {
 
   val serviceInfoContent: Option[Html] = Some(Html("<div>Service info content</div>"))
 
+  val email: Option[String] = Some("user@test.com")
+
   def createView(): () => HtmlFormat.Appendable =
-    () =>  epaye_view_or_correct_submissions.apply(PageType.ViewOrCorrectYourSubmissions.name)(messages)
+    () =>  epaye_view_or_correct_submissions.apply(PageType.ViewOrCorrectYourSubmissions.name, email)(messages)
 
 
   "Epaye View amd Correct Submission view" must {
@@ -59,6 +61,12 @@ class EpayeViewCorrectSubmissionViewSpec extends ViewBehaviours {
         "Basic PAYE Tools user guide (opens in new tab)",
         "https://www.gov.uk/government/publications/basic-paye-tools-user-guide/basic-paye-tools-user-guide"
       )
+    }
+
+    "have the correct email" in {
+      val doc = asDocument(createView()())
+      val paragraphs = doc.getElementsByTag("p").toString
+      paragraphs must include(email.get)
     }
   }
 }

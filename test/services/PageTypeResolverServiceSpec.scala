@@ -31,8 +31,8 @@ class PageTypeResolverServiceSpec extends ControllerSpecBase with MockitoSugar w
 
   implicit val message: Messages = messages
 
-  def fakeServiceInfoRequest(utr: Option[SaUtr] = None): ServiceInfoRequest[AnyContent] =
-    ServiceInfoRequest[AnyContent](AuthenticatedRequest(FakeRequest("", ""), utr, Some("user@example.com")), Some(HtmlFormat.empty))
+  def fakeServiceInfoRequest(utr: Option[SaUtr] = None, email: Option[String] = Some("user@example.com")): ServiceInfoRequest[AnyContent] =
+    ServiceInfoRequest[AnyContent](AuthenticatedRequest(FakeRequest("", ""), utr, email), Some(HtmlFormat.empty))
 
   "PageTypeResolverService" should {
 
@@ -144,10 +144,11 @@ class PageTypeResolverServiceSpec extends ControllerSpecBase with MockitoSugar w
     }
 
     "return the correct HTML for ViewOrCorrectYourSubmissions PageType" in {
+      val testEmail = Some("testUser@test.com")
       val service = new PageTypeResolverService(frontendAppConfig)
       val pageType = PageType.ViewOrCorrectYourSubmissions
-      val result = service.resolve(pageType)(fakeServiceInfoRequest(), message)
-      val expectedContent: HtmlFormat.Appendable = views.html.epaye.epaye_view_or_correct_submissions(pageType.name)(messages)
+      val result = service.resolve(pageType)(fakeServiceInfoRequest(email = testEmail), message)
+      val expectedContent: HtmlFormat.Appendable = views.html.epaye.epaye_view_or_correct_submissions(pageType.name, testEmail)(messages)
       result.body mustBe expectedContent.body
     }
 
