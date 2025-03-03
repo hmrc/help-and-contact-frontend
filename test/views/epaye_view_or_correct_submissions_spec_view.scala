@@ -68,5 +68,19 @@ class EpayeViewCorrectSubmissionViewSpec extends ViewBehaviours {
       val paragraphs = doc.getElementsByTag("p").toString
       paragraphs must include(email.get)
     }
+
+    "do not show the message if the email is None" in {
+      val email: Option[String] = None
+      val doc = asDocument(epaye_view_or_correct_submissions.apply(PageType.ViewOrCorrectYourSubmissions.name, email)(messages))
+      val paragraphs = doc.getElementsByTag("p").toString
+      paragraphs must not include("Your HMRC sign in email address is")
+    }
+
+    "do not show the message if the email is empty" in {
+      val email: Option[String] = Some("")
+      val doc = asDocument(epaye_view_or_correct_submissions.apply(PageType.ViewOrCorrectYourSubmissions.name, email)(messages))
+      val paragraphs = doc.getElementsByTag("p").toString
+      paragraphs must not include("Your HMRC sign in email address is")
+    }
   }
 }
