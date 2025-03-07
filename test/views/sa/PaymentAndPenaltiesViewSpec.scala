@@ -127,6 +127,14 @@ class PaymentAndPenaltiesViewSpec extends ViewBehaviours {
       )
       assertLinkById(
         doc,
+        "how-to-get-help-video",
+        "Video - How to get help when you can’t pay your tax bill (opens in a new tab)",
+        "https://www.youtube.com/watch?v=oXzjkDkPTrM&t=6s",
+
+        expectedOpensInNewTab = true
+      )
+      assertLinkById(
+        doc,
         "budget-for-taxbill",
         "Budget for your tax bill if you’re self-employed (opens in new tab)",
         "https://www.gov.uk/self-assessment-ready-reckoner",
@@ -138,6 +146,14 @@ class PaymentAndPenaltiesViewSpec extends ViewBehaviours {
         "how-do-i-budget-video",
         "Video - How do I budget for my Self Assessment tax bill? (opens in new tab)",
         "https://www.youtube.com/watch?v=xHn31myAkio",
+
+        expectedOpensInNewTab = true
+      )
+      assertLinkById(
+        doc,
+        "how-to-find-sa-penalties",
+        "Video - How to find out about Self Assessment penalties (opens in new tab)",
+        "https://www.youtube.com/watch?v=L9uh_gfKsZE",
 
         expectedOpensInNewTab = true
       )
