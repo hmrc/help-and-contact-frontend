@@ -60,6 +60,41 @@ class CtaxRegisterAddViewSpec extends ViewBehaviours {
         "registered your company (opens in new tab)",
         "https://www.gov.uk/limited-company-formation/register-your-company"
       )
+      assertLinkByLinkText(
+        doc,
+        "register for Corporation Tax",
+        "/business-registration/select-taxes"
+      )
+      assertLinkByLinkText(
+        doc,
+        "Check if you’re unsure what counts as being active (opens in new tab)",
+        "https://www.gov.uk/guidance/corporation-tax-trading-and-non-trading"
+      )
+      assertLinkByLinkText(
+        doc,
+        "Request your company’s Unique Taxpayer Reference",
+        "https://www.tax.service.gov.uk/ask-for-copy-of-your-corporation-tax-utr"
+      )
+      assertLinkByLinkText(
+        doc,
+        "accounting period (opens in new tab)",
+        "https://www.gov.uk/corporation-tax-accounting-period"
+      )
+      assertLinkByLinkText(
+        doc,
+        "Company Tax Return (opens in new tab),",
+        "https://www.gov.uk/company-tax-returns"
+      )
+      assertLinkByLinkText(
+        doc,
+        "Add Corporation Tax to your business tax account",
+        "/business-account/add-tax"
+      )
+      assertLinkByLinkText(
+        doc,
+        "close the limited company (opens in new tab).",
+        "https://www.gov.uk/closing-a-limited-company"
+      )
     }
   }
 }

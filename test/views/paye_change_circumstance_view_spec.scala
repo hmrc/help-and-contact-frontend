@@ -58,6 +58,31 @@ class PayeChangesEmployeeCircumstancesViewSpec extends ViewBehaviours {
         "paid paternal leave (opens in new tab)",
         "https://www.gov.uk/maternity-paternity-calculator"
       )
+      assertLinkByLinkText(
+        doc,
+        "reclaim the payments (opens in new tab)",
+        "https://www.gov.uk/recover-statutory-payments"
+      )
+      assertLinkByLinkText(
+        doc,
+        "ask HMRC to refund you before you make the payments (opens in new tab)",
+        "https://www.gov.uk/recover-statutory-payments/if-you-cant-afford-to-make-payments"
+      )
+      assertLinkByLinkText(
+        doc,
+        "form CA3821",
+        "https://www.gov.uk/government/publications/national-insurance-sending-employees-to-work-abroad-ca3821"
+      )
+      assertLinkByLinkText(
+        doc,
+        "form CA3822",
+        "https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822"
+      )
+      assertLinkByLinkText(
+        doc,
+        "ask HMRC to reimburse you",
+        "/digital-forms/form/Application-for-funding-a-tax-refund-for-an-employee/insufficient-enrolments"
+      )
     }
   }
 }

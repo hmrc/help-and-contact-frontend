@@ -52,6 +52,11 @@ class PayeStopEmployerViewSpec extends ViewBehaviours {
         "your business merges or changes ownership (opens in a new tab).",
         "https://www.gov.uk/guidance/payroll-what-to-do-if-your-business-merges-or-changes-ownership"
       )
+      assertLinkByLinkText(
+        doc,
+        "stopping being an employer (opens in a new tab).",
+        "https://www.gov.uk/stop-employing-staff"
+      )
     }
   }
 }

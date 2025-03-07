@@ -56,6 +56,11 @@ class CtaxClosingLimitedCompanyViewSpec extends ViewBehaviours {
         "compulsory liquidation (opens in a new tab)",
         "https://www.gov.uk/protecting-company-from-compulsory-liquidation"
       )
+      assertLinkByLinkText(
+        doc,
+        "Find out more about closing a limited company (opens in a new tab)",
+        "https://www.gov.uk/closing-a-limited-company"
+      )
     }
   }
 }

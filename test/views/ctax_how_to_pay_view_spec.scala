@@ -81,6 +81,26 @@ class CtaxHowToPayViewSpec extends ViewBehaviours {
         "link - click:How to pay your Corporation Tax:Video transcript",
         exactUrl = false
       )
+      assertLinkByLinkText(
+        doc,
+        "the year you set up your company (opens in new tab).",
+        "https://www.gov.uk/first-company-accounts-and-return"
+      )
+      assertLinkByLinkText(
+        doc,
+        "pay your Corporation Tax in instalments (opens in new tab).",
+        "https://www.gov.uk/guidance/corporation-tax-paying-in-instalments"
+      )
+      assertLinkByLinkText(
+        doc,
+        "pay you interest (opens in new tab)",
+        "https://www.gov.uk/get-refund-interest-corporation-tax"
+      )
+      assertLinkByLinkText(
+        doc,
+        "Read detailed information about how to pay your Corporation Tax bill (opens in new tab)",
+        "https://www.gov.uk/pay-corporation-tax/bank-details"
+      )
     }
   }
 }
