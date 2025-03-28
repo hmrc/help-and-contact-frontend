@@ -24,7 +24,6 @@ import javax.inject.Inject
 import play.api.i18n.I18nSupport
 import play.api.mvc.MessagesControllerComponents
 import uk.gov.hmrc.play.bootstrap.frontend.controller.FrontendController
-import views.html.epaye.epaye_get_started
 import views.html.transcripts._
 import views.html.transcripts.ct.how_to_pay_corporation_tax
 
