@@ -1003,16 +1003,28 @@ payingYourSelfAssessmentTaxBillTranscript.paragraph12 = You can find more inform
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Budgeting for your Self Assessment tax bill transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-budgetingYourSelfAssessmentTaxBillTranscript.title = How do I budget for my Self Assessment tax bill? - video transcript
-budgetingYourSelfAssessmentTaxBillTranscript.heading = How do I budget for my Self Assessment tax bill? - video transcript
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph1 = Budgeting for your SA tax bill can help you pay what you owe on time. You don’t have to wait until 31 January or 31 July to pay. If you do, you could miss the deadline.
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph2 = You can set up a budget plan to make regular payments by direct debit. If you’re up to date with previous Self Assessment payments, you can set up a budget payment plan using your online account on
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph3 = It’s flexible so you can decide how much you pay each month. You can reduce or stop payments at any time.
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph4 = If you’re self-employed, our ready reckoner on
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph4_2 = can help you budget for tax and National Insurance. Put in your estimated weekly or monthly profit, and we’ll give you an idea of how much you have to pay.
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph5 = A budget payment plan can help you meet the payment deadlines, and avoid any fines.
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph6 = Remember, if there’s anything left to pay, you’ll need to do this by the 31st January.
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph7 = To find out more about Self Assessment, go to
+budgetingYourSelfAssessmentTaxBillTranscript.title = Video transcript - How do I budget for my Self Assessment tax bill?
+budgetingYourSelfAssessmentTaxBillTranscript.heading = Video transcript - How do I budget for my Self Assessment tax bill?
+budgetingYourSelfAssessmentTaxBillTranscript.p1 = Budgeting for your Self Assessment tax bill can help you pay what you owe by the deadline, and also avoid any interest and penalties.
+budgetingYourSelfAssessmentTaxBillTranscript.p2 = You don’t have to wait until the 31st of January or the 31st of July to pay. If you do, you could miss the deadline.
+budgetingYourSelfAssessmentTaxBillTranscript.p3 = A budget payment plan allows you to make regular payments by direct debit towards your next tax bill.
+budgetingYourSelfAssessmentTaxBillTranscript.p4.part1 = If you’re up to date with previous Self Assessment payments, you can
+budgetingYourSelfAssessmentTaxBillTranscript.p4.part2 = set up a budget plan (opens in a new tab)
+budgetingYourSelfAssessmentTaxBillTranscript.p4.part3 = using your online account on GOV.UK.
+budgetingYourSelfAssessmentTaxBillTranscript.p5 = It’s flexible so you can decide how much you pay each month. You can reduce or stop payments at any time.
+budgetingYourSelfAssessmentTaxBillTranscript.p6 = When you set up a budget payment plan, it’s a good idea to include an end date for your payments, for example, the 31st of January.
+budgetingYourSelfAssessmentTaxBillTranscript.p7 = If you don’t, any repayment you’re due may be delayed.
+budgetingYourSelfAssessmentTaxBillTranscript.p8.part1 = To help you decide what to pay, use the
+budgetingYourSelfAssessmentTaxBillTranscript.p8.part2 = Self Assessment tax calculator (opens in a new tab)
+budgetingYourSelfAssessmentTaxBillTranscript.p8.part3 = on GOV.UK to estimate your Self Assessment tax bill for the current year.
+budgetingYourSelfAssessmentTaxBillTranscript.p9 = Tell us your estimated income to get an idea of how much Income Tax and any Class 4 National Insurance you need to pay.
+budgetingYourSelfAssessmentTaxBillTranscript.p10 = As well as using a budget payment plan, you can also make regular one-off payments through your online bank account - by using faster payments, setting up single Direct Debits or by sending a cheque.
+budgetingYourSelfAssessmentTaxBillTranscript.p11 = Remember, if there’s anything left to pay, you’ll need to do this by the 31st of January.
+budgetingYourSelfAssessmentTaxBillTranscript.p12.part1 = There’s more about
+budgetingYourSelfAssessmentTaxBillTranscript.p12.part2 = Self Assessment on GOV.UK (opens in a new tab)
+budgetingYourSelfAssessmentTaxBillTranscript.p12.part3 = and in our other
+budgetingYourSelfAssessmentTaxBillTranscript.p12.part4 = helpful videos on YouTube (opens in a new tab).
+budgetingYourSelfAssessmentTaxBillTranscript.hmrcYoutube = https://www.youtube.com/@HMRCgovuk
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Self Assessment penalties transcript

@@ -988,16 +988,28 @@ payingYourSelfAssessmentTaxBillTranscript.paragraph12 = Gallwch ddod o hyd i rag
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Budgeting for your Self Assessment tax bill transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-budgetingYourSelfAssessmentTaxBillTranscript.title = Sut ydw i’n cyllidebu ar gyfer fy mil treth Hunanasesiad? - trawsgrifiad fideo
-budgetingYourSelfAssessmentTaxBillTranscript.heading = Sut ydw i’n cyllidebu ar gyfer fy mil treth Hunanasesiad? - trawsgrifiad fideo
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph1 = Gall cyllidebu ar gyfer eich bil treth Hunanasesiad eich helpu i dalu’r hyn sydd arnoch mewn pryd. Does dim rhaid i chi aros tan 31 Ionawr neu 31 Gorffennaf i dalu. Os gwnewch hynny, gallech golli’r dyddiad cau.
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph2 = Gallwch drefnu cynllun cyllidebu i wneud taliadau rheolaidd drwy ddebyd uniongyrchol. Os ydych wedi llwyddo i dalu’ch holl filiau treth Hunanasesiad blaenorol hyd yma, gallwch drefnu cynllun talu cyllidebol gan ddefnyddio’ch cyfrif ar-lein ar
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph3 = Mae’n hyblyg, felly gallwch benderfynu faint i’w dalu bob mis. Gallwch drefnu i ostwng neu atal y taliadau ar unrhyw adeg.
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph4 = Os ydych yn hunangyflogedig, gall ein cyfrifydd parod ar
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph4_2 =  eich helpu i gyllidebu ar gyfer treth ac Yswiriant Gwladol. Nodwch eich elw wythnosol neu fisol amcangyfrifedig, a byddwn yn rhoi syniad i chi ynglŷn â faint y bydd angen i chi ei dalu
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph5 = Gall cynllun talu cyllidebol eich helpu i dalu erbyn y dyddiad cau, ac i osgoi unrhyw ddirwyon.
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph6 = Cofiwch, os oes unrhyw beth ar ôl i’w dalu, bydd angen i chi wneud hynny erbyn 31 Ionawr.
-budgetingYourSelfAssessmentTaxBillTranscript.paragraph7 = I gael rhagor o wybodaeth am Hunanasesiad, ewch i
+budgetingYourSelfAssessmentTaxBillTranscript.title = Trawsgrifiad fideo - Sut ydw i’n cyllidebu ar gyfer fy mil treth Hunanasesiad?
+budgetingYourSelfAssessmentTaxBillTranscript.heading = Trawsgrifiad fideo - Sut ydw i’n cyllidebu ar gyfer fy mil treth Hunanasesiad?
+budgetingYourSelfAssessmentTaxBillTranscript.p1 = Gall cyllidebu ar gyfer eich bil treth Hunanasesiad eich helpu i dalu’r hyn sydd arnoch erbyn y dyddiad cau, a hefyd osgoi unrhyw log a chosbau.
+budgetingYourSelfAssessmentTaxBillTranscript.p2 = Nid oes yn rhaid i chi aros tan y 31 Ionawr neu’r 31 Gorffennaf i dalu. Os gwnewch hynny, gallech golli’r dyddiad cau.
+budgetingYourSelfAssessmentTaxBillTranscript.p3 = Mae’r cynllun talu cyllidebol hwn yn eich galluogi chi i wneud taliadau rheolaidd drwy ddebyd uniongyrchol tuag at eich bil treth nesaf.
+budgetingYourSelfAssessmentTaxBillTranscript.p4.part1 = Os ydych yn gyfredol â thaliadau Hunanasesiad blaenorol, gallwch
+budgetingYourSelfAssessmentTaxBillTranscript.p4.part2 = sefydlu cynllun cyllidebol (yn agor tab newydd)
+budgetingYourSelfAssessmentTaxBillTranscript.p4.part3 = gan ddefnyddio eich cyfrif ar-lein ar GOV.UK.
+budgetingYourSelfAssessmentTaxBillTranscript.p5 = Mae’n hyblyg fel y gallwch benderfynu faint rydych chi’n ei dalu bob mis. Gallwch ostwng neu ddod â’r taliadau i ben ar unrhyw adeg.
+budgetingYourSelfAssessmentTaxBillTranscript.p6 = Pan fyddwch chi’n sefydlu cynllun talu cyllidebol, mae’n syniad da i gynnwys dyddiad dod i ben ar gyfer eich taliadau, er enghraifft, y 31 Ionawr.
+budgetingYourSelfAssessmentTaxBillTranscript.p7 = Os nad ydych chi’n gwneud hynny, efallai y bydd unrhyw ad-daliad sy’n ddyledus i chi yn cael ei ohirio.
+budgetingYourSelfAssessmentTaxBillTranscript.p8.part1 = I’ch helpu i benderfynu beth i’w dalu, defnyddiwch y
+budgetingYourSelfAssessmentTaxBillTranscript.p8.part2 = gyfrifiannell treth Hunanasesiad (yn agor tab newydd)
+budgetingYourSelfAssessmentTaxBillTranscript.p8.part3 = ar GOV.UK i amcangyfrif eich bil treth Hunanasesiad ar gyfer y flwyddyn bresennol.
+budgetingYourSelfAssessmentTaxBillTranscript.p9 = Rhowch wybod i ni eich incwm amcangyfrifedig i gael syniad o faint o Dreth Incwm ac unrhyw Yswiriant Gwladol Dosbarth 4 y mae angen i chi ei dalu.
+budgetingYourSelfAssessmentTaxBillTranscript.p10 = Yn ogystal â defnyddio cynllun talu cyllidebol, gallwch hefyd wneud taliadau untro rheolaidd drwy eich cyfrif banc ar-lein - drwy ddefnyddio taliadau cyflymach, trefnu taliadau unigol Debyd Uniongyrchol neu drwy anfon siec. 
+budgetingYourSelfAssessmentTaxBillTranscript.p11 = Cofiwch, os oes unrhyw beth ar ôl i’w dalu, bydd angen i chi wneud hynny erbyn y 31 Ionawr.
+budgetingYourSelfAssessmentTaxBillTranscript.p12.part1 = Mae rhagor o wybodaeth ar
+budgetingYourSelfAssessmentTaxBillTranscript.p12.part2 = Hunanasesiad ar GOV.UK (yn agor tab newydd)
+budgetingYourSelfAssessmentTaxBillTranscript.p12.part3 = ac yn ein
+budgetingYourSelfAssessmentTaxBillTranscript.p12.part4 =  fideos defnyddiol eraill ar YouTube (yn agor tab newydd).
+budgetingYourSelfAssessmentTaxBillTranscript.hmrcYoutube = https://www.youtube.com/@HMRCgovuk
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Self Assessment penalties transcript
