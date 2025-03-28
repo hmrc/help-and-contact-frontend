@@ -16,7 +16,6 @@
 
 package views.transcripts
 
-import org.jsoup.Jsoup
 import play.twirl.api.HtmlFormat
 import views.behaviours.ViewBehaviours
 import views.html.transcripts.budgeting_your_self_assessment_tax_bill
