@@ -21,10 +21,10 @@ import controllers.actions.mocks.MockAuth
 import models.requests.{AuthenticatedRequest, ServiceInfoRequest}
 import org.scalatestplus.mockito.MockitoSugar
 import play.api.i18n.Messages
-import play.twirl.api.{Html, HtmlFormat}
+import play.twirl.api.HtmlFormat
 import models.{PageType, SaUtr}
 import org.scalatest.concurrent.ScalaFutures
-import play.api.mvc.{AnyContent, AnyContentAsEmpty, Request}
+import play.api.mvc.AnyContent
 import play.api.test.FakeRequest
 
 class PageTypeResolverServiceSpec extends ControllerSpecBase with MockitoSugar with MockAuth with ScalaFutures {
