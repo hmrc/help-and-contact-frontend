@@ -1,7 +1,4 @@
-import com.typesafe.sbt.digest.Import._
-import com.typesafe.sbt.uglify.Import._
 import com.typesafe.sbt.web.Import._
-import net.ground5hark.sbt.concat.Import._
 import play.sbt.PlayImport.PlayKeys
 import play.sbt.routes.RoutesKeys
 import sbt.Keys._
