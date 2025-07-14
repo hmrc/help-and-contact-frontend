@@ -40,7 +40,7 @@ class BasicRecordKeepingForTheSelfEmployedViewSpec extends ViewBehaviours {
       }
 
       "has the correct text" in {
-        h1.text() mustBe "Basic record keeping for the self-employed - video transcript"
+        h1.text() mustBe "Video transcript - Basic record keeping for the self-employed"
       }
     }
 

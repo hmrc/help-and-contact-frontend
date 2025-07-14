@@ -46,7 +46,7 @@ class HowToPayVatAndDeadlines extends ViewBehaviours {
       assertLinkById(
         doc,
         "how-to-get-help-vat-video",
-        "Video - How to get help when you can’t pay your tax bill (opens in a new tab)",
+        "Video - What help can I get if I can’t pay my tax bill? (opens in a new tab)",
         "https://www.youtube.com/watch?v=oXzjkDkPTrM&t=6s",
         expectedOpensInNewTab = true
       )

@@ -235,8 +235,8 @@ vat.payments_and_deadlines.are_slightly_different_in_each_eu_country = are sligh
 vat.payments_and_deadlines.each_eu_country_has_set_a_minimun_amount_ = each EU country has set a minimum amount that can be refunded
 vat.payments_and_deadlines.if_your_business_makes_both_taxable_ = if your business makes both taxable and exempt supplies, you may not be able to reclaim all of the VAT you have been charged
 vat.payments_and_deadlines.how_to_pay_your_bill_link = Read detailed information about how to pay your VAT bill (opens in a new tab)
-vat.payments_and_deadlines.how_to_get_help_link = Video - How to get help when you can’t pay your tax bill (opens in a new tab)
-vat.payments_and_deadlines.how_to_get_help_transcript_link = How to get help when you can’t pay your tax bill - video transcript
+vat.payments_and_deadlines.how_to_get_help_link = Video - What help can I get if I can’t pay my tax bill? (opens in a new tab)
+vat.payments_and_deadlines.how_to_get_help_transcript_link = Video transcript - What help can I get if I can’t pay my tax bill?
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Register or Deregister
@@ -301,7 +301,7 @@ helpWithYourSelfAssessmentTaxReturn.filing_your_sa = Filing your Self Assessment
 helpWithYourSelfAssessmentTaxReturn.sent_sa_letter = You will usually be sent a tax return or a letter about a tax return if you are registered as self-employed.
 helpWithYourSelfAssessmentTaxReturn.file_by_deadline = You must file your tax return even if you have no tax to pay. If you do not file it by the deadline, you may have to pay a penalty.
 helpWithYourSelfAssessmentTaxReturn.video_why_sent_sa = Video - What to do if you’ve been sent a tax return? (opens in a new tab)
-helpWithYourSelfAssessmentTaxReturn.transcript_why_sent_sa = What to do if you’ve been sent a tax return? - video transcript
+helpWithYourSelfAssessmentTaxReturn.transcript_why_sent_sa = Video transcript - What to do if you’ve been sent a tax return?
 helpWithYourSelfAssessmentTaxReturn.not_complete = If you do not need to complete and file a Self Assessment tax return
 helpWithYourSelfAssessmentTaxReturn.used_to_file = If you used to file a tax return but do not need to file one for the most recent tax year,
 helpWithYourSelfAssessmentTaxReturn.used_to_file_link =  tell HMRC to stop Self Assessment.
@@ -316,13 +316,13 @@ helpWithYourSelfAssessmentTaxReturn.to_work_out = We use the information on your
 helpWithYourSelfAssessmentTaxReturn.register_for_sa_before_completion = If this is your first tax return, you must register for Self Assessment before you can complete and file your return.
 helpWithYourSelfAssessmentTaxReturn.more_about_registering = Find out more about registering for Self Assessment online
 helpWithYourSelfAssessmentTaxReturn.first_sa_video = Video - My first Self Assessment tax return (opens in new tab)
-helpWithYourSelfAssessmentTaxReturn.first_sa_transcript = My first Self Assessment tax return - video transcript
+helpWithYourSelfAssessmentTaxReturn.first_sa_transcript = Video transcript - My first Self Assessment tax return
 helpWithYourSelfAssessmentTaxReturn.help_completing = Help with completing and filing your tax return
 helpWithYourSelfAssessmentTaxReturn.watch_videos = Watch videos, get email alerts, take part in webinars and
 helpWithYourSelfAssessmentTaxReturn.learn_more = learn more about Self Assessment
 helpWithYourSelfAssessmentTaxReturn.how_to_tailor = How to tailor your return
 helpWithYourSelfAssessmentTaxReturn.tailor_tax_video = Video - How do I tailor my Self Assessment tax return? (opens in new tab)
-helpWithYourSelfAssessmentTaxReturn.tailor_tax_transcript = How do I tailor my Self Assessment tax return? - video transcript
+helpWithYourSelfAssessmentTaxReturn.tailor_tax_transcript = Video transcript - How do I tailor my Self Assessment tax return?
 helpWithYourSelfAssessmentTaxReturn.self_employed = If you are self-employed
 helpWithYourSelfAssessmentTaxReturn.self_employed_video = Video - Your self-employed tax return (opens in new tab)
 helpWithYourSelfAssessmentTaxReturn.self_employed_transcript = Your self-employed tax return - video transcript
@@ -447,7 +447,7 @@ modular.viewingSaCalculation.list_ni_contributions = any class 2 and class 4 Nat
 modular.viewingSaCalculation.list_opens = (opens in new tab)
 modular.viewingSaCalculation.print_a_copy = You can print a copy of the calculation for your records.
 modular.viewingSaCalculation.viewing_return_calculation_video = Video - Viewing your Self Assessment tax return calculation (opens in new tab)
-modular.viewingSaCalculation.viewing_return_calculation_transcript = Viewing your Self Assessment tax return calculations - video transcript
+modular.viewingSaCalculation.viewing_return_calculation_transcript =  Video transcript - Viewing your Self Assessment tax return calculations
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Modular - Basic record keeping
@@ -466,7 +466,7 @@ modular.basicRecordKeeping.vat_threshold = If your income is above the VAT thres
 modular.basicRecordKeeping.years_after = You must keep your records for at least 5 years after the 31 January submission deadline of the relevant tax year. HMRC may check your records to make sure you’re paying the right amount of tax.
 modular.basicRecordKeeping.example = Example: For the tax year 2019 to 2020, the submission deadline is 31 January 2021. Keep your records until at least 31 January 2026.
 modular.basicRecordKeeping.record_keeping_video = Video - Basic record keeping for the self employed (opens in new tab)
-modular.basicRecordKeeping.record_keeping_transcript = Basic record keeping when you’re self-employed - video transcript
+modular.basicRecordKeeping.record_keeping_transcript = Video transcript - Basic record keeping when you’re self-employed
 modular.basicRecordKeeping.more_help_record = More help with record keeping
 modular.basicRecordKeeping.self_record = Business records if you’re self-employed (opens in new tab)
 modular.basicRecordKeeping.keeping_pay_and_tax = Keeping your pay and tax records (opens in new tab)
@@ -539,11 +539,11 @@ payments_and_penalties.depends = The time you need to allow depends on how you p
 payments_and_penalties.no_longer = You can no longer pay at the Post Office.
 payments_and_penalties.read_info = Read detailed information about ways to pay your tax bill (opens in new tab)
 payments_and_penalties.how_do_i_pay_video = Video - How do I pay my Self Assessment tax bill? (opens in new tab)
-payments_and_penalties.how_do_i_pay_transcript = How do I pay my Self Assessment tax bill? - video transcript
+payments_and_penalties.how_do_i_pay_transcript = Video transcript - How do I pay my Self Assessment tax bill?
 payments_and_penalties.budgeting_for_sa = Budgeting for your Self Assessment tax bill
 payments_and_penalties.budget_taxbill = Budget for your tax bill if you’re self-employed (opens in new tab)
 payments_and_penalties.how_do_i_budget_video = Video - How do I budget for my Self Assessment tax bill? (opens in new tab)
-payments_and_penalties.how_do_i_budget_transcript = How do I budget for my Self Assessment tax bill? - video transcript
+payments_and_penalties.how_do_i_budget_transcript = Video transcript - How do I budget for my Self Assessment tax bill?
 payments_and_penalties.how_to_find_out_about_sa_video = Video - How to find out about Self Assessment penalties (opens in new tab)
 payments_and_penalties.penalties = Penalties
 payments_and_penalties.penalty_showing = You’ll have a penalty showing on your account if you:
@@ -587,7 +587,7 @@ expenses.send_proof = You do not need to send proof of your expenses when you fi
 expenses.keep_proof = You should keep proof and records so that you can show them to HMRC if asked. You need to make sure your records are accurate.
 expenses.find_out_more = Find out more about allowable expenses if you’re self-employed
 expenses.what_expenses_video = Video transcript – What expenses can I include in my Self Assessment tax return?
-expenses.what_expenses_transcript = What expenses can I include in my Self Assessment tax return? - video transcript
+expenses.what_expenses_transcript = Video transcript - What expenses can I include in my Self Assessment tax return?
 expenses.simplified = Simplified expenses
 expenses.cannot_be_used = Simplified expenses cannot be used by limited companies or business partnerships involving a limited company.
 expenses.if_self_employed = If you’re self-employed, or a business partnership, you can choose to use simplified expenses to work out some of your expenses using flat rates instead of working out your actual business costs.
@@ -610,7 +610,7 @@ expenses.claiming_travel = More help with claiming travel expenses
 expenses.travel_if = Travel expenses if you’re self-employed
 expenses.simplified_motoring_expenses = Simplified motoring expenses if you’re self employed
 expenses.motoring_expenses_video = Video - Claiming motoring expenses if you’re self-employed
-expenses.motoring_expenses_transcript = Claiming motoring expenses if you’re self-employed - video transcript
+expenses.motoring_expenses_transcript = Video transcript - Claiming motoring expenses if you’re self-employed
 
 
 
@@ -778,14 +778,14 @@ epaye.further_resources = Further resources
 epaye.further_resources_link1 = running your payroll (opens in new tab)
 epaye.further_resources_link2 = paying employers’ PAYE (opens in new tab)
 epaye.further_resources_link3 = Video - How do I use payroll software? (opens in new tab)
-epaye.further_resources_link4 = How do I use payroll software? - video transcript
+epaye.further_resources_link4 = Video transcript - How do I use payroll software?
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ PAYE Get started transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-how.payroll.software.title = How do I use payroll software? - video transcript
-how.payroll.software.transcript.heading = How do I use payroll software? - video transcript
+how.payroll.software.title = Video transcript - How do I use payroll software?
+how.payroll.software.transcript.heading = Video transcript - How do I use payroll software?
 how.payroll.software.transcript.gov_uk = GOV.UK (opens in new tab)
 how.payroll.software.transcript.and_pick_a_software = and pick a software package.
 how.payroll.software.transcript.to_send_your = To send your reports using payroll software, first go to
@@ -947,8 +947,8 @@ ct.register_deregister_close_company_ = close the limited company
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ How to find out about Self Assessment penalties  transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-howToFindSaPenaltiesTranscript.title = How to find out about Self Assessment penalties - video transcript
-howToFindSaPenaltiesTranscript.heading = How to find out about Self Assessment penalties - video transcript
+howToFindSaPenaltiesTranscript.title = Video transcript - How to find out about Self Assessment penalties
+howToFindSaPenaltiesTranscript.heading = Video transcript - How to find out about Self Assessment penalties
 howToFindSaPenaltiesTranscript.paragraph1 = You may have heard there are penalties if you’re late sending and paying your online tax return to HMRC.
 howToFindSaPenaltiesTranscript.paragraph2 = Remember you should send and pay your online tax return by 31st January, if you don’t you’ll usually be charged a penalty.
 howToFindSaPenaltiesTranscript.paragraph3 = You can check if you need to send a tax return by using our Self Assessment checker on
@@ -1218,8 +1218,8 @@ sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Calculating motoring expenses transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-sa.expenses.claiming_motoring_expenses.title = Claiming motoring expenses if you’re self-employed - video transcript
-sa.expenses.claiming_motoring_expenses.heading = Claiming motoring expenses if you’re self-employed - video transcript
+sa.expenses.claiming_motoring_expenses.title = Video transcript - Claiming motoring expenses if you’re self-employed
+sa.expenses.claiming_motoring_expenses.heading = Video transcript - Claiming motoring expenses if you’re self-employed
 sa.expenses.claiming_motoring_expenses.paragraph1 = If you work for yourself, you might use your car, van or motorcycle for both business and personal use. You can claim business expenses for a number of things, including fuel, vehicle insurance and parking. You cannot claim for non-business driving costs, fines or travel between home and work.
 sa.expenses.claiming_motoring_expenses.paragraph2 = There are 2 ways of working out your motor expenses. Either by using the actual costs method, or a flat rate for business mileage.
 sa.expenses.claiming_motoring_expenses.paragraph3 = Whichever way you choose, you must continue to use it for that vehicle.
@@ -1280,8 +1280,8 @@ newRegistering.for.self.assessment.transcript.paragraph16 = You can find out mor
 #~~ Basic record keeping transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-basic.record.keeping.transcript.title = Basic record keeping for the self-employed - video transcript
-basic.record.keeping.transcript.heading = Basic record keeping for the self-employed - video transcript
+basic.record.keeping.transcript.title = Video transcript - Basic record keeping for the self-employed
+basic.record.keeping.transcript.heading = Video transcript - Basic record keeping for the self-employed
 basic.record.keeping.transcript.paragraph1 = Basic record keeping is an important activity for any business. You must record any money going in and out of your business, whether the transaction is made in person - by phone - or online.
 basic.record.keeping.transcript.paragraph2 = You can keep your records on paper or digitally using a computer. These include items such as invoices, sale receipts, proof of purchases and bank statements. Remember your records must be accurate, clear and complete.
 basic.record.keeping.transcript.paragraph3 = Some software suppliers offer free record keeping apps for small businesses. ditional or cash basis method of accounting, and how you work out your expenses. How you keep your records depends on if you use the traditional or cash basis method of accounting, and how you work out your expenses. There’s more information about cash basis and simplified expenses in our YouTube video and on
@@ -1336,8 +1336,8 @@ add.a.tax.transcript.paragraph23 = GOV.UK
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Corporation tax transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ct.how.to.pay.transcript.title = Paying your Corporation Tax bill - video transcript
-ct.how.to.pay.transcript.heading = Paying your Corporation Tax bill - video transcript
+ct.how.to.pay.transcript.title = Video transcript - Paying your Corporation Tax bill
+ct.how.to.pay.transcript.heading = Video transcript - Paying your Corporation Tax bill
 ct.how.to.pay.transcript.paragraph1 = The deadline for sending us your Company tax return is usually twelve months after the end of the accounting period it covers.
 ct.how.to.pay.transcript.paragraph2 = There’s a separate deadline to pay your Corporation Tax bill - and that’s nine months and one day after the end of the accounting period.
 ct.how.to.pay.transcript.paragraph3 = For example, if your accounting period ends on the 30th of March, the Corporation Tax must be with HMRC within nine months and one day – so, in our example, by the 31st of December.
@@ -1599,8 +1599,8 @@ mtditsaHelp.help_with_mtditsa = Help with Making Tax Digital for Income Tax
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Help if you can’t pay your tax bill - Transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-help.cant.pay.taxbill.transcript.title = Help if you can’t pay your tax bill - video transcript
-help.cant.pay.taxbill.transcript.heading = Help if you can’t pay your tax bill - video transcript
+help.cant.pay.taxbill.transcript.title = Video transcript - What help can I get if I can’t pay my tax bill?
+help.cant.pay.taxbill.transcript.heading = Video transcript - What help can I get if I can’t pay my tax bill?
 help.cant.pay.taxbill.transcript.paragraph1 = If you’re having problems paying your tax bill, don’t worry. HMRC can help you get back on track.
 help.cant.pay.taxbill.transcript.paragraph2 = We’ll look at your financial circumstances and how we can help you.
 help.cant.pay.taxbill.transcript.paragraph3 = For example, if you can’t pay by the deadline, we may be able to agree an affordable payment plan.
@@ -1882,7 +1882,7 @@ ctax.howtopay.section4.p2 = The time you need to allow depends on how you pay.
 ctax.howtopay.section4.p3.linkText = Read detailed information about how to pay your Corporation Tax bill (opens in new tab)
 
 ctax.howtopay.section5.p1.linkText = Video - Paying your Corporation Tax bill (opens in new tab)
-ctax.howtopay.section5.p2.linkText = Paying your Corporation Tax bill - video transcript
+ctax.howtopay.section5.p2.linkText = Video transcript - Paying your Corporation Tax bill
 
 ctax.closinglimitedcompany.heading = Closing a limited company
 ctax.closinglimitedcompany.p1 = You usually need to have the agreement of your company’s directors and shareholders to close a limited company.

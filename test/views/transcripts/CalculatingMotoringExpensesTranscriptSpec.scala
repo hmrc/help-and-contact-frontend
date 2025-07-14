@@ -51,7 +51,7 @@ class CalculatingMotoringExpensesTranscriptSpec extends ViewBehaviours {
 
       val h1s = doc.getElementsByTag("h1")
       h1s.size() mustBe 1
-      h1s.first().text() mustBe "Claiming motoring expenses if you’re self-employed - video transcript"
+      h1s.first().text() mustBe "Video transcript - Claiming motoring expenses if you’re self-employed"
 
       val elements: List[String] = doc.getElementsByTag("article").first().getElementsByTag("p").asScala.toList.map(_.text())
       val contentList: List[String] = List(

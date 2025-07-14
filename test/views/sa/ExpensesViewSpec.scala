@@ -127,7 +127,7 @@ class ExpensesViewSpec extends ViewBehaviours {
       assertLinkById(
         doc,
         "claiming-motoring-transcript",
-        "Claiming motoring expenses if you’re self-employed - video transcript",
+        "Video transcript - Claiming motoring expenses if you’re self-employed",
         "/business-account/help/transcript/calculating-motoring-expenses"
       )
 

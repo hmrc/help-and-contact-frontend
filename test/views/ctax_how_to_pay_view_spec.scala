@@ -76,7 +76,7 @@ class CtaxHowToPayViewSpec extends ViewBehaviours {
       assertLinkByDocId(
         doc,
         "ct-how-to-pay-video-transcript",
-        "Paying your Corporation Tax bill - video transcript",
+        "Video transcript - Paying your Corporation Tax bill",
         "/business-account/help/transcript/how-to-pay-corporation-tax",
         "link - click:How to pay your Corporation Tax:Video transcript",
         exactUrl = false
