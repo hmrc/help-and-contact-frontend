@@ -757,6 +757,8 @@ epaye.your_accounts_office_reference = Mae eich cyfeirnod Swyddfa Gyfrifon yn 13
 epaye.the_letter_from_bullet = y llythyr a gawsoch gan CThEF pan wnaethoch gofrestru ar gyfer TWE am y tro cyntaf
 epaye.the_paying_paye_bullet = y llythyr ‘Talu TWE drwy ddull electronig’ y mae CThEF yn ei anfon atoch ar ddechrau bob blwyddyn dreth (llythyr ‘P30B’)
 epaye.make_sure_to_use = Sicrhewch eich bod yn defnyddio’r cyfeirnod Swyddfa Gyfrifon cywir os ydych yn rheoli mwy nag un cynllun cyflogres.
+epaye.video_when_and_how_to_pay_PAYE = Fideo – Sut a phryd i dalu TWE (yn agor tab newydd)
+epaye.video_when_and_how_to_pay_PAYE_transcript = Trawsgrifiad fideo – Sut a phryd i dalu TWE
 epaye.further_resources = Adnoddau pellach
 epaye.further_resources_link1 = rhedeg eich cyflogres (yn agor tab newydd)
 epaye.further_resources_link2 = talu TWE y cyflogwr (yn agor tab newydd)
@@ -1553,8 +1555,8 @@ register.online.sa.self.employed.transcript.gov_uk_link = GOV.UK (yn agor tab ne
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ When and how to pay epaye Transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-when.how.pay.epaye.title = Sut a phryd i dalu TWE
-when.how.pay.epaye.heading = Sut a phryd i dalu TWE
+when.how.pay.epaye.title = Trawsgrifiad fideo - Sut a phryd i dalu TWE
+when.how.pay.epaye.heading = Trawsgrifiad fideo - Sut a phryd i dalu TWE
 when.how.pay.epaye.paragraph1 = Rydych chi wedi talu eich cyflogeion ac wedi anfon y Cyflwyniad Taliadau Llawn i CThEM mewn pryd. Ond pryd a sut ydych chi’n talu’r hyn sydd arnoch?
 when.how.pay.epaye.paragraph2 = Ar ôl diwedd pob cyfnod cyflog, mae’n rhaid i’ch taliad glirio a chyrraedd cyfrif banc CThEM erbyn yr 22ain o’r mis. Fodd bynnag, os ydych chi’n talu â siec, mae’n rhaid i hyn gyrraedd CThEM erbyn y 19eg.
 when.how.pay.epaye.paragraph3 = Er enghraifft, os ydych chi wedi talu cyflogeion ym mis treth 4, hynny yw 6 Gorffennaf i 5 Awst, mae angen i chi sicrhau bod eich taliad yn clirio erbyn 22 Awst neu fod eich siec yn cyrraedd CThEM erbyn 19 Awst.

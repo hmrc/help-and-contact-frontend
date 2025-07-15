@@ -48,6 +48,15 @@
     </ul>
     <p class="govuk-body">@Messages("epaye.make_sure_to_use")</p>
 
+    <div class="govuk-inset-text">
+        <p class="govuk-body"><a class="govuk-link" href="https://www.youtube.com/watch?v=PnjlHOuCnK8" id="when-and-how-to-pay-epaye-video" target="_blank"
+                                 rel="noreferrer noopener">
+            @Messages("epaye.video_when_and_how_to_pay_PAYE")</a></p>
+        <p class="govuk-body"><a class="govuk-link" href="@controllers.routes.TranscriptController.onPageLoad("when-and-how-to-pay-epaye")" id="when-and-how-to-pay-epaye-transcript"
+            >
+            @Messages("epaye.video_when_and_how_to_pay_PAYE_transcript")</a></p>
+    </div>
+
     <h2 class="govuk-heading-m">@Messages("epaye.further_resources")</h2>
     <ul class="govuk-list govuk-list--bullet">
        <li><a href="https://www.gov.uk/running-payroll" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.further_resources_link1")</a></li>

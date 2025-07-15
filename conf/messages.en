@@ -774,6 +774,8 @@ epaye.your_accounts_office_reference = Your accounts office reference is 13 char
 epaye.the_letter_from_bullet = the letter from HMRC when you first registered for PAYE
 epaye.the_paying_paye_bullet = the ’Paying PAYE electronically’ letter HMRC sends you at the start of each tax year (the ’P30B’)
 epaye.make_sure_to_use = Make sure to use the correct accounts office reference if you manage more than one payroll scheme.
+epaye.video_when_and_how_to_pay_PAYE = Video – When and how to pay PAYE (opens in new tab)
+epaye.video_when_and_how_to_pay_PAYE_transcript = Video transcript – When and how to pay PAYE
 epaye.further_resources = Further resources
 epaye.further_resources_link1 = running your payroll (opens in new tab)
 epaye.further_resources_link2 = paying employers’ PAYE (opens in new tab)
@@ -1387,8 +1389,8 @@ cant.access.sa.online.paragraph13 = and in our other helpful videos on YouTube.
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ When and how to pay epaye Transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-when.how.pay.epaye.title = When and how to pay PAYE
-when.how.pay.epaye.heading = When and how to pay PAYE
+when.how.pay.epaye.title = Video transcript - When and how to pay PAYE
+when.how.pay.epaye.heading = Video transcript - When and how to pay PAYE
 when.how.pay.epaye.paragraph1 = You’ve paid your employees and sent the Full Payment Submission to HMRC on time. But when and how do you pay what you owe?
 when.how.pay.epaye.paragraph2 = Following the end of each pay period, your cleared payment must reach HMRC’s bank account by the 22nd of the month. However, if you’re paying by cheque, this must reach HMRC by the 19th.
 when.how.pay.epaye.paragraph3 = For example, if you’ve paid employees in tax month 4 - that’s the 6th July to the 5th August - you need to make sure your payment clears by the 22nd August or your cheque reaches HMRC by the 19th August.

@@ -64,6 +64,13 @@ class EpayeGetStartedViewSpec extends ViewBehaviours {
         "when you can submit a late FPS (opens in a new tab).",
         "https://www.gov.uk/running-payroll/fps-after-payday"
       )
+      assertLinkById(
+        doc,
+        "when-and-how-to-pay-epaye-video",
+        "Video – When and how to pay PAYE (opens in new tab)",
+        "https://www.youtube.com/watch?v=PnjlHOuCnK8",
+        expectedOpensInNewTab = true
+      )
     }
   }
 }
