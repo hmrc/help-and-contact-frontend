@@ -49,7 +49,7 @@ class registerDeregisterForVatViewSpec extends ViewBehaviours {
         doc,
         "register-for-vat",
         "register for VAT online",
-        "https://www.access.service.gov.uk/login/signin/creds"
+        "https://www.gov.uk/register-for-vat/how-register-for-vat"
 
       )
     }

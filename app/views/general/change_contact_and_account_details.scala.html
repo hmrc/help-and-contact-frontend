@@ -70,7 +70,7 @@
 
  <p class="govuk-body">
   @Messages("help_and_contact.if_youre_an_administrator_on_a_bta")
-  <a id="change-your-details-standard-user" href="https://www.access.service.gov.uk/group/members" class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank">
+  <a id="change-your-details-standard-user" href="@appConfig.getBusinessAccountUrl("teamMemberAccountAccess")" class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank">
    @Messages("help_and_contact.manage_the_hmrc_sign_in_details_for_standard_user") @Messages("app.common.openInNewTab")
   </a>.
  </p>

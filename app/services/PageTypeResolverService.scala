@@ -22,7 +22,6 @@ import models.requests.ServiceInfoRequest
 import play.api.i18n.Messages
 import play.api.mvc.AnyContent
 import play.twirl.api.{Html, HtmlFormat}
-import views.html._
 import views.html.sa._
 import views.html.general._
 import views.html.vat._

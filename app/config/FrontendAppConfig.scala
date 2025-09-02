@@ -39,23 +39,12 @@ class FrontendAppConfig @Inject()(servicesConfig: ServicesConfig,
     extends PortalUrlBuilder {
 
   private def loadConfig(key: String): String = servicesConfig.getString(key)
-  lazy val analyticsToken: String           = loadConfig(s"google-analytics.token")
-  lazy val analyticsHost: String            = loadConfig(s"google-analytics.host")
   lazy val btaUrl: String                   = servicesConfig.baseUrl("business-tax-account")
   lazy val loginUrl: String                 = loadConfig("urls.login")
   lazy val loginContinueUrl: String         = loadConfig("urls.loginContinue")
-  lazy val requestCorporationTaxUTR: String = loadConfig("urls.requestCorporationTaxUTR")
-  lazy val googleTagManagerId: String       = loadConfig(s"google-tag-manager.id")
   lazy val appName: String                  = loadConfig("appName")
 
-  private lazy val contactHost: String = servicesConfig.getString("contact-frontend.host")
-  private val contactFormServiceIdentifier: String = "helpandcontactfrontend"
-  lazy val reportAProblemPartialUrl: String = s"$contactHost/contact/problem_reports_ajax?service=$contactFormServiceIdentifier"
-  lazy val reportAProblemNonJSUrl: String = s"$contactHost/contact/problem_reports_nonjs?service=$contactFormServiceIdentifier"
-
   def getGovUrl(key: String): String = loadConfig(s"urls.external.govuk.$key")
-
-  def getYoutubeVideoId(key: String): String = loadConfig(s"urls.external.youtube.$key")
 
   private lazy val businessAccountHost: String = servicesConfig.getString("urls.business-account.host")
 
@@ -81,10 +70,6 @@ class FrontendAppConfig @Inject()(servicesConfig: ServicesConfig,
 
   lazy val languageTranslationEnabled: Boolean = servicesConfig.getBoolean("microservice.services.features.welsh-translation")
 
-  lazy val youtubeLinksEnabled: Boolean = servicesConfig.getBoolean("microservice.services.features.youtube-links")
-  lazy val monthlyRTIDateBy10thFeatureSwitch: Boolean = servicesConfig.getBoolean("features.monthly-RTI-date-by-10th")
-
-  def languageMap: Map[String, Lang] = Map("english" -> Lang("en"), "cymraeg" -> Lang("cy"))
 
   private lazy val portalHost: String = loadConfig("portal.host")
 
@@ -99,7 +84,6 @@ class FrontendAppConfig @Inject()(servicesConfig: ServicesConfig,
 
 
   lazy val taxYearBegin: String = taxYearStart.toString
-  lazy val taxYearFinish: String = taxYearEnd.toString
   lazy val taxYearPrevious: String = (taxYearStart - 1).toString
   lazy val taxYearPrevious2: String = (taxYearStart - 2).toString
   lazy val taxYearNext: String = (taxYearStart + 1).toString

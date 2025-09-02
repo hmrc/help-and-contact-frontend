@@ -50,7 +50,7 @@ class ChangeYourDetailsViewSpec extends ViewBehaviours {
         doc,
         "change-your-details-standard-user",
         "manage the HMRC sign in details for a standard user (opens in new tab)",
-        "https://www.access.service.gov.uk/group/members",
+        "http://localhost:9020/tax-and-scheme-management/services",
          expectedOpensInNewTab = true
 
       )
