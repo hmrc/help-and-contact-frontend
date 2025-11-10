@@ -14,7 +14,9 @@
  * limitations under the License.
  *@
 
-@(name: String)(implicit messages: Messages)
+@import config.FrontendAppConfig
+
+@(name: String, appConfig: FrontendAppConfig)(implicit messages: Messages)
 
 <div class="govuk-grid-column-three-quarters govuk-!-padding-left-8">
  <h1 id="page-title-@name" class="govuk-heading-l">@Messages("ctax.register.add.heading")</h1>
@@ -22,10 +24,10 @@
  <h2 class="govuk-heading-m">@Messages("ctax.register.add.section1.title")</h2>
  <p class="govuk-body">
     @Messages("ctax.register.add.section1.p1.preText")
-    <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank" href=https://www.gov.uk/limited-company-formation/register-your-company>
+    <a class="govuk-link govuk-link--no-visited-state" id="register-your-company-link" rel="noreferrer noopener" target="_blank" href="@appConfig.getGovUrl("limitedCompanyRegister")">
      @Messages("ctax.register.add.section1.p1.linkText")</a>
     @Messages("ctax.register.add.section1.p1.postText")
-    <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" href=/business-registration/select-taxes>
+    <a class="govuk-link govuk-link--no-visited-state" id="register-for-ct-link" rel="noreferrer noopener" href=/business-registration/select-taxes>
      @Messages("ctax.register.add.section1.p2.linkText")</a>
     @Messages("ctax.register.add.section1.p2.postText")
  </p>
@@ -39,8 +41,8 @@
   <li>@Messages("ctax.register.add.section1.list_item6")</li>
  </ul>
  <p class="govuk-body">
-  <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank"
-          href="https://www.gov.uk/guidance/corporation-tax-trading-and-non-trading">
+  <a class="govuk-link govuk-link--no-visited-state" id="ct-trading-non-trading-link" rel="noreferrer noopener" target="_blank"
+          href="@appConfig.getGovUrl("ctTradingOrNonTrading")">
    @Messages("ctax.register.add.section1.p5")</a>.<br/><br/>
    @Messages("ctax.register.add.section1.p6") </p>
  <p class="govuk-inset-text">@Messages("ctax.register.add.section1.inset1")</p>
@@ -53,7 +55,7 @@
  @Messages("ctax.register.add.section2.p2")
  </p>
  <p class="govuk-body">
- <a class="govuk-link govuk-link--no-visited-state" href="https://www.tax.service.gov.uk/ask-for-copy-of-your-corporation-tax-utr">
+ <a class="govuk-link govuk-link--no-visited-state" id="ask-for-utr-link" href="@appConfig.getGovUrl("askForCopyCorpTax")">
    @Messages("ctax.register.add.section2.p3.linkText")
   </a>
   @Messages("ctax.register.add.section2.p3.postLink")
@@ -62,7 +64,7 @@
  <ul class="govuk-list govuk-list--bullet">
   <li>@Messages("ctax.register.add.section2.list_item1")</li>
   <li>@Messages("ctax.register.add.section2.list_item2.preText")
-   <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank" href="https://www.gov.uk/corporation-tax-accounting-period">
+   <a class="govuk-link govuk-link--no-visited-state" id="ct-accounting-period-link" rel="noreferrer noopener" target="_blank" href="@appConfig.getGovUrl("corporationTaxAccountingPeriod")">
     @Messages("ctax.register.add.section2.list_item2.linkText")
    </a>
    @Messages("ctax.register.add.section2.list_item2.postText") </li>
@@ -72,14 +74,13 @@
  <p class="govuk-body">@Messages("ctax.register.add.section3.p1")
   <br/><br/>
   @Messages("ctax.register.add.section3.p2.preText")
-  <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank" href="https://www.gov.uk/company-tax-returns">
-   @Messages("ctax.register.add.section3.p2.linkText")
-   </a>@Messages("ctax.register.add.section3.p2.postText")
+  <a class="govuk-link govuk-link--no-visited-state" id="company-tax-return-link" rel="noreferrer noopener" target="_blank" href="@appConfig.getGovUrl("companyTaxReturns")">
+   @Messages("ctax.register.add.section3.p2.linkText")</a>@Messages("ctax.register.add.section3.p2.postText")
  </p>
 
  <h2 class="govuk-heading-m">@Messages("ctax.register.add.section4.title")</h2>
  <p class="govuk-body">
-  <a class="govuk-link govuk-link--no-visited-state" href="/business-account/add-tax">
+  <a class="govuk-link govuk-link--no-visited-state" id="add-tax-link" href="/business-account/add-tax">
    @Messages("ctax.register.add.section4.p1.linkText")
   </a>
   @Messages("ctax.register.add.section4.p1.postText")
@@ -92,7 +93,7 @@
  <h2 class="govuk-heading-m">@Messages("ctax.register.add.section5.title")</h2>
  <p class="govuk-body">
   @Messages("ctax.register.add.section5.p1.preText")
-  <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank" href="https://www.gov.uk/closing-a-limited-company">
+  <a class="govuk-link govuk-link--no-visited-state" id="closing-ltd-link" rel="noreferrer noopener" target="_blank" href="@appConfig.getGovUrl("closeLimitedCompany")">
    @Messages("ctax.register.add.section5.p1.linkText")
    </a>
  </p>

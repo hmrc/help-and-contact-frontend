@@ -148,7 +148,7 @@ class PageTypeResolverServiceSpec extends ControllerSpecBase with MockitoSugar w
       val service = new PageTypeResolverService(frontendAppConfig)
       val pageType = PageType.ViewOrCorrectYourSubmissions
       val result = service.resolve(pageType)(fakeServiceInfoRequest(email = testEmail), message)
-      val expectedContent: HtmlFormat.Appendable = views.html.epaye.epaye_view_or_correct_submissions(pageType.name, testEmail)(messages)
+      val expectedContent: HtmlFormat.Appendable = views.html.epaye.epaye_view_or_correct_submissions(pageType.name, testEmail, appConfig = frontendAppConfig)(messages)
       result.body mustBe expectedContent.body
     }
 
@@ -164,7 +164,7 @@ class PageTypeResolverServiceSpec extends ControllerSpecBase with MockitoSugar w
       val service = new PageTypeResolverService(frontendAppConfig)
       val pageType = PageType.PayeChangeCircumstance
       val result = service.resolve(pageType)(fakeServiceInfoRequest(), message)
-      val expectedContent: HtmlFormat.Appendable = views.html.epaye.paye_change_circumstance(pageType.name)(messages)
+      val expectedContent: HtmlFormat.Appendable = views.html.epaye.paye_change_circumstance(pageType.name, appConfig = frontendAppConfig)(messages)
       result.body mustBe expectedContent.body
     }
 
@@ -172,7 +172,7 @@ class PageTypeResolverServiceSpec extends ControllerSpecBase with MockitoSugar w
       val service = new PageTypeResolverService(frontendAppConfig)
       val pageType = PageType.PayeStopEmployer
       val result = service.resolve(pageType)(fakeServiceInfoRequest(), message)
-      val expectedContent: HtmlFormat.Appendable = views.html.epaye.paye_stop_employer(pageType.name)(messages)
+      val expectedContent: HtmlFormat.Appendable = views.html.epaye.paye_stop_employer(pageType.name, appConfig = frontendAppConfig)(messages)
       result.body mustBe expectedContent.body
     }
 
@@ -180,7 +180,7 @@ class PageTypeResolverServiceSpec extends ControllerSpecBase with MockitoSugar w
       val service = new PageTypeResolverService(frontendAppConfig)
       val pageType = PageType.RegisterAddCT
       val result = service.resolve(pageType)(fakeServiceInfoRequest(), message)
-      val expectedContent: HtmlFormat.Appendable = views.html.ct.ctax_register_add(pageType.name)(messages)
+      val expectedContent: HtmlFormat.Appendable = views.html.ct.ctax_register_add(pageType.name, appConfig = frontendAppConfig)(messages)
       result.body mustBe expectedContent.body
     }
 

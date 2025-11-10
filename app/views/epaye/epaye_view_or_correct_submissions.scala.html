@@ -14,7 +14,9 @@
  * limitations under the License.
  *@
 
-@(name: String, email:Option[String])(implicit messages: Messages)
+@import config.FrontendAppConfig
+
+@(name: String, email:Option[String], appConfig: FrontendAppConfig)(implicit messages: Messages)
 
 <div class="govuk-grid-column-three-quarters govuk-!-padding-left-8">
     <h1 id="page-title-@name" class="govuk-heading-l">@Messages("help_and_contact.view_or_correct_submissions")</h1>
@@ -23,7 +25,7 @@
     <p class="govuk-body">@Messages("epaye.submissions.submissions_show_up_")</p>
     <p class="govuk-body">@Messages("epaye.submissions.if_you_make_fps_on_time_")</p>
     <p class="govuk-body">@Messages("epaye.submissions.if_you_make_fps_late_")
-        <a href="https://www.gov.uk/running-payroll/fps-after-payday#viewing-late-fps-reports-in-your-hmrc-online-account" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.submissions.gov_uk_guide_on_payroll_")</a>.
+        <a id="gov-uk-guide" href="@appConfig.getGovUrl("govUkGuidePayroll")" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.submissions.gov_uk_guide_on_payroll_")</a>.
     </p>
 
     <h2 class="govuk-heading-m">@Messages("epaye.submissions.employer_payment_summary_")</h2>
@@ -42,12 +44,12 @@
     @email.collect { case em if em.nonEmpty =>
        <p class="govuk-body">@Html(Messages("epaye.submissions.your_hmrc_email_", email.get))</p>
     }
-    <p class="govuk-body"><a href="/business-account/manage-account/government-gateway-warning" class="govuk-link govuk-link--no-visited-state">@Messages("epaye.submissions.change_address_link")</a></p>
+    <p class="govuk-body"><a href="/business-account/manage-account/government-gateway-warning" id="government-gateway-warning-link" class="govuk-link govuk-link--no-visited-state">@Messages("epaye.submissions.change_address_link")</a></p>
     <h3 class="govuk-heading-s">@messages("epaye.submissions.payroll_software_confirmations")</h3>
     <p class="govuk-body">@Messages("epaye.submissions.you_can_also_check_")</p>
     <p class="govuk-body">@Messages("epaye.submissions.to_check_if_hmrc_received_")</p>
     <p class="govuk-body">@Messages("epaye.submissions.to_view_a_specific_submission_")
-        <a href="https://www.gov.uk/government/publications/basic-paye-tools-user-guide/basic-paye-tools-user-guide" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.submissions.user_guide")</a>@Messages("epaye.submissions.but_select_")
+        <a href="@appConfig.getGovUrl("basicPayeUserGuide")" id="basic-paye-tools-user-guide-link" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.submissions.user_guide")</a>@Messages("epaye.submissions.but_select_")
     </p>
     <p class="govuk-body">@Messages("epaye.submissions.contact_your_software_provider_")</p>
 
@@ -56,11 +58,11 @@
     <h3 class="govuk-heading-s">@messages("epaye.submissions.submissions_for_the_current_tax_year")</h3>
     <p class="govuk-body">@Messages("epaye.submissions.you_can_make_changes_")</p>
     <p class="govuk-body">@Messages("epaye.submissions.follow_the")
-        <a href="https://www.gov.uk/government/publications/basic-paye-tools-user-guide/basic-paye-tools-user-guide" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.submissions.user_guide")</a> @Messages("epaye.submissions.if_you_use_")
+        <a href="@appConfig.getGovUrl("basicPayeUserGuide")" id="basic-paye-tools-user-guide-link2" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.submissions.user_guide")</a> @Messages("epaye.submissions.if_you_use_")
     </p>
     <p class="govuk-body">@Messages("epaye.submissions.contact_your_software_provider_")</p>
 
     <h3 class="govuk-heading-s">@messages("epaye.submissions.submissions_from_an_earlier_tax_year")</h3>
     <p class="govuk-body">@Messages("epaye.submissions.if_you_spot_an_error_")</p>
-    <p class="govuk-body"><a href="https://www.gov.uk/payroll-errors/correcting-your-fps-or-eps" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.submissions.find_out_more_wrong_pay")</a></p>
+    <p class="govuk-body"><a href="@appConfig.getGovUrl("correctingFpsEps")" id="correcting-fps-eps-link" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.submissions.find_out_more_wrong_pay")</a></p>
 </div>

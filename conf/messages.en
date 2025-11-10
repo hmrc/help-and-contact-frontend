@@ -1833,8 +1833,8 @@ ctax.register.add.section2.list_item3 = the date your annual accounts are made u
 ctax.register.add.section3.title = What happens next
 ctax.register.add.section3.p1 = HMRC will tell you the deadline for paying Corporation Tax.
 ctax.register.add.section3.p2.preText = You must file a
-ctax.register.add.section3.p2.linkText = Company Tax Return (opens in new tab),
-ctax.register.add.section3.p2.postText = even if you make a loss or have no Corporation Tax to pay.
+ctax.register.add.section3.p2.linkText = Company Tax Return (opens in new tab)
+ctax.register.add.section3.p2.postText = , even if you make a loss or have no Corporation Tax to pay.
 
 ctax.register.add.section4.title = Add Corporation Tax to your business tax account
 ctax.register.add.section4.p1.linkText = Add Corporation Tax to your business tax account

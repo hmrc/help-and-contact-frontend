@@ -30,7 +30,7 @@ class EpayeViewCorrectSubmissionViewSpec extends ViewBehaviours {
   val email: Option[String] = Some("user@test.com")
 
   def createView(): () => HtmlFormat.Appendable =
-    () =>  epaye_view_or_correct_submissions.apply(PageType.ViewOrCorrectYourSubmissions.name, email)(messages)
+    () =>  epaye_view_or_correct_submissions.apply(PageType.ViewOrCorrectYourSubmissions.name, email, appConfig = frontendAppConfig)(messages)
 
 
   "Epaye View amd Correct Submission view" must {
@@ -71,14 +71,14 @@ class EpayeViewCorrectSubmissionViewSpec extends ViewBehaviours {
 
     "do not show the message if the email is None" in {
       val email: Option[String] = None
-      val doc = asDocument(epaye_view_or_correct_submissions.apply(PageType.ViewOrCorrectYourSubmissions.name, email)(messages))
+      val doc = asDocument(epaye_view_or_correct_submissions.apply(PageType.ViewOrCorrectYourSubmissions.name, email, appConfig = frontendAppConfig)(messages))
       val paragraphs = doc.getElementsByTag("p").toString
       paragraphs must not include("Your HMRC sign in email address is")
     }
 
     "do not show the message if the email is empty" in {
       val email: Option[String] = Some("")
-      val doc = asDocument(epaye_view_or_correct_submissions.apply(PageType.ViewOrCorrectYourSubmissions.name, email)(messages))
+      val doc = asDocument(epaye_view_or_correct_submissions.apply(PageType.ViewOrCorrectYourSubmissions.name, email, appConfig = frontendAppConfig)(messages))
       val paragraphs = doc.getElementsByTag("p").toString
       paragraphs must not include("Your HMRC sign in email address is")
     }

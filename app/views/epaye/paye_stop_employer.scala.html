@@ -14,7 +14,9 @@
  * limitations under the License.
  *@
 
-@(name: String)(implicit messages: Messages)
+@import config.FrontendAppConfig
+
+@(name: String, appConfig: FrontendAppConfig)(implicit messages: Messages)
 
 <div class="govuk-grid-column-three-quarters govuk-!-padding-left-8">
     <h1 id="page-title-@name" class="govuk-heading-l">@Messages("paye.stop.employer.heading")</h1>
@@ -29,13 +31,13 @@
 
     <p class="govuk-body">
         @Messages("paye.stop.employer.section3.p1.preText")
-        <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank" href=https://www.gov.uk/guidance/payroll-what-to-do-if-your-business-merges-or-changes-ownership>
+        <a class="govuk-link govuk-link--no-visited-state" id="your-business-merges-link" rel="noreferrer noopener" target="_blank" href="@appConfig.getGovUrl("businessMergesOrChanges")">
             @Messages("paye.stop.employer.section3.p1.linkText")</a>
     </p>
 
     <p class="govuk-body">
         @Messages("paye.stop.employer.section3.p2.preText")
-        <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank" href=https://www.gov.uk/stop-employing-staff>
+        <a class="govuk-link govuk-link--no-visited-state" id="stop-employing-staff-link" rel="noreferrer noopener" target="_blank" href="@appConfig.getGovUrl("stopEmploying")">
             @Messages("paye.stop.employer.section3.p2.linkText")</a>
     </p>
 

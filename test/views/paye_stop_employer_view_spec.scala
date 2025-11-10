@@ -28,7 +28,7 @@ class PayeStopEmployerViewSpec extends ViewBehaviours {
   val serviceInfoContent: Option[Html] = Some(Html("<div>Service info content</div>"))
 
   def createView(): () => HtmlFormat.Appendable =
-    () =>  paye_stop_employer.apply(PageType.PayeStopEmployer.name)(messages)
+    () =>  paye_stop_employer.apply(PageType.PayeStopEmployer.name, appConfig = frontendAppConfig)(messages)
 
 
   "Paye Stop Employer View" must {
