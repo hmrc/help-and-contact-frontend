@@ -950,16 +950,19 @@ howToFindSaPenaltiesTranscript.paragraph8 = Y ffordd hawsaf o osgoi cosbau yw an
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 viewingYourCalculationTranscript.title = Trawsgrifiad fideo - Bwrw golwg dros gyfrifiadau’ch Ffurflen Dreth Hunanasesiad
 viewingYourCalculationTranscript.heading = Trawsgrifiad fideo - Bwrw golwg dros gyfrifiadau’ch Ffurflen Dreth Hunanasesiad
-viewingYourCalculationTranscript.paragraph1 = Pan fyddwch yn defnyddio’ch Ffurflen Dreth Hunanasesiad ar-lein, mae’n cyfrifo’n awtomatig faint y mae angen i chi ein talu.
-viewingYourCalculationTranscript.paragraph2 = Ar ôl ychwanegu’ch ffigurau a gwirio bod pob dim yn gywir, gallwch fwrw golwg dros eich cyfrifiad.
-viewingYourCalculationTranscript.paragraph3 = Mae hyn yn dangos y swm sydd angen i chi ei dalu ar gyfer y Ffurflen Dreth hon. Bydd hyn yn cynnwys Treth Incwm, Yswiriant Gwladol Dosbarth 4 a chyfraniadau Yswiriant Gwladol Dosbarth 2, os ydynt yn ddyledus.
-
-viewingYourCalculationTranscript.paragraph4 = Os yw swm y Dreth Incwm ac Yswiriant Gwladol Dosbarth 4 yn £1,000 neu fwy, mae’n rhaid i chi wneud taliad ar gyfrif.
-viewingYourCalculationTranscript.paragraph5 = Mae taliad ar gyfrif yn cael ei wneud ddwywaith y flwyddyn, ar 31 Ionawr a 31 Gorffennaf, i’ch helpu i rannu cost treth bob blwyddyn.
-viewingYourCalculationTranscript.paragraph6 = Mae pob taliad yn werth hanner eich bil Treth Incwm ac Yswiriant Gwladol Dosbarth 4 diwethaf.  Didynnir y taliadau hyn oddi wrth y swm sydd arnoch y flwyddyn ganlynol.
-viewingYourCalculationTranscript.paragraph7 = Os hoffech weld sut mae’r ffigurau wedi’u cyfrifo mewn mwy o fanylder, dewiswch ‘Bwrw golwg dros eich cyfrifiad llawn a’i argraffu’. Mae’n dangos eich incwm, eich lwfans personol, y dreth sy’n ddyledus, unrhyw Yswiriant Gwladol Dosbarth 4, Yswiriant Gwladol Dosbarth 2, a chyfanswm unrhyw daliadau sy’n ddyledus.
-viewingYourCalculationTranscript.paragraph8 = Cofiwch nad yw’r taliadau amcangyfrifedig hyn yn cynnwys unrhyw daliadau rydych wedi’u gwneud eisoes. Gallwch argraffu copi ohono ar gyfer eich cofnodion eich hun.
-viewingYourCalculationTranscript.paragraph9 = Gallwch ddod o hyd i ragor o wybodaeth am Hunanasesiad ar
+viewingYourCalculationTranscript.paragraph1 = Pan fyddwch yn defnyddio’ch Ffurflen Dreth Hunanasesiad ar-lein, mae’n cyfrifo’n awtomatig faint sydd angen i chi ein talu.
+viewingYourCalculationTranscript.paragraph2 = Ar ôl i chi ychwanegu’ch ffigurau a gwirio bod pob dim yn gywir, gallwch edrych dros eich cyfrifiad.
+viewingYourCalculationTranscript.paragraph3 = Mae’r crynodeb hwn yn dangos y swm sydd arnoch ar gyfer y Ffurflen Dreth hon, yn seiliedig ar y ffigurau rydych wedi eu nodi.
+viewingYourCalculationTranscript.paragraph4 = Bydd hyn yn cynnwys Treth Incwm, Yswiriant Gwladol Dosbarth 4 a chyfraniadau gwirfoddol Yswiriant Gwladol Dosbarth 2, os ydynt yn ddyledus.
+viewingYourCalculationTranscript.paragraph5 = Bydd unrhyw Dreth Enillion Cyfalaf ac ad-daliadau Benthyciad Myfyriwr yn cael eu cynnwys hefyd.
+viewingYourCalculationTranscript.paragraph6 = Os yw swm y Dreth Incwm ac Yswiriant Gwladol Dosbarth 4 yn £1,000 neu fwy, mae’n rhaid i chi wneud taliad ar gyfrif.
+viewingYourCalculationTranscript.paragraph7 = Mae taliad ar gyfrif yn cael ei wneud ddwywaith y flwyddyn, ar 31 Ionawr a 31 Gorffennaf, i’ch helpu i rannu cost treth bob blwyddyn.
+viewingYourCalculationTranscript.paragraph8 = Mae pob taliad yn werth hanner eich bil Treth Incwm ac Yswiriant Gwladol Dosbarth 4 diwethaf.  Didynnir y taliadau hyn oddi wrth y swm sydd arnoch y flwyddyn ganlynol.
+viewingYourCalculationTranscript.paragraph9 = Dewiswch ‘Cadw a pharhau’ - sydd ar waelod y dudalen sy’n crynhoi - er mwyn gweld i fwy o fanylder sut mae’r ffigurau wedi cael eu cyfrifo. Mae hwn yn dangos eich incwm, lwfans personol, treth incwm sy’n ddyledus, ac unrhyw Yswiriant Gwladol Dosbarth 4 sy’n ddyledus. Bydd unrhyw gyfraniad gwirfoddol Yswiriant Gwladol Dosbarth 2 i’w gweld yma hefyd.
+viewingYourCalculationTranscript.paragraph10 = Mae cyfanswm unrhyw daliadau sy’n ddyledus yn cael eu dangos yn nes ymlaen i lawr y dudalen.
+viewingYourCalculationTranscript.paragraph11 = Cofiwch nad yw’r taliadau amcangyfrifedig hyn yn cynnwys unrhyw daliadau rydych wedi’u gwneud eisoes. Gallwch argraffu copi ohono ar gyfer eich cofnodion eich hun.
+viewingYourCalculationTranscript.paragraph12.prefix = Gallwch ddod o hyd i ragor o wybodaeth am Hunanasesiad ar
+viewingYourCalculationTranscript.paragraph12.suffix = ac yn ein fideos eraill ar YouTube.
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Paying your self assessment tax bill transcript

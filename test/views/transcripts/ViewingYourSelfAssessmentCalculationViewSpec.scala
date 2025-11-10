@@ -55,16 +55,18 @@ class ViewingYourSelfAssessmentCalculationViewSpec extends ViewBehaviours {
       val contentList = List(
         "When you use our Self Assessment online tax return, it automatically works out how much you’ll need to pay us.",
         "After adding your figures, and checking everything is correct, you can view your calculation.",
-          "This shows the amount you’re due to pay for this tax return. It will include Income Tax,"+
-            " Class 4 National Insurance and Class 2 National Insurance contributions, if they’re due.",
+        "This summary shows the amount you’re due to pay for this tax return based on the figures you’ve entered.",
+        "It will include Income Tax, Class 4 National Insurance and voluntary Class 2 National Insurance contributions, if they’re due.",
+        "Any Capital Gains Tax and Student Loan repayments due, will also be included.",
         "If the amount of Income Tax and Class 4 National Insurance is £1,000 or more, you have to make a payment on account.",
         "A payment on account is made twice a year, on the 31st of January and the 31st of July, to help you spread the cost of each year’s tax.",
         "Each payment is half of your last Income Tax and Class 4 National Insurance bill." +
           " These payments are taken off the amount you’re due to pay the following year.",
-        "If you’d like to see how the figures have been worked out in more detail, select ‘View and print your full calculation’. This shows your income, personal"+
-        " allowance, tax due, Class 4 National Insurance, Class 2 National Insurance and the total of any payments due.",
+        "Select ‘Save and continue’ at the bottom of the summary page to see how the figures have been worked out in more detail. This shows your income, personal"+
+        " allowance, income tax due and any Class 4 National Insurance due. Any voluntary Class 2 National Insurance will also show here.",
+        "The total of any payments due are shown further down the page.",
         "Remember, these estimated payments don’t include any payments you’ve already made. You can print a copy of this for your own records.",
-        "You can find more information about Self Assessment on GOV.UK."
+        "You can find more information about Self Assessment on GOV.UK and in our other videos on YouTube."
       )
 
       contentList.zipAll(elements, "", "").foreach {
