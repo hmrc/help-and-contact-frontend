@@ -30,16 +30,16 @@
     </ul>
     <p class="govuk-body">@Messages("epaye.you_can_use_either")</p>
     <ul class="govuk-list govuk-list--bullet">
-        <li>@Messages("HMRC's") <a href="@appConfig.getGovUrl("basicPayeTools")" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.you_can_use_either_bullet1_2")</a> @Messages("epaye.you_can_use_either_bullet1_3")</li>
-        <li><a href="@appConfig.getGovUrl("payrollSoftware")" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.you_can_use_either_bullet2_1")</a> @Messages("epaye.you_can_use_either_bullet2_2")</li>
+        <li>@Messages("HMRC's") <a href="@appConfig.getGovUrl("basicPayeTools")" id="basic-paye-link" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.you_can_use_either_bullet1_2")</a> @Messages("epaye.you_can_use_either_bullet1_3")</li>
+        <li><a href="@appConfig.getGovUrl("payrollSoftware")" id="commercial-payroll-software-link" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.you_can_use_either_bullet2_1")</a> @Messages("epaye.you_can_use_either_bullet2_2")</li>
     </ul>
 
     <h2 class="govuk-heading-m">@Messages("epaye.paying_your_employees")</h2>
     <p class="govuk-body">@Messages("epaye.you_must_make_a_submission")</p>
-    <p class="govuk-body">@Messages("epaye.you_must_submit_the_FPS") <a href="@appConfig.getGovUrl("payrollAfterPayday")" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.you_can_submit_late_FPS_link"). </a></p>
+    <p class="govuk-body">@Messages("epaye.you_must_submit_the_FPS") <a href="@appConfig.getGovUrl("payrollAfterPayday")" id="payroll-after-payday-link" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.you_can_submit_late_FPS_link"). </a></p>
     <h3 class="govuk-heading-s">@messages("epaye.if_you_do_not_pay_header")</h3>
     <p class="govuk-body">@Messages("epaye.if_you_do_not_pay")</p>
-    <p class="govuk-body">@Messages("epaye.instead_of_an_FPS") <a href="@appConfig.getGovUrl("epayeMoreAboutRefunds")" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.instead_of_an_FPS_link")</a></p>
+    <p class="govuk-body">@Messages("epaye.instead_of_an_FPS") <a href="@appConfig.getGovUrl("epayeMoreAboutRefunds")" id="eps-link" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.instead_of_an_FPS_link")</a></p>
 
     <h2 class="govuk-heading-m">@Messages("epaye.paying_hmrc")</h2>
     <p class="govuk-body">@Messages("epaye.you_need_to_use")</p>
@@ -61,10 +61,10 @@
 
     <h2 class="govuk-heading-m">@Messages("epaye.further_resources")</h2>
     <ul class="govuk-list govuk-list--bullet">
-       <li><a href="@appConfig.getGovUrl("runningPayroll")" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.further_resources_link1")</a></li>
-       <li><a href="@appConfig.getGovUrl("payPayeTax")" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.further_resources_link2")</a></li>
-       <li><a href="@appConfig.getYoutubeVideo("furtherResources")" class="govuk-link govuk-link--no-visited-state" id="further-resources-link" target="_blank">@Messages("epaye.further_resources_link3")</a></li>
-       <li><a href=@controllers.routes.TranscriptController.onPageLoad("how-do-i-use-payroll-software") class="govuk-link govuk-link--no-visited-state">@Messages("epaye.further_resources_link4")</a></li>
+       <li><a href="@appConfig.getGovUrl("runningPayroll")" id="running-your-payroll-link" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.further_resources_link1")</a></li>
+       <li><a href="@appConfig.getGovUrl("payPayeTax")" id="employers-paye-link" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.further_resources_link2")</a></li>
+       <li><a href="@appConfig.getYoutubeVideo("furtherResources")" id="further-resources-link" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("epaye.further_resources_link3")</a></li>
+       <li><a href=@controllers.routes.TranscriptController.onPageLoad("how-do-i-use-payroll-software") id="further-resources-link-transcript" class="govuk-link govuk-link--no-visited-state">@Messages("epaye.further_resources_link4")</a></li>
     </ul>
 
 </div>

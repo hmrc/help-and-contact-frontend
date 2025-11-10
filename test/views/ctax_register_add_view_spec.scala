@@ -28,7 +28,7 @@ class CtaxRegisterAddViewSpec extends ViewBehaviours {
   val serviceInfoContent: Option[Html] = Some(Html("<div>Service info content</div>"))
 
   def createView(): () => HtmlFormat.Appendable =
-    () =>  ctax_register_add.apply(PageType.RegisterAddCT.name)(messages)
+    () =>  ctax_register_add.apply(PageType.RegisterAddCT.name, appConfig = frontendAppConfig)(messages)
 
 
   "Register or add Corporation Tax view" must {
@@ -82,7 +82,7 @@ class CtaxRegisterAddViewSpec extends ViewBehaviours {
       )
       assertLinkByLinkText(
         doc,
-        "Company Tax Return (opens in new tab),",
+        "Company Tax Return (opens in new tab)",
         "https://www.gov.uk/company-tax-returns"
       )
       assertLinkByLinkText(

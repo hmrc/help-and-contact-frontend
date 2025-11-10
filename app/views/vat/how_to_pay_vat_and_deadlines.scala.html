@@ -41,12 +41,12 @@
         <br><br>
         @Messages("vat.payments_and_deadlines.you_need_to_allow_time_")
         <br><br>
-        <a href="@appConfig.getGovUrl("payVat")" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("vat.payments_and_deadlines.how_to_pay_your_bill_link")</a>
+        <a href="@appConfig.getGovUrl("payVat")" id="read-info-vat-bill-link" class="govuk-link govuk-link--no-visited-state" target="_blank">@Messages("vat.payments_and_deadlines.how_to_pay_your_bill_link")</a>
     </p>
     <div class="govuk-inset-text">
         <a href="@appConfig.getYoutubeVideo("howToGetHelp")" class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" id="how-to-get-help-vat-video"  target="_blank">@Messages("vat.payments_and_deadlines.how_to_get_help_link")</a>
         <br><br>
-        <a href='@controllers.routes.TranscriptController.onPageLoad("cant-pay-taxbill")' class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener">@Messages("vat.payments_and_deadlines.how_to_get_help_transcript_link")</a>
+        <a href='@controllers.routes.TranscriptController.onPageLoad("cant-pay-taxbill")' id="how-to-get-help-vat-transcript" class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener">@Messages("vat.payments_and_deadlines.how_to_get_help_transcript_link")</a>
     </div>
 
 
