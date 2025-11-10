@@ -40,7 +40,7 @@ class BasicRecordKeepingForTheSelfEmployedViewSpec extends ViewBehaviours {
       }
 
       "has the correct text" in {
-        h1.text() mustBe "Video transcript - Basic record keeping for the self-employed"
+        h1.text() mustBe "Video transcript - What self-employment records do I need to keep?"
       }
     }
 
@@ -61,11 +61,11 @@ class BasicRecordKeepingForTheSelfEmployedViewSpec extends ViewBehaviours {
       val contentList = List(
         "Basic record keeping is an important activity for any business. You must record any money going in and out of your business, whether the transaction is made in person - by phone - or online.",
         "You can keep your records on paper or digitally using a computer. These include items such as invoices, sale receipts, proof of purchases and bank statements. Remember your records must be accurate, clear and complete.",
-        "Some software suppliers offer free record keeping apps for small businesses. ditional or cash basis method of accounting, and how you work out your expenses. How you keep your records depends on if you use the traditional or cash basis method of accounting, and how you work out your expenses. There’s more information about cash basis and simplified expenses in our YouTube video and on GOV.UK.",
+        "Some software providers offer free record keeping apps for small businesses. How you keep your records depends on if you use the traditional or cash basis method of accounting, and how you work out your expenses. There’s more information about cash basis and simplified expenses in our YouTube video and on GOV.UK.",
         "It’s easier if you organise your income and expenses into categories and update these regularly. And remember to back up your digital records.",
-        "It’s important to keep your business and private transactions separate. Drawing or using money from your business for personal use isn’t an allowable business expense.",
-        "If you’re VAT registered, you’ll also need to keep records of how much VAT you’ve paid your suppliers and charged your customers. If your income is above the VAT threshold, you’ll need to submit your records to us using Making Tax Digital software. This will apply to all VAT registered businesses from April 2022.",
-        "Make sure you store your records for at least 6 years, as we may need to see them to check you’re paying the right amount of tax.",
+        "It’s important to keep your business and personal transactions separate. Drawing or using your businesses money for personal use isn’t an allowable business expense.",
+        "If you’re VAT registered, you’ll also need to keep records of how much VAT you’ve paid to suppliers and charged your customers. From April 2022, all VAT registered businesses must follow the rules for Making Tax Digital for VAT and submit their records using Making Tax Digital software.",
+        "Remember to store your records for at least six years, as we may need them to check you’re paying the right amount of tax.",
         "You can find out more on GOV.UK and in our other helpful videos on YouTube."
       )
 

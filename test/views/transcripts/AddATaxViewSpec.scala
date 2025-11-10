@@ -40,50 +40,27 @@ class AddATaxViewSpec extends ViewBehaviours {
       val doc = asDocument(createView())
 
       val elements = doc.getElementsByTag("article").first().getElementsByTag("p").asScala.toList.map(_.text())
-      val bullets = doc.getElementsByTag("article").first().getElementsByTag("li").asScala.toList.map(_.text())
-
-      val bulletList1 = List("Corporation Tax", "Self Assessment", "PAYE for employers, and", "VAT")
-      val bulletList2 = List("your Company Registration Number – sent to you by Companies House, or", "the postcode of your registered office.")
-      val bulletList3 = List("an individual or sole trader", "partnership, or", "trust")
-      val bulletList4 = List("if you’re currently submitting VAT returns", "the total from your latest VAT return and,", "the last month of your latest VAT accounting period")
-
-      val bulletsList = bulletList1 ++ bulletList2 ++ bulletList3 ++ bulletList4
 
       val contentList = List(
-        "You can add more than 40 services to your business tax account. Here’s how you add the 4 main ones:",
-        "This is the business tax account homepage. Any services you add will appear here.",
-        "For some services, we’ll send you an activation pin within 10 working days. Once you put the pin in, you can start using the service.",
-        "Let‘s start. Select ‘add a tax, duty or scheme’.",
-        "Select ‘Corporation Tax’. On the following screen, enter your 10-digit Corporation Tax Unique Taxpayer Reference.",
-        "Then enter either:",
-        "If your company is not based in the UK – then select this option.",
-        "To add Self Assessment, you’ll need your Unique Taxpayer Reference number.",
-        "If you don’t have it, you can’t add this service at this time. Instead you’ll be directed to register for Self Assessment.",
-        "Once you receive your Unique Taxpayer Reference letter, log back into your business tax account and enter your 10-digit Taxpayer Reference number here.",
-        "Then select if you’re:",
-        "If you’re an individual or sole trader. You’ll be asked to enter your National Insurance number. If you don’t have it, you’ll be asked for your postcode.",
-        "Next, confirm your identity to get access to Self Assessment right away. But don’t worry if you can’t do this. You can still request an activation pin in the post.",
-        "To add PAYE for Employers, select this option (Employers or intermediaries, for example PAYE for employers, or CIS).",
-        "If you have a PAYE reference number, enter it here, (Request access to PAYE for Employers page) as well as the HMRC office number and your Accounts office reference number.",
-        "If you don’t have a PAYE reference number, you’ll be directed to register as an employer.",
-        "Once you’ve received your reference numbers, log back into your Business Tax Account and add the details.",
-        "And to add VAT, select the type of VAT service you want and enter your 9-digit VAT number.",
-        "You’re then asked to enter the date you became VAT registered and the UK postcode for where your business is registered for VAT.",
-        "You’ll also need to tell us:",
-        "That’s it.",
-        "You can find more information about the Business Tax Account on GOV.UK"
-
+        "You can add more than 40 services to your Business Tax Account. Here’s how you add the four main ones.",
+        "Corporation Tax, Self Assessment, PAYE for employers and VAT.",
+        "When you log into your Business Tax Account for the first time you’ll see this home page. Any services you add will appear here. For some services, we’ll send you an activation PIN within 10 working days.",
+        "Once you put the PIN in, you can start using the service.",
+        "Let’s start. Select ‘Corporation Tax’. On the following screen enter your 10-digit Corporation Tax Unique Taxpayer Reference.",
+        "Then enter either, your Company Registration Number, sent to you by Companies House, or the postcode of your registered office. If your company is not based in the UK, then select this option.",
+        "To add Self Assessment, you’ll need your Unique Taxpayer Reference number. If you don’t have it, you can’t add this service at this time. Instead, you’ll be directed to register for Self Assessment.",
+        "Once you receive your Unique Taxpayer Reference letter, log back into your Business Tax Account and choose ‘Yes’. Enter here, your 10-digit Taxpayer Reference number here. Then select if you’re an ‘Individual or sole trader’, ‘Partnership’ or ‘Trust’.",
+        "If you’re an individual or sole trader, you’ll be asked to enter your National Insurance number. If you don’t have it, you’ll be asked for your postcode. Next, confirm your identity to get access to Self Assessment right away. But don’t worry if you can’t do this, you can still request an activation pin in the post.",
+        "To add PAYE for employers, select this option. Then choose, ‘PAYE for employers’. If you have a PAYE reference number, enter it here as well as the HMRC office number and your Accounts Office reference number.",
+        "If you don’t have a PAYE reference number, you’ll be directed to register as an employer. Once you’ve received your reference numbers, log back into your Business Tax Account and add the details.",
+        "To add VAT, select the type of VAT service you want. This page tells you what information you need and where to find it. Next, we ask if you have a VAT number. If you haven’t, you’ll need to register for VAT before you continue. When you have it, tell us your 9-digit VAT number here. You’re then asked to enter the date you became VAT registered and the UK postcode for where your business is registered for VAT.",
+        "You’ll also need to tell us if you’re currently submitting VAT returns, the total from your latest VAT return and the last month of your latest VAT accounting period.",
+        "And that’s it, you can find more information about the Business Tax Account on GOV.UK and in our other videos on YouTube."
       )
 
       contentList.zipAll(elements, "", "").foreach {
         case (content, element) => element mustBe content
       }
-
-      bulletsList.zipAll(bullets, "", "").foreach {
-        case (expected, actual) => actual mustBe expected
-      }
     }
   }
 }
-
-

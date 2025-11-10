@@ -77,17 +77,17 @@ class BudgetingYourSelfAssessmentTaxBillViewSpec extends ViewBehaviours {
       val elements = doc.getElementsByTag("article").first().getElementsByTag("p").asScala.toList.map(_.text())
 
       val contentList = List(
-        "Budgeting for your Self Assessment tax bill can help you pay what you owe by the deadline, and also avoid any interest and penalties.",
-        "You don’t have to wait until the 31st of January or the 31st of July to pay. If you do, you could miss the deadline.",
-        "A budget payment plan allows you to make regular payments by direct debit towards your next tax bill.",
+        "Budgeting for your Self Assessment tax bill can help you pay what you owe by the deadline and also avoid any interest and penalties. "+
+        "You don’t have to wait until the 31 January or the 31 July to pay. If you do, you could miss the deadline.",
+        "A budget payment plan allows you to make regular payments by direct debit towards your next tax bill. "+
         "If you’re up to date with previous Self Assessment payments, you can set up a budget plan (opens in a new tab) using your online account on GOV.UK.",
         "It’s flexible so you can decide how much you pay each month. You can reduce or stop payments at any time.",
-        "When you set up a budget payment plan, it’s a good idea to include an end date for your payments, for example, the 31st of January.",
+        "When you set up a budget payment plan, it’s a good idea to include an end date for your payments, for example, the 31 January. "+
         "If you don’t, any repayment you’re due may be delayed.",
-        "To help you decide what to pay, use the Self Assessment tax calculator (opens in a new tab) on GOV.UK to estimate your Self Assessment tax bill for the current year.",
+        "To help you decide what to pay, use the Self Assessment tax calculator (opens in a new tab) on GOV.UK to estimate your Self Assessment tax bill for the current year. "+
         "Tell us your estimated income to get an idea of how much Income Tax and any Class 4 National Insurance you need to pay.",
         "As well as using a budget payment plan, you can also make regular one-off payments through your online bank account - by using faster payments, setting up single Direct Debits or by sending a cheque.",
-        "Remember, if there’s anything left to pay, you’ll need to do this by the 31st of January.",
+        "Remember, if there’s anything left to pay, you’ll need to do this by the 31 January.",
         "There’s more about Self Assessment on GOV.UK (opens in a new tab) and in our other helpful videos on YouTube (opens in a new tab)."
       )
 

@@ -52,7 +52,7 @@ class NewTailorYourTaxReturnSpec extends ViewBehaviours {
       val elements = doc.getElementsByTag("article").first().getElementsByTag("p").asScala.toList.map(_.text())
 
       val contentList = List(
-        "When you’re filling in your online tax return, you’ll find a section called ‘Tailor your return’.",
+        "When you’re filing your online tax return, you’ll find a section called ‘Tailor your return’.",
         "It’s three pages of questions where you answer ‘Yes’ or ‘No’, which means you only get " +
           "the sections you need to complete. If you’re not sure about a question, click on the ‘Help about’ link for guidance.",
         "Page one asks if you’ve had income as an employee, from self-employment or from a partnership.",
@@ -66,9 +66,9 @@ class NewTailorYourTaxReturnSpec extends ViewBehaviours {
         "The third page is mainly about tax reliefs, including pension contributions, charitable gifts, Married Couple’s Allowance and Marriage Allowance.",
         "This is for tax you’ve paid in the tax year covered by this online return, and which has " +
           "already been refunded by us or Jobcentre Plus. It’s not for refunds that came from an earlier year, or from an employer.",
-        "The next section is ‘Fill in your return‘. Based on your answers in ‘Tailor your return‘, it shows you the sections you need to complete next.",
-        "Remember, your Self Assessment tax return covers the tax year that ended on the 5th of April and is due by the 31st " +
-          "of January the following year. Any tax you owe must be paid by the 31st of January.",
+        "The next section is Fill in your return. Based on your answers in Tailor your return, it shows you the sections you need to complete next.",
+        "Remember, your Self Assessment tax return covers the tax year that ended on the fifth of April and is due by the thirty first " +
+          "of January the following year. Any tax you owe must be paid by the thirty first of January.",
         "You can file anytime, just don’t leave it until the last minute.",
         "You can find out more about Self Assessment on GOV.UK and watch our other helpful videos and webinars on YouTube."
       )

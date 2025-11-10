@@ -43,12 +43,11 @@ class WhySentTaxReturnViewSpec extends ViewBehaviours {
       val elements = doc.getElementsByTag("article").first().getElementsByTag("p").asScala.toList.map(_.text())
 
       val contentList = List(
-        "You’ll usually be sent a tax return if you’re registered as self-employed, but there are plenty of other reasons why you may need to fill one in."+
-        " You can check if you need to fill in a Self Assessment tax return quickly and easily on GOV.UK using the link at the end of this video.",
-      "It’s not connected to HM Revenue and Customs online services so it’s completely anonymous",
-       "If you’re sent a tax return, or if you get an email or letter from HMRC telling you to complete one, you must do it - even if you don’t have any tax to pay. If you don’t send a tax return back by the deadline you may have to pay a penalty.",
-      "If you used to send a tax return but don’t need to send one for the last tax year, contact HMRC to close your Self Assessment account.",
-     "You must also tell HMRC if you’ve stopped being self-employed. You can do all this – and find out much more – on GOV.UK."
+        "You’ll usually be sent a tax return if you’re registered as self-employed, but there are plenty of other reasons why you may need to fill one in.",
+        "You can check if you need to fill in a Self Assessment tax return quickly and easily on GOV.UK using the link at the end of this video. It’s not connected to HM Revenue and Customs online services so it’s completely anonymous.",
+      "If you’re sent a tax return, or if you get an email or letter from HMRC telling you to complete one, you must do it - even if you don’t have any tax to pay.",
+       "If you don’t send a tax return back by the deadline you may have to pay a penalty. If you used to send a tax return but don’t need to send one for the last tax year, contact HMRC to close your Self Assessment account. You must also tell HMRC if you’ve stopped being self-employed.",
+     "You can do all of this and find out much more on GOV.UK."
       )
 
       contentList.zipAll(elements, "", "").foreach {

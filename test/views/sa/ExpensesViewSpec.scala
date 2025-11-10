@@ -112,21 +112,21 @@ class ExpensesViewSpec extends ViewBehaviours {
       assertLinkById(
         doc,
         "what-expenses-can-i-include-video",
-        "Video – What expenses can I include in my Self Assessment tax return? (opens in new tab)",
-        "https://www.youtube.com/watch?v=hspBxF2NVBY",
+        "Video – What self-employed expenses can I include in my tax return? (opens in new tab)",
+        "https://www.youtube.com/watch?v=M88WiSOwyZ4",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "claiming-motoring-video",
-        "Video - Claiming motoring expenses if you’re self-employed (opens in new tab)",
-        "https://www.youtube.com/watch?v=r2txvLXi_Fk",
+        "Video - What motoring expenses can I claim if I’m self-employed? (opens in new tab)",
+        "https://www.youtube.com/watch?v=f6oOb2zrah4",
         expectedOpensInNewTab = true
       )
       assertLinkById(
         doc,
         "claiming-motoring-transcript",
-        "Video transcript - Claiming motoring expenses if you’re self-employed",
+        "Video transcript - What motoring expenses can I claim if I’m self-employed?",
         "/business-account/help/transcript/calculating-motoring-expenses"
       )
 

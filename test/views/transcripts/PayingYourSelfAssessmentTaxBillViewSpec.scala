@@ -64,12 +64,13 @@ class PayingYourSelfAssessmentTaxBillViewSpec extends ViewBehaviours {
         "You can also pay your Self Assessment tax bill through the HMRC app.",
       "For your payment to reach us the same or next day, pay by:",
 
+        "Please note, you cannot use a personal credit card to make a payment.",
         "Alternatively, you can use a paying-in slip from HMRC at your bank or building society",
         "For payment to reach us within three days, pay by:",
         "Alternatively, you can send a cheque through the post.",
-        "After paying, you can view your HMRC online account, to check payment has been received – it should show as paid" +
-          " within seven working days.",
-        "You can find more information about Self Assessment on GOV.UK."
+        "After paying, you can view your HMRC online account, to check payment has been received – electronic and online payments should show as paid" +
+          " within seven working days. It may take longer for other payment methods to show.",
+        "You can find more information about Self Assessment on GOV.UK and in our other helpful videos on YouTube."
       )
       val contentLIList = List(
 

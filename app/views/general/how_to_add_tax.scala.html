@@ -27,8 +27,17 @@
   @Messages("help_and_contact.any_services_you_add")
   <br><br>
   @Messages("help_and_contact.you_can_add_more_than_40_services")<br><br>
-  @Messages("help_and_contact.each_time_you_add_service")
- </p>
+  @Messages("help_and_contact.each_time_you_add_service")</p>
+
+ <div class="govuk-inset-text">
+  <p class="govuk-body"><a class="govuk-link" href="@appConfig.getYoutubeVideo("addTax")" id = "bta-help-how-to-add-a-tax-video" target="_blank" rel="noreferrer noopener">
+   @Messages("btaHelp.how_i_add_a_tax")
+  </a></p>
+  <p class="govuk-body"><a class="govuk-link" href="@controllers.routes.TranscriptController.onPageLoad("add-a-tax")" id = "bta-help-how-to-add-a-tax-video-transcript">
+   @Messages("btaHelp.how_i_add_a_tax_transcript")
+   </a></p>
+ </div>
+
  <br><br>
  <h2 class="govuk-heading-m">@Messages("help_and_contact.add_corporation_tax")</h2>
  <ol class="govuk-list govuk-list--number">

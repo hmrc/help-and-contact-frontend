@@ -70,8 +70,8 @@ class BasicRecordKeepingSpec extends ViewBehaviours {
       assertLinkById(
         doc,
         "record-keeping-video",
-        "Video - Basic record keeping for the self employed (opens in new tab)",
-        "https://www.youtube.com/watch?v=Jn46jDuKbn8",
+        "Video - What self-employment records do I need to keep? (opens in new tab)",
+        "https://www.youtube.com/watch?v=VDECQMrnZ-o",
         expectedOpensInNewTab = true
       )
 

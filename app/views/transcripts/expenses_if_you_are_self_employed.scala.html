@@ -59,5 +59,10 @@ serviceInfoContent = serviceInfoContent
 <p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph6")</p>
 <p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph7")</p>
 <p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph8")</p>
-<p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph9") <a class="govuk-link" id="gov-link" href="https://www.gov.uk/" target="_blank">@messages("help_and_contact.govuk_link")</a>.</p>
+<p class="govuk-body">@messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph9.prefix")
+    <a class="govuk-link" id="gov-link" href="https://www.gov.uk/" target="_blank">
+        @messages("help_and_contact.govuk_link")
+    </a>
+    @messages(s"sa.expenses.what_expenses_can_i_include_in_my_sa_tax_return_transcript.paragraph9.suffix")
+</p>
 }

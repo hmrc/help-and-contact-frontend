@@ -89,7 +89,7 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
         doc,
         "why-i-have-been-sent-tax-video",
         "Video - What to do if you’ve been sent a tax return? (opens in a new tab)",
-        "https://www.youtube.com/watch?v=ZWasvKMvJvs",
+        "https://www.youtube.com/watch?v=Eaf09H_HTH0",
         expectedOpensInNewTab = true
       )
       assertLinkById(
@@ -102,7 +102,7 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
         doc,
         "my-first-sa-video",
         "Video - My first Self Assessment tax return (opens in new tab)",
-        "https://www.youtube.com/watch?v=FzvFjcuy-Wg",
+        "https://www.youtube.com/watch?v=yhnpUsixdhs",
         expectedOpensInNewTab = true
       )
 
@@ -117,7 +117,7 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
         doc,
         "tailor-tax-video",
         "Video - How do I tailor my Self Assessment tax return? (opens in new tab)",
-        "https://www.youtube.com/watch?v=pWROONSUsN8",
+        "https://www.youtube.com/watch?v=p6GV7jR5hAg",
         expectedOpensInNewTab = true
       )
 
@@ -125,7 +125,7 @@ class HelpWithYourSelfAssessmentTaxReturnViewSpec extends ViewBehaviours {
         doc,
         "viewing-sa-tax-calculation-video",
         "Video - Viewing your Self Assessment tax return calculation (opens in new tab)",
-        "https://www.youtube.com/watch?v=R49QSSdl8fc",
+        "https://www.youtube.com/watch?v=-TRf6nKkNKI",
         expectedOpensInNewTab = true
       )
 

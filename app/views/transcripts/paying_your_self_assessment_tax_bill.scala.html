@@ -54,14 +54,21 @@
     </ul>
 
     <p class="govuk-body">@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph8")</p>
-    <p class="govuk-body">@Html(messages("payingYourSelfAssessmentTaxBillTranscript.paragraph9"))</p>
+    <p class="govuk-body">@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph9")</p>
+    <p class="govuk-body">@Html(messages("payingYourSelfAssessmentTaxBillTranscript.paragraph10"))</p>
 
     <ul class="govuk-list govuk-list--bullet">
       <li>@messages("payingYourSelfAssessmentTaxBillTranscript.list3.bullet1")</li>
       <li>@messages("payingYourSelfAssessmentTaxBillTranscript.list3.bullet2")</li>
     </ul>
 
-    <p class="govuk-body">@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph10")</p>
     <p class="govuk-body">@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph11")</p>
-    <p class="govuk-body">@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph12") <a class="govuk-link" id="gov-link" href="https://www.gov.uk/" target="_blank">@messages("help_and_contact.govuk_link")</a>.</p>
+    <p class="govuk-body">@messages("payingYourSelfAssessmentTaxBillTranscript.paragraph12")</p>
+    <p class="govuk-body">
+        @messages("payingYourSelfAssessmentTaxBillTranscript.paragraph13.prefix")
+        <a class="govuk-link" id="gov-link" href="https://www.gov.uk/" target="_blank">
+            @messages("help_and_contact.govuk_link")
+        </a>
+        @messages("payingYourSelfAssessmentTaxBillTranscript.paragraph13.suffix")
+    </p>
 }
