@@ -35,7 +35,7 @@ class ServiceInfoController @Inject()(serviceInfoPartialConnector: ServiceInfoPa
                                       mcc: MessagesControllerComponents,
                                       partialService: PartialService) extends FrontendController(mcc) with LoggingUtil {
 
-  def serviceInfoPartial[A](request: AuthenticatedRequest[A])(implicit hc: HeaderCarrier, ec: ExecutionContext): Future[Option[Html]] = {
+  def serviceInfoPartial[A](pageInfo: Option[String] = Some("help"), request: AuthenticatedRequest[A])(implicit hc: HeaderCarrier, ec: ExecutionContext): Future[Option[Html]] = {
     implicit val requestImpl: AuthenticatedRequest[A] = request
     val maybeNavLinks = serviceInfoPartialConnector.getNavLinks()
     implicit val messages: Messages = mcc.messagesApi.preferred(request.request)
@@ -43,7 +43,7 @@ class ServiceInfoController @Inject()(serviceInfoPartialConnector: ServiceInfoPa
       navLinks <- maybeNavLinks
     } yield {
       infoLog("[ServiceInfoController][serviceInfoPartial] successful")
-      Some(service_info(partialService.partialList(navLinks)))
+      Some(service_info(partialService.partialList(navLinks), pageInfo))
     }
   }
 

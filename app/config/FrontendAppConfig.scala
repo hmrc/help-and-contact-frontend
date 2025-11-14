@@ -105,4 +105,6 @@ class FrontendAppConfig @Inject()(servicesConfig: ServicesConfig,
   def getYoutubeVideo(key: String): String =
     s"https://www.youtube.com/watch?v=${loadConfig(s"urls.external.youtube.$key")}"
 
+  lazy val forceServiceNavigation: Boolean = servicesConfig.getBoolean("play-frontend-hmrc.forceServiceNavigation")
+
 }
