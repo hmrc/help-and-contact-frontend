@@ -28,7 +28,7 @@ class PayeChangesEmployeeCircumstancesViewSpec extends ViewBehaviours {
   val serviceInfoContent: Option[Html] = Some(Html("<div>Service info content</div>"))
 
   def createView(): () => HtmlFormat.Appendable =
-    () =>  paye_change_circumstance.apply(PageType.PayeChangeCircumstance.name)(messages)
+    () =>  paye_change_circumstance.apply(PageType.PayeChangeCircumstance.name, appConfig = frontendAppConfig)(messages)
 
 
   "Paye Changes in employee circumstances view" must {

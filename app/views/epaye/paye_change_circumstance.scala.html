@@ -14,7 +14,9 @@
  * limitations under the License.
  *@
 
-@(name: String)(implicit messages: Messages)
+@import config.FrontendAppConfig
+
+@(name: String, appConfig: FrontendAppConfig)(implicit messages: Messages)
 
 <div class="govuk-grid-column-three-quarters govuk-!-padding-left-8">
     <h1 id="page-title-@name" class="govuk-heading-l">@Messages("paye.changes.circumstance.heading")</h1>
@@ -23,21 +25,21 @@
 
     <p class="govuk-body">
         @Messages("paye.changes.circumstance.section1.p1.preText")
-        <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank" href=https://www.gov.uk/maternity-paternity-calculator>
+        <a class="govuk-link govuk-link--no-visited-state" id="maternity-paternity-calculator-link" rel="noreferrer noopener" target="_blank" href="@appConfig.getGovUrl("maternityPaternityCalc")">
             @Messages("paye.changes.circumstance.section1.p1.linkText")</a>
         @Messages("paye.changes.circumstance.section1.p1.postText")
     </p>
 
     <p class="govuk-body">
         @Messages("paye.changes.circumstance.section1.p2.preText")
-        <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank" href=https://www.gov.uk/recover-statutory-payments>
+        <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" id="recover-statutory-payments-link" target="_blank" href="@appConfig.getGovUrl("recoveryStatutory")">
             @Messages("paye.changes.circumstance.section1.p2.linkText")</a>
         @Messages("paye.changes.circumstance.section1.p2.postText")
     </p>
 
     <p class="govuk-body">
         @Messages("paye.changes.circumstance.section1.p3.preText")
-        <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank" href=https://www.gov.uk/recover-statutory-payments/if-you-cant-afford-to-make-payments>
+        <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" target="_blank" id="if-you-cant-pay-link" href="@appConfig.getGovUrl("cantAffordPayments")">
             @Messages("paye.changes.circumstance.section1.p3.linkText")</a>
     </p>
 
@@ -45,14 +47,14 @@
 
     <p class="govuk-body">
         @Messages("paye.changes.circumstance.section2.p1.preText")
-        <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" href="https://www.gov.uk/government/publications/national-insurance-sending-employees-to-work-abroad-ca3821">
+        <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" id="ni-ca3821-link" href="@appConfig.getGovUrl("niCa3821")">
             @Messages("paye.changes.circumstance.section2.p1.linkText")</a>
         @Messages("paye.changes.circumstance.section2.p1.postText")
     </p>
 
     <p class="govuk-body">
         @Messages("paye.changes.circumstance.section2.p2.preText")
-        <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" href="https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822">
+        <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" id="ni-ca3822-link" href="@appConfig.getGovUrl("niCa3822")">
             @Messages("paye.changes.circumstance.section2.p2.linkText")</a>
         @Messages("paye.changes.circumstance.section2.p2.postText")
     </p>
@@ -63,7 +65,7 @@
 
     <p class="govuk-body">
         @Messages("paye.changes.circumstance.section3.p3.preText")
-        <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" href=/digital-forms/form/Application-for-funding-a-tax-refund-for-an-employee/insufficient-enrolments>
+        <a class="govuk-link govuk-link--no-visited-state" rel="noreferrer noopener" id="insufficient-enrolments-link" href=/digital-forms/form/Application-for-funding-a-tax-refund-for-an-employee/insufficient-enrolments>
             @Messages("paye.changes.circumstance.section3.p3.linkText")</a>
         @Messages("paye.changes.circumstance.section3.p3.postText")
     </p>
