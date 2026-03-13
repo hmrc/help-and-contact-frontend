@@ -803,7 +803,7 @@ epaye.submissions.title = Gweld neu gywiro eich cyflwyniadau
 epaye.submissions.heading = Gweld neu gywiro eich cyflwyniadau
 epaye.submissions.when_you_can_view_ = Pryd y gallwch fwrw golwg dros eich cyflwyniadau
 epaye.submissions.submissions_show_up_ = Mae cyflwyniadau yn ymddangos yn eich balans ar adegau gwahanol, yn dibynnu ar bryd yr ydych yn eu cyflwyno.
-epaye.submissions.if_you_make_fps_on_time_ = Os ydych yn gwneud Cyflwyniad Taliadau Llawn (FPS) mewn pryd, caiff eich balans ei ddiweddaru erbyn y 12fed o’r mis nesaf.
+epaye.submissions.if_you_make_fps_on_time_ = Os ydych yn gwneud Cyflwyniad Taliadau Llawn (FPS) mewn pryd, caiff eich balans ei ddiweddaru erbyn y 10fed o’r mis.
 epaye.submissions.if_you_make_fps_late_ = Os ydych yn gwneud FPS yn hwyr, gweler y
 epaye.submissions.gov_uk_guide_on_payroll_ = canllaw ynghylch y gyflogres ar GOV.UK (yn agor tab newydd)
 epaye.submissions.employer_payment_summary_ = Crynodeb o Daliadau’r Cyflogwr
@@ -831,7 +831,7 @@ epaye.submissions.you_can_make_changes_ = Gallwch wneud newidiadau i gyflwyniada
 epaye.submissions.follow_the = Dilynwch y
 epaye.submissions.if_you_use_ = os ydych yn defnyddio meddalwedd Offer TWE Sylfaenol (BPT) CThEM.
 epaye.submissions.submissions_from_an_earlier_tax_year = Cyflwyniadau o flwyddyn dreth gynharach
-epaye.submissions.if_you_spot_an_error_ = Os ydych wedi gwneud camgymeriad mewn cyflwyniad ar ôl i’r flwyddyn dreth honno ddod i ben, mae’n rhaid i chi gyflwyno Diweddariad Blwyddyn Gynharach os bydd hynny ar ôl 19 Ebrill.
+epaye.submissions.if_you_spot_an_error_ = Os ydych wedi gwneud camgymeriad mewn cyflwyniad ar ôl i’r flwyddyn dreth honno ddod i ben, mae’n rhaid i chi gyflwyno Cyflwyniad Taliadau Llawn (FPS) arall yn dangos y ffigurau cywir ar gyfer y flwyddyn hyd yma.
 epaye.submissions.find_out_more_wrong_pay = Mae rhagor o wybodaeth i’w chael yn yr adran ‘os ydych wedi rhoi gwybod am y tâl neu’r didyniadau anghywir’ (yn agor tab newydd)
 
 #######################################################
