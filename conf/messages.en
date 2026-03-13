@@ -819,7 +819,7 @@ epaye.submissions.title = View or correct your submissions
 epaye.submissions.heading = View or correct your submissions
 epaye.submissions.when_you_can_view_ = When you can view your submissions
 epaye.submissions.submissions_show_up_ = Submissions show up in your balance at different times depending on when you submit them.
-epaye.submissions.if_you_make_fps_on_time_ = If you make a Full Payment Submission (FPS) on time, your balance will be updated by the 12th of the next month.
+epaye.submissions.if_you_make_fps_on_time_ = If you make a Full Payment Submission (FPS) on time, your balance will be updated by the 10th of the month.
 epaye.submissions.if_you_make_fps_late_ = If you make an FPS late, see the
 epaye.submissions.gov_uk_guide_on_payroll_ = GOV.UK guide on payroll (opens in new tab)
 epaye.submissions.employer_payment_summary_ = Employer Payment Summary (EPS)
@@ -847,7 +847,7 @@ epaye.submissions.you_can_make_changes_ = You can make changes to submissions fo
 epaye.submissions.follow_the = Follow the
 epaye.submissions.if_you_use_ =  if you use HMRC’s Basic PAYE Tools software (BPT).
 epaye.submissions.submissions_from_an_earlier_tax_year = Submissions from an earlier tax year
-epaye.submissions.if_you_spot_an_error_ = If you have made an error in a submission after that tax year has ended, you must submit an Earlier Year Update if it is after April 19.
+epaye.submissions.if_you_spot_an_error_ = If you have made an error in a submission after that tax year has ended, you must submit another Full Payment Submission (FPS) with the correct year to date figures.
 epaye.submissions.find_out_more_wrong_pay = Find out more in the section ‘if you’ve reported the wrong pay or deductions’ (opens  in new tab)
 
 #######################################################
