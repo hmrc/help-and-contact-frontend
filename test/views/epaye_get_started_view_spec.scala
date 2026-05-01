@@ -68,7 +68,7 @@ class EpayeGetStartedViewSpec extends ViewBehaviours {
         doc,
         "when-and-how-to-pay-epaye-video",
         "Video – When and how to pay PAYE (opens in new tab)",
-        "https://www.youtube.com/watch?v=PnjlHOuCnK8",
+        "https://www.youtube.com/watch?v=EJNtkuO1VZk",
         expectedOpensInNewTab = true
       )
     }
