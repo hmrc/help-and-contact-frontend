@@ -68,6 +68,7 @@ class FrontendAppConfig @Inject()(servicesConfig: ServicesConfig,
   def getDfsFormUrl(formId: String): String = s"$dfsHost$dfsBase${servicesConfig.getString(s"urls.digital-forms-service.formTypeRef.$formId")}$dfsSuffix"
 
   lazy val languageTranslationEnabled: Boolean = servicesConfig.getBoolean("microservice.services.features.welsh-translation")
+  lazy val showUserResearchBanner: Boolean = servicesConfig.getBoolean("microservice.services.features.showUserResearchBanner")
 
 
   private lazy val portalHost: String = loadConfig("portal.host")
@@ -104,5 +105,10 @@ class FrontendAppConfig @Inject()(servicesConfig: ServicesConfig,
 
   def getYoutubeVideo(key: String): String =
     s"https://www.youtube.com/watch?v=${loadConfig(s"urls.external.youtube.$key")}"
+
+  def urBannerUrl(language: String): String = language match {
+    case "cy" => servicesConfig.getString("urls.urBanner") + "&Q_Language=CY"
+    case _ => servicesConfig.getString("urls.urBanner")
+  }
 
 }

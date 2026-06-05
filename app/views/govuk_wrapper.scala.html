@@ -16,8 +16,9 @@
 
 @import config.FrontendAppConfig
 @import uk.gov.hmrc.govukfrontend.views.html.components._
-@import uk.gov.hmrc.hmrcfrontend.views.html.components.{HmrcLanguageSelect, HmrcReportTechnicalIssue}
+@import uk.gov.hmrc.hmrcfrontend.views.html.components.{HmrcLanguageSelect, HmrcReportTechnicalIssue, HmrcUserResearchBanner}
 @import uk.gov.hmrc.hmrcfrontend.views.viewmodels.language.{Cy, En, LanguageSelect}
+@import uk.gov.hmrc.hmrcfrontend.views.viewmodels.userresearchbanner.UserResearchBanner
 @import uk.gov.hmrc.hmrcfrontend.views.html.helpers._
 
 
@@ -29,7 +30,8 @@
       hmrcLanguageSelect: HmrcLanguageSelect,
       hmrcStandardHeader: HmrcStandardHeader,
       appConfig: FrontendAppConfig,
-      hmrcTimeoutDialogHelper: HmrcTimeoutDialogHelper
+      hmrcTimeoutDialogHelper: HmrcTimeoutDialogHelper,
+      hmrcUserResearchBanner : HmrcUserResearchBanner
 )
 
 @(title: String,
@@ -47,12 +49,18 @@
         twoThirds: Boolean = false,
         scriptsBlock: Option[Html] = None)(contentBlock: Html)(implicit request: RequestHeader, messages: Messages)
 
+
 @headerDefault = {
 @headerBlock.getOrElse {
  @hmrcStandardHeader(
   serviceName = Some(messages("site.service_name")),
   serviceUrl = Some(appConfig.getTarUrl),
-  signOutUrl = Some(appConfig.getBusinessAccountUrl("signout"))
+  signOutUrl = Some(appConfig.getBusinessAccountUrl("signout")),
+  additionalBannersBlock =
+   Option.when(appConfig.showUserResearchBanner)(hmrcUserResearchBanner(UserResearchBanner(
+     url = appConfig.urBannerUrl(messages.lang.code),
+     language = if(messages.lang.code == "en") En else Cy)))
+   )),
  )
  @hmrcTimeoutDialogHelper(
   signOutUrl = "/business-account/timeout",
