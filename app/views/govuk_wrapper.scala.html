@@ -56,10 +56,10 @@
   serviceName = Some(messages("site.service_name")),
   serviceUrl = Some(appConfig.getTarUrl),
   signOutUrl = Some(appConfig.getBusinessAccountUrl("signout")),
-  additionalBannersBlock =
-   Option.when(appConfig.showUserResearchBanner)(hmrcUserResearchBanner(UserResearchBanner(
+  userResearchBanner =
+   Option.when(appConfig.showUserResearchBanner)(UserResearchBanner(
      url = appConfig.urBannerUrl(messages.lang.code),
-     language = if(messages.lang.code == "en") En else Cy)))
+     language = if(messages.lang.code == "en") En else Cy)
    )),
  )
  @hmrcTimeoutDialogHelper(
