@@ -34,7 +34,7 @@ class ServiceInfoController @Inject()(serviceInfoPartialConnector: ServiceInfoPa
                                       mcc: MessagesControllerComponents,
                                       partialService: PartialService) extends FrontendController(mcc) with LoggingUtil {
 
-  def serviceInfoPartial[A](request: AuthenticatedRequest[A], activeTab: String = "home")
+  def serviceInfoPartial[A](request: AuthenticatedRequest[A], activeTab: String = "help")
                               (implicit hc: HeaderCarrier, ec: ExecutionContext): Future[Option[ServiceNavigationInfo]] = {
     implicit val requestImpl: AuthenticatedRequest[A] = request
     val maybeNavLinks = serviceInfoPartialConnector.getNavLinks()
