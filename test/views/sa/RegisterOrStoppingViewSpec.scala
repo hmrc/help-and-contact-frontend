@@ -137,24 +137,11 @@ class RegisterOrStoppingViewSpec extends ViewBehaviours {
 
       )
 
-      assertLinkById(
-        doc,
-        "viewing-register-online-sa-not-self-employed-video",
-        "Video – How do I register online for Self Assessment if I’m not self-employed? (opens in a new tab)",
-        "https://www.youtube.com/watch?v=6ia0F3zitD0",
-
-        expectedOpensInNewTab = true
-      )
-
-      assertLinkById(
-        doc,
-        "viewing-register-online-sa-self-employed-video",
-        "Video – How do I register online for Self Assessment if I’m self-employed? (opens in a new tab)",
-        "https://www.youtube.com/watch?v=bovXqb7H4T8",
-
-        expectedOpensInNewTab = true
-      )
-
+      doc.getElementById("viewing-register-online-sa-not-self-employed-video") mustBe null
+      doc.getElementById("viewing-register-online-sa-not-self-employed-transcript") mustBe null
+      doc.getElementById("viewing-register-online-sa-self-employed-video") mustBe null
+      doc.text() must not include("How do I register online for Self Assessment if I’m not self-employed?")
+      doc.text() must not include("How do I register online for Self Assessment if I’m self-employed?")
     }
 
   }
