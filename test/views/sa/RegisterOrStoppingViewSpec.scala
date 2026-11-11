@@ -140,8 +140,7 @@ class RegisterOrStoppingViewSpec extends ViewBehaviours {
       doc.getElementById("viewing-register-online-sa-not-self-employed-video") mustBe null
       doc.getElementById("viewing-register-online-sa-not-self-employed-transcript") mustBe null
       doc.getElementById("viewing-register-online-sa-self-employed-video") mustBe null
-      doc.text() must not include("How do I register online for Self Assessment if I’m not self-employed?")
-      doc.text() must not include("How do I register online for Self Assessment if I’m self-employed?")
+      doc.getElementById("viewing-register-online-sa-self-employed-transcript") mustBe null
     }
 
   }
