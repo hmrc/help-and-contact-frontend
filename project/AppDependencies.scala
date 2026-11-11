@@ -40,14 +40,3 @@ private object AppDependencies {
     compile ++ testCommon() ++ test()
 }
 
-object TestPhases {
-
-  def oneForkedJvmPerTest(tests: Seq[TestDefinition]): Seq[Group] =
-    tests map { test =>
-      new Group(
-        test.name,
-        Seq(test),
-        SubProcess(ForkOptions().withRunJVMOptions(Vector("-Dtest.name=" + test.name)))
-      )
-    }
-}
