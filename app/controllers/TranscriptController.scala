@@ -57,8 +57,6 @@ class TranscriptController @Inject()(implicit ec: ExecutionContext,
                                      cant_pay_taxbill: cant_pay_taxbill,
                                      how_to_pay_corporation_tax: how_to_pay_corporation_tax,
                                      how_do_i_use_payroll_software: how_do_i_use_payroll_software,
-                                     register_online_sa_not_self_employed: register_online_sa_not_self_employed,
-                                     register_online_sa_self_employed: register_online_sa_self_employed,
                                      override val controllerComponents: MessagesControllerComponents)
     extends FrontendController(controllerComponents)
     with I18nSupport {
@@ -97,11 +95,8 @@ class TranscriptController @Inject()(implicit ec: ExecutionContext,
       "cant-access-sa-online" -> cant_access_sa_online(appConfig)(Some(request.serviceInfoContent)),
       "when-and-how-to-pay-epaye" -> when_and_how_to_pay_epaye(appConfig)(Some(request.serviceInfoContent)),
       "cant-pay-taxbill" -> cant_pay_taxbill(appConfig)(Some(request.serviceInfoContent)),
-      "how-to-pay-corporation-tax" -> how_to_pay_corporation_tax(appConfig)(Some(request.serviceInfoContent)
-      ),
-      "how-do-i-use-payroll-software" -> how_do_i_use_payroll_software(appConfig)(Some(request.serviceInfoContent)),
-      "register_online_sa_not_self_employed" -> register_online_sa_not_self_employed(appConfig)(Some(request.serviceInfoContent)),
-      "register_online_sa_self_employed" -> register_online_sa_self_employed(appConfig)(Some(request.serviceInfoContent))
+      "how-to-pay-corporation-tax" -> how_to_pay_corporation_tax(appConfig)(Some(request.serviceInfoContent)),
+      "how-do-i-use-payroll-software" -> how_do_i_use_payroll_software(appConfig)(Some(request.serviceInfoContent))
     )
 
 
