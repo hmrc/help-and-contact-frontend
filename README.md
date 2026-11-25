@@ -6,6 +6,11 @@ This repository contains the Help and Contact section of the Business tax accoun
 ```
 sm2 --start BTA_MIN
 ```
+## Running the application locally
+```
+sm2 --stop HELP_AND_CONTACT_FRONTEND
+./run.sh
+```
 
 ### License
 

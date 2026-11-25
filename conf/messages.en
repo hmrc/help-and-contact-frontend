@@ -1323,32 +1323,37 @@ add.a.tax.transcript.paragraph16 = and in our other videos on YouTube.
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Corporation tax transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ct.how.to.pay.transcript.title = Video transcript - Paying your Corporation Tax bill
-ct.how.to.pay.transcript.heading = Video transcript - Paying your Corporation Tax bill
-ct.how.to.pay.transcript.paragraph1 = The deadline for sending us your Company tax return is usually twelve months after the end of the accounting period it covers.
-ct.how.to.pay.transcript.paragraph2 = There’s a separate deadline to pay your Corporation Tax bill - and that’s nine months and one day after the end of the accounting period.
+ct.how.to.pay.transcript.title = Video transcript - How do I pay my Corporation Tax bill?
+ct.how.to.pay.transcript.heading = Video transcript - How do I pay my Corporation Tax bill?
+ct.how.to.pay.transcript.paragraph1 = The deadline for sending HMRC your Company tax return is usually twelve months after the end of the accounting period it covers.
+ct.how.to.pay.transcript.paragraph2 = There’s a separate deadline to pay your Corporation Tax bill – and that’s nine months and one day after the end of the accounting period.
 ct.how.to.pay.transcript.paragraph3 = For example, if your accounting period ends on the 30th of March, the Corporation Tax must be with HMRC within nine months and one day – so, in our example, by the 31st of December.
 ct.how.to.pay.transcript.paragraph4 = If your payment is late, you may be charged interest and penalties.
-ct.how.to.pay.transcript.paragraph5 = We recommend that you pay your Corporation Tax bill online using your business tax account. If you do so, your details will automatically be pre-populated for you. This reduces the risk of payments going astray.
-ct.how.to.pay.transcript.paragraph6 = Once you’ve signed in to your business tax account, you’ll see your ‘welcome’ page. It includes an option to ‘Make a Corporation Tax payment’
-ct.how.to.pay.transcript.paragraph7 = Select this link and then ‘choose a way to pay’. Choose your payment method and select ‘continue’.
-ct.how.to.pay.transcript.paragraph8 = You can make a single, one-off Direct Debit payment for your Corporation Tax bill. This is not a recurring payment.
-ct.how.to.pay.transcript.paragraph9 = If you’ve not paid by Direct Debit before, allow five days for this to be set up. It should then take three working days each time you pay, once you’ve already authorised a Direct Debit from HMRC.
-ct.how.to.pay.transcript.paragraph10 = Or you can approve a payment direct from your bank account. Select ‘pay by bank account’ and follow the instructions.
-ct.how.to.pay.transcript.paragraph11 = Get HMRC’s bank details to make your payment by:
+ct.how.to.pay.transcript.paragraph5 = It’s important to use the correct payment reference for each accounting period. It’ll be different each time you make a payment.
+ct.how.to.pay.transcript.paragraph6 = You’ll find it on your ‘Notice to deliver your tax return’ or in any reminders we send. It’s also in your company’s HMRC online account. Choose ‘View Corporation Tax Statement’, then ‘Accounting periods’ and select the correct period.
+ct.how.to.pay.transcript.paragraph7 = Your details are automatically entered for you if you pay online using your Business Tax Account. We recommend this as it reduces the risk of payments going missing.
+ct.how.to.pay.transcript.paragraph8 = Once you’ve signed in to your Business Tax Account, you’ll see the Corporation Tax section. It includes an option to ‘Make a Corporation Tax payment’.
+ct.how.to.pay.transcript.paragraph9 = Select the link to go to the Corporation Tax details page.
+ct.how.to.pay.transcript.paragraph10 = Then select this link and ‘choose a way to pay’.
+ct.how.to.pay.transcript.paragraph11 = You can approve a payment direct from your bank account.
+ct.how.to.pay.transcript.paragraph12 = Or, you can make a single, one-off Direct Debit payment for your Corporation Tax bill. This is not a recurring payment.
+ct.how.to.pay.transcript.paragraph13 = If you’ve not paid by Direct Debit before, allow five working days for this to be set up. After that, it should then take three working days each time you pay.
+ct.how.to.pay.transcript.paragraph14 = You can also pay by debit or corporate credit card online. Credit cards and corporate debit cards are charged a non-refundable fee. There’s no fee if you pay by personal debit card.
+ct.how.to.pay.transcript.paragraph15 = You cannot pay with a personal credit card.
+ct.how.to.pay.transcript.paragraph16 = After choosing your payment method, select ‘continue’ and follow the instructions.
+ct.how.to.pay.transcript.paragraph17 = If you pay using one of these methods, you’ll receive an on-screen confirmation that you’ve sent your payment.
+ct.how.to.pay.transcript.paragraph18.p1 = If you’ve not yet registered for a Business Tax Account, you can still pay online – search ‘Pay your Corporation Tax bill’ on
+ct.how.to.pay.transcript.paragraph18.linkText = GOV.UK
+ct.how.to.pay.transcript.paragraph18.p2 = for more information.
+ct.how.to.pay.transcript.paragraph19 = To make your payment by online or telephone bank transfer using:
 ct.how.to.pay.transcript.list1 = Faster Payments,
 ct.how.to.pay.transcript.list2 = Bacs
 ct.how.to.pay.transcript.list3 = or CHAPS
-ct.how.to.pay.transcript.paragraph12 = You can also pay by debit or corporate credit card online. Credit cards and corporate debit cards are charged a non-refundable fee. There’s no fee if you pay by personal debit card.
-ct.how.to.pay.transcript.paragraph13 = You cannot pay with a personal credit card.
-ct.how.to.pay.transcript.paragraph14.p1 = If you’ve not yet registered for a business tax account, you can still pay online – search ‘Pay your Corporation Tax bill’ on
-ct.how.to.pay.transcript.paragraph14.linkText = GOV.UK
-ct.how.to.pay.transcript.paragraph14.p2 = for more information.
-ct.how.to.pay.transcript.paragraph15 = Please remember that it’s important to use the correct payment reference for each accounting period. You’ll find the number on the payslip attached to the CT603 ‘notice to deliver a return’ – sometimes referred to as a ‘notice to file’.
-ct.how.to.pay.transcript.paragraph16 = Once you’ve sent the payment you’ll receive an on-screen acknowledgement confirming that we’ve received it.
-ct.how.to.pay.transcript.paragraph17 = Remember to make sure you pay by the deadline to avoid any interest or penalties.
-ct.how.to.pay.transcript.paragraph18.p1 = You can find more information on
-ct.how.to.pay.transcript.paragraph18.linkText = GOV.UK
+ct.how.to.pay.transcript.paragraph20 = you need HMRC’s bank details. There are separate account details if you’re paying from an overseas account.
+ct.how.to.pay.transcript.paragraph21 = Remember to make sure you pay by the deadline to avoid any interest or penalties.
+ct.how.to.pay.transcript.paragraph22.p1 = You can find more information about Corporation Tax on
+ct.how.to.pay.transcript.paragraph22.linkText = GOV.UK
+ct.how.to.pay.transcript.paragraph22.p2 = and in our other helpful videos on YouTube.
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Can’t Access SA Online Transcript
