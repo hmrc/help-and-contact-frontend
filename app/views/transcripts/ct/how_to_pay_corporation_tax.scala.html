@@ -29,9 +29,17 @@
 ) {
   @components.heading("how-to-pay-corporation-tax-heading", "ct.how.to.pay.transcript.heading", "govuk-heading-xl")
 
-  @for(i <- 1 to 11) {
+  @for(i <- 1 to 17) {
     <p class="govuk-body">@messages(s"ct.how.to.pay.transcript.paragraph$i")</p>
   }
+
+  <p class="govuk-body">@messages("ct.how.to.pay.transcript.paragraph18.p1")
+    <a class="govuk-link" href="https://www.gov.uk/" id="ct-how-to-pay-video"
+        data-journey-click="link - click:How to pay your Corporation Tax:Transcript GovUK">@messages("ct.how.to.pay.transcript.paragraph18.linkText")
+    </a> @messages("ct.how.to.pay.transcript.paragraph18.p2")
+  </p>
+
+  <p class="govuk-body">@messages(s"ct.how.to.pay.transcript.paragraph19")</p>
 
   <ul class="govuk-list govuk-list--bullet">
     @for(i <- 1 to 3){
@@ -39,22 +47,13 @@
     }
   </ul>
 
-  @for(i <- 12 to 13) {
+  @for(i <- 20 to 21) {
     <p class="govuk-body">@messages(s"ct.how.to.pay.transcript.paragraph$i")</p>
   }
 
-  <p class="govuk-body">@messages("ct.how.to.pay.transcript.paragraph14.p1")
-    <a class="govuk-link" href="https://www.gov.uk/" id="ct-how-to-pay-video"
-    data-journey-click="link - click:How to pay your Corporation Tax:Transcript GovUK">@messages("ct.how.to.pay.transcript.paragraph14.linkText")
-    </a> @messages("ct.how.to.pay.transcript.paragraph14.p2")
-  </p>
-
-  @for(i <- 15 to 17) {
-    <p class="govuk-body">@messages(s"ct.how.to.pay.transcript.paragraph$i")</p>
-  }
-
-  <p class="govuk-body">@messages("ct.how.to.pay.transcript.paragraph18.p1")
+  <p class="govuk-body">@messages("ct.how.to.pay.transcript.paragraph22.p1")
     <a class="govuk-link" href="https://www.gov.uk/" id="ct-how-to-pay-video-transcript"
-    data-journey-click="link - click:How to pay your Corporation Tax:Transcript GovUK">@messages("ct.how.to.pay.transcript.paragraph18.linkText")</a>.
+    data-journey-click="link - click:How to pay your Corporation Tax:Transcript GovUK">@messages("ct.how.to.pay.transcript.paragraph22.linkText")
+    </a> @messages("ct.how.to.pay.transcript.paragraph22.p2")
   </p>
 }

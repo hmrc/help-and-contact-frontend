@@ -1346,32 +1346,37 @@ add.a.tax.transcript.paragraph16 = ac yn ein fideos eraill ar YouTube.
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Corporation tax transcript
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ct.how.to.pay.transcript.title = Trawsgrifiad fideo - Talu eich bil Treth Gorfforaeth
-ct.how.to.pay.transcript.heading = Trawsgrifiad fideo - Talu eich bil Treth Gorfforaeth
-ct.how.to.pay.transcript.paragraph1 = Y dyddiad cau ar gyfer anfon eich Ffurflen Dreth y Cwmni atom fel arfer yw deuddeg mis ar ôl i’r cyfnod cyfrifyddu ddod i ben.
-ct.how.to.pay.transcript.paragraph2 = Mae dyddiad cau ar wahân ar gyfer talu eich bil Treth Gorfforaeth - sef naw mis ac un diwrnod ar ôl diwedd y cyfnod cyfrifyddu.
-ct.how.to.pay.transcript.paragraph3 = Er enghraifft, os bydd eich cyfnod cyfrifyddu’n dod i ben ar 30 Mawrth, rhaid i’r Dreth Gorfforaeth gyrraedd CThEM cyn pen naw mis ac un diwrnod – felly, yn ein henghraifft ni, erbyn 31 Rhagfyr.
-ct.how.to.pay.transcript.paragraph4 = Os yw eich taliad yn hwyr, gallech fod yn agored i dalu llog a chosb am dalu’n hwyr.
-ct.how.to.pay.transcript.paragraph5 = Rydym yn argymell eich bod yn talu eich bil Treth Gorfforaeth ar-lein gan ddefnyddio eich cyfrif treth busnes. Os byddwch yn gwneud hynny, bydd eich manylion yn cael eu rhag-lenwi’n awtomatig ar eich rhan. Mae hyn yn lleihau’r risg y bydd taliadau’n mynd ar goll.
-ct.how.to.pay.transcript.paragraph6 = Ar ôl i chi fewngofnodi i’ch cyfrif treth busnes, byddwch yn gweld eich tudalen groeso. Mae’n cynnwys opsiwn i wneud taliad Treth Gorfforaeth
-ct.how.to.pay.transcript.paragraph7 = Cliciwch y ddolen hon ac yna dewiswch ddull o dalu. Dewiswch eich dull talu ac yna ewch yn eich blaen.
-ct.how.to.pay.transcript.paragraph8 = Gallwch wneud taliad Debyd Uniongyrchol unigol ar gyfer eich bil Treth Gorfforaeth. Nid yw hwn yn daliad rheolaidd.
-ct.how.to.pay.transcript.paragraph9 = Os nad ydych wedi talu drwy Ddebyd Uniongyrchol o’r blaen, caniatewch bum diwrnod i sefydlu hyn. Unwaith y byddwch eisoes wedi awdurdodi Debyd Uniongyrchol gan CThEM, dylai gymryd tri diwrnod gwaith bob tro y byddwch yn talu.
-ct.how.to.pay.transcript.paragraph10 = Neu gallwch gymeradwyo taliad yn uniongyrchol o’ch cyfrif banc. Dewiswch yr opsiwn i dalu drwy gyfrif banc a dilyn y cyfarwyddiadau.
-ct.how.to.pay.transcript.paragraph11 = Cael gafael ar fanylion banc CThEM i wneud trosglwyddiad banc drwy:
+ct.how.to.pay.transcript.title = Trawsgrifiad fideo - Sut ydw i’n talu fy mil Treth Gorfforaeth?
+ct.how.to.pay.transcript.heading = Trawsgrifiad fideo - Sut ydw i’n talu fy mil Treth Gorfforaeth?
+ct.how.to.pay.transcript.paragraph1 = Y dyddiad cau ar gyfer anfon eich Ffurflen Dreth y Cwmni at CThEF fel arfer yw deuddeg mis ar ôl diwedd y cyfnod cyfrifyddu y mae’n ei gwmpasu.
+ct.how.to.pay.transcript.paragraph2 = Mae dyddiad cau ar wahân i dalu eich bil Treth Gorfforaeth – sef naw mis ac un diwrnod ar ôl diwedd y cyfnod cyfrifyddu.
+ct.how.to.pay.transcript.paragraph3 = Er enghraifft, os daw eich cyfnod cyfrifyddu i ben ar 30 Mawrth, mae’n rhaid i Dreth Gorfforaeth gyrraedd CThEF o fewn naw mis ac un diwrnod – felly, yn ein hesiampl ni, erbyn 31 Rhagfyr.
+ct.how.to.pay.transcript.paragraph4 = Os bydd eich taliad yn hwyr, efallai y codir llog a chosbau arnoch.
+ct.how.to.pay.transcript.paragraph5 = Mae’n bwysig defnyddio’r cyfeirnod talu cywir ar gyfer pob cyfnod cyfrifyddu. Bydd yn wahanol bob tro y byddwch yn gwneud taliad.
+ct.how.to.pay.transcript.paragraph6 = Fe’i cewch ar eich ‘Hysbysiad i gyflwyno eich Ffurflen Dreth’ neu mewn unrhyw atgofion a anfonwn. Mae hefyd ar gael yng nghyfrif ar-lein CThEF eich cwmni. Dewiswch ‘Gweld Datganiad Treth Gorfforaeth’, yna ‘Cyfnodau cyfrifyddu’ a dewiswch y cyfnod cywir.
+ct.how.to.pay.transcript.paragraph7 = Caiff eich manylion eu nodi’n awtomatig ar eich cyfer os byddwch yn talu ar-lein gan ddefnyddio eich Cyfrif Treth Busnes. Rydym yn argymell hyn gan ei fod yn lleihau’r risg y bydd taliadau’n mynd ar goll.
+ct.how.to.pay.transcript.paragraph8 = Unwaith y byddwch wedi mewngofnodi i’ch Cyfrif Treth Busnes, byddwch yn gweld yr adran Treth Gorfforaeth. Mae’n cynnwys opsiwn i ‘Wneud taliad Treth Gorfforaeth’.
+ct.how.to.pay.transcript.paragraph9 = Dewiswch y ddolen i fynd i dudalen manylion Treth Gorfforaeth.
+ct.how.to.pay.transcript.paragraph10 = Yna dewiswch y ddolen hon a ‘dewis ffordd o dalu’.
+ct.how.to.pay.transcript.paragraph11 = Gallwch gymeradwyo taliad yn uniongyrchol o’ch cyfrif banc.
+ct.how.to.pay.transcript.paragraph12 = Neu, gallwch wneud un taliad Debyd Uniongyrchol unigol ar gyfer eich bil Treth Gorfforaeth. Nid yw hwn yn daliad rheolaidd.
+ct.how.to.pay.transcript.paragraph13 = Os nad ydych wedi talu drwy Ddebyd Uniongyrchol o’r blaen, caniatewch bum diwrnod gwaith i hyn gael ei sefydlu. Ar ôl hynny, dylai gymryd tri diwrnod gwaith bob tro y byddwch yn talu.
+ct.how.to.pay.transcript.paragraph14 = Gallwch hefyd dalu ar-lein drwy gerdyn debyd neu gerdyn credyd corfforaethol. Codir ffi na ellir ei had-dalu ar gardiau credyd a chardiau debyd corfforaethol. Nid oes ffi os talwch â cherdyn debyd personol.
+ct.how.to.pay.transcript.paragraph15 = Ni allwch dalu â cherdyn credyd personol.
+ct.how.to.pay.transcript.paragraph16 = Ar ôl dewis eich dull talu, dewiswch ‘parhau’ a dilynwch y cyfarwyddiadau.
+ct.how.to.pay.transcript.paragraph17 = Os byddwch yn talu gan ddefnyddio un o’r dulliau hyn, byddwch yn cael cadarnhad ar y sgrin eich bod wedi anfon eich taliad.
+ct.how.to.pay.transcript.paragraph18.p1 = Os nad ydych wedi cofrestru ar gyfer Cyfrif Treth Busnes eto, gallwch dalu ar-lein o hyd – chwiliwch am ‘Pay your Corporation Tax bill’ ar
+ct.how.to.pay.transcript.paragraph18.linkText = GOV.UK
+ct.how.to.pay.transcript.paragraph18.p2 = am ragor o wybodaeth.
+ct.how.to.pay.transcript.paragraph19 = I wneud eich taliad drwy drosglwyddiad banc ar-lein neu dros y ffôn gan ddefnyddio:
 ct.how.to.pay.transcript.list1 = Taliadau Cyflymach,
 ct.how.to.pay.transcript.list2 = Bacs
 ct.how.to.pay.transcript.list3 = neu CHAPS
-ct.how.to.pay.transcript.paragraph12 = Gallwch hefyd dalu ar-lein drwy gerdyn debyd neu gerdyn credyd corfforaethol. Codir ffi na ellir ei had-dalu ar gardiau credyd a chardiau debyd corfforaethol. Nid oes ffi yn cael ei chodi os ydych yn talu â cherdyn debyd personol.
-ct.how.to.pay.transcript.paragraph13 = Ni allwch dalu â cherdyn credyd personol.
-ct.how.to.pay.transcript.paragraph14.p1 = Os nad ydych wedi cofrestru ar gyfer cyfrif treth busnes eto, gallwch dalu ar-lein o hyd – chwiliwch am ‘Pay your Corporation Tax bill’ ar
-ct.how.to.pay.transcript.paragraph14.linkText = GOV.UK
-ct.how.to.pay.transcript.paragraph14.p2 = i gael rhagor o wybodaeth.
-ct.how.to.pay.transcript.paragraph15 = Cofiwch ei bod yn bwysig defnyddio’r cyfeirnod talu cywir ar gyfer pob cyfnod cyfrifyddu. Fe welwch y rhif ar y slip cyflog sydd ynghlwm wrth y ffurflen CT603 ‘hysbysiad i gyflwyno Ffurflen Dreth’ - a elwir weithiau’n ‘hysbysiad i gyflwyno’.
-ct.how.to.pay.transcript.paragraph16 = Ar ôl i chi anfon y taliad, byddwch yn cael cydnabyddiaeth ar y sgrin yn cadarnhau ein bod wedi ein cyrraedd.
-ct.how.to.pay.transcript.paragraph17 = Cofiwch wneud yn siŵr eich bod yn talu erbyn y dyddiad cau er mwyn osgoi unrhyw log neu gosbau.
-ct.how.to.pay.transcript.paragraph18.p1 = Gallwch ddod o hyd i ragor o wybodaeth ar
-ct.how.to.pay.transcript.paragraph18.linkText = GOV.UK
+ct.how.to.pay.transcript.paragraph20 = bydd angen manylion banc CThEF arnoch. Mae manylion cyfrif ar wahân os ydych yn talu o gyfrif tramor.
+ct.how.to.pay.transcript.paragraph21 = Cofiwch sicrhau eich bod yn talu erbyn y terfyn amser er mwyn osgoi unrhyw log neu gosbau.
+ct.how.to.pay.transcript.paragraph22.p1 = Gallwch ddod o hyd i ragor o wybodaeth am Dreth Gorfforaeth ar
+ct.how.to.pay.transcript.paragraph22.linkText = GOV.UK
+ct.how.to.pay.transcript.paragraph22.p2 = ac yn ein fideos defnyddiol eraill ar YouTube.
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #~~ Can’t Access SA Online Transcript

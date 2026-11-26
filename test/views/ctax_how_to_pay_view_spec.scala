@@ -68,7 +68,7 @@ class CtaxHowToPayViewSpec extends ViewBehaviours {
         doc,
         "ct-how-to-pay-video",
         "Video - Paying your Corporation Tax bill (opens in new tab)",
-        "https://www.youtube.com/watch?v=_eTj5_S9nrA",
+        "https://www.youtube.com/watch?v=PXcSHNSsD0s",
         "",
         expectedOpensInNewTab = true
       )
